@@ -162,7 +162,7 @@
         {
           "name": "Sunflowers for My Love (1/3)",
           "display": "#7 Sunflowers for My Love (1/3)",
-          "content": "Investigate the door.\n Time limit to find next part: 20 min.\n\n Part 1: <a href='/#/map?m=prideholme&c=story-002'>click here</a> \n Part 2: <a href=''>click here</a> \n Part 3: <a href='/#/map?m=prideholme&c=story-003'>click here</a>",
+          "content": "Investigate the door.\n Time limit to find next part: 20 min.\n\n Part 1: <a href='./#/map?m=prideholme&c=story-002'>click here</a> \n Part 2: <a href=''>click here</a> \n Part 3: <a href='./#/map?m=prideholme&c=story-003'>click here</a>",
           "id": "story-002",
           "lat": -167.08,
           "lng": 205.10
@@ -170,7 +170,7 @@
         {
           "name": "Sunflowers for My Love (3/3)",
           "display": "#7 Sunflowers for My Love (3/3)",
-          "content": "Investigate the sunflower field. \n\n Part 1: <a href='/#/map?m=prideholme&c=story-002'>click here</a> \n Part 2: <a href=''>click here</a> \n Part 3: <a href='/#/map?m=prideholme&c=story-003'>click here</a>",
+          "content": "Investigate the sunflower field. \n\n Part 1: <a href='./#/map?m=prideholme&c=story-002'>click here</a> \n Part 2: <a href=''>click here</a> \n Part 3: <a href='./#/map?m=prideholme&c=story-003'>click here</a>",
           "id": "story-003",
           "lat": -169.08,
           "lng": 209.17

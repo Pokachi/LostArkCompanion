@@ -12,7 +12,7 @@
         </b-col>
         <b-col>
           <div v-for="(marker, index) in data.markers" :key="marker.type" :set="playerData = getPlayerData(data.mapId)">
-            <b-img width="18px" class="mb-1" :src="iconData[marker.type].icon" /> {{ iconData[marker.type].name }} ({{playerData[index]? playerData[index].c : 0}}/{{marker.count}})
+            <b-img width="18px" class="mb-1" :src="iconData[marker.type].icon" /> {{ iconData[marker.type].name }} ({{ playerData && playerData[index]? playerData[index].c : 0}}/{{marker.count}})
           </div>
         </b-col>
       </b-row>
@@ -41,7 +41,13 @@ export default {
       this.$emit('updateMarker', type, id, newState);
     },
     getPlayerData: function(mapId) {
-      return JSON.parse(localStorage.getItem(mapId + 'map'));
+      if (localStorage.getItem(mapId + 'map')) {
+        try {
+          this.playerData = JSON.parse(localStorage.getItem(mapId + 'map'));
+        } catch (e) {
+          localStorage.removeItem(mapId + 'map');
+        }
+      }
     },
     updateQuery: function (mapId) {
       let closeButton = document.getElementsByClassName("leaflet-popup-close-button")[0];
