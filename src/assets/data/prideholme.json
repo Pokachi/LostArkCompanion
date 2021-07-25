@@ -4,14 +4,8 @@
   "continent": "Rethramis",
   "icon": "./map/prideholme/prideholme.png",
   "markers": [
-
     {
-      "anchor": [9, 9],
       "type": "mokoko",
-      "name": "Mokoko Beans",
-      "toggleable": true,
-      "icon": "./icons/mokoko.png",
-      "popup": "normal",
       "data": [
         {
           "name": "Mokoko Bean",
@@ -79,12 +73,7 @@
       ]
     },
     {
-      "anchor": [9, 9],
       "type": "affinity",
-      "name": "Affinity",
-      "toggleable": true,
-      "icon": "./icons/affinity.png",
-      "popup": "normal",
       "data": [
         {
           "name": "Neria",
@@ -105,12 +94,7 @@
       ]
     },
     {
-      "anchor": [9, 9],
       "type": "vista",
-      "name": "Vista",
-      "toggleable": true,
-      "icon": "./icons/vista.png",
-      "popup": "normal",
       "data": [
         {
           "name": "Chain War Memorial Tree",
@@ -123,12 +107,7 @@
       ]
     },
     {
-      "anchor": [9, 9],
       "type": "food",
-      "name": "Food",
-      "toggleable": true,
-      "icon": "./icons/food.png",
-      "popup": "normal",
       "data": [
         {
           "name": "Veda's Prideholme-style",
@@ -157,12 +136,7 @@
       ]
     },
     {
-      "anchor": [9, 9],
       "type": "quest",
-      "name": "Quest",
-      "toggleable": true,
-      "icon": "./icons/quest.png",
-      "popup": "normal",
       "data": [
         {
           "name": "Song for a Hero",
@@ -175,12 +149,7 @@
       ]
     },
     {
-      "anchor": [9, 9],
       "type": "story",
-      "name": "Hidden Story",
-      "toggleable": true,
-      "icon": "./icons/story.png",
-      "popup": "normal",
       "data": [
         {
           "name": "Korumba's Cat",
@@ -217,12 +186,7 @@
       ]
     },
     {
-      "anchor": [8, 8],
       "type": "passage",
-      "name": "Secret Passage",
-      "toggleable": true,
-      "icon": "./icons/passage.png",
-      "popup": "normal",
       "data": [
         {
           "name": "Secret Passage",
@@ -235,18 +199,25 @@
       ]
     },
     {
-      "anchor": [0, 0],
       "type": "zone",
-      "name": "Zone",
-      "toggleable": false,
-      "popup": "zone",
       "data": [
         {
           "name": "Log Hill",
           "display": "Log Hill",
+          "content": "Insert some descriptions here. Insert some descriptions here. Insert some descriptions here. Insert some descriptions here.",
           "id": "zone-001",
           "lat": -99.81,
-          "lng": 225.27
+          "lng": 225.27,
+          "markers": [
+            { "type": "mokoko",  "count": 9 },
+            { "type": "affinity", "count": 2 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 3 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 4 },
+            { "type": "passage", "count": 1 }
+          ],
+          "mapId": "prideholme"
         }
       ]
     }

@@ -1,0 +1,79 @@
+<template>
+  <div>
+    <h5>{{ data.name }}</h5>
+    <hr class="bg-light mb-2 mt-0"/>
+    <b-container fluid>
+      <b-row>
+        <b-col>
+          <p class="mt-0" v-html="data.content" />
+          <div class="text-center">
+            <b-button size="sm" v-on:click="updateQuery(data.mapId)"> Enter </b-button>
+          </div>
+        </b-col>
+        <b-col>
+          <div v-for="(marker, index) in data.markers" :key="marker.type" :set="playerData = getPlayerData(data.mapId)">
+            <b-img width="18px" class="mb-1" :src="iconData[marker.type].icon" /> {{ iconData[marker.type].name }} ({{playerData[index]? playerData[index].c : 0}}/{{marker.count}})
+          </div>
+        </b-col>
+      </b-row>
+    </b-container>
+    <footer class="d-flex">
+      <label class="mt-2 em font-weight-bold">Hide: </label>
+      <b-form-checkbox :ref="data.name-id" class="ml-5" v-model="found" name="check-button" switch size="lg" v-on:input="updateMarker(type, id, $event)"> </b-form-checkbox>
+    </footer>
+  </div>
+</template>
+
+<script>
+import iconData from "@/assets/data/icon.json";
+
+export default {
+  name: "GameMapZonePopup",
+  props: ['data', 'type', 'id', 'isFound'],
+  data: function () {
+    return {
+      found: this.isFound,
+      iconData: iconData,
+    }
+  },
+  methods: {
+    updateMarker: function(type, id, newState) {
+      this.$emit('updateMarker', type, id, newState);
+    },
+    getPlayerData: function(mapId) {
+      return JSON.parse(localStorage.getItem(mapId + 'map'));
+    },
+    updateQuery: function (mapId) {
+      let closeButton = document.getElementsByClassName("leaflet-popup-close-button")[0];
+      if (closeButton) {
+        closeButton.click()
+      }
+      this.$router.push({ query: { m: mapId}});
+    }
+  }
+}
+</script>
+
+<style>
+
+.media {
+  display: flex
+}
+.mb-4dot5 {
+  margin-bottom: 2rem !important;;
+}
+
+footer {
+  position: absolute;
+  bottom:10px;
+}
+
+h5 {
+  font-size: 1rem !important;
+}
+
+.modal-content {
+  border: 0 !important;
+}
+
+</style>

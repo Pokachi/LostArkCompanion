@@ -15,7 +15,7 @@
       </p>
       <footer class="d-flex">
         <label class="mt-2 em font-weight-bold">Found: </label>
-        <b-form-checkbox :ref="name-id" class="ml-5" v-model="found" name="check-button" switch size="lg" v-on:input="updateMarker(type, id, $event)"> </b-form-checkbox>
+        <b-form-checkbox class="ml-5" v-model="found" name="check-button" switch size="lg" v-on:input="updateMarker(type, id, $event)"> </b-form-checkbox>
       </footer>
     </b-media>
   </div>

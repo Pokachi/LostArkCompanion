@@ -1,0 +1,35 @@
+{
+  "type": "world",
+  "name": "World",
+  "markers": [
+    {
+      "name": "Prideholme",
+      "anchor": [30, 30],
+      "type": "zone",
+      "toggleable": false,
+      "icon": "./map/prideholme/prideholme.png",
+      "popup": "zone",
+      "custom": true,
+      "data": [
+        {
+          "name": "Prideholme",
+          "display": "Prideholme",
+          "content": "Insert some descriptions here. Insert some descriptions here. Insert some descriptions here. Insert some descriptions here.",
+          "id": "zone-001",
+          "lat": -189.51,
+          "lng": 105.72,
+          "markers": [
+            { "type": "mokoko",  "count": 9 },
+            { "type": "affinity", "count": 2 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 3 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 4 },
+            { "type": "passage", "count": 1 }
+          ],
+          "mapId": "prideholme"
+        }
+      ]
+    }
+  ]
+}
