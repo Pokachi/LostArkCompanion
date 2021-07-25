@@ -2,7 +2,7 @@
   "type": "zone",
   "name": "Prideholme",
   "continent": "Rethramis",
-  "icon": "/map/prideholme/prideholme.png",
+  "icon": "./map/prideholme/prideholme.png",
   "markers": [
 
     {
@@ -10,7 +10,7 @@
       "type": "mokoko",
       "name": "Mokoko Beans",
       "toggleable": true,
-      "icon": "/icons/mokoko.png",
+      "icon": "./icons/mokoko.png",
       "popup": "normal",
       "data": [
         {
@@ -83,7 +83,7 @@
       "type": "affinity",
       "name": "Affinity",
       "toggleable": true,
-      "icon": "/icons/affinity.png",
+      "icon": "./icons/affinity.png",
       "popup": "normal",
       "data": [
         {
@@ -109,7 +109,7 @@
       "type": "vista",
       "name": "Vista",
       "toggleable": true,
-      "icon": "/icons/vista.png",
+      "icon": "./icons/vista.png",
       "popup": "normal",
       "data": [
         {
@@ -127,7 +127,7 @@
       "type": "food",
       "name": "Food",
       "toggleable": true,
-      "icon": "/icons/food.png",
+      "icon": "./icons/food.png",
       "popup": "normal",
       "data": [
         {
@@ -161,7 +161,7 @@
       "type": "quest",
       "name": "Quest",
       "toggleable": true,
-      "icon": "/icons/quest.png",
+      "icon": "./icons/quest.png",
       "popup": "normal",
       "data": [
         {
@@ -179,7 +179,7 @@
       "type": "story",
       "name": "Hidden Story",
       "toggleable": true,
-      "icon": "/icons/story.png",
+      "icon": "./icons/story.png",
       "popup": "normal",
       "data": [
         {
@@ -221,12 +221,12 @@
       "type": "passage",
       "name": "Secret Passage",
       "toggleable": true,
-      "icon": "/icons/passage.png",
+      "icon": "./icons/passage.png",
       "popup": "normal",
       "data": [
         {
           "name": "Secret Passage",
-          "image": "/images/prideholme/passage2.png",
+          "image": "./images/prideholme/passage.png",
           "content": "Top left wall of the church is passable.",
           "id": "passage-001",
           "lat": -104.71,

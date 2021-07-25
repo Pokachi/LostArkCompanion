@@ -142,7 +142,7 @@ export default {
         this.location = "prideholme";
         this.mapData = await import("@/assets/data/prideholme.json");
       }
-      this.mapUrl = '/map/' + this.location + '/{z}/{x}/{y}.png';
+      this.mapUrl = './map/' + this.location + '/{z}/{x}/{y}.png';
 
       if (this.$route.query.c) {
         this.mapData.markers.forEach(marker => {
