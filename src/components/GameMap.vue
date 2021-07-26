@@ -29,10 +29,10 @@
                 </p>
               </l-icon>
               <l-popup v-if="iconData[marker.type].popup==='normal'" class="text-light">
-                <game-map-popup :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker"/>
+                <game-map-popup :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker" :key="data.id"/>
               </l-popup>
               <l-popup v-else-if="iconData[marker.type].popup==='zone'" class="text-light" :options="popupOptions">
-                <game-map-zone-popup :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker"/>
+                <game-map-zone-popup :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker" :key="data.id"/>
               </l-popup>
             </l-marker>
           </div>
@@ -47,10 +47,10 @@
                 </p>
               </l-icon>
               <l-popup v-if="marker.popup==='normal'" class="text-light">
-                <game-map-popup :data="data" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker"/>
+                <game-map-popup :data="data" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker" :key="data.id" />
               </l-popup>
               <l-popup v-else-if="marker.popup==='zone'" :marker-data="marker" class="text-light" :options="popupOptions">
-                <game-map-zone-popup :data="data" :marker-data="marker" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker"/>
+                <game-map-zone-popup :data="data" :marker-data="marker" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker" :key="data.id" />
               </l-popup>
             </l-marker>
           </div>
