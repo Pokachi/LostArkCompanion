@@ -4,7 +4,7 @@
   "markers": [
     {
       "name": "Zone",
-      "type": "worldzone",
+      "type": "zone",
       "toggleable": true,
       "popup": "zone",
       "world": true,
