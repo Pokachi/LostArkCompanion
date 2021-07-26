@@ -162,7 +162,7 @@
         {
           "name": "Sunflowers for My Love (1/3)",
           "display": "#7 Sunflowers for My Love (1/3)",
-          "content": "Investigate the door.",
+          "content": "Investigate the door.\n Time limit: 20min",
           "markerLink": [
             {
               "label": "Part 1",
