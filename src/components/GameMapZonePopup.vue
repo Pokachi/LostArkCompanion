@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h5 class="text-center">{{ data.name }}</h5>
+    <h5 class="text-center mb-0 continent-name-text">{{ data.continent }}</h5>
+    <h3 class="text-center mt-0 zone-name-text">{{ data.name }}</h3>
     <hr class="bg-light mb-2 mt-0"/>
     <b-container fluid class="mb-2">
       <b-row>
@@ -79,6 +80,10 @@ h5 {
 
 .modal-content {
   border: 0 !important;
+}
+
+.continent-name-text {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 </style>

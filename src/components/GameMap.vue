@@ -20,7 +20,7 @@
       <!-- List of markers -->
       <div v-if="mapData">
         <div v-for="(marker, mIndex) in mapData.markers" :key="marker.type">
-          <div v-if="iconData[marker.type] && !marker.custom">
+          <div v-if="iconData[marker.type] && !marker.world">
             <l-marker v-for="(data, dIndex) in marker.data" :lat-lng="data" :key="data.id">
               <l-icon :icon-anchor="iconData[marker.type].anchor">
                 <b-img v-if="iconData[marker.type].icon" fluid :src="iconData[marker.type].icon" :class="[playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '' ]" />
@@ -37,11 +37,11 @@
             </l-marker>
           </div>
 
-          <div v-if="marker.custom">
+          <div v-if="marker.world">
             <l-marker v-for="(data, dIndex) in marker.data" :lat-lng="data" :key="data.id">
-              <l-icon :icon-anchor="marker.anchor">
-                <b-img v-if="marker.icon" fluid :src="marker.icon" :class="[playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '' ]" />
-                <p :class="[marker.popup === 'zone' ? 'link-label' : 'text-light', playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '', 'icon-display-name']">
+              <l-icon v-if="data.icon" :icon-anchor="data.anchor">
+                <b-img fluid :src="data.icon" :class="[playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '' ]" />
+                <p :class="[marker.popup === 'zone' ? 'zone-name-text' : 'text-light', playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '', 'icon-display-name']">
                   {{ data.display }}
                 </p>
               </l-icon>
@@ -66,6 +66,9 @@
           <div v-for="(marker, index) in mapData.markers" :key="marker.type" :class="playerData[index] && playerData[index].h ? 'found' : ''">
             <b-button v-if="iconData[marker.type].toggleable" squared switch class="container-fluid text-left mt-1" v-on:click="toggleMarker(index)">
               <b-img width="18px" class="mr-2 mb-1" :src="iconData[marker.type].icon" /> {{ iconData[marker.type].name }} ({{playerData[index]? playerData[index].c : 0}}/{{marker.data.length}})
+            </b-button>
+            <b-button v-if="marker.world && marker.toggleable" squared switch class="container-fluid text-left mt-1" v-on:click="toggleMarker(index)">
+              <b-img width="18px" class="mr-2 mb-1" :src="marker.icon" /> {{ marker.name }} ({{playerData[index]? playerData[index].c : 0}}/{{marker.data.length}})
             </b-button>
           </div>
         </div>
@@ -295,5 +298,9 @@ export default {
 
 .hidden {
   opacity: 0;
+}
+
+.zone-name-text {
+  color: #d1ab84;
 }
 </style>

@@ -3,16 +3,18 @@
   "name": "World",
   "markers": [
     {
-      "name": "Prideholme",
-      "anchor": [30, 30],
+      "name": "Zone",
       "type": "zone",
-      "toggleable": false,
-      "icon": "./map/prideholme/prideholme.png",
+      "toggleable": true,
       "popup": "zone",
-      "custom": true,
+      "world": true,
+      "icon": "./icons/zone.png",
       "data": [
         {
+          "icon": "./map/prideholme/prideholme.png",
+          "anchor": [30, 30],
           "name": "Prideholme",
+          "continent": "Rethramis",
           "display": "Prideholme",
           "content": "Insert some descriptions here. Insert some descriptions here. Insert some descriptions here. Insert some descriptions here.",
           "id": "zone-001",
