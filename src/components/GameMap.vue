@@ -179,6 +179,7 @@ export default {
       }
       this.mapUrl = './map/' + this.location + '/{z}/{x}/{y}.png';
 
+      this.playerData = {};
       if (localStorage.getItem(this.location + 'map')) {
         try {
           this.playerData = JSON.parse(localStorage.getItem(this.location + 'map'));

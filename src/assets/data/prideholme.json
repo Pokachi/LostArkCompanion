@@ -237,6 +237,7 @@
       "data": [
         {
           "name": "Log Hill",
+          "continent": "Rethramis",
           "display": "Log Hill",
           "content": "Insert some descriptions here. Insert some descriptions here. Insert some descriptions here. Insert some descriptions here.",
           "id": "zone001",

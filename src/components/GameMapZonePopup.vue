@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3 class="mb-0">{{ data.name }}</h3>
-    <h5 class="subtitle-name-text">{{ markerData.name }}</h5>
+    <h5 class="subtitle-name-text">{{ data.continent }}</h5>
     <div class="found-toggle subtitle-name-text ">
       <b-form-checkbox v-model="found" name="check-button" switch v-on:input="updateMarker(type, id, $event)">Complete: </b-form-checkbox>
     </div>
