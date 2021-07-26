@@ -71,7 +71,7 @@
         </div>
         <div v-if="this.location != 'world'">
           <b-button squared class="container-fluid text-center fixed-bottom" v-on:click="changeMap('world')">
-            Go to overworld
+            Go to World Map
           </b-button>
         </div>
       </b-sidebar>
@@ -223,6 +223,18 @@ export default {
 
 <style>
 @import "../../node_modules/leaflet/dist/leaflet.css";
+
+.custom-control, .custom-switch, .b-custom-control-lg {
+  padding-left: 0 !important;
+}
+
+.custom-control-label::before {
+  left: 5rem !important;
+}
+.custom-control-label::after {
+
+  left: calc(5rem + 2px) !important;
+}
 
 #map {
   height: calc(100vh - 84px);

@@ -1,26 +1,25 @@
 <template>
   <div>
-    <h5>{{ data.name }}</h5>
+    <h5 class="text-center">{{ data.name }}</h5>
     <hr class="bg-light mb-2 mt-0"/>
-    <b-container fluid>
+    <b-container fluid class="mb-2">
       <b-row>
+        <b-col>
+          <div v-for="(marker, index) in data.markers" :key="marker.type" :set="playerData = getPlayerData(data.mapId)">
+            <b-img width="18px" class="mb-1" :src="iconData[marker.type].icon" /> {{ iconData[marker.type].name }} ({{ playerData && playerData[index]? playerData[index].c : 0}}/{{marker.count}})
+          </div>
+        </b-col>
         <b-col>
           <p class="mt-0" v-html="data.content" />
           <div class="text-center">
             <b-button size="sm" v-on:click="updateQuery(data.mapId)"> Enter </b-button>
           </div>
         </b-col>
-        <b-col>
-          <div v-for="(marker, index) in data.markers" :key="marker.type" :set="playerData = getPlayerData(data.mapId)">
-            <b-img width="18px" class="mb-1" :src="iconData[marker.type].icon" /> {{ iconData[marker.type].name }} ({{ playerData && playerData[index]? playerData[index].c : 0}}/{{marker.count}})
-          </div>
-        </b-col>
       </b-row>
     </b-container>
-    <footer class="d-flex">
-      <label class="mt-2 em font-weight-bold">Hide: </label>
-      <b-form-checkbox :ref="data.name-id" class="ml-5" v-model="found" name="check-button" switch size="lg" v-on:input="updateMarker(type, id, $event)"> </b-form-checkbox>
-    </footer>
+    <div>
+      <b-form-checkbox v-model="found" name="check-button" switch size="lg" v-on:input="updateMarker(type, id, $event)">Hide: </b-form-checkbox>
+    </div>
   </div>
 </template>
 

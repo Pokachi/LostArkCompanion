@@ -9,14 +9,13 @@
           <b-img fluid :src="image"></b-img>
         </b-modal>
       </template>
-      <h5>{{ name }}</h5>
+      <h5 class="text-center">{{ name }}</h5>
       <hr class="bg-light mb-2 mt-0"/>
-      <p class="mt-0 mb-4dot5" v-html="content">
+      <p class="mt-0 mb-3" v-html="content">
       </p>
-      <footer class="d-flex">
-        <label class="mt-2 em font-weight-bold">Found: </label>
-        <b-form-checkbox class="ml-5" v-model="found" name="check-button" switch size="lg" v-on:input="updateMarker(type, id, $event)"> </b-form-checkbox>
-      </footer>
+      <div>
+        <b-form-checkbox v-model="found" name="check-button" switch size="lg" v-on:input="updateMarker(type, id, $event)">Found: </b-form-checkbox>
+      </div>
     </b-media>
   </div>
 </template>
@@ -39,7 +38,6 @@ export default {
 </script>
 
 <style>
-
 .media {
   display: flex
 }
