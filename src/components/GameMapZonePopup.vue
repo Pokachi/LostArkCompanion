@@ -6,21 +6,21 @@
     <b-container fluid class="mb-2">
       <b-row>
         <b-col>
+          <p class="mt-0" v-html="data.content" />
+          <div class="float-bottom">
+            <div class="text-center mb-2">
+              <b-button size="sm" v-on:click="changeMap(data.mapId)"> Enter </b-button>
+            </div>
+            <b-form-checkbox v-model="found" name="check-button" switch size="lg" v-on:input="updateMarker(type, id, $event)">Hide: </b-form-checkbox>
+          </div>
+        </b-col>
+        <b-col>
           <div v-for="(marker, index) in data.markers" :key="marker.type" :set="playerData = getPlayerData(data.mapId)">
             <b-img width="18px" class="mb-1" :src="iconData[marker.type].icon" /> {{ iconData[marker.type].name }} ({{ playerData && playerData[index]? playerData[index].c : 0}}/{{marker.count}})
           </div>
         </b-col>
-        <b-col>
-          <p class="mt-0" v-html="data.content" />
-          <div class="text-center">
-            <b-button size="sm" v-on:click="updateQuery(data.mapId)"> Enter </b-button>
-          </div>
-        </b-col>
       </b-row>
     </b-container>
-    <div>
-      <b-form-checkbox v-model="found" name="check-button" switch size="lg" v-on:input="updateMarker(type, id, $event)">Hide: </b-form-checkbox>
-    </div>
   </div>
 </template>
 
@@ -48,25 +48,20 @@ export default {
           localStorage.removeItem(mapId + 'map');
         }
       }
-    },
-    updateQuery: function (mapId) {
-      let closeButton = document.getElementsByClassName("leaflet-popup-close-button")[0];
-      if (closeButton) {
-        closeButton.click()
-      }
-      this.$router.push({ query: { m: mapId}});
     }
   }
 }
 </script>
 
 <style>
+.float-bottom {
+  position: absolute !important;
+  width: calc(100% - 30px);
+  bottom: 0;
+}
 
 .media {
   display: flex
-}
-.mb-4dot5 {
-  margin-bottom: 2rem !important;;
 }
 
 footer {
@@ -80,10 +75,6 @@ h5 {
 
 .modal-content {
   border: 0 !important;
-}
-
-.continent-name-text {
-  color: rgba(255, 255, 255, 0.3);
 }
 
 </style>

@@ -10,63 +10,63 @@
         {
           "name": "Mokoko Bean",
           "content": "Next to the tree and vista.",
-          "id": "mokoko-001",
+          "id": "mokoko001",
           "lat": -95.95,
           "lng": 75.35
         },
         {
           "name": "Mokoko Bean",
           "content": "1 of the 2 mokoko beans hidden behind the secret passage.",
-          "id": "mokoko-002",
+          "id": "mokoko002",
           "lat": -123.21,
           "lng": -10.54
         },
         {
           "name": "Mokoko Bean",
           "content": "1 of the 2 mokoko beans hidden behind the secret passage.",
-          "id": "mokoko-003",
+          "id": "mokoko003",
           "lat": -130.92,
           "lng": -10
         },
         {
           "name": "Mokoko Bean",
           "content": "Next to the tree by the stairs.",
-          "id": "mokoko-004",
+          "id": "mokoko004",
           "lat": -132.22,
           "lng": 100.58
         },
         {
           "name": "Mokoko Bean",
           "content": "Next to the lion statue.",
-          "id": "mokoko-005",
+          "id": "mokoko005",
           "lat": -100.04,
           "lng": 130.01
         },
         {
           "name": "Mokoko Bean",
           "content": "By the entrance to Neria's tavern.",
-          "id": "mokoko-006",
+          "id": "mokoko006",
           "lat": -78.69,
           "lng": 143.47
         },
         {
           "name": "Mokoko Bean",
           "content": "Behind the flower pots by the house.",
-          "id": "mokoko-007",
+          "id": "mokoko007",
           "lat": -133.06,
           "lng": 170.09
         },
         {
           "name": "Mokoko Bean",
           "content": "In the middle of the field.",
-          "id": "mokoko-008",
+          "id": "mokoko008",
           "lat": -194.69,
           "lng": 239.84
         },
         {
           "name": "Mokoko Bean",
           "content": "Next to the cart of wheat.",
-          "id": "mokoko-009",
+          "id": "mokoko009",
           "lat": -232.80,
           "lng": 199.73
         }
@@ -79,7 +79,7 @@
           "name": "Neria",
           "display": "Neria",
           "content": "",
-          "id": "affinity-001",
+          "id": "affinity001",
           "lat": -67.58,
           "lng": 147.86
         },
@@ -87,7 +87,7 @@
           "name": "Siera",
           "display": "Siera",
           "content": "",
-          "id": "affinity-002",
+          "id": "affinity002",
           "lat": -191.21,
           "lng": 112.10
         }
@@ -100,7 +100,7 @@
           "name": "Chain War Memorial Tree",
           "display": "#1 Chain War Memorial Tree",
           "content": "This is part of the story quest. You should have this one already.",
-          "id": "vista-001",
+          "id": "vista001",
           "lat": -96.87,
           "lng": 78.61
         }
@@ -113,7 +113,7 @@
           "name": "Veda's Prideholme-style",
           "display": "#1 Veda's Prideholme-style",
           "content": "Purchase the food from Veda.\n Cost: 3000 silver",
-          "id": "food-001",
+          "id": "food001",
           "lat": -70.08,
           "lng": 126.73
         },
@@ -121,7 +121,7 @@
           "name": "Holy Potato with Teeth Marks",
           "display": "#7 Holy Potato with Teeth Marks",
           "content": "Obtained from Siera after reaching trust level.",
-          "id": "food-002",
+          "id": "food002",
           "lat": -189.96,
           "lng": 114.22
         },
@@ -129,7 +129,7 @@
           "name": "Giant wheat sack",
           "display": "#4 Giant wheat sack",
           "content": "Cooked at Hely for Regria Wheat Bread.\n Cost: 1400 silver",
-          "id": "food-003",
+          "id": "food003",
           "lat": -235.84,
           "lng": 220.87
         }
@@ -142,7 +142,7 @@
           "name": "Song for a Hero",
           "display": "#2 Song for a Hero",
           "content": "Obtained from Siera.",
-          "id": "quest-001",
+          "id": "quest001",
           "lat": -191.96,
           "lng": 114.22
         }
@@ -155,23 +155,57 @@
           "name": "Korumba's Cat",
           "display": "#5 Korumba's Cat",
           "content": "Investigate the tomb to the top left of the cart.",
-          "id": "story-001",
+          "id": "story001",
           "lat": -227.33,
           "lng": 197.5
         },
         {
           "name": "Sunflowers for My Love (1/3)",
           "display": "#7 Sunflowers for My Love (1/3)",
-          "content": "Investigate the door.\n Time limit to find next part: 20 min.\n\n Part 1: <a href='./#/map?m=prideholme&c=story-002'>click here</a> \n Part 2: <a href=''>click here</a> \n Part 3: <a href='./#/map?m=prideholme&c=story-003'>click here</a>",
-          "id": "story-002",
+          "content": "Investigate the door.",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "prideholme",
+              "marker": "story002"
+            },
+            {
+              "label": "Part 2",
+              "zone": "prideholme",
+              "marker": "story002"
+            },
+            {
+              "label": "Part 3",
+              "zone": "prideholme",
+              "marker": "story003"
+            }
+          ],
+          "id": "story002",
           "lat": -167.08,
           "lng": 205.10
         },
         {
           "name": "Sunflowers for My Love (3/3)",
           "display": "#7 Sunflowers for My Love (3/3)",
-          "content": "Investigate the sunflower field. \n\n Part 1: <a href='./#/map?m=prideholme&c=story-002'>click here</a> \n Part 2: <a href=''>click here</a> \n Part 3: <a href='./#/map?m=prideholme&c=story-003'>click here</a>",
-          "id": "story-003",
+          "content": "Investigate the sunflower field.",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "prideholme",
+              "marker": "story002"
+            },
+            {
+              "label": "Part 2",
+              "zone": "prideholme",
+              "marker": "story002"
+            },
+            {
+              "label": "Part 3",
+              "zone": "prideholme",
+              "marker": "story003"
+            }
+          ],
+          "id": "story003",
           "lat": -169.08,
           "lng": 209.17
         },
@@ -179,7 +213,7 @@
           "name": "The Hidden Past of Varut",
           "display": "#1 The Hidden Past of Varut",
           "content": "Investigate the area behind the wooden board at the end of the church.",
-          "id": "story-004",
+          "id": "story004",
           "lat": -87.58,
           "lng": 14.49
         }
@@ -192,7 +226,7 @@
           "name": "Secret Passage",
           "image": "./images/prideholme/passage.png",
           "content": "Top left wall of the church is passable.",
-          "id": "passage-001",
+          "id": "passage001",
           "lat": -104.71,
           "lng": 6.86
         }
@@ -205,7 +239,7 @@
           "name": "Log Hill",
           "display": "Log Hill",
           "content": "Insert some descriptions here. Insert some descriptions here. Insert some descriptions here. Insert some descriptions here.",
-          "id": "zone-001",
+          "id": "zone001",
           "lat": -99.81,
           "lng": 225.27,
           "markers": [

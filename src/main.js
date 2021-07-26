@@ -11,6 +11,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faImages, faGlobe, faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
+import '@/mixins/globalMixin'
+
 Vue.use(BootstrapVue)
 
 // Font-awesome library

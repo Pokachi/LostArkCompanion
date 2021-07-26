@@ -17,11 +17,11 @@
           :options="mapOptions"
       />
 
-      <!-- List of markers -->
       <div v-if="mapData">
+        <!-- List of markers collection markers-->
         <div v-for="(marker, mIndex) in mapData.markers" :key="marker.type">
           <div v-if="iconData[marker.type] && !marker.world">
-            <l-marker v-for="(data, dIndex) in marker.data" :lat-lng="data" :key="data.id">
+            <l-marker v-for="(data, dIndex) in marker.data" :lat-lng="data" :key="data.id" :ref="data.id">
               <l-icon :icon-anchor="iconData[marker.type].anchor">
                 <b-img v-if="iconData[marker.type].icon" fluid :src="iconData[marker.type].icon" :class="[playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '' ]" />
                 <p :class="[iconData[marker.type].popup === 'zone' ? 'link-label' : 'text-light', playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '', 'icon-display-name']">
@@ -29,16 +29,17 @@
                 </p>
               </l-icon>
               <l-popup v-if="iconData[marker.type].popup==='normal'" class="text-light">
-                <game-map-popup :image="data.image" :content="data.content" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :name="data.name" :type="mIndex" :id="dIndex" @updateMarker="updateMarker"/>
+                <game-map-popup :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker"/>
               </l-popup>
-              <l-popup v-if="iconData[marker.type].popup==='zone'" class="text-light" :options="popupOptions">
+              <l-popup v-else-if="iconData[marker.type].popup==='zone'" class="text-light" :options="popupOptions">
                 <game-map-zone-popup :data="data" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker"/>
               </l-popup>
             </l-marker>
           </div>
 
+          <!-- List of world map markers-->
           <div v-if="marker.world">
-            <l-marker v-for="(data, dIndex) in marker.data" :lat-lng="data" :key="data.id">
+            <l-marker v-for="(data, dIndex) in marker.data" :lat-lng="data" :key="data.id" :ref="data.id">
               <l-icon v-if="data.icon" :icon-anchor="data.anchor">
                 <b-img fluid :src="data.icon" :class="[playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '' ]" />
                 <p :class="[marker.popup === 'zone' ? 'zone-name-text' : 'text-light', playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '', 'icon-display-name']">
@@ -48,7 +49,7 @@
               <l-popup v-if="marker.popup==='normal'" class="text-light">
                 <game-map-popup :image="data.image" :content="data.content" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :name="data.name" :type="mIndex" :id="dIndex" @updateMarker="updateMarker"/>
               </l-popup>
-              <l-popup v-if="marker.popup==='zone'" class="text-light" :options="popupOptions">
+              <l-popup v-else-if="marker.popup==='zone'" class="text-light" :options="popupOptions">
                 <game-map-zone-popup :data="data" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker"/>
               </l-popup>
             </l-marker>
@@ -134,13 +135,6 @@ export default {
     this.importData()
   },
   methods: {
-    changeMap(mapId) {
-      let closeButton = document.getElementsByClassName("leaflet-popup-close-button")[0];
-      if (closeButton) {
-        closeButton.click()
-      }
-      this.$router.push({ query: { m: mapId}});
-    },
     saveData() {
       localStorage.setItem(this.location + 'map', JSON.stringify(this.playerData));
     },
@@ -220,6 +214,15 @@ export default {
       this.importData()
       this.$forceUpdate()
     }
+  },
+  updated() {
+    this.$nextTick(()=> {
+      try {
+        this.$refs[this.$route.query.c][0].mapObject.openPopup();
+      } catch (e) {
+        // it's okay
+      }
+    })
   }
 }
 </script>
@@ -232,11 +235,11 @@ export default {
 }
 
 .custom-control-label::before {
-  left: 5rem !important;
+  left: 4rem !important;
 }
 .custom-control-label::after {
 
-  left: calc(5rem + 2px) !important;
+  left: calc(4rem + 2px) !important;
 }
 
 #map {
@@ -281,7 +284,10 @@ export default {
 .leaflet-popup-content-wrapper {
   background: #3f3f3f !important;
   white-space: pre-line;
-  min-width: 175px;
+}
+
+.leaflet-popup-content {
+  min-width: 400px;
 }
 
 .b-sidebar-header {
@@ -303,4 +309,9 @@ export default {
 .zone-name-text {
   color: #d1ab84;
 }
+
+.subtitle-name-text {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 </style>
