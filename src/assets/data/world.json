@@ -17,7 +17,7 @@
           "continent": "Rethramis",
           "display": "Prideholme",
           "content": "A small town frequented by pilgrims. As the holy city of Rethramis, it produced many archbishops.",
-          "id": "zone-001",
+          "id": "zone001",
           "lat": -189.51,
           "lng": 105.72,
           "markers": [

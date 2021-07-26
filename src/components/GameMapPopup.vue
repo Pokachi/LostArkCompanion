@@ -3,7 +3,7 @@
     <h3 class="mb-0">{{ data.name }}</h3>
     <h5 class="subtitle-name-text">{{ markerData.name }}</h5>
     <div class="found-toggle subtitle-name-text ">
-      <b-form-checkbox v-model="found" name="check-button" switch v-on:input="updateMarker(type, id, $event)">Found: </b-form-checkbox>
+      <b-form-checkbox v-model="found" name="check-button" switch v-on:input="updateMarker(type, id, $event)">Complete: </b-form-checkbox>
     </div>
     <hr class="bg-light mb-2 mt-0"/>
     <div class="d-flex">
@@ -11,7 +11,8 @@
       <div v-if="data.markerLink" class="popup-sidebar pr-3 text-center">
         <h5> Quest Chain </h5>
         <div v-for="link in data.markerLink" :key="link.label">
-          <b-link v-on:click="changeMap(link.zone, link.marker)"> {{ link.label }} </b-link>
+          <b-link v-if="link.marker != data.id" v-on:click="changeMap(link.zone, link.marker)"> {{ link.label }} </b-link>
+          <b-link v-else> {{ link.label }} </b-link>
         </div>
       </div>
       <!-- Check if there is image, and determine what to display -->
@@ -64,21 +65,6 @@ h5 {
 
 .modal-content {
   border: 0 !important;
-}
-
-.found-toggle {
-  position: absolute;
-  right: 4rem;
-  top: 2.8rem;
-  font-size: 1rem !important;
-}
-
-.popup-sidebar {
-  border-right: 1.5px solid;
-}
-
-.popup-content {
-  flex-grow: 1
 }
 
 </style>

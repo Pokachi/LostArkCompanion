@@ -32,7 +32,7 @@
                 <game-map-popup :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker"/>
               </l-popup>
               <l-popup v-else-if="iconData[marker.type].popup==='zone'" class="text-light" :options="popupOptions">
-                <game-map-zone-popup :data="data" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker"/>
+                <game-map-zone-popup :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker"/>
               </l-popup>
             </l-marker>
           </div>
@@ -47,10 +47,10 @@
                 </p>
               </l-icon>
               <l-popup v-if="marker.popup==='normal'" class="text-light">
-                <game-map-popup :image="data.image" :content="data.content" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :name="data.name" :type="mIndex" :id="dIndex" @updateMarker="updateMarker"/>
+                <game-map-popup :data="data" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker"/>
               </l-popup>
-              <l-popup v-else-if="marker.popup==='zone'" class="text-light" :options="popupOptions">
-                <game-map-zone-popup :data="data" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker"/>
+              <l-popup v-else-if="marker.popup==='zone'" :marker-data="marker" class="text-light" :options="popupOptions">
+                <game-map-zone-popup :data="data" :marker-data="marker" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker"/>
               </l-popup>
             </l-marker>
           </div>
@@ -235,11 +235,11 @@ export default {
 }
 
 .custom-control-label::before {
-  left: 4rem !important;
+  left: 5rem !important;
 }
 .custom-control-label::after {
 
-  left: calc(4rem + 2px) !important;
+  left: calc(5rem + 2px) !important;
 }
 
 #map {
@@ -314,4 +314,22 @@ export default {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.found-toggle {
+  position: absolute;
+  right: 3.5rem;
+  top: 2.8rem;
+  font-size: 1rem !important;
+}
+
+.popup-sidebar {
+  border-right: 1.5px solid;
+}
+
+.popup-content {
+  flex-grow: 1
+}
+
+.zone-markers {
+  flex: 40%;
+}
 </style>
