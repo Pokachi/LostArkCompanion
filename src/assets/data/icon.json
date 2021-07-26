@@ -13,7 +13,8 @@
     "name": "Affinity",
     "toggleable": true,
     "icon": "./icons/affinity.png",
-    "popup": "normal"
+    "popup": "normal",
+    "color": "#fb3e47"
   },
   "vista": {
     "anchor": [9, 9],
@@ -29,7 +30,8 @@
     "name": "Food",
     "toggleable": true,
     "icon": "./icons/food.png",
-    "popup": "normal"
+    "popup": "normal",
+    "color": "#c19a7c"
   },
   "quest": {
     "anchor": [9, 9],
@@ -37,7 +39,8 @@
     "name": "Quest",
     "toggleable": true,
     "icon": "./icons/quest.png",
-    "popup": "normal"
+    "popup": "normal",
+    "color": "#b42550"
   },
   "story": {
     "anchor": [9, 9],
@@ -45,7 +48,8 @@
     "name": "Hidden Story",
     "toggleable": true,
     "icon": "./icons/story.png",
-    "popup": "normal"
+    "popup": "normal",
+    "color": "#5c8b23"
   },
   "passage": {
     "anchor": [8, 8],

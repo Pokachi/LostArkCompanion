@@ -24,7 +24,7 @@
             <l-marker v-for="(data, dIndex) in marker.data" :lat-lng="data" :key="data.id" :ref="data.id">
               <l-icon :icon-anchor="iconData[marker.type].anchor">
                 <b-img v-if="iconData[marker.type].icon" fluid :src="iconData[marker.type].icon" :class="[playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '' ]" />
-                <p :class="[iconData[marker.type].popup === 'zone' ? 'link-label' : 'text-light', playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '', 'icon-display-name']">
+                <p :style="'color:' + iconData[marker.type].color + '!important;'" :class="[iconData[marker.type].popup === 'zone' ? 'link-label' : 'text-light', playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '', 'icon-display-name']">
                   {{ data.display }}
                 </p>
               </l-icon>
@@ -42,7 +42,7 @@
             <l-marker v-for="(data, dIndex) in marker.data" :lat-lng="data" :key="data.id" :ref="data.id">
               <l-icon v-if="data.icon" :icon-anchor="data.anchor">
                 <b-img fluid :src="data.icon" :class="[playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '' ]" />
-                <p :class="[marker.popup === 'zone' ? 'zone-name-text' : 'text-light', playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '', 'icon-display-name']">
+                <p :style="'color:' + marker.color" :class="[marker.popup === 'zone' ? 'zone-name-text' : 'text-light', playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '', 'icon-display-name']">
                   {{ data.display }}
                 </p>
               </l-icon>
