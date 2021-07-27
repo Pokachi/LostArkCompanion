@@ -24,16 +24,9 @@ Vue.config.productionTip = false
 // Custom settings for app
 Vue.prototype.$appConfig = appConfig
 
-const app = new Vue({
+new Vue({
+  el: '#app',
   router,
-  render: h => h(App),
-  created () {
-    if (sessionStorage.redirect) {
-      const redirect = sessionStorage.redirect
-      delete sessionStorage.redirect
-      this.$router.push(redirect)
-    }
-  }
+  template: '<App/>',
+  components: { App }
 })
-
-app.$mount('#app')
