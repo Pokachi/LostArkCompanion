@@ -7,11 +7,11 @@
       "type": "zone",
       "toggleable": true,
       "world": true,
-      "icon": "../icons/zone.png",
+      "icon": "./icons/zone.png",
       "color": "#d1ab84",
       "data": [
         {
-          "icon": "../map/prideholme/prideholme.png",
+          "icon": "./map/prideholme/prideholme.png",
           "anchor": [30, 30],
           "name": "Prideholme",
           "continent": "Rethramis",
