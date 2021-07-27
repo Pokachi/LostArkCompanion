@@ -326,4 +326,8 @@ export default {
 .zone-markers {
   flex: 40%;
 }
+
+.modal-content {
+  border: 0 !important;
+}
 </style>
