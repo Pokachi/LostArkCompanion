@@ -26,7 +26,7 @@
             <l-marker v-for="(data, dIndex) in marker.data" :lat-lng="data" :key="data.id" :ref="data.id">
               <l-icon :icon-anchor="iconData[marker.type].anchor">
                 <b-img v-if="iconData[marker.type].icon" fluid :src="iconData[marker.type].icon" :class="[playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '' ]" />
-                <p :style="'color:' + iconData[marker.type].color + '!important;'" :class="[iconData[marker.type].popup === 'zone' ? 'link-label' : 'text-light', playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '', 'icon-display-name']">
+                <p :style="'color:' + iconData[marker.type].color + '!important;'" :class="[playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '', 'icon-display-name']">
                   {{ data.display }}
                 </p>
               </l-icon>
@@ -44,7 +44,7 @@
             <l-marker v-for="(data, dIndex) in marker.data" :lat-lng="data" :key="data.id" :ref="data.id">
               <l-icon v-if="data.icon" :icon-anchor="data.anchor">
                 <b-img fluid :src="data.icon" :class="[playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '' ]" />
-                <p :style="'color:' + marker.color" :class="[marker.popup === 'zone' ? 'zone-name-text' : 'text-light', playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '', 'icon-display-name']">
+                <p :style="'color:' + marker.color + '!important;'" :class="[playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '', 'icon-display-name']">
                   {{ data.display }}
                 </p>
               </l-icon>
@@ -239,41 +239,36 @@ export default {
 <style>
 @import "../../node_modules/leaflet/dist/leaflet.css";
 
-.custom-control, .custom-switch, .b-custom-control-lg {
-  padding-left: 0 !important;
+/* Hide close button */
+.leaflet-popup-close-button {
+  display: none !important;
 }
 
+/* Complete Switch */
 .custom-control-label::before {
   left: 5rem !important;
 }
 .custom-control-label::after {
-
   left: calc(5rem + 2px) !important;
 }
 
+/* map */
 #map {
   height: calc(100vh - 84px);
   width: 100%;
 }
 
+/* Side Bar */
 #sidebar-right {
-  height: 50vh;
+  height: calc(60vh - 84px);
   top: 120px;
-}
-
-#menu-control-header {
-  text-align: right;
 }
 
 #menu-control {
   position: absolute;
-  top:6vh;
+  top:120px;
   right:0vh;
   z-index: 999;
-}
-
-.not-collapsed {
-  right:320px;
 }
 
 .leaflet-container {
@@ -299,24 +294,12 @@ export default {
   min-width: 400px;
 }
 
-.b-sidebar-header {
-  text-align: center;
-}
-
-.link-label {
-  color: deepskyblue !important;
-}
-
 .found {
-  opacity: 0.2;
+  opacity: 0.4;
 }
 
 .hidden {
   opacity: 0;
-}
-
-.zone-name-text {
-  color: #d1ab84;
 }
 
 .subtitle-name-text {

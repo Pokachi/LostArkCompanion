@@ -47,24 +47,5 @@ export default {
 </script>
 
 <style>
-.media {
-  display: flex
-}
-.mb-4dot5 {
-margin-bottom: 2rem !important;;
-}
-
-footer {
-  position: absolute;
-  bottom:10px;
-}
-
-h5 {
-  font-size: 1rem !important;
-}
-
-.modal-content {
-  border: 0 !important;
-}
 
 </style>

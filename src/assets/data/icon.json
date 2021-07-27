@@ -22,7 +22,8 @@
     "name": "Vista",
     "toggleable": true,
     "icon": "../icons/vista.png",
-    "popup": "normal"
+    "popup": "normal",
+    "color": "white"
   },
   "food": {
     "anchor": [9, 9],
@@ -64,6 +65,7 @@
     "type": "zone",
     "name": "Zone",
     "toggleable": false,
-    "popup": "zone"
+    "popup": "zone",
+    "color": "deepskyblue"
   }
 }

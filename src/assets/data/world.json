@@ -9,6 +9,7 @@
       "popup": "zone",
       "world": true,
       "icon": "../icons/zone.png",
+      "color": "#d1ab84",
       "data": [
         {
           "icon": "../map/prideholme/prideholme.png",

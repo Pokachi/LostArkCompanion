@@ -51,27 +51,5 @@ export default {
 </script>
 
 <style>
-.float-bottom {
-  position: absolute !important;
-  width: calc(100% - 30px);
-  bottom: 0;
-}
-
-.media {
-  display: flex
-}
-
-footer {
-  position: absolute;
-  bottom:10px;
-}
-
-h5 {
-  font-size: 1rem !important;
-}
-
-.modal-content {
-  border: 0 !important;
-}
 
 </style>
