@@ -14,6 +14,14 @@
     "icon": "./images/icons/affinity.png",
     "color": "#fb3e47"
   },
+  "monster": {
+    "anchor": [9, 9],
+    "type": "monster",
+    "name": "Monster",
+    "toggleable": true,
+    "icon": "./images/icons/monster.png",
+    "color": "#cf8b33"
+  },
   "vista": {
     "anchor": [9, 9],
     "type": "vista",

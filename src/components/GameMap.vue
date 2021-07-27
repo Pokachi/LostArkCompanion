@@ -63,7 +63,7 @@
 
     <!-- Side bar -->
     <div v-if="mapData" id="menu-control">
-      <b-button squared v-b-toggle.sidebar-right class="float-right mt-5">Menu</b-button>
+      <b-button squared v-b-toggle.sidebar-right class="float-right">Menu</b-button>
       <b-sidebar id="sidebar-right" :title="this.mapData.name" right shadow bg-variant="dark" text-variant="light">
         <div class="px-3 py-2 mb-5">
           <div v-for="(marker, index) in mapData.markers" :key="marker.type" :class="playerData[index] && playerData[index].h ? 'found' : ''">
@@ -194,14 +194,12 @@ export default {
       }
 
       if(this.location === "world") {
-        this.minZoom = 2;
-        this.maxZoom = 5;
         this.maxBounds = latLngBounds([[-32, 0], [-224, 256]]);
       } else {
-        this.minZoom = 1;
-        this.maxZoom = 3;
         this.maxBounds = latLngBounds([[128, -128], [-384, 384]]);
       }
+      this.minZoom = this.mapData.minZoom;
+      this.maxZoom = this.mapData.maxZoom;
 
       if (this.$route.query.c) {
         this.mapData.markers.forEach(marker => {
@@ -265,12 +263,12 @@ export default {
 /* Side Bar */
 #sidebar-right {
   height: calc(60vh - 84px);
-  top: 120px;
+  top: 100px;
 }
 
 #menu-control {
   position: absolute;
-  top:120px;
+  top:100px;
   right:0vh;
   z-index: 999;
 }

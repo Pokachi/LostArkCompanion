@@ -1,0 +1,92 @@
+{
+  "type": "zone",
+  "name": "Log Hill",
+  "continent": "Rethramis",
+  "icon": "./images/map/loghill/loghill.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "content": "Next to the stone walls and piller.",
+          "id": "mokoko0010",
+          "lat": -189.60,
+          "lng": 112.38
+        },
+        {
+          "name": "Mokoko Bean",
+          "content": "Left of the boulder.",
+          "id": "mokoko0011",
+          "lat": -165.54,
+          "lng": 136.25
+        }
+      ]
+    },{
+      "type": "monster",
+      "data": [
+        {
+          "name": "Alpha White Redbeak",
+          "display": "#1 Alpha White Redbeak",
+          "image": "./images/map/loghill/popup/alpha_white_redbeak.png",
+          "id": "monser0001",
+          "lat": -144.59,
+          "lng": 142.56
+        }
+      ]
+    },
+    {
+      "type": "vista",
+      "data": [
+        {
+          "name": "Church Ruins",
+          "display": "#3 Church Ruins",
+          "content": "Right in front of the pedestal.",
+          "id": "vista0002",
+          "lat": -150.42,
+          "lng": 149.50
+        }
+      ]
+    },
+    {
+      "type": "food",
+      "data": [
+        {
+          "name": "Disgorged Lump",
+          "display": "#5 Disgorged Lump",
+          "content": "Used to cook Protein Packed White Bird Stew at Hely.\n Cost: 1400 silver",
+          "image": "./images/map/loghill/popup/disgorged_lump.png",
+          "id": "food0004",
+          "lat": -171.54,
+          "lng": 144.06
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "name": "Prideholme",
+          "continent": "Rethramis",
+          "display": "Prideholme",
+          "content": "A small town frequented by pilgrims. As the holy city of Rethramis, it produced many archbishops.",
+          "id": "zone0001",
+          "lat": -220.60,
+          "lng": 106.75,
+          "markers": [
+            { "type": "mokoko",  "count": 9 },
+            { "type": "affinity", "count": 2 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 3 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 4 },
+            { "type": "passage", "count": 1 }
+          ],
+          "mapId": "prideholme"
+        }
+      ]
+    }
+  ]
+}

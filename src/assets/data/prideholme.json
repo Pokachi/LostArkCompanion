@@ -3,6 +3,8 @@
   "name": "Prideholme",
   "continent": "Rethramis",
   "icon": "./images/map/prideholme/prideholme.png",
+  "minZoom": 1,
+  "maxZoom": 3,
   "markers": [
     {
       "type": "mokoko",
@@ -10,63 +12,63 @@
         {
           "name": "Mokoko Bean",
           "content": "Next to the tree and vista.",
-          "id": "mokoko001",
+          "id": "mokoko0001",
           "lat": -95.95,
           "lng": 75.35
         },
         {
           "name": "Mokoko Bean",
           "content": "1 of the 2 mokoko beans hidden behind the secret passage.",
-          "id": "mokoko002",
+          "id": "mokoko0002",
           "lat": -123.21,
           "lng": -10.54
         },
         {
           "name": "Mokoko Bean",
           "content": "1 of the 2 mokoko beans hidden behind the secret passage.",
-          "id": "mokoko003",
+          "id": "mokoko0003",
           "lat": -130.92,
           "lng": -10
         },
         {
           "name": "Mokoko Bean",
           "content": "Next to the tree by the stairs.",
-          "id": "mokoko004",
+          "id": "mokoko0004",
           "lat": -132.22,
           "lng": 100.58
         },
         {
           "name": "Mokoko Bean",
           "content": "Next to the lion statue.",
-          "id": "mokoko005",
+          "id": "mokoko0005",
           "lat": -100.04,
           "lng": 130.01
         },
         {
           "name": "Mokoko Bean",
           "content": "By the entrance to Neria's tavern.",
-          "id": "mokoko006",
+          "id": "mokoko0006",
           "lat": -78.69,
           "lng": 143.47
         },
         {
           "name": "Mokoko Bean",
           "content": "Behind the flower pots by the house.",
-          "id": "mokoko007",
+          "id": "mokoko0007",
           "lat": -133.06,
           "lng": 170.09
         },
         {
           "name": "Mokoko Bean",
           "content": "In the middle of the field.",
-          "id": "mokoko008",
+          "id": "mokoko0008",
           "lat": -194.69,
           "lng": 239.84
         },
         {
           "name": "Mokoko Bean",
           "content": "Next to the cart of wheat.",
-          "id": "mokoko009",
+          "id": "mokoko0009",
           "lat": -232.80,
           "lng": 199.73
         }
@@ -79,7 +81,7 @@
           "name": "Neria",
           "display": "Neria",
           "content": "",
-          "id": "affinity001",
+          "id": "affinity0001",
           "lat": -67.58,
           "lng": 147.86
         },
@@ -87,7 +89,7 @@
           "name": "Siera",
           "display": "Siera",
           "content": "",
-          "id": "affinity002",
+          "id": "affinity0002",
           "lat": -191.21,
           "lng": 112.10
         }
@@ -100,7 +102,7 @@
           "name": "Chain War Memorial Tree",
           "display": "#1 Chain War Memorial Tree",
           "content": "This is part of the story quest. You should have this one already.",
-          "id": "vista001",
+          "id": "vista0001",
           "lat": -96.87,
           "lng": 78.61
         }
@@ -113,7 +115,7 @@
           "name": "Veda's Prideholme-style",
           "display": "#1 Veda's Prideholme-style",
           "content": "Purchase the food from Veda.\n Cost: 3000 silver",
-          "id": "food001",
+          "id": "food0001",
           "lat": -70.08,
           "lng": 126.73
         },
@@ -121,15 +123,15 @@
           "name": "Holy Potato with Teeth Marks",
           "display": "#7 Holy Potato with Teeth Marks",
           "content": "Obtained from Siera after reaching trust level.",
-          "id": "food002",
+          "id": "food0002",
           "lat": -189.96,
           "lng": 114.22
         },
         {
           "name": "Giant wheat sack",
           "display": "#4 Giant wheat sack",
-          "content": "Cooked at Hely for Regria Wheat Bread.\n Cost: 1400 silver",
-          "id": "food003",
+          "content": "Used to cook Regria Wheat Bread at Hely.\n Cost: 1400 silver",
+          "id": "food0003",
           "lat": -235.84,
           "lng": 220.87
         }
@@ -142,7 +144,7 @@
           "name": "Song for a Hero",
           "display": "#2 Song for a Hero",
           "content": "Obtained from Siera.",
-          "id": "quest001",
+          "id": "quest0001",
           "lat": -191.96,
           "lng": 114.22
         }
@@ -155,7 +157,7 @@
           "name": "Korumba's Cat",
           "display": "#5 Korumba's Cat",
           "content": "Investigate the tomb to the top left of the cart.",
-          "id": "story001",
+          "id": "story0001",
           "lat": -227.33,
           "lng": 197.5
         },
@@ -180,7 +182,7 @@
               "marker": "story003"
             }
           ],
-          "id": "story002",
+          "id": "story0002",
           "lat": -167.08,
           "lng": 205.10
         },
@@ -205,7 +207,7 @@
               "marker": "story003"
             }
           ],
-          "id": "story003",
+          "id": "story0003",
           "lat": -169.08,
           "lng": 209.17
         },
@@ -213,7 +215,7 @@
           "name": "The Hidden Past of Varut",
           "display": "#1 The Hidden Past of Varut",
           "content": "Investigate the area behind the wooden board at the end of the church.",
-          "id": "story004",
+          "id": "story0004",
           "lat": -87.58,
           "lng": 14.49
         }
@@ -226,7 +228,7 @@
           "name": "Secret Passage",
           "image": "./images/map/prideholme/popup/passage.png",
           "content": "Top left wall of the church is passable.",
-          "id": "passage001",
+          "id": "passage0001",
           "lat": -104.71,
           "lng": 6.86
         }
@@ -239,8 +241,8 @@
           "name": "Log Hill",
           "continent": "Rethramis",
           "display": "Log Hill",
-          "content": "Insert some descriptions here. Insert some descriptions here. Insert some descriptions here. Insert some descriptions here.",
-          "id": "zone002",
+          "content": "A hill near Leonhart, where stone sculptures from the Iron Chain War era remain. The stone tablet of the cathedral was found in the old chapel here.",
+          "id": "zone0002",
           "lat": -99.81,
           "lng": 225.27,
           "markers": [

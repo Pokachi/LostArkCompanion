@@ -1,6 +1,8 @@
 {
   "type": "world",
   "name": "World",
+  "minZoom": 2,
+  "maxZoom": 5,
   "markers": [
     {
       "name": "Zone",
@@ -17,7 +19,7 @@
           "continent": "Rethramis",
           "display": "Prideholme",
           "content": "A small town frequented by pilgrims. As the holy city of Rethramis, it produced many archbishops.",
-          "id": "zone001",
+          "id": "zone0001",
           "lat": -189.51,
           "lng": 105.72,
           "markers": [
@@ -29,6 +31,25 @@
             { "type": "story", "count": 4 }
           ],
           "mapId": "prideholme"
+        },
+        {
+          "icon": "./images/map/loghill/log_hill.png",
+          "anchor": [30, 30],
+          "name": "Log Hill",
+          "continent": "Rethramis",
+          "display": "Log Hill",
+          "content": "A hill near Leonhart, where stone sculptures from the Iron Chain War era remain. The stone tablet of the cathedral was found in the old chapel here.",
+          "id": "zone0002",
+          "lat": -181.23,
+          "lng": 108.59,
+          "markers": [
+            { "type": "mokoko",  "count": 9 },
+            { "type": "monster", "count": 2 },
+            { "type": "vista", "count": 4 },
+            { "type": "food", "count": 1 },
+            { "type": "story", "count": 2 }
+          ],
+          "mapId": "loghill"
         }
       ]
     }
