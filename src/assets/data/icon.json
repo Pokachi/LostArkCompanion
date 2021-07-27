@@ -4,14 +4,14 @@
     "type": "mokoko",
     "name": "Mokoko Beans",
     "toggleable": true,
-    "icon": "./icons/mokoko.png"
+    "icon": "./images/icons/mokoko.png"
   },
   "affinity": {
     "anchor": [9, 9],
     "type": "affinity",
     "name": "Affinity",
     "toggleable": true,
-    "icon": "./icons/affinity.png",
+    "icon": "./images/icons/affinity.png",
     "color": "#fb3e47"
   },
   "vista": {
@@ -19,7 +19,7 @@
     "type": "vista",
     "name": "Vista",
     "toggleable": true,
-    "icon": "./icons/vista.png",
+    "icon": "./images/icons/vista.png",
     "color": "white"
   },
   "food": {
@@ -27,7 +27,7 @@
     "type": "food",
     "name": "Food",
     "toggleable": true,
-    "icon": "./icons/food.png",
+    "icon": "./images/icons/food.png",
     "color": "#c19a7c"
   },
   "quest": {
@@ -35,7 +35,7 @@
     "type": "quest",
     "name": "Quest",
     "toggleable": true,
-    "icon": "./icons/quest.png",
+    "icon": "./images/icons/quest.png",
     "color": "#b42550"
   },
   "story": {
@@ -43,7 +43,7 @@
     "type": "story",
     "name": "Hidden Story",
     "toggleable": true,
-    "icon": "./icons/story.png",
+    "icon": "./images/icons/story.png",
     "color": "#5c8b23"
   },
   "passage": {
@@ -51,7 +51,7 @@
     "type": "passage",
     "name": "Secret Passage",
     "toggleable": true,
-    "icon": "./icons/passage.png"
+    "icon": "./images/icons/passage.png"
   },
   "zone": {
     "anchor": [0, 0],

@@ -181,7 +181,7 @@ export default {
         this.location = "world";
         this.mapData = await import("@/assets/data/world.json");
       }
-      this.mapUrl = './map/' + this.location + '/{z}/{x}/{y}.png';
+      this.mapUrl = './images/map/' + this.location + '/{z}/{x}/{y}.png';
 
       this.playerData = {};
       if (localStorage.getItem(this.location + 'map')) {

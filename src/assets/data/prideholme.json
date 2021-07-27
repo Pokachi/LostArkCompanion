@@ -2,7 +2,7 @@
   "type": "zone",
   "name": "Prideholme",
   "continent": "Rethramis",
-  "icon": "./map/prideholme/prideholme.png",
+  "icon": "./images/map/prideholme/prideholme.png",
   "markers": [
     {
       "type": "mokoko",
@@ -224,7 +224,7 @@
       "data": [
         {
           "name": "Secret Passage",
-          "image": "./images/prideholme/passage.png",
+          "image": "./images/map/prideholme/popup/passage.png",
           "content": "Top left wall of the church is passable.",
           "id": "passage001",
           "lat": -104.71,
