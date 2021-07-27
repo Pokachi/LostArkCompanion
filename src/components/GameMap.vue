@@ -30,10 +30,10 @@
                   {{ data.display }}
                 </p>
               </l-icon>
-              <l-popup v-if="iconData[marker.type].popup==='normal'" class="text-light">
+              <l-popup v-if="marker.type!=='zone'" class="text-light">
                 <game-map-popup :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker" :key="data.id"/>
               </l-popup>
-              <l-popup v-else-if="iconData[marker.type].popup==='zone'" class="text-light" :options="popupOptions">
+              <l-popup v-else-if="marker.type==='zone'" class="text-light" :options="popupOptions">
                 <game-map-zone-popup :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker" :key="data.id"/>
               </l-popup>
             </l-marker>
@@ -48,10 +48,10 @@
                   {{ data.display }}
                 </p>
               </l-icon>
-              <l-popup v-if="marker.popup==='normal'" class="text-light">
+              <l-popup v-if="marker.type!=='zone'" class="text-light">
                 <game-map-popup :data="data" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker" :key="data.id" />
               </l-popup>
-              <l-popup v-else-if="marker.popup==='zone'" :marker-data="marker" class="text-light" :options="popupOptions">
+              <l-popup v-else-if="marker.type==='zone'" :marker-data="marker" class="text-light" :options="popupOptions">
                 <game-map-zone-popup :data="data" :marker-data="marker" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker" :key="data.id" />
               </l-popup>
             </l-marker>
@@ -65,7 +65,7 @@
     <div v-if="mapData" id="menu-control">
       <b-button squared v-b-toggle.sidebar-right class="float-right mt-5">Menu</b-button>
       <b-sidebar id="sidebar-right" :title="this.mapData.name" right shadow bg-variant="dark" text-variant="light">
-        <div class="px-3 py-2">
+        <div class="px-3 py-2 mb-5">
           <div v-for="(marker, index) in mapData.markers" :key="marker.type" :class="playerData[index] && playerData[index].h ? 'found' : ''">
             <b-button v-if="iconData[marker.type].toggleable" squared switch class="container-fluid text-left mt-1" v-on:click="toggleMarker(index)">
               <b-img width="18px" class="mr-2 mb-1" :src="iconData[marker.type].icon" /> {{ iconData[marker.type].name }} ({{playerData[index]? playerData[index].c : 0}}/{{marker.data.length}})
@@ -224,7 +224,6 @@ export default {
   updated() {
     this.$nextTick(()=> {
       try {
-        this.$refs.map.mapObject.closePopup();
         if(this.$route.query.c) {
           this.$refs[this.$route.query.c][0].mapObject.openPopup();
         }

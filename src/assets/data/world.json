@@ -6,7 +6,6 @@
       "name": "Zone",
       "type": "zone",
       "toggleable": true,
-      "popup": "zone",
       "world": true,
       "icon": "../icons/zone.png",
       "color": "#d1ab84",
@@ -27,8 +26,7 @@
             { "type": "vista", "count": 1 },
             { "type": "food", "count": 3 },
             { "type": "quest", "count": 1 },
-            { "type": "story", "count": 4 },
-            { "type": "passage", "count": 1 }
+            { "type": "story", "count": 4 }
           ],
           "mapId": "prideholme"
         }
