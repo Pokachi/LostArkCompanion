@@ -169,17 +169,17 @@
             {
               "label": "Part 1",
               "zone": "prideholme",
-              "marker": "story002"
+              "marker": "story0002"
             },
             {
               "label": "Part 2",
               "zone": "prideholme",
-              "marker": "story002"
+              "marker": "story0002"
             },
             {
               "label": "Part 3",
               "zone": "prideholme",
-              "marker": "story003"
+              "marker": "story0003"
             }
           ],
           "id": "story0002",
@@ -194,17 +194,17 @@
             {
               "label": "Part 1",
               "zone": "prideholme",
-              "marker": "story002"
+              "marker": "story0002"
             },
             {
               "label": "Part 2",
               "zone": "prideholme",
-              "marker": "story002"
+              "marker": "story0002"
             },
             {
               "label": "Part 3",
               "zone": "prideholme",
-              "marker": "story003"
+              "marker": "story0003"
             }
           ],
           "id": "story0003",
