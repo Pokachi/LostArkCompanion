@@ -115,6 +115,7 @@ export default {
   },
   data: function () {
     return {
+      lastOpenedPopup: null,
       location: this.$route.query.m,
       mapData: null,
       iconData: iconData,
@@ -224,8 +225,9 @@ export default {
   updated() {
     this.$nextTick(()=> {
       try {
-        if(this.$route.query.c) {
+        if(this.$route.query.c && this.lastOpenedPopup !== this.$route.query.c) {
           this.$refs[this.$route.query.c][0].mapObject.openPopup();
+          this.lastOpenedPopup = this.$route.query.c;
         }
       } catch (e) {
         // it's okay
