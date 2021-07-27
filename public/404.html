@@ -10,7 +10,7 @@
         // ========================================
         const segment = 1
 
-        sessionStorage.redirect = location.href;
+        sessionStorage.redirect = location.href.split('/').slice(3).join('/');
 
         location.replace(
             "/LostArkTools/"

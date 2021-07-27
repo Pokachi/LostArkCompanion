@@ -2,7 +2,7 @@
   <div id="nav">
     <b-navbar type="dark" variant="dark">
       <b-navbar-brand href="#">
-        <router-link to="/LostArkTools/map"><img :src="logoURL" width="100px" alt="Innovator Island"></router-link>
+        <router-link to="/map"><img :src="logoURL" width="100px" alt="Innovator Island"></router-link>
       </b-navbar-brand>
       <!-- Right aligned nav items -->
       <!-- Photo Gallery icon -->
