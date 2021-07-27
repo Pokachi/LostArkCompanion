@@ -1,6 +1,6 @@
 <template>
   <div id="map">
-    <l-map
+    <l-map v-if="dataReady"
         ref="map"
         :zoom="minZoom"
         :min-zoom="minZoom"
@@ -115,6 +115,7 @@ export default {
   },
   data: function () {
     return {
+      dataReady: false,
       lastOpenedPopup: null,
       location: this.$route.query.m,
       mapData: null,
@@ -211,10 +212,12 @@ export default {
           });
         });
       }
+      this.dataReady = true;
     }
   },
   watch: {
     $route () {
+      this.dataReady = false;
       if(this.$route.query.m) {
         this.location = this.$route.query.m;
       }
