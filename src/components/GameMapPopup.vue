@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     updateMarker: function(type, id, newState) {
-      this.$emit('updateMarker', type, id, newState)
+      this.$emit('updateMarker', type, id, newState);
     }
   }
 }

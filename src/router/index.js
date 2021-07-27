@@ -6,7 +6,7 @@ import DailyTracker from "@/components/DailyTracker";
 Vue.use(Router)
 
 export default new Router({
-    // mode: 'history',
+    mode: 'history',
     base: __dirname,
     routes: [
         { path: '/map', name: 'Home', component: GameMap },

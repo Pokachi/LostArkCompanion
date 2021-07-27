@@ -1,9 +1,11 @@
 <template>
   <div id="map">
     <l-map
+        ref="map"
         :zoom="minZoom"
         :min-zoom="minZoom"
         :max-zoom="maxZoom"
+        :max-bounds="maxBounds"
         :crs="crs"
         :center="center"
         @click="printLocation"
@@ -117,13 +119,14 @@ export default {
       mapData: null,
       iconData: iconData,
       playerData: {},
-      center: [0, 0],
+      center: [-128, 128],
       attribution: "Created By Ophelia",
       mapUrl: null,
       minZoom: 1,
       maxZoom: 3,
+      maxBounds: latLngBounds([[64, -64], [-320, 320]]),
       mapOptions: {
-        bounds: latLngBounds([[-256, 0], [0, 256]])
+        bounds: latLngBounds([[0, 0], [-256, 256]])
       },
       popupOptions: {
         maxWidth: 400
@@ -177,7 +180,7 @@ export default {
         this.location = "world";
         this.mapData = await import("@/assets/data/world.json");
       }
-      this.mapUrl = './map/' + this.location + '/{z}/{x}/{y}.png';
+      this.mapUrl = '../map/' + this.location + '/{z}/{x}/{y}.png';
 
       this.playerData = {};
       if (localStorage.getItem(this.location + 'map')) {
@@ -191,9 +194,11 @@ export default {
       if(this.location === "world") {
         this.minZoom = 2;
         this.maxZoom = 5;
+        this.maxBounds = latLngBounds([[-32, 0], [-224, 256]]);
       } else {
         this.minZoom = 1;
         this.maxZoom = 3;
+        this.maxBounds = latLngBounds([[128, -128], [-384, 384]]);
       }
 
       if (this.$route.query.c) {
@@ -219,7 +224,10 @@ export default {
   updated() {
     this.$nextTick(()=> {
       try {
-        this.$refs[this.$route.query.c][0].mapObject.openPopup();
+        this.$refs.map.mapObject.closePopup();
+        if(this.$route.query.c) {
+          this.$refs[this.$route.query.c][0].mapObject.openPopup();
+        }
       } catch (e) {
         // it's okay
       }
