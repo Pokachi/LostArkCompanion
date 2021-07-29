@@ -288,7 +288,7 @@ export default {
   updated() {
     this.$nextTick(()=> {
       try {
-        if ((this.$route.query.c && this.lastOpenedPopup !== this.$route.query.c) || (this.$route.query.i && this.$route.query.i !== this.lastOpenedPopupIndex)) {
+        if ((this.$route.query.i && this.$route.query.c && this.lastOpenedPopup !== this.$route.query.c) || (this.$route.query.i && this.$route.query.i !== this.lastOpenedPopupIndex)) {
           this.$refs[this.$route.query.c][this.$route.query.i].mapObject.openPopup();
           this.lastOpenedPopupIndex = this.$route.query.i;
           this.lastOpenedPopup = this.$route.query.c;

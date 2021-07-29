@@ -34,7 +34,7 @@
           "multi": true,
           "locations": [
             {
-              "content": "Respawn Timer: 10 seconds",
+              "content": "2 spawn between the 3 locations.\nRespawn Timer: 10 seconds",
               "image": "./images/map/loghill/popup/alpha_white_redbeak.png",
               "zone": "loghill",
               "index": 0,
@@ -42,7 +42,7 @@
               "lng": 142.56
             },
             {
-              "content": "Share spawn slot with location 3.\nRespawn Timer: 10 seconds",
+              "content": "2 spawn between the 3 locations.\nRespawn Timer: 10 seconds",
               "image": "./images/map/loghill/popup/alpha_white_redbeak2.png",
               "zone": "loghill",
               "index": 1,
@@ -50,7 +50,7 @@
               "lng": 125.5
             },
             {
-              "content": "Share spawn slot with location 2.\nRespawn Timer: 10 seconds",
+              "content": "2 spawn between the 3 locations.\nRespawn Timer: 10 seconds",
               "image": "./images/map/loghill/popup/alpha_white_redbeak3.png",
               "zone": "loghill",
               "index": 2,
