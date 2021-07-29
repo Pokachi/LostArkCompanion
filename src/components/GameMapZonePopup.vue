@@ -10,8 +10,8 @@
       <p class="mt-0 mb-2" v-html="data.content" />
     </div>
     <div class="d-flex flex-wrap mt-3 mb-2" :set="playerData = getPlayerData(data.mapId)">
-      <div v-for="(marker, index) in data.markers" :key="marker.type" class="zone-markers ml-3">
-        <b-img width="18px" class="mb-1" :src="iconData[marker.type].icon" /> {{ iconData[marker.type].name }} ({{ playerData && playerData[index]? playerData[index].c : 0}}/{{marker.count}})
+      <div v-for="(marker) in data.markers" :key="marker.type" class="zone-markers ml-3">
+        <b-img width="18px" class="mb-1" :src="iconData[marker.type].icon" /> {{ iconData[marker.type].name }} ({{ playerData && playerData[marker.type]? playerData[marker.type].c : 0}}/{{marker.count}})
       </div>
     </div>
     <div class="text-center mb-2">
