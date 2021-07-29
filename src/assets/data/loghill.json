@@ -32,9 +32,9 @@
           "display": "#1 Alpha White Redbeak",
           "id": "monster0001",
           "multi": true,
+          "content": "2 spawn between the 3 locations.\nRespawn Timer: 10 seconds",
           "locations": [
             {
-              "content": "2 spawn between the 3 locations.\nRespawn Timer: 10 seconds",
               "image": "./images/map/loghill/popup/alpha_white_redbeak.png",
               "zone": "loghill",
               "index": 0,
@@ -42,7 +42,6 @@
               "lng": 142.56
             },
             {
-              "content": "2 spawn between the 3 locations.\nRespawn Timer: 10 seconds",
               "image": "./images/map/loghill/popup/alpha_white_redbeak2.png",
               "zone": "loghill",
               "index": 1,
@@ -50,7 +49,6 @@
               "lng": 125.5
             },
             {
-              "content": "2 spawn between the 3 locations.\nRespawn Timer: 10 seconds",
               "image": "./images/map/loghill/popup/alpha_white_redbeak3.png",
               "zone": "loghill",
               "index": 2,
@@ -85,6 +83,26 @@
           "id": "food0004",
           "lat": -171.54,
           "lng": 144.06
+        }
+      ]
+    },
+    {
+      "type": "merchant",
+      "data": [
+        {
+          "name": "Ben",
+          "display": "Ben",
+          "id": "merchant0001",
+          "multi": true,
+          "content": "TBD ware",
+          "locations": [
+            {
+              "zone": "loghill",
+              "index": 0,
+              "lat": -137.84,
+              "lng": 134.62
+            }
+          ]
         }
       ]
     },

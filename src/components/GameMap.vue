@@ -2,7 +2,7 @@
   <div id="map">
     <l-map v-if="dataReady"
         ref="map"
-        :zoom="minZoom"
+        :zoom="zoomLevel"
         :min-zoom="minZoom"
         :max-zoom="maxZoom"
         :max-bounds="maxBounds"
@@ -146,6 +146,7 @@ export default {
       mapUrl: null,
       minZoom: 1,
       maxZoom: 3,
+      zoomLevel: 1,
       maxBounds: latLngBounds([[64, -64], [-320, 320]]),
       mapOptions: {
         bounds: latLngBounds([[0, 0], [-256, 256]])
@@ -250,12 +251,14 @@ export default {
       }
       this.minZoom = this.mapData.minZoom;
       this.maxZoom = this.mapData.maxZoom;
+      this.zoomLevel = this.mapData.minZoom;
       if (this.$route.query.c && this.$route.query.i) {
         this.mapData.markers.forEach(marker => {
           marker.data.forEach(data => {
             if (data.id === this.$route.query.c) {
               try {
                 this.center = [data.locations[this.$route.query.i].lat, data.locations[this.$route.query.i].lng];
+                this.zoomLevel = this.mapData.maxZoom;
               } catch (e) {
                 this.center = [-128, 128];
               }
@@ -268,6 +271,7 @@ export default {
           marker.data.forEach(data => {
             if (data.id === this.$route.query.c) {
               this.center = [data.lat, data.lng];
+              this.zoomLevel = this.mapData.maxZoom;
             }
           });
         });

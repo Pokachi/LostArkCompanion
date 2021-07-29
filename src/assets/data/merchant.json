@@ -1,0 +1,16 @@
+{
+  "ben": {
+    "items": [
+      {
+        "grade": 3,
+        "subIcon": "heart",
+        "image": "./images/items/fancier_bouquet.png",
+        "name": "Fancier Bouquet",
+        "description": "A delicately-made bouquet of rare flowers around Prideholme. Some would find it too expensive and overly luxurious.",
+        "cost": 10000,
+        "currency": "silver",
+        "condition": "Purchase Limit 1"
+      }
+    ]
+  }
+}

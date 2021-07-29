@@ -22,6 +22,14 @@
     "icon": "./images/icons/monster.png",
     "color": "#cf8b33"
   },
+  "merchant": {
+    "anchor": [9, 9],
+    "type": "merchant",
+    "name": "Wondering Merchant",
+    "toggleable": true,
+    "icon": "./images/icons/merchant.png",
+    "color": "#c5c5c5"
+  },
   "vista": {
     "anchor": [9, 9],
     "type": "vista",
