@@ -21,38 +21,57 @@
 
       <div v-if="mapData">
         <!-- List of markers collection markers-->
-        <div v-for="(marker, mIndex) in mapData.markers" :key="marker.type">
+        <div v-for="(marker) in mapData.markers" :key="marker.type">
           <div v-if="iconData[marker.type] && !marker.world">
-            <l-marker v-for="(data, dIndex) in marker.data" :lat-lng="data" :key="data.id" :ref="data.id">
-              <l-icon :icon-anchor="iconData[marker.type].anchor">
-                <b-img v-if="iconData[marker.type].icon" fluid :src="iconData[marker.type].icon" :class="[playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '' ]" />
-                <p :style="'color:' + iconData[marker.type].color + '!important;'" :class="[playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '', 'icon-display-name']">
-                  {{ data.display }}
-                </p>
-              </l-icon>
-              <l-popup v-if="marker.type!=='zone'" class="text-light">
-                <game-map-popup :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker" :key="data.id"/>
-              </l-popup>
-              <l-popup v-else-if="marker.type==='zone'" class="text-light" :options="popupOptions">
-                <game-map-zone-popup :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker" :key="data.id"/>
-              </l-popup>
-            </l-marker>
+            <div v-for="(data) in marker.data" :key="data.id">
+              <!-- single marker -->
+              <l-marker v-if="!data.locations" :lat-lng="data" :ref="data.id">
+                <l-icon :icon-anchor="iconData[marker.type].anchor">
+                  <b-img v-if="iconData[marker.type].icon" fluid :src="iconData[marker.type].icon" :class="[playerData[marker.type] && playerData[marker.type][data.id] ? 'found' : '', playerData[marker.type] && playerData[marker.type].h ? 'hidden' : '' ]" />
+                  <p :style="'color:' + iconData[marker.type].color + '!important;'" :class="[playerData[marker.type] && playerData[marker.type][data.id] ? 'found' : '', playerData[marker.type] && playerData[marker.type].h ? 'hidden' : '', 'icon-display-name']">
+                    {{ data.display }}
+                  </p>
+                </l-icon>
+                <l-popup v-if="marker.type!=='zone'" class="text-light">
+                  <game-map-popup :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" @updateMarker="updateMarker" :key="data.id"/>
+                </l-popup>
+                <l-popup v-else-if="marker.type==='zone'" class="text-light" :options="popupOptions">
+                  <game-map-zone-popup :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" @updateMarker="updateMarker" :key="data.id"/>
+                </l-popup>
+              </l-marker>
+
+              <!-- multiple marker -->
+              <l-marker v-else-if="data.locations" v-for="(location, lIndex) in data.locations" :key="lIndex" :lat-lng="location" :ref="data.id">
+                <l-icon :icon-anchor="iconData[marker.type].anchor">
+                  <b-img v-if="iconData[marker.type].icon" fluid :src="iconData[marker.type].icon" :class="[playerData[marker.type] && playerData[marker.type][data.id] ? 'found' : '', playerData[marker.type] && playerData[marker.type].h ? 'hidden' : '' ]" />
+                  <p :style="'color:' + iconData[marker.type].color + '!important;'" :class="[playerData[marker.type] && playerData[marker.type][data.id] ? 'found' : '', playerData[marker.type] && playerData[marker.type].h ? 'hidden' : '', 'icon-display-name']">
+                    {{ data.display }}
+                  </p>
+                </l-icon>
+                <l-popup v-if="marker.type!=='zone'" class="text-light">
+                  <game-map-popup :location-data="location" :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" @updateMarker="updateMarker" :key="data.id + lIndex.toString()"/>
+                </l-popup>
+                <l-popup v-else-if="marker.type==='zone'" class="text-light" :options="popupOptions">
+                  <game-map-zone-popup :location-data="location" :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" @updateMarker="updateMarker" :key="data.id + lIndex.toString()"/>
+                </l-popup>
+              </l-marker>
+            </div>
           </div>
 
           <!-- List of world map markers-->
           <div v-if="marker.world">
-            <l-marker v-for="(data, dIndex) in marker.data" :lat-lng="data" :key="data.id" :ref="data.id">
+            <l-marker v-for="(data) in marker.data" :lat-lng="data" :key="data.id" :ref="data.id">
               <l-icon v-if="data.icon" :icon-anchor="data.anchor">
-                <b-img fluid :src="data.icon" :class="[playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '' ]" />
-                <p :style="'color:' + marker.color + '!important;'" :class="[playerData[mIndex] && playerData[mIndex][dIndex] ? 'found' : '', playerData[mIndex] && playerData[mIndex].h ? 'hidden' : '', 'icon-display-name']">
+                <b-img fluid :src="data.icon" :class="[playerData[marker.type] && playerData[marker.type][data.id] ? 'found' : '', playerData[marker.type] && playerData[marker.type].h ? 'hidden' : '' ]" />
+                <p :style="'color:' + marker.color + '!important;'" :class="[playerData[marker.type] && playerData[marker.type][data.id] ? 'found' : '', playerData[marker.type] && playerData[marker.type].h ? 'hidden' : '', 'icon-display-name']">
                   {{ data.display }}
                 </p>
               </l-icon>
               <l-popup v-if="marker.type!=='zone'" class="text-light">
-                <game-map-popup :data="data" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker" :key="data.id" />
+                <game-map-popup :data="data" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" @updateMarker="updateMarker" :key="data.id" />
               </l-popup>
               <l-popup v-else-if="marker.type==='zone'" :marker-data="marker" class="text-light" :options="popupOptions">
-                <game-map-zone-popup :data="data" :marker-data="marker" :is-found="playerData[mIndex] && playerData[mIndex][dIndex]" :type="mIndex" :id="dIndex" @updateMarker="updateMarker" :key="data.id" />
+                <game-map-zone-popup :data="data" :marker-data="marker" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" @updateMarker="updateMarker" :key="data.id" />
               </l-popup>
             </l-marker>
           </div>
@@ -66,12 +85,12 @@
       <b-button squared v-b-toggle.sidebar-right class="float-right">Menu</b-button>
       <b-sidebar id="sidebar-right" :title="this.mapData.name" right shadow bg-variant="dark" text-variant="light">
         <div class="px-3 py-2 mb-5">
-          <div v-for="(marker, index) in mapData.markers" :key="marker.type" :class="playerData[index] && playerData[index].h ? 'found' : ''">
-            <b-button v-if="iconData[marker.type].toggleable" squared switch class="container-fluid text-left mt-1" v-on:click="toggleMarker(index)">
-              <b-img width="18px" class="mr-2 mb-1" :src="iconData[marker.type].icon" /> {{ iconData[marker.type].name }} ({{playerData[index]? playerData[index].c : 0}}/{{marker.data.length}})
+          <div v-for="marker in mapData.markers" :key="marker.type" :class="playerData[marker.type] && playerData[marker.type].h ? 'found' : ''">
+            <b-button v-if="iconData[marker.type].toggleable" squared switch class="container-fluid text-left mt-1" v-on:click="toggleMarker(marker.type)">
+              <b-img width="18px" class="mr-2 mb-1" :src="iconData[marker.type].icon" /> {{ iconData[marker.type].name }} ({{playerData[marker.type]? playerData[marker.type].c : 0}}/{{marker.data.length}})
             </b-button>
-            <b-button v-if="marker.world && marker.toggleable" squared switch class="container-fluid text-left mt-1" v-on:click="toggleMarker(index)">
-              <b-img width="18px" class="mr-2 mb-1" :src="marker.icon" /> {{ marker.name }} ({{playerData[index]? playerData[index].c : 0}}/{{marker.data.length}})
+            <b-button v-if="marker.world && marker.toggleable" squared switch class="container-fluid text-left mt-1" v-on:click="toggleMarker(marker.type)">
+              <b-img width="18px" class="mr-2 mb-1" :src="marker.icon" /> {{ marker.name }} ({{playerData[marker.type]? playerData[marker.type].c : 0}}/{{marker.data.length}})
             </b-button>
           </div>
         </div>
@@ -117,6 +136,7 @@ export default {
     return {
       dataReady: false,
       lastOpenedPopup: null,
+      lastOpenedPopupIndex: null,
       location: this.$route.query.m,
       mapData: null,
       iconData: iconData,
@@ -140,8 +160,8 @@ export default {
     this.importData()
   },
   methods: {
-    saveData() {
-      localStorage.setItem(this.location + 'map', JSON.stringify(this.playerData));
+    saveData(key, data) {
+      localStorage.setItem(key + 'map', JSON.stringify(data));
     },
     printLocation(event) {
       var coord = event.latlng;
@@ -158,9 +178,9 @@ export default {
       this.playerData[type].h = !this.playerData[type].h;
 
       this.$forceUpdate();
-      this.saveData();
+      this.saveData(this.location, this.playerData);
     },
-    updateMarker(type, id, newState) {
+    updateMarker(type, id, newState, locations) {
       if (!this.playerData[type]) {
         this.playerData[type] = {};
         this.playerData[type].c = 0;
@@ -172,8 +192,38 @@ export default {
       } else {
         this.playerData[type].c--;
       }
+
+      if(locations) {
+        locations.forEach(location => {
+          if (location.zone !== this.location) {
+            console.log(location)
+            let tempData = {};
+            if (localStorage.getItem(location.zone + 'map')) {
+              try {
+                tempData = JSON.parse(localStorage.getItem(location.zone + 'map'));
+              } catch (e) {
+                localStorage.removeItem(location.zone + 'map');
+              }
+            }
+
+            if (!tempData[type]) {
+              tempData[type] = {};
+              tempData[type].c = 0;
+              tempData[type].h = false;
+            }
+            tempData[type][id] = newState;
+            if (newState) {
+              tempData[type].c++;
+            } else {
+              tempData[type].c--;
+            }
+            this.saveData(location.zone, tempData);
+          }
+        });
+      }
+
       this.$forceUpdate();
-      this.saveData();
+      this.saveData(this.location, this.playerData);
     },
     async importData() {
       try {
@@ -200,8 +250,20 @@ export default {
       }
       this.minZoom = this.mapData.minZoom;
       this.maxZoom = this.mapData.maxZoom;
-
-      if (this.$route.query.c) {
+      if (this.$route.query.c && this.$route.query.i) {
+        this.mapData.markers.forEach(marker => {
+          marker.data.forEach(data => {
+            if (data.id === this.$route.query.c) {
+              try {
+                this.center = [data.locations[this.$route.query.i].lat, data.locations[this.$route.query.i].lng];
+              } catch (e) {
+                this.center = [-128, 128];
+              }
+            }
+          });
+        });
+      }
+      else if (this.$route.query.c) {
         this.mapData.markers.forEach(marker => {
           marker.data.forEach(data => {
             if (data.id === this.$route.query.c) {
@@ -226,7 +288,12 @@ export default {
   updated() {
     this.$nextTick(()=> {
       try {
-        if(this.$route.query.c && this.lastOpenedPopup !== this.$route.query.c) {
+        if ((this.$route.query.c && this.lastOpenedPopup !== this.$route.query.c) || (this.$route.query.i && this.$route.query.i !== this.lastOpenedPopupIndex)) {
+          this.$refs[this.$route.query.c][this.$route.query.i].mapObject.openPopup();
+          this.lastOpenedPopupIndex = this.$route.query.i;
+          this.lastOpenedPopup = this.$route.query.c;
+        }
+        else if(this.$route.query.c && this.lastOpenedPopup !== this.$route.query.c) {
           this.$refs[this.$route.query.c][0].mapObject.openPopup();
           this.lastOpenedPopup = this.$route.query.c;
         }
@@ -319,8 +386,12 @@ export default {
   border-right: 1.5px solid;
 }
 
+.popup-sidebar-right {
+  border-left: 1.5px solid;
+}
+
 .popup-content {
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .zone-markers {

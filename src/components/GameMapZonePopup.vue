@@ -3,7 +3,7 @@
     <h3 class="mb-0">{{ data.name }}</h3>
     <h5 class="subtitle-name-text">{{ data.continent }}</h5>
     <div class="found-toggle subtitle-name-text ">
-      <b-form-checkbox v-model="found" name="check-button" switch v-on:input="updateMarker(type, id, $event)">Complete: </b-form-checkbox>
+      <b-form-checkbox v-model="found" name="check-button" switch v-on:input="updateMarker(markerData.type, data.id, $event)">Complete: </b-form-checkbox>
     </div>
     <hr class="bg-light mb-2 mt-0"/>
     <div class="popup-content pl-3 mt-2 text-center">
@@ -25,7 +25,7 @@ import iconData from "@/assets/data/icon.json";
 
 export default {
   name: "GameMapZonePopup",
-  props: ['data', 'markerData', 'type', 'id', 'isFound'],
+  props: ['data', 'markerData', 'isFound'],
   data: function () {
     return {
       found: this.isFound,

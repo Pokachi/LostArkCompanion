@@ -30,10 +30,34 @@
         {
           "name": "Alpha White Redbeak",
           "display": "#1 Alpha White Redbeak",
-          "image": "./images/map/loghill/popup/alpha_white_redbeak.png",
-          "id": "monser0001",
-          "lat": -144.59,
-          "lng": 142.56
+          "id": "monster0001",
+          "multi": true,
+          "locations": [
+            {
+              "content": "Respawn Timer: 10 seconds",
+              "image": "./images/map/loghill/popup/alpha_white_redbeak.png",
+              "zone": "loghill",
+              "index": 0,
+              "lat": -144.59,
+              "lng": 142.56
+            },
+            {
+              "content": "Share spawn slot with location 3.\nRespawn Timer: 10 seconds",
+              "image": "./images/map/loghill/popup/alpha_white_redbeak2.png",
+              "zone": "loghill",
+              "index": 1,
+              "lat": -172.53,
+              "lng": 125.5
+            },
+            {
+              "content": "Share spawn slot with location 2.\nRespawn Timer: 10 seconds",
+              "image": "./images/map/loghill/popup/alpha_white_redbeak3.png",
+              "zone": "loghill",
+              "index": 2,
+              "lat": -178.40,
+              "lng": 123.12
+            }
+          ]
         }
       ]
     },
