@@ -32,11 +32,8 @@
                     {{ data.display }}
                   </p>
                 </l-icon>
-                <l-popup v-if="marker.type!=='zone'" class="text-light">
+                <l-popup class="text-light">
                   <game-map-popup :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" @updateMarker="updateMarker" :key="data.id"/>
-                </l-popup>
-                <l-popup v-else-if="marker.type==='zone'" class="text-light" :options="popupOptions">
-                  <game-map-zone-popup :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" @updateMarker="updateMarker" :key="data.id"/>
                 </l-popup>
               </l-marker>
 
@@ -48,11 +45,8 @@
                     {{ data.display }}
                   </p>
                 </l-icon>
-                <l-popup v-if="marker.type!=='zone'" class="text-light">
+                <l-popup class="text-light">
                   <game-map-popup :location-data="location" :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" @updateMarker="updateMarker" :key="data.id + lIndex.toString()"/>
-                </l-popup>
-                <l-popup v-else-if="marker.type==='zone'" class="text-light" :options="popupOptions">
-                  <game-map-zone-popup :location-data="location" :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" @updateMarker="updateMarker" :key="data.id + lIndex.toString()"/>
                 </l-popup>
               </l-marker>
             </div>
@@ -67,11 +61,8 @@
                   {{ data.display }}
                 </p>
               </l-icon>
-              <l-popup v-if="marker.type!=='zone'" class="text-light">
-                <game-map-popup :data="data" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" @updateMarker="updateMarker" :key="data.id" />
-              </l-popup>
-              <l-popup v-else-if="marker.type==='zone'" :marker-data="marker" class="text-light" :options="popupOptions">
-                <game-map-zone-popup :data="data" :marker-data="marker" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" @updateMarker="updateMarker" :key="data.id" />
+              <l-popup class="text-light">
+                <game-map-popup :data="data" :marker-data="marker" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" @updateMarker="updateMarker" :key="data.id" />
               </l-popup>
             </l-marker>
           </div>
@@ -109,7 +100,6 @@
 import { CRS, Icon, latLngBounds } from 'leaflet'
 import { LMap, LTileLayer, LMarker, LIcon, LPopup } from 'vue2-leaflet'
 import GameMapPopup from "@/components/GameMapPopup";
-import GameMapZonePopup from "@/components/GameMapZonePopup";
 import iconData from "@/assets/data/icon.json";
 
 // Leaflet/Webpack bug workaround - https://github.com/Leaflet/Leaflet/issues/4968
@@ -125,7 +115,6 @@ export default {
   name: "GameMap",
   components: {
     GameMapPopup,
-    GameMapZonePopup,
     LMap,
     LTileLayer,
     LMarker,
@@ -197,7 +186,6 @@ export default {
       if(locations) {
         locations.forEach(location => {
           if (location.zone !== this.location) {
-            console.log(location)
             let tempData = {};
             if (localStorage.getItem(location.zone + 'map')) {
               try {

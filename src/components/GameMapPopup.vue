@@ -18,12 +18,23 @@
       <div class="popup-content pl-3 pr-3 mt-2 text-center">
         <p v-if="data.content" class="mt-0 mb-2" v-html="data.content" />
         <p v-if="locationData && locationData.content" class="mt-0 mb-2" v-html="locationData.content" />
+
+        <div v-if="data.mapId" class="d-flex flex-wrap mt-3 mb-2 text-left" :set="playerData = getPlayerData(data.mapId)">
+          <div v-for="(marker) in data.markers" :key="marker.type" class="zone-markers ml-3">
+            <b-img width="18px" class="mb-1" :src="iconData[marker.type].icon" /> {{ iconData[marker.type].name }} ({{ playerData && playerData[marker.type]? playerData[marker.type].c : 0}}/{{marker.count}})
+          </div>
+        </div>
+        <div v-if="data.mapId" class="text-center mb-2">
+          <b-button size="sm" v-on:click="changeMap(data.mapId)"> Enter </b-button>
+        </div>
+
         <b-button v-if="data.image" v-b-modal="markerData.type.toString()+data.id.toString()" variant="link" size="sm">
           <b-img width="128" :src="data.image"></b-img>
         </b-button>
         <b-modal v-if="data.image" :id="markerData.type.toString()+data.id.toString()" :hide-footer="true" :hide-header="true" body-bg-variant="dark">
           <b-img fluid :src="data.image"></b-img>
         </b-modal>
+
         <b-button v-if="locationData && locationData.image" v-b-modal="markerData.type.toString()+data.id.toString()+locationData.index.toString()" variant="link" size="sm">
           <b-img width="128" :src="locationData.image"></b-img>
         </b-button>
@@ -43,17 +54,30 @@
 </template>
 
 <script>
+import iconData from "@/assets/data/icon.json";
+
 export default {
   name: "GameMapPopup",
   props: ['data', 'markerData', 'locationData', 'isFound'],
   data: function () {
     return {
-      found: this.isFound
+      found: this.isFound,
+      iconData: iconData
     }
   },
   methods: {
     updateMarker: function(type, id, newState, locations) {
       this.$emit('updateMarker', type, id, newState, locations);
+    },
+    getPlayerData: function(mapId) {
+      if (localStorage.getItem(mapId + 'map')) {
+        try {
+          return JSON.parse(localStorage.getItem(mapId + 'map'));
+        } catch (e) {
+          localStorage.removeItem(mapId + 'map');
+          return {};
+        }
+      }
     }
   }
 }
