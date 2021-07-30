@@ -100,7 +100,7 @@
 import { CRS, Icon, latLngBounds } from 'leaflet'
 import { LMap, LTileLayer, LMarker, LIcon, LPopup } from 'vue2-leaflet'
 import GameMapPopup from "@/components/GameMapPopup";
-import iconData from "@/assets/data/icon.json";
+import iconData from "@/assets/data/map/icon.json";
 
 // Leaflet/Webpack bug workaround - https://github.com/Leaflet/Leaflet/issues/4968
 delete Icon.Default.prototype._getIconUrl
@@ -216,10 +216,10 @@ export default {
     },
     async importData() {
       try {
-        this.mapData = await import("@/assets/data/" + this.location + ".json");
+        this.mapData = await import("@/assets/data/map/" + this.location + ".json");
       } catch (e) {
         this.location = "world";
-        this.mapData = await import("@/assets/data/world.json");
+        this.mapData = await import("@/assets/data/map/world.json");
       }
       this.mapUrl = './images/map/' + this.location + '/{z}/{x}/{y}.png';
 

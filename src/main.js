@@ -8,7 +8,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import { appConfig } from './config'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faImages, faGlobe, faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons'
+import { faImages, faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import '@/mixins/globalMixin'
@@ -16,7 +16,7 @@ import '@/mixins/globalMixin'
 Vue.use(BootstrapVue)
 
 // Font-awesome library
-library.add(faImages, faGlobe, faArrowCircleLeft)
+library.add(faImages, faAngleDoubleLeft)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false

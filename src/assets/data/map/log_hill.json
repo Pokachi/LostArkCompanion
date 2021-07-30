@@ -2,7 +2,7 @@
   "type": "zone",
   "name": "Log Hill",
   "continent": "Rethramis",
-  "icon": "./images/map/loghill/loghill.png",
+  "icon": "./images/map/log_hill/log_hill.png",
   "minZoom": 2,
   "maxZoom": 4,
   "markers": [
@@ -35,22 +35,22 @@
           "content": "2 spawn between the 3 locations.\nRespawn Timer: 10 seconds",
           "locations": [
             {
-              "image": "./images/map/loghill/popup/alpha_white_redbeak.png",
-              "zone": "loghill",
+              "image": "./images/map/log_hill/popup/alpha_white_redbeak.png",
+              "zone": "log_hill",
               "index": 0,
               "lat": -144.59,
               "lng": 142.56
             },
             {
-              "image": "./images/map/loghill/popup/alpha_white_redbeak2.png",
-              "zone": "loghill",
+              "image": "./images/map/log_hill/popup/alpha_white_redbeak2.png",
+              "zone": "log_hill",
               "index": 1,
               "lat": -172.53,
               "lng": 125.5
             },
             {
-              "image": "./images/map/loghill/popup/alpha_white_redbeak3.png",
-              "zone": "loghill",
+              "image": "./images/map/log_hill/popup/alpha_white_redbeak3.png",
+              "zone": "log_hill",
               "index": 2,
               "lat": -178.40,
               "lng": 123.12
@@ -79,7 +79,7 @@
           "name": "Disgorged Lump",
           "display": "#5 Disgorged Lump",
           "content": "Used to cook Protein Packed White Bird Stew at Hely.\n Cost: 1400 silver",
-          "image": "./images/map/loghill/popup/disgorged_lump.png",
+          "image": "./images/map/log_hill/popup/disgorged_lump.png",
           "id": "food0004",
           "lat": -171.54,
           "lng": 144.06
@@ -92,12 +92,12 @@
         {
           "name": "Ben",
           "display": "Ben",
-          "id": "merchant0001",
+          "id": "ben",
           "multi": true,
           "content": "TBD ware",
           "locations": [
             {
-              "zone": "loghill",
+              "zone": "log_hill",
               "index": 0,
               "lat": -137.84,
               "lng": 134.62

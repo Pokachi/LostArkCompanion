@@ -14,11 +14,17 @@
           <b-link v-on:click="changeMap(link.zone, link.marker)"> {{ link.label }} </b-link>
         </div>
       </div>
-      <!-- Check if there is image, and determine what to display -->
+
+      <!-- core content -->
       <div class="popup-content pl-3 pr-3 mt-2 text-center">
+        <!-- html content -->
         <p v-if="data.content" class="mt-0 mb-2" v-html="data.content" />
         <p v-if="locationData && locationData.content" class="mt-0 mb-2" v-html="locationData.content" />
 
+        <!-- merchant module -->
+        <wandering-merchant-detail v-if="markerData.type === 'merchant'" :merchant-id="data.id"></wandering-merchant-detail>
+
+        <!-- zone collection -->
         <div v-if="data.mapId" class="d-flex flex-wrap mt-3 mb-2 text-left" :set="playerData = getPlayerData(data.mapId)">
           <div v-for="(marker) in data.markers" :key="marker.type" class="zone-markers ml-3">
             <b-img width="18px" class="mb-1" :src="iconData[marker.type].icon" /> {{ iconData[marker.type].name }} ({{ playerData && playerData[marker.type]? playerData[marker.type].c : 0}}/{{marker.count}})
@@ -28,6 +34,7 @@
           <b-button size="sm" v-on:click="changeMap(data.mapId)"> Enter </b-button>
         </div>
 
+        <!-- image -->
         <b-button v-if="data.image" v-b-modal="markerData.type.toString()+data.id.toString()" variant="link" size="sm">
           <b-img width="128" :src="data.image"></b-img>
         </b-button>
@@ -35,6 +42,7 @@
           <b-img fluid :src="data.image"></b-img>
         </b-modal>
 
+        <!-- location specific image -->
         <b-button v-if="locationData && locationData.image" v-b-modal="markerData.type.toString()+data.id.toString()+locationData.index.toString()" variant="link" size="sm">
           <b-img width="128" :src="locationData.image"></b-img>
         </b-button>
@@ -42,6 +50,7 @@
           <b-img fluid :src="locationData.image"></b-img>
         </b-modal>
       </div>
+
       <!-- add a side bar for other location if this can be done somewhere else -->
       <div v-if="data.locations" class="popup-sidebar-right pl-3 text-center">
         <h5> Other Location </h5>
@@ -54,10 +63,12 @@
 </template>
 
 <script>
-import iconData from "@/assets/data/icon.json";
+import iconData from "@/assets/data/map/icon.json";
+import WanderingMerchantDetail from "@/components/WanderingMerchantDetail";
 
 export default {
   name: "GameMapPopup",
+  components: {WanderingMerchantDetail},
   props: ['data', 'markerData', 'locationData', 'isFound'],
   data: function () {
     return {
