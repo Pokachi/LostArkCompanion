@@ -1,8 +1,8 @@
 {
   "items": [
     {
-      "itemId": "fancier_bouquet",
-      "condition": "Purchase Limit 1"
+      "id": "fancier_bouquet",
+      "condition": "Limit 1"
     }
   ]
 }
