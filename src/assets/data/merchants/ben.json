@@ -5,7 +5,27 @@
       "condition": "Limit 1"
     },
     {
+      "id": "prideholme_potato",
+      "condition": "Limit 1"
+    },
+    {
+      "id": "rethramis_holy_water",
+      "condition": "Limit 1"
+    },
+    {
+      "id": "surprise_chest",
+      "condition": "Limit 1"
+    },
+    {
+      "id": "varut_card",
+      "condition": "Limit 1"
+    },
+    {
       "id": "prideholme_neria_card",
+      "condition": "Limit 1"
+    },
+    {
+      "id": "siera_card",
       "condition": "Limit 1"
     }
   ]

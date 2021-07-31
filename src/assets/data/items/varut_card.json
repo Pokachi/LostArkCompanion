@@ -1,12 +1,12 @@
 {
-  "id": "prideholme_neria_card",
+  "id": "varut_card",
   "grade": 2,
   "image": "./images/items/card.png",
-  "name": "Prideholme Neria Card",
+  "name": "Varut Card",
   "type": "Card",
   "bound": "Bound to Account on Pickup",
   "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
-  "description": "A kind, cheerful girl who works at the Prideholme tavern and likes to cook.",
+  "description": "A gentle priest at Prideholme Cathedral. A member of the Sacrian Order and one of the Dawn Priests who support Pope Gustaven.",
   "cost": 8000,
   "currency": "silver"
 }

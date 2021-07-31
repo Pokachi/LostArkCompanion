@@ -1,12 +1,12 @@
 {
-  "id": "prideholme_neria_card",
-  "grade": 2,
+  "id": "siera_card",
+  "grade": 1,
   "image": "./images/items/card.png",
-  "name": "Prideholme Neria Card",
+  "name": "Siera Card",
   "type": "Card",
   "bound": "Bound to Account on Pickup",
   "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
-  "description": "A kind, cheerful girl who works at the Prideholme tavern and likes to cook.",
-  "cost": 8000,
+  "description": "A bard who lives in Prideholme.",
+  "cost": 5000,
   "currency": "silver"
 }
