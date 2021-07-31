@@ -94,7 +94,6 @@
           "display": "Ben",
           "id": "ben",
           "multi": true,
-          "content": "TBD ware",
           "locations": [
             {
               "zone": "log_hill",
