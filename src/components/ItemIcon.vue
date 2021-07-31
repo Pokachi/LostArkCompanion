@@ -6,18 +6,21 @@
       <span v-if="cost" class="item-cost"> {{cost}} </span>
     </div>
 
-    <b-tooltip custom-class="item-tooltip text-left" :target="id" triggers="hover">
+    <b-popover custom-class="item-popover text-left" :target="id" triggers="hover">
       <h4 :class="['font-grade-' + data.grade, 'title', 'mb-0']"> {{data.name}} </h4>
       <hr class="bg-light mb-2 mt-0">
-      <div :class="['text-left', 'pl-3', 'item-icon-popup' + data.grade, 'mb-2']">
+      <div v-if="data.type !== 'Card'" :class="['text-left', 'pl-3', 'item-icon-popup' + data.grade, 'mb-2']">
         <b-img :src="data.image" />
         <b-img v-if="data.subIcon" class="item-sub-icon-popup" :src="'./images/items/subicon/icon_' + data.subIcon + '.png'" />
         <span :class="['font-grade-' + data.grade, 'item-type']"> {{ data.type}} </span>
       </div>
+      <div v-else>
+        <b-img :style="'background-image: url(./images/items/card/' + data.id + '.png)'" :class="['item-card']" :src="'./images/items/card/frame/frame_grade_' + data.grade + '.png'" />
+      </div>
       <p v-if="data.bound" v-html="data.bound" class="text-left pl-3"/>
       <p v-html="data.description" class="text-left pl-3 description"></p>
       <p v-if="data.destruction" v-html="data.destruction" class="text-left pl-3" />
-    </b-tooltip>
+    </b-popover>
   </div>
 </template>
 
@@ -29,26 +32,30 @@ export default {
 </script>
 
 <style>
-.item-tooltip {
-  opacity: 1 !important;
-}
 
 /* tooltip background color */
-.item-tooltip .tooltip-inner {
+.item-popover .popover-body {
   background-color: #2d2d2d;
   box-shadow: 0 3px 14px rgb(0 0 0 / 40%);
   padding-left: 0 !important;
   padding-right: 0 !important;
   padding-top: 0 !important;
   min-width: 400px;
+  color: white;
+  text-align: center;
 }
 /* arrrow color */
-.item-tooltip .arrow::before {
-  border-top-color: #2d2d2d !important;
+.item-popover .arrow {
+  display: none !important;
 }
 </style>
 
 <style scoped>
+
+.item-popover {
+  border: none;
+}
+
 .title {
   background-color: black;
   width: 100%;
@@ -125,6 +132,12 @@ export default {
    background-position: -10rem 0;
    background-repeat: no-repeat;
  }
+
+.item-card {
+  background-size: 95%;
+  background-position: 0.25rem 0.5rem;
+  background-repeat: no-repeat;
+}
 
 .fit-content {
   width: fit-content;
