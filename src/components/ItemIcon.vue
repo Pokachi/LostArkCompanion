@@ -5,8 +5,8 @@
       <b-img v-if="data.subIcon" class="item-sub-icon" :src="'./images/items/subicon/icon_' + data.subIcon + '.png'" />
       <span v-if="cost" class="item-cost"> {{cost}} </span>
     </div>
-
-    <b-popover custom-class="item-popover text-left" :target="id" triggers="hover">
+    <div :id="'popover-container-'+id"></div>
+    <b-popover custom-class="item-popover text-left" :target="id" triggers="hover" :container="'popover-container-'+id">
       <h4 :class="['font-grade-' + data.grade, 'title', 'mb-0']"> {{data.name}} </h4>
       <hr class="bg-light mb-2 mt-0">
       <div v-if="data.type !== 'Card'" :class="['text-left', 'pl-3', 'item-icon-popup' + data.grade, 'mb-2']">
