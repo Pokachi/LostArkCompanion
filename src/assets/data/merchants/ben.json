@@ -3,6 +3,10 @@
     {
       "id": "fancier_bouquet",
       "condition": "Limit 1"
+    },
+    {
+      "id": "prideholme_neria_card",
+      "condition": "Limit 1"
     }
   ]
 }

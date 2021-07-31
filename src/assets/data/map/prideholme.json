@@ -247,12 +247,10 @@
           "lng": 225.27,
           "markers": [
             { "type": "mokoko",  "count": 9 },
-            { "type": "affinity", "count": 2 },
-            { "type": "vista", "count": 1 },
-            { "type": "food", "count": 3 },
-            { "type": "quest", "count": 1 },
-            { "type": "story", "count": 4 },
-            { "type": "passage", "count": 1 }
+            { "type": "monster", "count": 2 },
+            { "type": "vista", "count": 4 },
+            { "type": "food", "count": 1 },
+            { "type": "story", "count": 2 }
           ],
           "mapId": "log_hill"
         }
