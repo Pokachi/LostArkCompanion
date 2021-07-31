@@ -96,4 +96,42 @@ export default {
 
 <style>
 
+.found {
+  opacity: 0.4;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.subtitle-name-text {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.found-toggle {
+  position: absolute;
+  right: 3.5rem;
+  top: 2.8rem;
+  font-size: 1rem !important;
+}
+
+.popup-sidebar {
+  border-right: 1.5px solid;
+}
+
+.popup-sidebar-right {
+  border-left: 1.5px solid;
+}
+
+.popup-content {
+  flex-grow: 1;
+}
+
+.zone-markers {
+  flex: 40%;
+}
+
+.modal-content {
+  border: 0 !important;
+}
 </style>
