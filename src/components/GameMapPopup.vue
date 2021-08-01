@@ -25,7 +25,7 @@
         <wandering-merchant-detail v-if="markerData.type === 'merchant'" :merchant-id="data.id" :disambiguator="uuidv4()"></wandering-merchant-detail>
 
         <!-- affinity module -->
-        <affinity-detail v-if="markerData.type === 'affinity'" :affinity-id="data.id"></affinity-detail>
+        <affinity-detail v-if="markerData.type === 'affinity'" :affinity-id="data.id" :disambiguator="uuidv4()"></affinity-detail>
 
         <!-- zone collection -->
         <div v-if="data.mapId" class="d-flex flex-wrap mt-3 mb-2 text-left" :set="playerData = getPlayerData(data.mapId)">

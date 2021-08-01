@@ -1,5 +1,5 @@
 <template>
-  <div v-if="affinityData">
+  <div v-if="affinityData && Object.keys(itemData).length !== 0">
     <div class="d-flex">
       <b-carousel v-model="slide"
                   :interval="5000"
@@ -28,8 +28,13 @@
     </div>
     <b-tabs content-class="mt-3" active-nav-item-class="bg-dark text-light" fill>
       <b-tab title="Reward" active>
-        <div class="d-flex">
-
+        <div class="d-flex flex-column align-middle">
+          <div v-for="(rewardStage, index) of Object.keys(affinityData.rewards)" :key="rewardStage" class="d-flex flex-row mt-2 align-items-center">
+            <h4 :class="['affinity-' + rewardStage, 'flex-grow-0', 'flex-shrink-0', 'text-left']"> {{rewardStage}} </h4>
+            <div v-for="item of affinityData.rewards[rewardStage]" :key="item.id" class="ml-1">
+              <item-icon :data="itemData[item.id]" :count="item.count"  :id="item.id + index.toString() + disambiguator" :key="item.id + index.toString() + disambiguator"></item-icon>
+            </div>
+          </div>
         </div>
       </b-tab>
       <b-tab title="Likes"><p>WIP</p></b-tab>
@@ -39,9 +44,11 @@
 </template>
 
 <script>
+import ItemIcon from "@/components/ItemIcon";
 export default {
   name: "AffinityDetail",
-  props: ['affinityId'],
+  components: {ItemIcon},
+  props: ['affinityId', 'disambiguator'],
   data: function () {
     return {
       affinityData: null,
@@ -92,18 +99,30 @@ export default {
 
 .affinity-normal {
   color: #cdb344;
+  width: 120px;
+  height: fit-content;
+  text-transform: capitalize;
 }
 
 .affinity-interested {
   color: #7ec543;
+  width: 120px;
+  height: fit-content;
+  text-transform: capitalize;
 }
 
 .affinity-friendly {
   color: #51c5b8;
+  width: 120px;
+  height: fit-content;
+  text-transform: capitalize;
 }
 
 .affinity-trust {
   color: #3d91d1;
+  width: 120px;
+  height: fit-content;
+  text-transform: capitalize;
 }
 
 </style>

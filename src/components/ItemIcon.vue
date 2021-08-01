@@ -3,6 +3,7 @@
     <div :id="id" class="position-relative fit-content">
       <b-img :style="'background-image: url(./images/items/background/icon_grade_' + data.grade + '.png)'" class="item-icon" :src="data.image" />
       <b-img v-if="data.subIcon" class="item-sub-icon" :src="'./images/items/subicon/icon_' + data.subIcon + '.png'" />
+      <span v-if="count" class="item-count"> {{count}} </span>
       <span v-if="cost" class="item-cost"> {{cost}} </span>
     </div>
     <div :id="'popover-container-'+id"></div>
@@ -156,6 +157,18 @@ export default {
   height: auto;
   bottom: 0;
   right: 0;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  font-size: large;
+  font-weight: bold;
+}
+
+.item-count {
+  position: absolute;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  bottom: 0;
+  left: 5px;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-size: large;
   font-weight: bold;

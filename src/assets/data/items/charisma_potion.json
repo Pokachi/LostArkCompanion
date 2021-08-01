@@ -6,5 +6,5 @@
   "type": "Special Potion",
   "bound": "Binds when obtained",
   "destruction": "<span style=\"color: #C24B46\">Unsellable</span>,<span style=\"color: #C24B46\">Indestructible</span>,<span style=\"color: #C24B46\">Cannot be dismantled</span>",
-  "description": "Upon acquiring, automatically obtain <span style=\"color=: #6FFFCF\">10</span> Charisma."
+  "description": "Upon acquiring, automatically obtain <span style=\"color:#6FFFCF\">10</span> Charisma."
 }
