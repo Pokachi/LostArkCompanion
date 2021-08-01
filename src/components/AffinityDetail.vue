@@ -2,7 +2,8 @@
   <div v-if="affinityData && Object.keys(itemData).length !== 0">
     <div class="d-flex">
       <b-carousel v-model="slide"
-                  :interval="5000"
+                  :interval="10000"
+                  controls
                   no-animation
                   class="affinity-portrait">
         <b-carousel-slide
