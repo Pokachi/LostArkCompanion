@@ -27,7 +27,11 @@
       </div>
     </div>
     <b-tabs content-class="mt-3" active-nav-item-class="bg-dark text-light" fill>
-      <b-tab title="Reward" active><p>WIP</p></b-tab>
+      <b-tab title="Reward" active>
+        <div class="d-flex">
+
+        </div>
+      </b-tab>
       <b-tab title="Likes"><p>WIP</p></b-tab>
       <b-tab title="Level"><p>WIP</p></b-tab>
     </b-tabs>
@@ -50,10 +54,13 @@ export default {
     try {
       this.affinityData = await import("@/assets/data/affinities/" + this.affinityId + ".json");
       this.itemData = {};
-      //for (const item of this.merchantData.items) {
-      //  let itemData = await import("@/assets/data/items/" + item.id + ".json");
-      //  this.itemData[item.id] = itemData;
-      //}
+      for (const rewardStage of Object.keys(this.affinityData.rewards)) {
+        for (const reward of this.affinityData.rewards[rewardStage]) {
+          if (!this.itemData[reward.id]) {
+            this.itemData[reward.id] = await import("@/assets/data/items/" + reward.id + ".json");
+          }
+        }
+      }
 
       this.$forceUpdate()
     } catch (e) {
@@ -83,8 +90,20 @@ export default {
   margin-bottom: 1rem;
 }
 
-.affinity-tab {
+.affinity-normal {
+  color: #cdb344;
+}
 
+.affinity-interested {
+  color: #7ec543;
+}
+
+.affinity-friendly {
+  color: #51c5b8;
+}
+
+.affinity-trust {
+  color: #3d91d1;
 }
 
 </style>

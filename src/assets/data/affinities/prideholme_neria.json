@@ -6,16 +6,16 @@
   "location": "Prideholme",
   "subLocation": "Neria's Tavern",
   "birthDate": "7/7",
-  "reward": {
+  "rewards": {
     "normal": [
       {
-        "id": "ancient_cold_coin",
+        "id": "ancient_gold_coin",
         "count": 8
       }
     ],
     "interested": [
       {
-        "id": "ancient_cold_coin",
+        "id": "ancient_gold_coin",
         "count": 15
       }
     ],
@@ -26,7 +26,7 @@
     ],
     "trust": [
       {
-        "id": "battle_engraving_recipe_pouch",
+        "id": "harmony_battle_engraving_recipe_pouch",
         "count": 3
       },
       {

@@ -27,7 +27,7 @@
 <script>
 export default {
   name: "ItemIcon",
-  props: ['data', 'showName', 'cost', 'id']
+  props: ['data', 'showName', 'cost', 'count', 'id']
 }
 </script>
 
