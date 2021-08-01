@@ -24,6 +24,9 @@
         <!-- merchant module -->
         <wandering-merchant-detail v-if="markerData.type === 'merchant'" :merchant-id="data.id" :disambiguator="uuidv4()"></wandering-merchant-detail>
 
+        <!-- affinity module -->
+        <affinity-detail v-if="markerData.type === 'affinity'" :affinity-id="data.id"></affinity-detail>
+
         <!-- zone collection -->
         <div v-if="data.mapId" class="d-flex flex-wrap mt-3 mb-2 text-left" :set="playerData = getPlayerData(data.mapId)">
           <div v-for="(marker) in data.markers" :key="marker.type" class="zone-markers ml-3">
@@ -65,10 +68,11 @@
 <script>
 import iconData from "@/assets/data/map/icon.json";
 import WanderingMerchantDetail from "@/components/WanderingMerchantDetail";
+import AffinityDetail from "@/components/AffinityDetail";
 
 export default {
   name: "GameMapPopup",
-  components: {WanderingMerchantDetail},
+  components: {AffinityDetail, WanderingMerchantDetail},
   props: ['data', 'markerData', 'locationData', 'isFound'],
   data: function () {
     return {

@@ -1,0 +1,40 @@
+{
+  "name": "Neria",
+  "id": "prideholme_neria",
+  "description": "A lady working at Neria's Tavern in Prideholme. Everyone loves her bright smile and her positive attitude towards life.",
+  "continent": "Rethramis",
+  "location": "Prideholme",
+  "subLocation": "Neria's Tavern",
+  "birthDate": "7/7",
+  "reward": {
+    "normal": [
+      {
+        "id": "ancient_cold_coin",
+        "count": 8
+      }
+    ],
+    "interested": [
+      {
+        "id": "ancient_cold_coin",
+        "count": 15
+      }
+    ],
+    "friendly": [
+      {
+        "id": "prideholme_neria_card"
+      }
+    ],
+    "trust": [
+      {
+        "id": "battle_engraving_recipe_pouch",
+        "count": 3
+      },
+      {
+        "id": "charisma_potion"
+      },
+      {
+        "id": "vitality_increase_potion"
+      }
+    ]
+  }
+}

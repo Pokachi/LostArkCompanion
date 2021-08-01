@@ -93,6 +93,7 @@
           "name": "Ben",
           "display": "Ben",
           "id": "ben",
+          "content": "Sells the following items",
           "multi": true,
           "locations": [
             {

@@ -81,7 +81,7 @@
           "name": "Neria",
           "display": "Neria",
           "content": "",
-          "id": "affinity0001",
+          "id": "prideholme_neria",
           "lat": -67.58,
           "lng": 147.86
         },
@@ -89,7 +89,7 @@
           "name": "Siera",
           "display": "Siera",
           "content": "",
-          "id": "affinity0002",
+          "id": "prideholme_siera",
           "lat": -191.21,
           "lng": 112.10
         }
