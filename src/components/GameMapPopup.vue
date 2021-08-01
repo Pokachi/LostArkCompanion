@@ -22,7 +22,7 @@
         <p v-if="locationData && locationData.content" class="mt-0 mb-2" v-html="locationData.content" />
 
         <!-- merchant module -->
-        <wandering-merchant-detail v-if="markerData.type === 'merchant'" :merchant-id="data.id"></wandering-merchant-detail>
+        <wandering-merchant-detail v-if="markerData.type === 'merchant'" :merchant-id="data.id" :disambiguator="uuidv4()"></wandering-merchant-detail>
 
         <!-- zone collection -->
         <div v-if="data.mapId" class="d-flex flex-wrap mt-3 mb-2 text-left" :set="playerData = getPlayerData(data.mapId)">
@@ -89,6 +89,12 @@ export default {
           return {};
         }
       }
+    },
+    uuidv4() {
+      return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+        return v.toString(16);
+      });
     }
   }
 }
