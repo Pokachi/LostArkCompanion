@@ -136,7 +136,7 @@ export default {
       minZoom: 1,
       maxZoom: 3,
       zoomLevel: 1,
-      maxBounds: latLngBounds([[64, -64], [-320, 320]]),
+      maxBounds: latLngBounds([[256, -256], [-512, 512]]),
       mapOptions: {
         bounds: latLngBounds([[0, 0], [-256, 256]])
       },
@@ -235,7 +235,7 @@ export default {
       if(this.location === "world") {
         this.maxBounds = latLngBounds([[-32, 0], [-224, 256]]);
       } else {
-        this.maxBounds = latLngBounds([[128, -128], [-384, 384]]);
+        this.maxBounds = latLngBounds([[512 / (this.mapData.minZoom * 2), -512 / (this.mapData.minZoom * 2)], [-512 / (this.mapData.minZoom * 2) - 256, 512 / (this.mapData.minZoom * 2) + 256]]);
       }
       this.minZoom = this.mapData.minZoom;
       this.maxZoom = this.mapData.maxZoom;
