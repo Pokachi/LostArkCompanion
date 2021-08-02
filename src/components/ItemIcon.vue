@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="border icon-border">
     <div :id="id" class="position-relative fit-content">
       <b-img :style="['background-image: url(./images/items/background/icon_grade_' + data.grade + '.png)', size ? 'width: ' + 64 * size + 'px' : '']" class="item-icon" :src="data.image" />
       <b-img v-if="data.subIcon" class="item-sub-icon" :src="'./images/items/subicon/icon_' + data.subIcon + '.png'" :style="size ? 'width: ' + 28 * size + 'px' : ''"/>
@@ -52,6 +52,10 @@ export default {
 </style>
 
 <style scoped>
+
+.icon-border {
+  border-color: #ffffff80 !important;
+}
 
 .item-popover {
   border: none;

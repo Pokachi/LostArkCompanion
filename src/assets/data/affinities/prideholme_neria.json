@@ -37,6 +37,18 @@
       }
     ]
   },
+  "likes": {
+    "songs": [
+      {
+        "id": "hearts_melody",
+        "points": 250
+      },
+      {
+        "id": "serenade_of_love",
+        "points": 275
+      }
+    ]
+  },
   "levels": [
     {
       "name": "Normal I",

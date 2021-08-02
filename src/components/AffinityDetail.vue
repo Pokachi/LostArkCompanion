@@ -34,14 +34,14 @@
                :key="rewardStage"
                :class="['d-flex', 'flex-row', 'align-items-center', index===0 ? '' : 'border-top', Object.keys(affinityData.rewards).length -1 === index ? '' : 'border-bottom']">
             <h4 :class="['affinity-' + rewardStage, 'flex-grow-0', 'flex-shrink-0', 'text-left']"> {{rewardStage}} </h4>
-            <div v-for="item of affinityData.rewards[rewardStage]" :key="item.id" class="mt-1 mb-1 ml-1 border icon-border">
+            <div v-for="item of affinityData.rewards[rewardStage]" :key="item.id" class="mt-1 mb-1 ml-1">
               <item-icon :data="itemData[item.id]" :count="item.count"  :id="item.id + index.toString() + disambiguator" :key="item.id + index.toString() + disambiguator" :size="0.75"></item-icon>
             </div>
           </div>
         </div>
       </b-tab>
       <b-tab title="Likes"><p>WIP</p></b-tab>
-      <b-tab title="Level" :set="totalExp = 0">
+      <b-tab title="Stage" :set="totalExp = 0">
         <div class="d-flex flex-column flex-wrap">
           <div class="d-flex flex-row">
             <h6 class="border m-0 p-1 affinity-level-header"> Stage </h6>
@@ -98,10 +98,6 @@ export default {
 
 .affinity-level-header {
   width: 120px;
-}
-
-.icon-border {
-  border-color: #ffffff80 !important;
 }
 
 .opacity5 {
