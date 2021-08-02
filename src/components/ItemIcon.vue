@@ -1,8 +1,8 @@
 <template>
   <div>
     <div :id="id" class="position-relative fit-content">
-      <b-img :style="'background-image: url(./images/items/background/icon_grade_' + data.grade + '.png)'" class="item-icon" :src="data.image" />
-      <b-img v-if="data.subIcon" class="item-sub-icon" :src="'./images/items/subicon/icon_' + data.subIcon + '.png'" />
+      <b-img :style="['background-image: url(./images/items/background/icon_grade_' + data.grade + '.png)', size ? 'width: ' + 64 * size + 'px' : '']" class="item-icon" :src="data.image" />
+      <b-img v-if="data.subIcon" class="item-sub-icon" :src="'./images/items/subicon/icon_' + data.subIcon + '.png'" :style="size ? 'width: ' + 28 * size + 'px' : ''"/>
       <span v-if="count" class="item-count"> {{count}} </span>
       <span v-if="cost" class="item-cost"> {{cost}} </span>
     </div>
@@ -28,7 +28,7 @@
 <script>
 export default {
   name: "ItemIcon",
-  props: ['data', 'showName', 'cost', 'count', 'id']
+  props: ['data', 'showName', 'cost', 'count', 'id', 'size']
 }
 </script>
 
@@ -177,8 +177,6 @@ export default {
 .item-sub-icon {
   position: absolute;
   display: inline-block;
-  width: 28px;
-  height: 28px;
   bottom: 0;
   right: 0;
 }

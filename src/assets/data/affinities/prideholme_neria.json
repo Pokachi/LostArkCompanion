@@ -36,5 +36,47 @@
         "id": "vitality_increase_potion"
       }
     ]
-  }
+  },
+  "levels": [
+    {
+      "name": "Normal I",
+      "stage": "normal",
+      "expRequired": 400
+    },
+    {
+      "name": "Normal 2",
+      "stage": "normal",
+      "expRequired": 1100
+    },
+    {
+      "name": "Interested 1",
+      "stage": "interested",
+      "expRequired": 3400
+    },
+    {
+      "name": "Interested 2",
+      "stage": "interested",
+      "expRequired": 5200
+    },
+    {
+      "name": "Interested 3",
+      "stage": "interested",
+      "expRequired": 6800
+    },
+    {
+      "name": "Friendly 1",
+      "stage": "friendly",
+      "expRequired": 7000
+    },
+    {
+      "name": "Friendly 2",
+      "stage": "friendly",
+      "expRequired": 7000
+    },
+    {
+      "name": "Friendly 3",
+      "stage": "friendly",
+      "expRequired": 7000
+    }
+  ]
 }

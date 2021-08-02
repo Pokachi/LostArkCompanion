@@ -27,19 +27,34 @@
         <p class="text-left pl-4 mt-2"> {{ affinityData.description }} </p>
       </div>
     </div>
-    <b-tabs content-class="mt-3" active-nav-item-class="bg-dark text-light" fill>
+    <b-tabs content-class="mt-1" active-nav-item-class="bg-dark text-light" fill>
       <b-tab title="Reward" active>
-        <div class="d-flex flex-column align-middle">
-          <div v-for="(rewardStage, index) of Object.keys(affinityData.rewards)" :key="rewardStage" class="d-flex flex-row mt-2 align-items-center">
+        <div class="d-flex flex-column">
+          <div v-for="(rewardStage, index) of Object.keys(affinityData.rewards)"
+               :key="rewardStage"
+               :class="['d-flex', 'flex-row', 'align-items-center', index===0 ? '' : 'border-top', Object.keys(affinityData.rewards).length -1 === index ? '' : 'border-bottom']">
             <h4 :class="['affinity-' + rewardStage, 'flex-grow-0', 'flex-shrink-0', 'text-left']"> {{rewardStage}} </h4>
-            <div v-for="item of affinityData.rewards[rewardStage]" :key="item.id" class="ml-1">
-              <item-icon :data="itemData[item.id]" :count="item.count"  :id="item.id + index.toString() + disambiguator" :key="item.id + index.toString() + disambiguator"></item-icon>
+            <div v-for="item of affinityData.rewards[rewardStage]" :key="item.id" class="mt-1 mb-1 ml-1 border icon-border">
+              <item-icon :data="itemData[item.id]" :count="item.count"  :id="item.id + index.toString() + disambiguator" :key="item.id + index.toString() + disambiguator" :size="0.75"></item-icon>
             </div>
           </div>
         </div>
       </b-tab>
       <b-tab title="Likes"><p>WIP</p></b-tab>
-      <b-tab title="Level"><p>WIP</p></b-tab>
+      <b-tab title="Level" :set="totalExp = 0">
+        <div class="d-flex flex-column flex-wrap">
+          <div class="d-flex flex-row">
+            <h6 class="border m-0 p-1 affinity-level-header"> Stage </h6>
+            <h6 class="border m-0 p-1 affinity-level-header"> Points </h6>
+            <h6 class="border m-0 p-1 affinity-level-header"> Total Points </h6>
+          </div>
+          <div v-for="level of affinityData.levels" :key="level.name" class="d-flex flex-row" :set="totalExp= totalExp + level.expRequired">
+            <p :class="['border m-0 p-1', 'affinity-' + level.stage]">{{ level.name }}</p>
+            <p :class="['border m-0 p-1', 'affinity-' + level.stage]">{{ level.expRequired }}</p>
+            <p :class="['border m-0 p-1', 'affinity-' + level.stage]">{{ totalExp }}</p>
+          </div>
+        </div>
+      </b-tab>
     </b-tabs>
   </div>
 </template>
@@ -75,11 +90,19 @@ export default {
       this.affinityData = null;
       this.itemData = null;
     }
-  },
+  }
 }
 </script>
 
 <style scoped>
+
+.affinity-level-header {
+  width: 120px;
+}
+
+.icon-border {
+  border-color: #ffffff80 !important;
+}
 
 .opacity5 {
   opacity: 0.5;
