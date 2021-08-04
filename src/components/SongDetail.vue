@@ -1,5 +1,5 @@
 <template>
-  <div v-if="songData && itemData">
+  <div v-if="songData && itemData" class="opacity3">
     <div class="d-flex">
       <item-icon :data="itemData" :id="songId + uuidv4()" :key="itemData.id" size="0.9"/>
       <div class="d-flex flex-column ml-2 text-left flex-fill">

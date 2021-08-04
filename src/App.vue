@@ -17,4 +17,12 @@ export default {
 </script>
 
 <style>
+
+.opacity3 {
+  opacity: 0.3;
+}
+
+.opacity5 {
+  opacity: 0.5;
+}
 </style>

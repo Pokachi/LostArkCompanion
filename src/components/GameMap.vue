@@ -355,4 +355,11 @@ export default {
   min-width: 400px;
 }
 
+.found {
+  opacity: 0.4;
+}
+
+.hidden {
+  opacity: 0;
+}
 </style>

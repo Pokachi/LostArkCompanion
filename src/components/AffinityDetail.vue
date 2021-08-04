@@ -46,6 +46,8 @@
           <div v-for="song of affinityData.likes.songs" :key="song.id">
             <song-detail :song-id="song.id" :points="song.points" class="mb-2"/>
           </div>
+          <h4 class="affinity-header-name">Emotes</h4>
+          <div> WIP </div>
         </div>
       </b-tab>
       <b-tab title="Stage" :set="totalExp = 0">
@@ -106,10 +108,6 @@ export default {
 
 .affinity-level-header {
   width: 120px;
-}
-
-.opacity5 {
-  opacity: 0.5;
 }
 
 .affinity-header {

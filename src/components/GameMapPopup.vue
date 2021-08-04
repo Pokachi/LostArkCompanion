@@ -100,14 +100,6 @@ export default {
 
 <style>
 
-.found {
-  opacity: 0.4;
-}
-
-.hidden {
-  opacity: 0;
-}
-
 .subtitle-name-text {
   color: rgba(255, 255, 255, 0.3);
 }
