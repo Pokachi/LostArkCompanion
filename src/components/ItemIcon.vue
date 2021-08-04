@@ -9,11 +9,16 @@
     <div :id="'popover-container-'+id"></div>
     <b-popover custom-class="item-popover text-left" :target="id" triggers="hover" :container="'popover-container-'+id">
       <h4 :class="['font-grade-' + data.grade, 'title', 'mb-0']"> {{data.name}} </h4>
-      <hr class="bg-light mb-2 mt-0">
-      <div v-if="data.type !== 'Card'" :class="['text-left', 'pl-3', 'item-icon-popup' + data.grade, 'mb-2']">
-        <b-img :src="data.image" />
-        <b-img v-if="data.subIcon" class="item-sub-icon-popup" :src="'./images/items/subicon/icon_' + data.subIcon + '.png'" />
-        <span :class="['font-grade-' + data.grade, 'item-type']"> {{ data.type}} </span>
+      <hr class="bg-light mb-0 mt-0">
+      <div v-if="data.type !== 'Card'" :class="['d-flex', 'align-middle', 'text-left', 'pl-3', 'item-icon-popup' + data.grade, 'mb-2']">
+        <div style="width: 64px; height: 64px" class="mt-2 mb-2">
+          <b-img :src="data.image"/>
+          <b-img v-if="data.subIcon" class="item-sub-icon-popup" :src="'./images/items/subicon/icon_' + data.subIcon + '.png'" />
+        </div>
+        <div class="fit-content ml-3">
+          <div :class="['font-grade-' + data.grade, 'item-type']"> {{ data.type}} </div>
+          <div v-if="data.cooldown"> {{ 'Cooldown: ' + data.cooldown}} </div>
+        </div>
       </div>
       <div v-else>
         <b-img :style="'background-image: url(./images/items/card/' + data.id + '.png)'" :class="['item-card']" :src="'./images/items/card/frame/frame_grade_' + data.grade + '.png'" />
@@ -190,8 +195,8 @@ export default {
   display: inline-block;
   width: 28px;
   height: 28px;
-  bottom: -15px;
-  right: 30px;
+  bottom: 28px;
+  right: -36px;
 }
 
 .item-type {

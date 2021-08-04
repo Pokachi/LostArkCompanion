@@ -1,0 +1,10 @@
+{
+  "id": "hearts_melody",
+  "grade": 0,
+  "image": "./images/items/hearts_melody.png",
+  "name": "Heart's Melody",
+  "type": "Song",
+  "bound": "Binds when obtained",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A song left by Lazenith, the first civilization of Arkesia. It has the power to move people's hearts."
+}

@@ -6,6 +6,6 @@
   "name": "Ancient Gold Coin",
   "type": "Normal Silver Coin",
   "bound": "Binds when obtained",
-  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>,<span style=\"color: #C24B46\">Indestructible</span>,<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
   "description": "A gold coin widely used in the ancient times. A decent collector would never let it slip away. You can sell it to merchants at a high price. <br><span style=\"color: #FFFFAC\">Obtain 1000 silver when used.</span>"
 }
