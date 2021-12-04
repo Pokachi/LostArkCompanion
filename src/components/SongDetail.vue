@@ -16,6 +16,8 @@
 
 <script>
 import ItemIcon from "@/components/ItemIcon";
+import '@/assets/css/main.css';
+
 export default {
   name: "SongDetail",
   props: ["songId", "points"],
@@ -35,7 +37,10 @@ export default {
     this.playerSongData = {};
     if (localStorage.getItem('player_songs')) {
       try {
-        this.playerSongData = JSON.parse(localStorage.getItem('player_songs'));
+        let playerCollectibles = JSON.parse(localStorage.getItem('player_collectibles'));
+        if (playerCollectibles.songData) {
+          this.playerSongData = playerCollectibles.songData;
+        }
       } catch (e) {
         localStorage.removeItem('player_songs');
       }

@@ -27,6 +27,7 @@
         <p class="text-left pl-4 mt-2"> {{ affinityData.description }} </p>
       </div>
     </div>
+
     <b-tabs content-class="mt-1" active-nav-item-class="bg-dark text-light" fill>
       <b-tab title="Reward" active>
         <div class="d-flex flex-column">
@@ -43,8 +44,8 @@
       <b-tab title="Likes">
         <div class="d-flex flex-column">
           <h4 class="affinity-header-name">Songs</h4>
-          <div v-for="song of affinityData.likes.songs" :key="song.id">
-            <song-detail :song-id="song.id" :points="song.points" class="mb-2"/>
+          <div v-for="(song, index) of affinityData.likes.songs" :key="song.id" :class="[index===0 ? '' : 'border-top', Object.keys(affinityData.likes.songs).length -1 === index ? '' : 'border-bottom']">
+            <song-detail :song-id="song.id" :points="song.points" class="mb-2 mt-2"/>
           </div>
           <h4 class="affinity-header-name">Emotes</h4>
           <div> WIP </div>

@@ -1,0 +1,7 @@
+.locked {
+    opacity: 0.25;
+}
+
+.fullOpacity {
+    opacity: 1 !important;
+}

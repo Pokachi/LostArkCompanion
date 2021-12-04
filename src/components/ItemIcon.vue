@@ -7,7 +7,7 @@
       <span v-if="cost" class="item-cost"> {{cost}} </span>
     </div>
     <div :id="'popover-container-'+id"></div>
-    <b-popover custom-class="item-popover text-left" :target="id" triggers="hover" :container="'popover-container-'+id">
+    <b-popover v-if="!hide_popover" custom-class="item-popover text-left" :target="id" triggers="hover" :container="'popover-container-'+id">
       <h4 :class="['font-grade-' + data.grade, 'title', 'mb-0']"> {{data.name}} </h4>
       <hr class="bg-light mb-0 mt-0">
       <div v-if="data.type !== 'Card'" :class="['d-flex', 'align-middle', 'text-left', 'pl-3', 'item-icon-popup' + data.grade, 'mb-2']">
@@ -33,7 +33,7 @@
 <script>
 export default {
   name: "ItemIcon",
-  props: ['data', 'showName', 'cost', 'count', 'id', 'size']
+  props: ['data', 'showName', 'cost', 'count', 'id', 'size', 'hide_popover']
 }
 </script>
 
