@@ -2,6 +2,7 @@
   <div id="app">
     <navBar/>
     <router-view/>
+    <notifications group="copy" position="bottom left" :speed="500" />
   </div>
 </template>
 

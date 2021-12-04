@@ -1,6 +1,6 @@
 <template>
-  <div v-if="songData && itemData" class="opacity3">
-    <div class="d-flex">
+  <div v-if="songData && itemData">
+    <div :class="[playerSongData.songId ? '' : '', 'd-flex']">
       <item-icon :data="itemData" :id="songId + uuidv4()" :key="itemData.id" size="0.9"/>
       <div class="d-flex flex-column ml-2 text-left flex-fill">
         <div class="d-flex">
@@ -22,6 +22,7 @@ export default {
   components: {ItemIcon},
   data: function() {
     return {
+      found: false,
       songData: null,
       itemData: null,
       playerSongData: null
@@ -34,7 +35,7 @@ export default {
     this.playerSongData = {};
     if (localStorage.getItem('player_songs')) {
       try {
-        this.playerData = JSON.parse(localStorage.getItem('player_songs'));
+        this.playerSongData = JSON.parse(localStorage.getItem('player_songs'));
       } catch (e) {
         localStorage.removeItem('player_songs');
       }
@@ -44,6 +45,17 @@ export default {
   }
 }
 </script>
+
+<style>
+
+/* Acquire Switch */
+.custom-control-label::before {
+  left: 4rem !important;
+}
+.custom-control-label::after {
+  left: calc(4rem + 2px) !important;
+}
+</style>
 
 <style scoped>
 .points {

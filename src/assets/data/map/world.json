@@ -1,6 +1,7 @@
 {
   "type": "world",
   "name": "World",
+  "id": "world",
   "minZoom": 2,
   "maxZoom": 5,
   "markers": [

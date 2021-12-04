@@ -1,6 +1,8 @@
 {
   "type": "zone",
   "name": "Prideholme",
+  "id": "prideholme",
+  "parent": "world",
   "continent": "Rethramis",
   "icon": "./images/map/prideholme/prideholme.png",
   "minZoom": 1,

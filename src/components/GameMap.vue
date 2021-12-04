@@ -9,6 +9,7 @@
         :crs="crs"
         :center="center"
         @click="printLocation"
+        @contextmenu.native="contextMenu($event)"
     >
       <!-- This is the map -->
       <l-tile-layer
@@ -33,7 +34,7 @@
                   </p>
                 </l-icon>
                 <l-popup class="text-light">
-                  <game-map-popup :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" @updateMarker="updateMarker" :key="data.id"/>
+                  <game-map-popup :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" :map-id="mapData.id" @updateMarker="updateMarker" :key="data.id"/>
                 </l-popup>
               </l-marker>
 
@@ -46,7 +47,7 @@
                   </p>
                 </l-icon>
                 <l-popup class="text-light">
-                  <game-map-popup :location-data="location" :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" @updateMarker="updateMarker" :key="data.id + lIndex.toString()"/>
+                  <game-map-popup :location-data="location" :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" :map-id="mapData.id" :index="lIndex" @updateMarker="updateMarker" :key="data.id + lIndex.toString()"/>
                 </l-popup>
               </l-marker>
             </div>
@@ -62,7 +63,7 @@
                 </p>
               </l-icon>
               <l-popup class="text-light">
-                <game-map-popup :data="data" :marker-data="marker" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" @updateMarker="updateMarker" :key="data.id" />
+                <game-map-popup :data="data" :marker-data="marker" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" @updateMarker="updateMarker" :map-id="mapData.id" :key="data.id" />
               </l-popup>
             </l-marker>
           </div>
@@ -131,7 +132,7 @@ export default {
       iconData: iconData,
       playerData: {},
       center: [-128, 128],
-      attribution: "Created By Ophelia",
+      attribution: "Created By Pokachi",
       mapUrl: null,
       minZoom: 1,
       maxZoom: 3,
@@ -152,6 +153,12 @@ export default {
   methods: {
     saveData(key, data) {
       localStorage.setItem(key + 'map', JSON.stringify(data));
+    },
+    contextMenu(e) {
+      e.preventDefault();
+      if(this.mapData) {
+        this.$router.push({query: {m: this.mapData.parent}}).catch(()=>{});
+      }
     },
     printLocation(event) {
       var coord = event.latlng;
@@ -303,14 +310,6 @@ export default {
 /* Hide close button */
 .leaflet-popup-close-button {
   display: none !important;
-}
-
-/* Complete Switch */
-.custom-control-label::before {
-  left: 5rem !important;
-}
-.custom-control-label::after {
-  left: calc(5rem + 2px) !important;
 }
 
 /* map */

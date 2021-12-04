@@ -33,9 +33,6 @@
             <b-img width="18px" class="mb-1" :src="iconData[marker.type].icon" /> {{ iconData[marker.type].name }} ({{ playerData && playerData[marker.type]? playerData[marker.type].c : 0}}/{{marker.count}})
           </div>
         </div>
-        <div v-if="data.mapId" class="text-center mb-2">
-          <b-button size="sm" v-on:click="changeMap(data.mapId)"> Enter </b-button>
-        </div>
 
         <!-- image -->
         <b-button v-if="data.image" v-b-modal="markerData.type.toString()+data.id.toString()" variant="link" size="sm">
@@ -52,6 +49,19 @@
         <b-modal v-if="locationData && locationData.image" :id="markerData.type.toString()+data.id.toString()+locationData.index.toString()" :hide-footer="true" :hide-header="true" body-bg-variant="dark">
           <b-img fluid :src="locationData.image"></b-img>
         </b-modal>
+
+        <!-- copy node location button -->
+        <div v-if="data.mapId" class="text-center mb-2">
+          <b-button size="sm" class="mr-2" v-on:click="copyLocation(mapId, data.id, index)">
+            Copy Location
+          </b-button>
+          <b-button size="sm" v-on:click="changeMap(data.mapId)"> Enter </b-button>
+        </div>
+        <div v-else class="text-center mt-3 mb-1">
+          <b-button size="sm" v-on:click="copyLocation(mapId, data.id, index)">
+            Copy Location
+          </b-button>
+        </div>
       </div>
 
       <!-- add a side bar for other location if this can be done somewhere else -->
@@ -73,7 +83,7 @@ import AffinityDetail from "@/components/AffinityDetail";
 export default {
   name: "GameMapPopup",
   components: {AffinityDetail, WanderingMerchantDetail},
-  props: ['data', 'markerData', 'locationData', 'isFound'],
+  props: ['data', 'markerData', 'locationData', 'isFound', 'index', "mapId"],
   data: function () {
     return {
       found: this.isFound,
@@ -81,6 +91,14 @@ export default {
     }
   },
   methods: {
+    copyLocation: function(mapId, markerId, indexId) {
+      let url = location.protocol + '//' + location.host + location.pathname + '#' + this.$route.path + '?m=' + mapId + '&c=' + markerId;
+      if (indexId >= 0) {
+        url += '&i=' + indexId;
+      }
+      navigator.clipboard.writeText(url)
+      this.$notify({group: 'copy', text: 'Copied location to clipboard.'})
+    },
     updateMarker: function(type, id, newState, locations) {
       this.$emit('updateMarker', type, id, newState, locations);
     },
@@ -99,6 +117,13 @@ export default {
 </script>
 
 <style>
+/* Complete Switch */
+.found-toggle .custom-control .custom-control-label::before {
+  left: 5rem !important;
+}
+.found-toggle .custom-control .custom-control-label::after {
+  left: calc(5rem + 2px) !important;
+}
 
 .subtitle-name-text {
   color: rgba(255, 255, 255, 0.3);

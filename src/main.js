@@ -2,6 +2,7 @@ import BootstrapVue from 'bootstrap-vue'
 import Vue from 'vue'
 import App from '@/App.vue'
 import router from '@/router'
+import Notification from 'vue-notification'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -14,6 +15,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import '@/mixins/globalMixin'
 
 Vue.use(BootstrapVue)
+Vue.use(Notification)
 
 // Font-awesome library
 library.add(faImages, faAngleDoubleLeft)

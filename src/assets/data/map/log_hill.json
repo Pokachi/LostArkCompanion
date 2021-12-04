@@ -1,6 +1,8 @@
 {
   "type": "zone",
   "name": "Log Hill",
+  "id": "log_hill",
+  "parent": "world",
   "continent": "Rethramis",
   "icon": "./images/map/log_hill/log_hill.png",
   "minZoom": 2,
