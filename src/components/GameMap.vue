@@ -247,7 +247,7 @@ export default {
       if(this.location === "world") {
         this.maxBounds = latLngBounds([[-32, 0], [-224, 256]]);
       } else {
-        this.maxBounds = latLngBounds([[512 / (this.mapData.minZoom), -512 / (this.mapData.minZoom)], [-512 / (this.mapData.minZoom) - 256, 512 / (this.mapData.minZoom) + 256]]);
+        this.maxBounds = latLngBounds([[512 / (this.mapData.minZoom), -776 / (this.mapData.minZoom)], [-512 / (this.mapData.minZoom) - 256, 776 / (this.mapData.minZoom) + 256]]);
       }
       this.minZoom = this.mapData.minZoom;
       this.maxZoom = this.mapData.maxZoom;
@@ -319,13 +319,13 @@ export default {
 
 /* map */
 #map {
-  height: calc(100vh - 84px);
+  height: calc(100vh - 56px);
   width: 100%;
 }
 
 /* Side Bar */
 #sidebar-right {
-  height: calc(60vh - 84px);
+  height: calc(60vh - 56px);
   top: 100px;
 }
 
