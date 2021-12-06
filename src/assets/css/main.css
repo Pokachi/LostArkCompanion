@@ -1,7 +1,21 @@
-.locked {
-    opacity: 0.25;
+.acquired {
+    color: turquoise;
+}
+
+.unacquired {
+    color: crimson;
 }
 
 .fullOpacity {
     opacity: 1 !important;
+}
+
+.blue_quest {
+    color: rgb(66, 223, 231);
+    font-size: 1rem;
+}
+
+.purple_quest {
+    color: rgb(123, 115, 225);
+    font-size: 1rem;
 }

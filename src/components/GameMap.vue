@@ -152,7 +152,7 @@ export default {
   },
   methods: {
     saveData(key, data) {
-      localStorage.setItem(key + 'map', JSON.stringify(data));
+      localStorage.setItem(key + '_map', JSON.stringify(data));
     },
     contextMenu(e) {
       e.preventDefault();
@@ -177,7 +177,12 @@ export default {
       this.$forceUpdate();
       this.saveData(this.location, this.playerData);
     },
-    updateMarker(type, id, newState, locations) {
+    updateMarker(type, id, newState, locations, isCollectible) {
+      if (isCollectible) {
+        console.log("test");
+        this.updateCollectible(type, null, id, newState);
+      }
+
       if (!this.playerData[type]) {
         this.playerData[type] = {};
         this.playerData[type].c = 0;
@@ -194,11 +199,11 @@ export default {
         locations.forEach(location => {
           if (location.zone !== this.location) {
             let tempData = {};
-            if (localStorage.getItem(location.zone + 'map')) {
+            if (localStorage.getItem(location.zone + '_map')) {
               try {
-                tempData = JSON.parse(localStorage.getItem(location.zone + 'map'));
+                tempData = JSON.parse(localStorage.getItem(location.zone + '_map'));
               } catch (e) {
-                localStorage.removeItem(location.zone + 'map');
+                localStorage.removeItem(location.zone + '_map');
               }
             }
 
@@ -231,18 +236,18 @@ export default {
       this.mapUrl = './images/map/' + this.location + '/{z}/{x}/{y}.png';
 
       this.playerData = {};
-      if (localStorage.getItem(this.location + 'map')) {
+      if (localStorage.getItem(this.location + '_map')) {
         try {
-          this.playerData = JSON.parse(localStorage.getItem(this.location + 'map'));
+          this.playerData = JSON.parse(localStorage.getItem(this.location + '_map'));
         } catch (e) {
-          localStorage.removeItem(this.location + 'map');
+          localStorage.removeItem(this.location + '_map');
         }
       }
 
       if(this.location === "world") {
         this.maxBounds = latLngBounds([[-32, 0], [-224, 256]]);
       } else {
-        this.maxBounds = latLngBounds([[512 / (this.mapData.minZoom * 2), -512 / (this.mapData.minZoom * 2)], [-512 / (this.mapData.minZoom * 2) - 256, 512 / (this.mapData.minZoom * 2) + 256]]);
+        this.maxBounds = latLngBounds([[512 / (this.mapData.minZoom), -512 / (this.mapData.minZoom)], [-512 / (this.mapData.minZoom) - 256, 512 / (this.mapData.minZoom) + 256]]);
       }
       this.minZoom = this.mapData.minZoom;
       this.maxZoom = this.mapData.maxZoom;

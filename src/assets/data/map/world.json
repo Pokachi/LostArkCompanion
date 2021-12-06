@@ -15,6 +15,7 @@
       "data": [
         {
           "icon": "./images/map/prideholme/prideholme.png",
+          "isCollectible": false,
           "anchor": [30, 30],
           "name": "Prideholme",
           "continent": "Rethramis",
@@ -35,6 +36,7 @@
         },
         {
           "icon": "./images/map/log_hill/log_hill.png",
+          "isCollectible": false,
           "anchor": [30, 30],
           "name": "Log Hill",
           "continent": "Rethramis",

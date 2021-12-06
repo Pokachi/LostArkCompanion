@@ -2,5 +2,9 @@
   "id": "serenade_of_love",
   "name": "Serenade of Love",
   "cooldown": "5s",
-  "description": "A beautiful way to confess your love."
+  "description": "A beautiful way to confess your love.",
+  "acquisition":"Legendary barley - Liebehiem",
+  "acquisitionType": "purple_quest",
+  "acquisitionLocation": "liebehiem",
+  "acquisitionLink": "#/map?m=liebehiem&c=serenade_of_love"
 }

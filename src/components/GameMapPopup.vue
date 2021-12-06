@@ -3,7 +3,7 @@
     <h3 class="mb-0">{{ data.name }}</h3>
     <h5 class="subtitle-name-text">{{ markerData.name }}</h5>
     <div class="found-toggle subtitle-name-text ">
-      <b-form-checkbox v-model="found" name="check-button" switch v-on:input="updateMarker(markerData.type, data.id, $event, data.locations)">Complete: </b-form-checkbox>
+      <b-form-checkbox v-model="found" name="check-button" switch v-on:input="updateMarker(markerData.type, data.id, $event, data.locations, data.isCollectible)">Complete: </b-form-checkbox>
     </div>
     <hr class="bg-light mb-2 mt-0"/>
     <div class="d-flex">
@@ -99,8 +99,8 @@ export default {
       navigator.clipboard.writeText(url)
       this.$notify({group: 'copy', text: 'Copied location to clipboard.'})
     },
-    updateMarker: function(type, id, newState, locations) {
-      this.$emit('updateMarker', type, id, newState, locations);
+    updateMarker: function(type, id, newState, locations, isCollectible) {
+      this.$emit('updateMarker', type, id, newState, locations, isCollectible);
     },
     getPlayerData: function(mapId) {
       if (localStorage.getItem(mapId + 'map')) {

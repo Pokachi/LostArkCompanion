@@ -1,15 +1,30 @@
 <template>
   <div v-if="songData && itemData">
-    <div :class="[playerSongData.songId ? '' : '', 'd-flex']">
-      <item-icon :data="itemData" :id="songId + uuidv4()" :key="itemData.id" size="0.9"/>
-      <div class="d-flex flex-column ml-2 text-left flex-fill">
-        <div class="d-flex">
-          <h6 class="m-0">{{songData.name}}</h6>
-          <p class="mt-0 mb-0 ml-auto"> Cooldown: {{songData.cooldown}} </p>
+    <div :class="['d-flex', 'flex-column']">
+      <div class="d-flex">
+        <item-icon :data="itemData" :id="songId + uuidv4()" :key="itemData.id" size="0.9"/>
+        <div class="d-flex flex-column ml-2 text-left flex-fill">
+          <div class="d-flex">
+            <h6 class="m-0">{{songData.name}}</h6>
+            <p class="mt-0 mb-0 ml-auto"> Cooldown: {{songData.cooldown}} </p>
+          </div>
+          <p v-if="points"  class="m-0 points"> {{points}} Affinity Points</p>
+          <p class="mb-1 mt-auto"> {{songData.description}}</p>
         </div>
-        <p v-if="points"  class="m-0 points"> {{points}} Affinity Points</p>
-        <p class="mb-1 mt-auto"> {{songData.description}}</p>
       </div>
+      <div class="text-left mt-2 d-flex align-items-center">
+        <h6 class="m-0"> Acquisition Method </h6>
+        <div class="ml-auto mr-4 subtitle-name-text acquired-font">
+          <b-form-checkbox v-model="playerSongData[songId]" name="check-button" switch v-on:input="updateCollectible('song', songData.acquisitionLocation, songId, $event);">Acquired: </b-form-checkbox>
+        </div>
+      </div>
+      <!--TODO: Add link -->
+      <b-link class="d-inline-block" :href="songData.acquisitionLink">
+        <b-img :src="'./images/icons/' + songData.acquisitionType + '.png'" class="pb-1"/>
+        <span :class="['d-inline-block', songData.acquisitionType, 'ml-1']">
+          {{songData.acquisition}}
+        </span>
+      </b-link>
     </div>
   </div>
 </template>
@@ -35,14 +50,14 @@ export default {
     this.itemData = await import("@/assets/data/items/" + this.songId + ".json");
 
     this.playerSongData = {};
-    if (localStorage.getItem('player_songs')) {
+    if (localStorage.getItem('player_collectibles')) {
       try {
         let playerCollectibles = JSON.parse(localStorage.getItem('player_collectibles'));
-        if (playerCollectibles.songData) {
-          this.playerSongData = playerCollectibles.songData;
+        if (playerCollectibles.song) {
+          this.playerSongData = playerCollectibles.song;
         }
       } catch (e) {
-        localStorage.removeItem('player_songs');
+        localStorage.removeItem('player_collectibles');
       }
     }
 
@@ -55,14 +70,22 @@ export default {
 
 /* Acquire Switch */
 .custom-control-label::before {
-  left: 4rem !important;
+  left: 4.5rem !important;
 }
 .custom-control-label::after {
-  left: calc(4rem + 2px) !important;
+  left: calc(4.5rem + 2px) !important;
 }
 </style>
 
 <style scoped>
+.acquisition-method {
+  height: 18px;
+}
+
+.acquired-font {
+  font-size: 1rem !important;
+}
+
 .points {
   color: #19a7e5;
 }

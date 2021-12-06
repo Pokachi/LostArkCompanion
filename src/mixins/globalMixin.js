@@ -10,6 +10,51 @@ Vue.mixin({
                 var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
                 return v.toString(16);
             });
+        },
+
+        //collectibles
+        updateCollectible(type, location, id, state) {
+            let playerCollectibles = JSON.parse(localStorage.getItem('player_collectibles'));
+
+            if (!playerCollectibles) {
+                playerCollectibles = {};
+            }
+
+            if (!playerCollectibles[type]) {
+                playerCollectibles[type] = {};
+            }
+
+            playerCollectibles[type][id] = state;
+
+            localStorage.setItem('player_collectibles', JSON.stringify(playerCollectibles));
+
+            if (location) {
+               this.updateMap(location, type, id, state);
+            }
+        },
+
+        //map
+        updateMap(location, type, id, state) {
+            let mapData = JSON.parse(localStorage.getItem(location + '_map'));
+
+            if (!mapData) {
+                mapData = {};
+            }
+
+            if (!mapData[type]) {
+                mapData[type] = {};
+                mapData[type].c = 0;
+                mapData[type].h = false;
+            }
+            mapData[type][id] = state;
+            if (state) {
+                mapData[type].c++;
+            } else {
+                mapData[type].c--;
+            }
+
+            this.$forceUpdate();
+            localStorage.setItem(location + '_map', JSON.stringify(mapData));
         }
     }
 })
