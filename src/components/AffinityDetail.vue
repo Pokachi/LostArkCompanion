@@ -29,7 +29,20 @@
     </div>
 
     <b-tabs content-class="mt-1" active-nav-item-class="bg-dark text-light" fill>
-      <b-tab title="Reward" active>
+      <b-tab title="Requirement" active>
+        <div class="d-flex flex-column">
+          <h4 v-if="affinityData.condition.quest" class="mt-2">
+            Quest
+          </h4>
+          <div v-if="affinityData.condition.quest">
+            <b-img :src="'./images/icons/' + affinityData.condition.questType + '.png'" class="pb-1"/>
+            <span :class="['d-inline-block', 'acquisition-text', affinityData.condition.questType, 'ml-1']">
+              {{affinityData.condition.quest}}
+            </span>
+          </div>
+        </div>
+      </b-tab>
+      <b-tab title="Reward">
         <div class="d-flex flex-column">
           <div v-for="(rewardStage, index) of Object.keys(affinityData.rewards)"
                :key="rewardStage"
