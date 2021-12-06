@@ -1,21 +1,31 @@
-.acquired {
-    color: turquoise;
+.tooltiphr {
+    border: 0;
+    height: 1px;
+    width: 30%;
+    background-image: -webkit-linear-gradient(left,#7a8288,#f8f9fa 9%,#f8f9fa 91%,#7a8288);
+    margin-top: 5px;
+    margin-bottom: 3px;
 }
 
-.unacquired {
-    color: crimson;
+.darker-bg {
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2);
+    background-position: left top;
+    background-repeat: repeat;
 }
 
 .fullOpacity {
     opacity: 1 !important;
 }
 
+.acquisition-text {
+    font-size: 1rem;
+}
+
 .blue_quest {
     color: rgb(66, 223, 231);
-    font-size: 1rem;
 }
 
 .purple_quest {
     color: rgb(123, 115, 225);
-    font-size: 1rem;
 }

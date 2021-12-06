@@ -44,11 +44,13 @@
       <b-tab title="Likes">
         <div class="d-flex flex-column">
           <h4 class="affinity-header-name">Songs</h4>
-          <div v-for="(song, index) of affinityData.likes.songs" :key="song.id" :class="[index===0 ? '' : 'border-top', Object.keys(affinityData.likes.songs).length -1 === index ? '' : 'border-bottom']">
+          <div v-for="song of affinityData.likes.songs" :key="song.id" class="darker-bg mb-2 pl-3 pr-3 pt-1">
             <song-detail :song-id="song.id" :points="song.points" class="mb-2 mt-2"/>
           </div>
           <h4 class="affinity-header-name">Emotes</h4>
-          <div> WIP </div>
+          <div v-for="emote of affinityData.likes.emotes" :key="emote.id" class="darker-bg mb-2 pl-3 pr-3 pt-1">
+            <emote-detail :emote-id="emote.id" :points="emote.points" class="mb-2 mt-2"/>
+          </div>
         </div>
       </b-tab>
       <b-tab title="Stage" :set="totalExp = 0">
@@ -72,9 +74,11 @@
 <script>
 import ItemIcon from "@/components/ItemIcon";
 import SongDetail from "@/components/SongDetail";
+import EmoteDetail from "@/components/EmoteDetail";
+
 export default {
   name: "AffinityDetail",
-  components: {SongDetail, ItemIcon},
+  components: {SongDetail, EmoteDetail, ItemIcon},
   props: ['affinityId', 'disambiguator'],
   data: function () {
     return {

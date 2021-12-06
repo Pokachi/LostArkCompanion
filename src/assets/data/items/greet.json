@@ -1,0 +1,10 @@
+{
+  "id": "greet",
+  "grade": 0,
+  "image": "./images/items/greet.png",
+  "name": "Greet",
+  "type": "Emote",
+  "bound": "Binds when obtained",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A romantic serenade handed down by bards. It has been played for loved ones since ancient times."
+}

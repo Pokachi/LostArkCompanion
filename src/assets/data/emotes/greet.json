@@ -1,0 +1,7 @@
+{
+  "id": "greet",
+  "name": "Greet",
+  "description": "Type /greet to wave and say hello.",
+  "acquisition":"Obtained By Default",
+  "acquisitionType": "default"
+}

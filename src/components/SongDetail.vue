@@ -2,7 +2,7 @@
   <div v-if="songData && itemData">
     <div :class="['d-flex', 'flex-column']">
       <div class="d-flex">
-        <item-icon :data="itemData" :id="songId + uuidv4()" :key="itemData.id" size="0.9"/>
+        <item-icon :data="itemData" :id="songId + uuidv4()" :key="itemData.id" :hide_popover="songData.acquisitionType === 'default'" size="0.9"/>
         <div class="d-flex flex-column ml-2 text-left flex-fill">
           <div class="d-flex">
             <h6 class="m-0">{{songData.name}}</h6>
@@ -12,19 +12,25 @@
           <p class="mb-1 mt-auto"> {{songData.description}}</p>
         </div>
       </div>
-      <div class="text-left mt-2 d-flex align-items-center">
+      <hr class="tooltiphr">
+      <div class="text-left mt-1 d-flex align-items-center">
         <h6 class="m-0"> Acquisition Method </h6>
         <div class="ml-auto mr-4 subtitle-name-text acquired-font">
-          <b-form-checkbox v-model="playerSongData[songId]" name="check-button" switch v-on:input="updateCollectible('song', songData.acquisitionLocation, songId, $event);">Acquired: </b-form-checkbox>
+          <b-form-checkbox v-if="songData.acquisitionType !== 'default'" v-model="playerSongData[songId]" name="check-button" switch v-on:input="updateCollectible('song', songData.acquisitionLocation, songId, $event);">Acquired: </b-form-checkbox>
         </div>
       </div>
-      <!--TODO: Add link -->
-      <b-link class="d-inline-block" :href="songData.acquisitionLink">
-        <b-img :src="'./images/icons/' + songData.acquisitionType + '.png'" class="pb-1"/>
-        <span :class="['d-inline-block', songData.acquisitionType, 'ml-1']">
+      <b-link v-if="songData.acquisitionLink" class="d-inline-block" :href="songData.acquisitionLink">
+        <b-img v-if="songData.acquisitionType" :src="'./images/icons/' + songData.acquisitionType + '.png'" class="pb-1"/>
+        <span :class="['d-inline-block', 'acquisition-text', songData.acquisitionType ? songData.acquisitionType : '', 'ml-1']">
           {{songData.acquisition}}
         </span>
       </b-link>
+      <div v-else>
+        <b-img v-if="songData.acquisitionType !== 'default'" :src="'./images/icons/' + songData.acquisitionType + '.png'" class="pb-1"/>
+        <span :class="['d-inline-block', 'acquisition-text', songData.acquisitionType ? songData.acquisitionType : '', 'ml-1']">
+          {{songData.acquisition}}
+        </span>
+      </div>
     </div>
   </div>
 </template>
