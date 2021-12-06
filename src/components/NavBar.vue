@@ -2,7 +2,8 @@
   <div id="nav">
     <b-navbar type="dark" variant="dark">
       <b-navbar-brand href="#">
-        <router-link to="/map"><img :src="logoURL" width="100px" alt="Innovator Island"></router-link>
+        <router-link to="/map" class="ml-4">Map</router-link>
+        <!--<router-link to="/dailyTracker" class="ml-4">Daily Tracker</router-link>-->
       </b-navbar-brand>
       <!-- Right aligned nav items -->
       <!-- Photo Gallery icon -->
@@ -15,7 +16,6 @@ export default {
   name: "NavBar",
   data: function () {
     return {
-      logoURL: this.$appConfig.images.logoURL,
       lang: 'EN',
       languageCount: 1
     }

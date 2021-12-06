@@ -6,7 +6,6 @@ import Notification from 'vue-notification'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-import { appConfig } from './config'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faImages, faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons'
@@ -22,9 +21,6 @@ library.add(faImages, faAngleDoubleLeft)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
-
-// Custom settings for app
-Vue.prototype.$appConfig = appConfig
 
 new Vue({
   el: '#app',
