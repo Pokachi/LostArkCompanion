@@ -5,6 +5,9 @@
       <div class="d-flex flex-column ml-2 text-left">
         <p v-if="points"  class="m-0 points"> {{points}} Affinity</p>
         <div v-if="conditions" class="d-flex">
+          <div class="mt-1">
+            Rq:
+          </div>
           <div v-if="conditions.charisma" class="position-relative ml-auto mr-auto" style="width: 25px; height: 25px">
             <b-img style="width: 18px; height: 18px" :src="'./images/other/charisma.png'" alt="Charisma" class="mt-1"/>
             <span class="stats-number"> {{conditions.charisma}} </span>

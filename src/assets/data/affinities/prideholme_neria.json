@@ -151,6 +151,62 @@
       {
         "id": "fancier_bouquet",
         "points": 330
+      },
+      {
+        "id": "glacial_beer",
+        "points": 330
+      },
+      {
+        "id": "goblin_yam",
+        "points": 330
+      },
+      {
+        "id": "lakebar_tomato_juice",
+        "points": 330
+      },
+      {
+        "id": "model_of_luterras_sword",
+        "points": 330
+      },
+      {
+        "id": "perfect_beer_stein",
+        "points": 330
+      },
+      {
+        "id": "stalwart_cage",
+        "points": 330
+      },
+      {
+        "id": "stern_scrap_iron",
+        "points": 330
+      },
+      {
+        "id": "tournament_entrance_certificate",
+        "points": 330
+      },
+      {
+        "id": "yudia_natural_salt",
+        "points": 330
+      },
+      {
+        "id": "raccoontaurus_milk",
+        "points": 330
+      },
+      {
+        "id": "liebeheims_rose",
+        "points": 324
+      },
+      {
+        "id": "lobster_dish",
+        "points": 324
+      },
+      {
+        "id": "zagoras_ice_cap",
+        "points": 324
+      },
+      {
+        "id": "paradise_parfait",
+        "points": 300
       }
     ]
   },

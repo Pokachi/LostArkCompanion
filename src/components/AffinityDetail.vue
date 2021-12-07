@@ -47,7 +47,7 @@
           <div v-for="(rewardStage, index) of Object.keys(affinityData.rewards)"
                :key="rewardStage"
                :class="['d-flex', 'flex-row', 'align-items-center', index===0 ? '' : 'border-top', Object.keys(affinityData.rewards).length -1 === index ? '' : 'border-bottom']">
-            <h4 :class="['affinity-' + rewardStage, 'flex-grow-0', 'flex-shrink-0', 'text-left']"> {{rewardStage}} </h4>
+            <h4 :class="['affinity-' + rewardStage, 'flex-grow-0', 'flex-shrink-0', 'text-left']" style="width: 123px"> {{rewardStage}} </h4>
             <div v-for="item of affinityData.rewards[rewardStage]" :key="item.id" class="mt-1 mb-1 ml-1">
               <item-icon :data="itemData[item.id]" :count="item.count"  :id="item.id + index.toString() + disambiguator" :key="item.id + index.toString() + disambiguator" :size="0.75"></item-icon>
             </div>
@@ -73,7 +73,7 @@
           <div class="d-flex flex-row">
             <h6 class="border m-0 p-1 quest-header"> Quest </h6>
             <h6 class="border m-0 p-1 stage-header"> Stage </h6>
-            <h6 class="border m-0 p-1 stats-header"> Stats </h6>
+            <h6 class="border m-0 p-1 stats-header"> Stats Rq.</h6>
           </div>
           <div v-for="quest of affinityData.quests" :key="quest.name" class="d-flex flex-row">
             <b-link v-if="quest.link" :href="quest.link" target="_blank" rel="noopener noreferrer" class="border m-0 p-1 quest-header">
@@ -118,15 +118,17 @@
         </div>
       </b-tab>
       <b-tab title="Songs">
-        <div class="d-flex flex-column">
+        <div class="d-flex flex-column mt-2">
           <div v-for="song of affinityData.likes.songs" :key="song.id" class="darker-bg mb-2 pl-3 pr-3 pt-1">
             <song-detail :song-id="song.id" :points="song.points" class="mb-2 mt-2"/>
           </div>
         </div>
       </b-tab>
       <b-tab title="Emotes">
-        <div v-for="emote of affinityData.likes.emotes" :key="emote.id" class="darker-bg mb-2 pl-3 pr-3 pt-1">
-          <emote-detail :emote-id="emote.id" :points="emote.points" class="mb-2 mt-2"/>
+        <div class="d-flex flex-column mt-2">
+          <div v-for="emote of affinityData.likes.emotes" :key="emote.id" class="darker-bg mb-2 pl-3 pr-3 pt-1">
+            <emote-detail :emote-id="emote.id" :points="emote.points" class="mb-2 mt-2"/>
+          </div>
         </div>
       </b-tab>
       <b-tab title="Gifts">
@@ -208,7 +210,7 @@ export default {
 }
 
 .affinity-level-header {
-  width: 120px;
+  width: 123px;
 }
 
 .affinity-header {
@@ -241,8 +243,6 @@ export default {
 
 .affinity-trust {
   color: #3d91d1;
-  width: 120px;
-  height: fit-content;
   text-transform: capitalize;
 }
 

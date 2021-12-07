@@ -24,7 +24,7 @@
         <b-img :style="'background-image: url(./images/items/card/' + data.id + '.png)'" :class="['item-card']" :src="'./images/items/card/frame/frame_grade_' + data.grade + '.png'" />
       </div>
       <p v-if="data.bound" v-html="data.bound" class="text-left pl-3"/>
-      <p v-html="data.description" class="text-left pl-3 description"></p>
+      <p v-html="data.description" class="text-left pl-3 pr-3 description"></p>
       <p v-if="data.destruction" v-html="data.destruction" class="text-left pl-3" />
     </b-popover>
   </div>
