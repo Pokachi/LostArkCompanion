@@ -1,0 +1,13 @@
+{
+  "id": "moonlight_butterfly",
+  "grade": 3,
+  "subIcon": "heart",
+  "image": "./images/items/moonlight_butterfly.png",
+  "name": "Moonlight Butterfly",
+  "type": "Affinity Item",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "<span style=\"color: #FFEC50\">A mysterious butterfly that emits light only at night. It's famous for the dance it does when good music is played, as if recognizing the sweetness of the melody.<br><br><span style=\"color: #FFEC50\">Ryeon and Sapiano the Fox would love this.</span>",
+  "cost": 18000,
+  "currency": "silver"
+}

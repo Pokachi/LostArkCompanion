@@ -1,10 +1,12 @@
 <template>
   <div v-if="affinityData && Object.keys(itemData).length !== 0">
     <div class="d-flex">
+      <b-img v-if="affinityData.imageCount === 1" :src="'./images/affinity/' + affinityId + '_1.png'" class="affinity-portrait" />
       <b-carousel v-model="slide"
                   :interval="10000"
                   controls
                   no-animation
+                  v-if="affinityData.imageCount >= 2"
                   class="affinity-portrait">
         <b-carousel-slide
             :img-src="'./images/affinity/' + affinityId + '_1.png'"
@@ -12,7 +14,7 @@
         <b-carousel-slide
             :img-src="'./images/affinity/' + affinityId + '_2.png'"
         ></b-carousel-slide>
-        <b-carousel-slide
+        <b-carousel-slide v-if="affinityData.imageCount >= 3"
             :img-src="'./images/affinity/' + affinityId + '_3.png'"
         ></b-carousel-slide>
       </b-carousel>

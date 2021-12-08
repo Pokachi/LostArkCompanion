@@ -1,0 +1,7 @@
+{
+  "id": "sad",
+  "name": "Sad",
+  "description": "Type /sad to weep.",
+  "acquisition":"Obtained By Default",
+  "acquisitionType": "default"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "special_potato",
+  "grade": 2,
+  "subIcon": "book",
+  "image": "./images/items/special_potato.png",
+  "name": "Special Potato",
+  "type": "Collectible",
+  "bound": "Binds when obtained",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A potato exuding holy energy. Take a bite before anyone comes.<br><span style=\"color: #FFFFAC\">This item will become a Adventurer's Tome Specialty when used.</span>"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "small_music_box",
+  "grade": 3,
+  "subIcon": "heart",
+  "image": "./images/items/small_music_box.png",
+  "name": "Small Music Box",
+  "type": "Affinity Item",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "<span style=\"color: #FFEC50\">If you wind up the box and open it, it plays a song of the ancient bards.<br><br><span style=\"color: #FFEC50\">Puppa the Panda and Yom the Squirrel would love this.</span>",
+  "cost": 18000,
+  "currency": "silver"
+}

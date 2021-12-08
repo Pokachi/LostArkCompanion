@@ -1,0 +1,13 @@
+{
+  "id": "halite_statue",
+  "grade": 3,
+  "subIcon": "heart",
+  "image": "./images/items/halite_statue.png",
+  "name": "Halite Statue",
+  "type": "Affinity Item",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "<span style=\"color: #FFEC50\">A collectible piece of naturally shaped rock salt. It's sold at a high price to collectors. It needs to be kept with care, however, as there were more than a few reported cases where kids licked it for its weird sweet flavor and destroyed its value as a collectible.<br><br><span style=\"color: #FFEC50\">Javern would love this.</span>",
+  "cost": 18000,
+  "currency": "silver"
+}

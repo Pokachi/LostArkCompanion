@@ -1,0 +1,13 @@
+{
+  "id": "torso_sculpture",
+  "grade": 3,
+  "subIcon": "heart",
+  "image": "./images/items/torso_sculpture.png",
+  "name": "Torso Sculpture",
+  "type": "Affinity Item",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "<span style=\"color: #FFEC50\">A carved stone sculpture of a torso without limbs nor head. The absence of its neck and limbs does not come from idleness but from a deliberate intention of the maker to maximize the masculine beauty by ridding it of the unnecessary.<br><br><span style=\"color: #FFEC50\">Ezrebet would love this.</span>",
+  "cost": 18000,
+  "currency": "silver"
+}

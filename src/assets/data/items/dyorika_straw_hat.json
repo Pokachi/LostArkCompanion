@@ -1,0 +1,13 @@
+{
+  "id": "dyorika_straw_hat",
+  "grade": 3,
+  "subIcon": "heart",
+  "image": "./images/items/dyorika_straw_hat.png",
+  "name": "Dyorika Straw Hat",
+  "type": "Affinity Item",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "<span style=\"color: #FFEC50\">A hat that the farmers in Dyorika Plain wear to avoid the blazing sun. Its unique design made it a popular souvenir that those visiting Luterra buy to remember their journey by.<br><br><span style=\"color: #FFEC50\">Selfa would love this.</span>",
+  "cost": 18000,
+  "currency": "silver"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "exquisite_music_box",
+  "grade": 3,
+  "subIcon": "heart",
+  "image": "./images/items/exquisite_music_box.png",
+  "name": "Exquisite Music Box",
+  "type": "Affinity Item",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "<span style=\"color: #FFEC50\">A richly ornamented music box with flamboyant colors popular among the noblemen in Vern. If you wind it, the doll inside dances to a beautiful waltz.<br><br><span style=\"color: #FFEC50\">Stern's Neria would love this.</span>",
+  "cost": 18000,
+  "currency": "silver"
+}

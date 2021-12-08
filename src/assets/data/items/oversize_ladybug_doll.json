@@ -1,0 +1,13 @@
+{
+  "id": "oversize_ladybug_doll",
+  "grade": 3,
+  "subIcon": "heart",
+  "image": "./images/items/oversize_ladybug_doll.png",
+  "name": "Oversize Ladybug Doll",
+  "type": "Affinity Item",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "<span style=\"color: #FFEC50\">A triple extra size doll of a ladybug made in Mokoko Village. Kids will love it.<br><br><span style=\"color: #FFEC50\">Dakudaku would love this.</span>",
+  "cost": 18000,
+  "currency": "silver"
+}

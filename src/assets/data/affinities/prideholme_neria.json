@@ -6,6 +6,7 @@
   "location": "Prideholme",
   "subLocation": "Neria's Tavern",
   "birthDate": "7/7",
+  "imageCount": 3,
   "condition": {
     "quest": "What's In A Name",
     "questType": "yellow_quest",
