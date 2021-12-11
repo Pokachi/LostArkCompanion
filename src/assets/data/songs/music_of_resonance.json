@@ -5,6 +5,7 @@
   "description": "It opens hidden spaces.",
   "acquisition":"Treasure Hunter Igran - Peyto\n(16,500 Pirate Coin)",
   "acquisitionType": "exchange",
-  "acquisitionLocation": "Peyto",
+  "acquisitionContinentId": "peyto",
+  "acquisitionLocation": "peyto",
   "acquisitionLink": "#/map?m=peyto&c=music_of_resonance"
 }

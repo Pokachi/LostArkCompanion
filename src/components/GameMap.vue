@@ -179,7 +179,7 @@ export default {
     },
     updateMarker(type, id, newState, locations, isCollectible) {
       if (isCollectible) {
-        this.updateCollectible(type, this.location, id, newState);
+        this.updateCollectible(type, id, newState, this.mapData.continentId, null);
       }
 
       if (!this.playerData[type]) {

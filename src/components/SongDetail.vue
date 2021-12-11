@@ -16,7 +16,7 @@
       <div class="text-left mt-1 d-flex align-items-center">
         <h6 class="m-0"> Acquisition Method </h6>
         <div class="ml-auto mr-4 subtitle-name-text acquired-font">
-          <b-form-checkbox v-if="songData.acquisitionType !== 'default'" v-model="playerSongData[songId]" name="check-button" switch v-on:input="updateCollectible('song', songData.acquisitionLocation, songId, $event);">Acquired: </b-form-checkbox>
+          <b-form-checkbox v-if="songData.acquisitionType !== 'default'" v-model="playerSongData[songId]" name="check-button" switch v-on:input="updateCollectible('song', songId, $event, songData.acquisitionContinentId, songData.acquisitionLocation);">Acquired: </b-form-checkbox>
         </div>
       </div>
       <b-link v-if="songData.acquisitionLink" class="d-inline-block" :href="songData.acquisitionLink">
@@ -59,8 +59,9 @@ export default {
     if (localStorage.getItem('song_collectibles')) {
       try {
         let playerCollectibles = JSON.parse(localStorage.getItem('song_collectibles'));
-        if (playerCollectibles.song) {
-          this.playerSongData = playerCollectibles.song;
+
+        if (playerCollectibles[this.songData.acquisitionContinentId]) {
+          this.playerSongData = playerCollectibles[this.songData.acquisitionContinentId];
         }
       } catch (e) {
         localStorage.removeItem('song_collectibles');

@@ -4,6 +4,7 @@
   "id": "prideholme",
   "parent": "world",
   "continent": "Rethramis",
+  "continentId": "rethramis",
   "icon": "./images/map/prideholme/prideholme.png",
   "minZoom": 1,
   "maxZoom": 3,

@@ -5,6 +5,7 @@
   "description": "A song with the power to move people's hearts.",
   "acquisition":"Time for Treatment - Forest of Giants",
   "acquisitionType": "blue_quest",
-  "acquisitionLocation": "tortoyk",
+  "acquisitionContinentId": "tortoyk",
+  "acquisitionLocation": "forest_of_giant",
   "acquisitionLink": "#/map?m=forest_of_giant&c=hearts_melody"
 }

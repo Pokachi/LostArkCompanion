@@ -5,6 +5,7 @@
   "description": "A beautiful way to confess your love.",
   "acquisition":"Relationship Guru - Liebehiem",
   "acquisitionType": "purple_quest",
+  "acquisitionContinentId": "liebehiem",
   "acquisitionLocation": "liebehiem",
   "acquisitionLink": "#/map?m=liebehiem&c=serenade_of_love"
 }

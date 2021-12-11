@@ -15,7 +15,7 @@
       <div v-if="emoteData.acquisitionType !== 'default'" class="text-left mt-1 d-flex align-items-center">
         <h6 class="m-0"> Acquisition Method </h6>
         <div class="ml-auto mr-4 subtitle-name-text acquired-font">
-          <b-form-checkbox v-if="emoteData.acquisitionType !== 'default'" v-model="playerEmoteData[emoteId]" name="check-button" switch v-on:input="updateCollectible('emote', emoteData.acquisitionLocation, emoteId, $event);">Acquired: </b-form-checkbox>
+          <b-form-checkbox v-if="emoteData.acquisitionType !== 'default'" v-model="playerEmoteData[emoteId]" name="check-button" switch v-on:input="updateCollectible('emote', emoteId, $event, emoteData.acquisitionContinentId, emoteData.acquisitionLocation);">Acquired: </b-form-checkbox>
         </div>
       </div>
       <b-link v-if="emoteData.acquisitionLink" class="d-inline-block" :href="emoteData.acquisitionLink">
@@ -58,8 +58,9 @@ export default {
     if (localStorage.getItem('emote_collectibles')) {
       try {
         let playerCollectibles = JSON.parse(localStorage.getItem('emote_collectibles'));
-        if (playerCollectibles.emote) {
-          this.playerEmoteData = playerCollectibles.emote;
+
+        if (playerCollectibles[this.emoteData.acquisitionContinentId]) {
+          this.playerEmoteData = playerCollectibles[this.emoteData.acquisitionContinentId];
         }
       } catch (e) {
         localStorage.removeItem('emote_collectibles');

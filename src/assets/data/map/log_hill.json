@@ -4,6 +4,7 @@
   "id": "log_hill",
   "parent": "world",
   "continent": "Rethramis",
+  "continentId": "rethramis",
   "icon": "./images/map/log_hill/log_hill.png",
   "minZoom": 2,
   "maxZoom": 4,

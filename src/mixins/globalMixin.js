@@ -13,7 +13,7 @@ Vue.mixin({
         },
 
         //collectibles
-        updateCollectible(type, location, id, state) {
+        updateCollectible(type, id, state, continentId, location) {
             let playerCollectibles = JSON.parse(localStorage.getItem(type + '_collectibles'));
 
             if (!playerCollectibles) {
@@ -21,22 +21,22 @@ Vue.mixin({
                 playerCollectibles.c = 0;
             }
 
-            if (location && !playerCollectibles[location]) {
-                playerCollectibles[location] = {};
-                playerCollectibles[location].c = 0;
+            if (continentId && !playerCollectibles[continentId]) {
+                playerCollectibles[continentId] = {};
+                playerCollectibles[continentId].c = 0;
             }
 
-            playerCollectibles[location][id] = state;
+            playerCollectibles[continentId][id] = state;
 
             if (state) {
                 playerCollectibles.c++;
-                if (location) {
-                    playerCollectibles[location].c++;
+                if (continentId) {
+                    playerCollectibles[continentId].c++;
                 }
             } else {
                 playerCollectibles.c--;
-                if (location) {
-                    playerCollectibles[location].c--;
+                if (continentId) {
+                    playerCollectibles[continentId].c--;
                 }
             }
 
