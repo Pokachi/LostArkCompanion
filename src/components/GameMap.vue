@@ -219,9 +219,8 @@ export default {
             }
             this.saveData(location.zone, tempData);
           }
-          console.log(this.$refs);
+
           for (const ref of this.$refs[location.zone + '_' + id]) {
-            console.log(ref);
             ref.updateFound(newState);
           }
         });
