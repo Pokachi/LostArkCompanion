@@ -56,14 +56,14 @@ export default {
     this.itemData = await import("@/assets/data/items/" + this.songId + ".json");
 
     this.playerSongData = {};
-    if (localStorage.getItem('player_collectibles')) {
+    if (localStorage.getItem('song_collectibles')) {
       try {
-        let playerCollectibles = JSON.parse(localStorage.getItem('player_collectibles'));
+        let playerCollectibles = JSON.parse(localStorage.getItem('song_collectibles'));
         if (playerCollectibles.song) {
           this.playerSongData = playerCollectibles.song;
         }
       } catch (e) {
-        localStorage.removeItem('player_collectibles');
+        localStorage.removeItem('song_collectibles');
       }
     }
 

@@ -14,19 +14,33 @@ Vue.mixin({
 
         //collectibles
         updateCollectible(type, location, id, state) {
-            let playerCollectibles = JSON.parse(localStorage.getItem('player_collectibles'));
+            let playerCollectibles = JSON.parse(localStorage.getItem(type + '_collectibles'));
 
             if (!playerCollectibles) {
                 playerCollectibles = {};
+                playerCollectibles.c = 0;
             }
 
-            if (!playerCollectibles[type]) {
-                playerCollectibles[type] = {};
+            if (location && !playerCollectibles[location]) {
+                playerCollectibles[location] = {};
+                playerCollectibles[location].c = 0;
             }
 
-            playerCollectibles[type][id] = state;
+            playerCollectibles[location][id] = state;
 
-            localStorage.setItem('player_collectibles', JSON.stringify(playerCollectibles));
+            if (state) {
+                playerCollectibles.c++;
+                if (location) {
+                    playerCollectibles[location].c++;
+                }
+            } else {
+                playerCollectibles.c--;
+                if (location) {
+                    playerCollectibles[location].c--;
+                }
+            }
+
+            localStorage.setItem(type + '_collectibles', JSON.stringify(playerCollectibles));
 
             if (location) {
                this.updateMap(location, type, id, state);

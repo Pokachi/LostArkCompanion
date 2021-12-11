@@ -47,7 +47,7 @@
                   </p>
                 </l-icon>
                 <l-popup class="text-light">
-                  <game-map-popup :location-data="location" :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" :map-id="mapData.id" :index="lIndex" @updateMarker="updateMarker" :key="data.id + lIndex.toString()"/>
+                  <game-map-popup :location-data="location" :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" :map-id="mapData.id" :index="lIndex" @updateMarker="updateMarker" :key="data.id + lIndex.toString()" :ref="location.zone + '_' + data.id"/>
                 </l-popup>
               </l-marker>
             </div>
@@ -179,8 +179,7 @@ export default {
     },
     updateMarker(type, id, newState, locations, isCollectible) {
       if (isCollectible) {
-        console.log("test");
-        this.updateCollectible(type, null, id, newState);
+        this.updateCollectible(type, this.location, id, newState);
       }
 
       if (!this.playerData[type]) {
@@ -219,6 +218,11 @@ export default {
               tempData[type].c--;
             }
             this.saveData(location.zone, tempData);
+          }
+          console.log(this.$refs);
+          for (const ref of this.$refs[location.zone + '_' + id]) {
+            console.log(ref);
+            ref.updateFound(newState);
           }
         });
       }

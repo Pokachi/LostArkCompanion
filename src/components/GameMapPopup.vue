@@ -111,6 +111,10 @@ export default {
           return {};
         }
       }
+    },
+    updateFound: function(newState) {
+      this.found = newState;
+      this.$forceUpdate();
     }
   }
 }

@@ -7,6 +7,15 @@
     margin-bottom: 3px;
 }
 
+.generalhr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-image: -webkit-linear-gradient(left,#7a8288,#f8f9fa 9%,#f8f9fa 91%,#7a8288);
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
 .darker-bg {
     border-radius: 10px;
     background: rgba(0,0,0,0.2);
