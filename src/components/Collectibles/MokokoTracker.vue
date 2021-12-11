@@ -5,7 +5,7 @@
     </h1>
     <div class="text-center">
       <b-img src="./images/collectibles/mokoko.png" style="width: 32px"/>
-      <h3 class="mt-0 mb-0 ml-1 mr-3 text-white d-inline-block align-middle">({{ selectedRegion ? mokokoCollectionData[selectedRegion.id] ? mokokoCollectionData[selectedRegion.id].c : 0 : mokokoCollectionData.c }}/130)</h3>
+      <h3 class="mt-0 mb-0 ml-1 mr-3 text-white d-inline-block align-middle">{{ selectedRegion ? mokokoCollectionData[selectedRegion.id] ? mokokoCollectionData[selectedRegion.id].c : 0 : mokokoCollectionData.c }}/{{ mokokoData.total }}</h3>
       <b-dropdown id="dropdown-1" :text="selectedRegion ? selectedRegion.name : 'Select Region'" class="m-md-2">
         <b-dropdown-item @click="selectRegion(null)">All</b-dropdown-item>
         <b-dropdown-item @click="selectRegion({ id:'rethramis', name: 'Rethramis'})">Rethramis</b-dropdown-item>
@@ -14,6 +14,9 @@
     </div>
     <hr class="generalhr">
 
+    <div v-if="!selectedRegion">
+
+    </div>
     <!--<mokoko-tracker-all v-if="!selectedRegion" />
     <mokoko-tracker-region v-else :region="selectedRegion" />-->
   </div>

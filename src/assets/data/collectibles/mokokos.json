@@ -1,1 +1,75 @@
-{}
+{
+  "total": 1243,
+  "regions": [
+    {
+      "name": "Rethramis",
+      "id": "rethramis",
+      "count": 51
+    },
+    {
+      "name": "Yudia",
+      "id": "yudia",
+      "count": 37
+    },
+    {
+      "name": "West Luterra",
+      "id": "west_luterra",
+      "count": 71
+    },
+    {
+      "name": "East Luttera",
+      "id": "east_luterra",
+      "count": 127
+    },
+    {
+      "name": "Anikka",
+      "id": "anikka",
+      "count": 72
+    },
+    {
+      "name": "Arthetine",
+      "id": "arthetine",
+      "count": 87
+    },
+    {
+      "name": "North Vern",
+      "id": "north_vern",
+      "count": 83
+    },
+    {
+      "name": "Shushire",
+      "id": "shushire",
+      "count": 57
+    },
+    {
+      "name": "Rohendel",
+      "id": "rohendel",
+      "count": 70
+    },
+    {
+      "name": "Yorn",
+      "id": "yorn",
+      "count": 70
+    },
+    {
+      "name": "Feiton",
+      "id": "feiton",
+      "count": 70
+    },
+    {
+      "name": "Papunika",
+      "id": "papunika",
+      "count": 70
+    },
+    {
+      "name": "South Vern",
+      "id": "south_vern",
+      "count": 25
+    },
+    {
+      "name": "Open Sea",
+      "id": "sea",
+      "count": 353
+    }
+  ]
+}
