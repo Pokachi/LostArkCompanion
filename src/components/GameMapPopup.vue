@@ -114,7 +114,6 @@ export default {
     },
     updateFound: function(newState) {
       this.found = newState;
-      this.$forceUpdate();
     }
   }
 }
