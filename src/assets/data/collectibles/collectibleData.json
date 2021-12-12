@@ -1,75 +1,79 @@
 {
-  "total": 1243,
-  "regions": [
-    {
+  "mokoko_total": 1243,
+  "regions": {
+    "rethramis": {
       "name": "Rethramis",
       "id": "rethramis",
-      "count": 51
+      "zones": [
+        "prideholme",
+        "log_hill"
+      ],
+      "mokoko_total": 51
     },
-    {
+    "yudia": {
       "name": "Yudia",
       "id": "yudia",
-      "count": 37
+      "mokoko_total": 37
     },
-    {
+    "west_luterra": {
       "name": "West Luterra",
       "id": "west_luterra",
-      "count": 71
+      "mokoko_total": 71
     },
-    {
+    "east_luterra": {
       "name": "East Luttera",
       "id": "east_luterra",
-      "count": 127
+      "mokoko_total": 127
     },
-    {
+    "anikka": {
       "name": "Anikka",
       "id": "anikka",
-      "count": 72
+      "mokoko_total": 72
     },
-    {
+    "arthetine": {
       "name": "Arthetine",
       "id": "arthetine",
-      "count": 87
+      "mokoko_total": 87
     },
-    {
+    "north_vern": {
       "name": "North Vern",
       "id": "north_vern",
-      "count": 83
+      "mokoko_total": 83
     },
-    {
+    "shushire": {
       "name": "Shushire",
       "id": "shushire",
-      "count": 57
+      "mokoko_total": 57
     },
-    {
+    "rohendel": {
       "name": "Rohendel",
       "id": "rohendel",
-      "count": 70
+      "mokoko_total": 70
     },
-    {
+    "yorn": {
       "name": "Yorn",
       "id": "yorn",
-      "count": 70
+      "mokoko_total": 70
     },
-    {
+    "feiton": {
       "name": "Feiton",
       "id": "feiton",
-      "count": 70
+      "mokoko_total": 70
     },
-    {
+    "papunika": {
       "name": "Papunika",
       "id": "papunika",
-      "count": 70
+      "mokoko_total": 70
     },
-    {
+    "south_vern": {
       "name": "South Vern",
       "id": "south_vern",
-      "count": 25
+      "mokoko_total": 25
     },
-    {
+    "sea": {
       "name": "Open Sea",
       "id": "sea",
-      "count": 353
+      "mokoko_total": 353
     }
-  ]
+  }
 }

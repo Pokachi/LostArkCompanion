@@ -3,7 +3,7 @@ import Vue from 'vue'
 Vue.mixin({
     methods: {
         changeMap(mapId, markerId, indexId) {
-            this.$router.push({query: {m: mapId, c: markerId, i: indexId}}).catch(()=>{});
+            this.$router.push({path:'/map', query: {m: mapId, c: markerId, i: indexId}}).catch(()=>{});
         },
         uuidv4() {
             return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
