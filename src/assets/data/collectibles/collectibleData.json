@@ -5,8 +5,14 @@
       "name": "Rethramis",
       "id": "rethramis",
       "zones": [
-        "prideholme",
-        "log_hill"
+        {
+          "id": "prideholme",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "log_hill",
+          "mokokoIndex": 0
+        }
       ],
       "mokoko_total": 51
     },

@@ -26,12 +26,14 @@
     </div>
 
     <div v-else class="text-white d-flex flex-grow-0 flex-wrap justify-content-center">
-      <div v-for="zone of mokokoData.regions[selectedRegion].zones" :key="zone" class="d-inline-block ml-5 mr-5 mt-4  flex-width-mokoko text-center">
-        <b-link @click="changeMap(zone)">
-          <h4 class="m-0 p-0 text-white"> {{ zone }} </h4>
+      <div v-for="zone of mokokoData.regions[selectedRegion].zones" :key="zone.id" class="d-inline-block ml-5 mr-5 mt-4  flex-width-mokoko text-center">
+        <b-link @click="changeMap(zone.id)" v-if="zoneData[zone.id]">
+          <b-img :src="'./images/map/' + zone.id + '/' + zone.id + '.png'"/>
+          <h4 class="m-0 p-0 text-white"> {{ zoneData[zone.id].name }} </h4>
+          <hr class="tooltiphr">
+          <b-img src="./images/collectibles/mokoko.png" style="width: 16px"/>
+          <h6 class="mt-0 mb-0 ml-1 mr-3 text-white d-inline-block align-middle">{{ zoneCollectibleData[zone.id] && zoneCollectibleData[zone.id].mokoko ? zoneCollectibleData[zone.id].mokoko.c : 0 }}/{{ zoneData[zone.id].markers[zone.mokokoIndex].data.length }}</h6>
         </b-link>
-        <hr class="tooltiphr">
-        <b-img src="./images/collectibles/mokoko.png" style="width: 16px"/>
       </div>
     </div>
   </div>
@@ -44,6 +46,8 @@ export default {
   data: function () {
     return {
       selectedRegion: null,
+      zoneData: null,
+      zoneCollectibleData: null,
       mokokoData: null,
       mokokoCollectionData: null,
       dataReady: false
@@ -69,6 +73,21 @@ export default {
           localStorage.removeItem('mokoko_collectibles');
         }
       }
+
+      if(this.selectedRegion) {
+        this.zoneCollectibleData = {};
+        this.zoneData = {};
+        for (const zone of this.mokokoData.regions[this.selectedRegion].zones) {
+          const temp = JSON.parse(localStorage.getItem(zone.id + '_map'));
+          if (temp) {
+            this.zoneCollectibleData[zone.id] = temp;
+          }
+          const temp2 = await import("@/assets/data/map/" + zone.id + ".json");
+          if (temp2) {
+            this.zoneData[zone.id] = temp2;
+          }
+        }
+      }
       this.dataReady=true;
       this.$forceUpdate()
     }
@@ -85,6 +104,12 @@ export default {
     }
   },
   async created() {
+    if(this.$route.query.r) {
+      this.dataReady = false;
+      this.selectedRegion = this.$route.query.r;
+    } else {
+      this.selectedRegion = null;
+    }
     await this.importData();
   }
 }
