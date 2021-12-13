@@ -121,16 +121,7 @@ a:hover {
   text-decoration: none;
 }
 
-div {
-  background: #2d2d2d !important;
-}
-
 .flex-width-mokoko {
   flex-basis: 10em;
-}
-
-.appContent {
-  height: calc(100vh - 56px);
-  width: 100%;
 }
 </style>

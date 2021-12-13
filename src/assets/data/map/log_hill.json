@@ -13,6 +13,7 @@
       "type": "mokoko",
       "data": [
         {
+          "isCollectible": true,
           "name": "Mokoko Bean",
           "content": "To the right of the stone wall and piller.",
           "id": "mokoko0010",
@@ -20,17 +21,75 @@
           "lng": 112.38
         },
         {
+          "isCollectible": true,
           "name": "Mokoko Bean",
           "content": "Left of the boulder.",
           "id": "mokoko0011",
           "lat": -165.54,
           "lng": 136.25
+        },
+        {
+          "isCollectible": true,
+          "name": "Mokoko Bean",
+          "content": "",
+          "id": "mokoko0012",
+          "lat": -173.5,
+          "lng": 103.87
+        },
+        {
+          "isCollectible": true,
+          "name": "Mokoko Bean",
+          "content": "",
+          "id": "mokoko0013",
+          "lat": -140.28,
+          "lng": 93.75
+        },
+        {
+          "isCollectible": true,
+          "name": "Mokoko Bean",
+          "content": "",
+          "id": "mokoko0014",
+          "lat": -140.04,
+          "lng": 92.5
+        },
+        {
+          "isCollectible": true,
+          "name": "Mokoko Bean",
+          "content": "",
+          "id": "mokoko0015",
+          "lat": -120.12,
+          "lng": 142
+        },
+        {
+          "isCollectible": true,
+          "name": "Mokoko Bean",
+          "content": "",
+          "id": "mokoko0016",
+          "lat": -75.25,
+          "lng": 190.46
+        },
+        {
+          "isCollectible": true,
+          "name": "Mokoko Bean",
+          "content": "",
+          "id": "mokoko0017",
+          "lat": -63,
+          "lng": 88.68
+        },
+        {
+          "isCollectible": true,
+          "name": "Mokoko Bean",
+          "content": "",
+          "id": "mokoko0018",
+          "lat": -62.75,
+          "lng": 87.49
         }
       ]
     },{
       "type": "monster",
       "data": [
         {
+          "isCollectible": true,
           "name": "Alpha White Redbeak",
           "display": "#1 Alpha White Redbeak",
           "id": "monster0001",
@@ -59,6 +118,34 @@
               "lng": 123.12
             }
           ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Alpha Coclaw",
+          "display": "#2 Alpha Coclaw",
+          "id": "monster0002",
+          "multi": true,
+          "content": "2 spawn between the 3 locations.\nRespawn Timer: 20 seconds",
+          "locations": [
+            {
+              "zone": "log_hill",
+              "index": 0,
+              "lat": -105.35,
+              "lng": 177.89
+            },
+            {
+              "zone": "log_hill",
+              "index": 1,
+              "lat": -67.75,
+              "lng": 153.31
+            },
+            {
+              "zone": "log_hill",
+              "index": 2,
+              "lat": -72.68,
+              "lng": 189.06
+            }
+          ]
         }
       ]
     },
@@ -66,12 +153,40 @@
       "type": "vista",
       "data": [
         {
+          "isCollectible": true,
+          "name": "Old Fishing Spot",
+          "display": "#2 Old Fishing Spot",
+          "content": "Right after you jump of the gap.",
+          "id": "vista0002",
+          "lat": -185.62,
+          "lng": 97.43
+        },
+        {
+          "isCollectible": true,
           "name": "Church Ruins",
           "display": "#3 Church Ruins",
           "content": "Right in front of the pedestal.",
-          "id": "vista0002",
+          "id": "vista0003",
           "lat": -150.42,
           "lng": 149.50
+        },
+        {
+          "isCollectible": true,
+          "name": "Waterfall Bridge",
+          "display": "#4 Waterfall Bridge",
+          "content": "",
+          "id": "vista0004",
+          "lat": -123,
+          "lng": 144.68
+        },
+        {
+          "isCollectible": true,
+          "name": "Collapsed Bridge",
+          "display": "#5 Collapsed Bridge",
+          "content": "",
+          "id": "vista0005",
+          "lat": -119.12,
+          "lng": 162.62
         }
       ]
     },
@@ -79,6 +194,7 @@
       "type": "food",
       "data": [
         {
+          "isCollectible": true,
           "name": "Disgorged Lump",
           "display": "#5 Disgorged Lump",
           "content": "Used to cook Protein Packed White Bird Stew at Hely.\n Cost: 1400 silver",
@@ -86,6 +202,63 @@
           "id": "food0004",
           "lat": -171.54,
           "lng": 144.06
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Sunflowers for My Love (2/3)",
+          "display": "#7 Sunflowers for My Love (2/3)",
+          "content": "Investigate the sunflower field.\n Time limit: 20min",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "prideholme",
+              "marker": "story0002"
+            },
+            {
+              "label": "Part 2",
+              "zone": "log_hill",
+              "marker": "story0005"
+            },
+            {
+              "label": "Part 3",
+              "zone": "prideholme",
+              "marker": "story0003"
+            }
+          ],
+          "id": "story0005",
+          "lat": -174.63,
+          "lng": 90.87
+        },
+        {
+          "isCollectible": false,
+          "name": "A Knight in Shining Armor (1/3)",
+          "display": "#6 A Knight in Shining Armor (1/3)",
+          "content": "Investigate the rope.\n Time limit: 20min",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "log_hill",
+              "marker": "story0006"
+            },
+            {
+              "label": "Part 2",
+              "zone": "log_hill",
+              "marker": "story0006"
+            },
+            {
+              "label": "Part 3",
+              "zone": "log_hill",
+              "marker": "story0006"
+            }
+          ],
+          "id": "story0006",
+          "lat": -78.60,
+          "lng": 159.79
         }
       ]
     },
@@ -116,6 +289,33 @@
       ]
     },
     {
+      "type": "minuet",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Forest's Minuet",
+          "display": "Forest's Minuet",
+          "content": "Kill the nearby golem to reveal the passage",
+          "id": "minute0001",
+          "lat": -65.25,
+          "lng": 88.7
+        }
+      ]
+    },
+    {
+      "type": "passage",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "Kill the nearby golem to reveal the passage",
+          "id": "passage0002",
+          "lat": -141.93,
+          "lng": 94.18
+        }
+      ]
+    },
+    {
       "type": "zone",
       "data": [
         {
@@ -132,8 +332,7 @@
             { "type": "vista", "count": 1 },
             { "type": "food", "count": 3 },
             { "type": "quest", "count": 1 },
-            { "type": "story", "count": 4 },
-            { "type": "passage", "count": 1 }
+            { "type": "story", "count": 4 }
           ],
           "mapId": "prideholme"
         }

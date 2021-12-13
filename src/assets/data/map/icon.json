@@ -75,5 +75,13 @@
     "name": "Zone",
     "toggleable": false,
     "color": "deepskyblue"
+  },
+  "minuet": {
+    "anchor": [0, 0],
+    "type": "minuet",
+    "name": "Minuet",
+    "toggleable": true,
+    "color": "green",
+    "icon": "./images/icons/minuet.png"
   }
 }

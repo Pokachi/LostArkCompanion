@@ -18,6 +18,11 @@ export default {
 </script>
 
 <style>
+.appContent {
+  height: calc(100vh - 56px);
+  width: 100%;
+  background: #2d2d2d !important;
+}
 
 .opacity3 {
   opacity: 0.3;

@@ -14,6 +14,99 @@
           "mokokoIndex": 0
         }
       ],
+      "bookData": [
+        {
+          "name": "Vista",
+          "items": [
+            {
+              "location": "prideholme",
+              "id": "vista0001",
+              "image": "./images/collectibles/vista/vista0001.png"
+            },
+            {
+              "location": "log_hill",
+              "id": "vista0002",
+              "image": "./images/collectibles/vista/vista0002.png"
+            },
+            {
+              "location": "log_hill",
+              "id": "vista0003",
+              "image": "./images/collectibles/vista/vista0003.png"
+            },
+            {
+              "location": "log_hill",
+              "id": "vista0004",
+              "image": "./images/collectibles/vista/vista0004.png"
+            },
+            {
+              "location": "log_hill",
+              "id": "vista0005",
+              "image": "./images/collectibles/vista/vista0005.png"
+            },
+            {
+              "location": "ankumo_mountain",
+              "id": "vista0006",
+              "image": "./images/collectibles/vista/vista0006.png"
+            },
+            {
+              "location": "rethramis_border",
+              "id": "vista0007",
+              "image": "./images/collectibles/vista/vista0007.png"
+            },
+            {
+              "location": "rethramis_border",
+              "id": "vista0008",
+              "image": "./images/collectibles/vista/vista0008.png"
+            }
+          ]
+        },
+        {
+          "name": "Food",
+          "items": [
+            {
+              "location": "prideholme",
+              "id": "food0001",
+              "image": "./images/items/vedas_prideholme_style_home_food.png",
+              "grade": 3
+            },
+            {
+              "location": "log_hill",
+              "id": "food0002",
+              "image": "./images/collectibles/vista/vista0002.png"
+            },
+            {
+              "location": "log_hill",
+              "id": "food0003",
+              "image": "./images/collectibles/vista/vista0003.png"
+            },
+            {
+              "location": "log_hill",
+              "id": "food0004",
+              "image": "./images/collectibles/vista/vista0004.png"
+            },
+            {
+              "location": "log_hill",
+              "id": "food0005",
+              "image": "./images/collectibles/vista/vista0005.png"
+            },
+            {
+              "location": "ankumo_mountain",
+              "id": "food0006",
+              "image": "./images/collectibles/vista/vista0006.png"
+            },
+            {
+              "location": "rethramis_border",
+              "id": "food0007",
+              "image": "./images/collectibles/vista/vista0007.png"
+            },
+            {
+              "location": "rethramis_border",
+              "id": "food0008",
+              "image": "./images/collectibles/vista/vista0008.png"
+            }
+          ]
+        }
+      ],
       "mokoko_total": 51
     },
     "yudia": {

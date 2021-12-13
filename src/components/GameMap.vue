@@ -362,10 +362,6 @@ export default {
   min-width: 400px;
 }
 
-.found {
-  opacity: 0.25;
-}
-
 .hidden {
   opacity: 0;
 }

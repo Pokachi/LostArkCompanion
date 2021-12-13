@@ -9,7 +9,7 @@
         <b-nav-item to="/map">Map</b-nav-item>
         <b-nav-item-dropdown text="Collectibles" ref="dropdown">
           <b-dropdown-item href="/LostArkCompanion/#/collectibles/mokoko" >Mokoko Beans</b-dropdown-item>
-          <b-dropdown-item href="#">Ignea Tokens</b-dropdown-item>
+          <b-dropdown-item href="/LostArkCompanion/#/collectibles/ignea">Ignea Tokens</b-dropdown-item>
           <b-dropdown-item href="#">Songs</b-dropdown-item>
           <b-dropdown-item href="#">Emotes</b-dropdown-item>
         </b-nav-item-dropdown>
