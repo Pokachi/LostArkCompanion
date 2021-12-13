@@ -103,11 +103,11 @@ export default {
       this.$emit('updateMarker', type, id, newState, locations, isCollectible);
     },
     getPlayerData: function(mapId) {
-      if (localStorage.getItem(mapId + 'map')) {
+      if (localStorage.getItem(mapId + '_map')) {
         try {
-          return JSON.parse(localStorage.getItem(mapId + 'map'));
+          return JSON.parse(localStorage.getItem(mapId + '_map'));
         } catch (e) {
-          localStorage.removeItem(mapId + 'map');
+          localStorage.removeItem(mapId + '_map');
           return {};
         }
       }
