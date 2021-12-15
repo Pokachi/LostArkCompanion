@@ -8,6 +8,9 @@
   "icon": "./images/map/prideholme/prideholme.png",
   "minZoom": 1,
   "maxZoom": 3,
+  "adjacentZones": [
+    "zone0002"
+  ],
   "markers": [
     {
       "type": "mokoko",
