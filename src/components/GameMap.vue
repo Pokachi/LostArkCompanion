@@ -34,22 +34,24 @@
                   </p>
                 </l-icon>
                 <l-popup class="text-light">
-                  <game-map-popup :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" :map-id="mapData.id" @updateMarker="updateMarker" :key="data.id"/>
+                  <game-map-popup :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" :map-id="mapData.id" @updateMarker="updateMarker" :key="data.id" :ref="location + '_' + data.id"/>
                 </l-popup>
               </l-marker>
 
               <!-- multiple marker -->
-              <l-marker v-else-if="data.locations" v-for="(location, lIndex) in data.locations" :key="lIndex" :lat-lng="location" :ref="data.id">
-                <l-icon :icon-anchor="iconData[marker.type].anchor">
-                  <b-img v-if="iconData[marker.type].icon" fluid :src="iconData[marker.type].icon" :class="[playerData[marker.type] && playerData[marker.type][data.id] ? 'found' : '', playerData[marker.type] && playerData[marker.type].h ? 'hidden' : '' ]" />
-                  <p :style="'color:' + iconData[marker.type].color + '!important;'" :class="[playerData[marker.type] && playerData[marker.type][data.id] ? 'found' : '', playerData[marker.type] && playerData[marker.type].h ? 'hidden' : '', 'icon-display-name']">
-                    {{ data.display }}
-                  </p>
-                </l-icon>
-                <l-popup class="text-light">
-                  <game-map-popup :location-data="location" :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" :map-id="mapData.id" :index="lIndex" @updateMarker="updateMarker" :key="data.id + lIndex.toString()" :ref="location.zone + '_' + data.id"/>
-                </l-popup>
-              </l-marker>
+              <div v-else-if="data.locations" v-for="(location, lIndex) in data.locations" :key="lIndex">
+                <l-marker v-if="location.zone === mapData.id"  :lat-lng="location" :ref="data.id">
+                  <l-icon :icon-anchor="iconData[marker.type].anchor">
+                    <b-img v-if="iconData[marker.type].icon" fluid :src="iconData[marker.type].icon" :class="[playerData[marker.type] && playerData[marker.type][data.id] ? 'found' : '', playerData[marker.type] && playerData[marker.type].h ? 'hidden' : '' ]" />
+                    <p :style="'color:' + iconData[marker.type].color + '!important;'" :class="[playerData[marker.type] && playerData[marker.type][data.id] ? 'found' : '', playerData[marker.type] && playerData[marker.type].h ? 'hidden' : '', 'icon-display-name']">
+                      {{ data.display }}
+                    </p>
+                  </l-icon>
+                  <l-popup class="text-light">
+                    <game-map-popup :location-data="location" :data="data" :marker-data="iconData[marker.type]" :is-found="playerData[marker.type] && playerData[marker.type][data.id]" :map-id="mapData.id" :index="lIndex" @updateMarker="updateMarker" :key="data.id + lIndex.toString()" :ref="location.zone + '_' + data.id"/>
+                  </l-popup>
+                </l-marker>
+              </div>
             </div>
           </div>
 
@@ -127,6 +129,7 @@ export default {
       dataReady: false,
       lastOpenedPopup: null,
       lastOpenedPopupIndex: null,
+      lastOpenedPopupOffset: 0,
       location: this.$route.query.m,
       mapData: null,
       iconData: iconData,
@@ -187,6 +190,10 @@ export default {
         this.playerData[type].c = 0;
         this.playerData[type].h = false;
       }
+      if (newState === this.playerData[type][id]) {
+        return;
+      }
+
       this.playerData[type][id] = newState;
       if (newState) {
         this.playerData[type].c++;
@@ -211,6 +218,9 @@ export default {
               tempData[type].c = 0;
               tempData[type].h = false;
             }
+            if (newState === tempData[type][id]) {
+              return;
+            }
             tempData[type][id] = newState;
             if (newState) {
               tempData[type].c++;
@@ -219,9 +229,16 @@ export default {
             }
             this.saveData(location.zone, tempData);
           }
+          if (location.zone === this.location) {
+            for (const ref of this.$refs[location.zone + '_' + id]) {
+              ref.updateFound(newState);
+            }
 
-          for (const ref of this.$refs[location.zone + '_' + id]) {
-            ref.updateFound(newState);
+            if (this.mapData.adjacentZones) {
+              for (const adjZone of this.mapData.adjacentZones) {
+                this.$refs[location.zone + '_' + adjZone][0].$forceUpdate();
+              }
+            }
           }
         });
       }
@@ -262,6 +279,7 @@ export default {
               try {
                 this.center = [data.locations[this.$route.query.i].lat, data.locations[this.$route.query.i].lng];
                 this.zoomLevel = this.mapData.maxZoom;
+                this.lastOpenedPopupOffset = data.locations[this.$route.query.i].indexOffset;
               } catch (e) {
                 this.center = [-128, 128];
               }
@@ -296,7 +314,7 @@ export default {
     this.$nextTick(()=> {
       try {
         if ((this.$route.query.i && this.$route.query.c && this.lastOpenedPopup !== this.$route.query.c) || (this.$route.query.i && this.$route.query.i !== this.lastOpenedPopupIndex)) {
-          this.$refs[this.$route.query.c][this.$route.query.i].mapObject.openPopup();
+          this.$refs[this.$route.query.c][parseInt(this.$route.query.i) + this.lastOpenedPopupOffset].mapObject.openPopup();
           this.lastOpenedPopupIndex = this.$route.query.i;
           this.lastOpenedPopup = this.$route.query.c;
         }

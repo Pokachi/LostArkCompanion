@@ -20,7 +20,7 @@
           "name": "Prideholme",
           "continent": "Rethramis",
           "display": "Prideholme",
-          "content": "A small town frequented by pilgrims. As the holy city of Rethramis, it produced many archbishops.",
+          "content": "Prideholme, a small city, has produced numerous archbishops over a long period of time, and is the holy land of Rethramis, where many pilgrims visit every year.",
           "id": "zone0001",
           "lat": -189.51,
           "lng": 105.72,
@@ -41,18 +41,37 @@
           "name": "Log Hill",
           "continent": "Rethramis",
           "display": "Log Hill",
-          "content": "A hill near Leonhart, where stone sculptures from the Iron Chain War era remain. The stone tablet of the cathedral was found in the old chapel here.",
+          "content": "A hilly area near Prideholme filled with stonework from the Chain War era. The monument in the cathedral was originally found in East Oratory in this area.",
           "id": "zone0002",
           "lat": -181.23,
           "lng": 108.59,
           "markers": [
             { "type": "mokoko",  "count": 9 },
-            { "type": "monster", "count": 2 },
+            { "type": "monster", "count": 3 },
             { "type": "vista", "count": 4 },
             { "type": "food", "count": 1 },
             { "type": "story", "count": 2 }
           ],
           "mapId": "log_hill"
+        },
+        {
+          "icon": "./images/map/ankumo_mountain/ankumo_mountain.png",
+          "isCollectible": false,
+          "anchor": [30, 30],
+          "name": "Ankumo Mountain",
+          "continent": "Rethramis",
+          "display": "Ankumo Mountain",
+          "content": "At the foot of Ankumo Mountain, there is an old cathedral and a sacred spring with healing power, which attracts many people.",
+          "id": "zone0003",
+          "lat": -188.62,
+          "lng": 122.12,
+          "markers": [
+            { "type": "mokoko",  "count": 5 },
+            { "type": "monster", "count": 4 },
+            { "type": "vista", "count": 1 },
+            { "type": "story", "count": 2 }
+          ],
+          "mapId": "ankumo_mountain"
         }
       ]
     }

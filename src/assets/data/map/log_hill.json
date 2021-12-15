@@ -8,6 +8,11 @@
   "icon": "./images/map/log_hill/log_hill.png",
   "minZoom": 2,
   "maxZoom": 4,
+  "adjacentZones": [
+    "zone0001",
+    "zone0003",
+    "dungeon0001"
+  ],
   "markers": [
     {
       "type": "mokoko",
@@ -100,6 +105,7 @@
               "image": "./images/map/log_hill/popup/alpha_white_redbeak.png",
               "zone": "log_hill",
               "index": 0,
+              "indexOffset": 0,
               "lat": -144.59,
               "lng": 142.56
             },
@@ -107,6 +113,7 @@
               "image": "./images/map/log_hill/popup/alpha_white_redbeak2.png",
               "zone": "log_hill",
               "index": 1,
+              "indexOffset": 0,
               "lat": -172.53,
               "lng": 125.5
             },
@@ -114,6 +121,7 @@
               "image": "./images/map/log_hill/popup/alpha_white_redbeak3.png",
               "zone": "log_hill",
               "index": 2,
+              "indexOffset": 0,
               "lat": -178.40,
               "lng": 123.12
             }
@@ -130,18 +138,73 @@
             {
               "zone": "log_hill",
               "index": 0,
+              "indexOffset": 0,
               "lat": -105.35,
               "lng": 177.89
             },
             {
               "zone": "log_hill",
               "index": 1,
+              "indexOffset": 0,
               "lat": -67.75,
               "lng": 153.31
             },
             {
               "zone": "log_hill",
               "index": 2,
+              "indexOffset": 0,
+              "lat": -72.68,
+              "lng": 189.06
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Toxiclaw Explorer",
+          "display": "#3 Toxiclaw Explorer",
+          "id": "monster0003",
+          "multi": true,
+          "content": "TBD",
+          "locations": [
+            {
+              "zone": "log_hill",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -80,
+              "lng": 186.42
+            },
+            {
+              "zone": "log_hill",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -65.12,
+              "lng": 171.24
+            },
+            {
+              "zone": "log_hill",
+              "index": 2,
+              "indexOffset": 0,
+              "lat": -166.25,
+              "lng": 114.366
+            },
+            {
+              "zone": "log_hill",
+              "index": 3,
+              "indexOffset": 0,
+              "lat": -151.25,
+              "lng": 106.81
+            },
+            {
+              "zone": "toxiclaw_cavern",
+              "index": 4,
+              "indexOffset": -4,
+              "lat": -67.75,
+              "lng": 153.31
+            },
+            {
+              "zone": "toxiclaw_cavern",
+              "index": 5,
+              "indexOffset": -4,
               "lat": -72.68,
               "lng": 189.06
             }
@@ -297,8 +360,8 @@
           "display": "Forest's Minuet",
           "content": "Kill the nearby golem to reveal the passage",
           "id": "minute0001",
-          "lat": -65.25,
-          "lng": 88.7
+          "lat": -65.73,
+          "lng": 89.65
         }
       ]
     },
@@ -319,10 +382,26 @@
       "type": "zone",
       "data": [
         {
+          "isCollectible": true,
+          "name": "Toxiclaw Cavern",
+          "continent": "Rethramis",
+          "display": "Toxiclaw Cavern",
+          "content": "Insert Description Here.",
+          "id": "dungeon0001",
+          "lat": -98.75,
+          "lng": 180.55,
+          "markers": [
+            { "type": "mokoko",  "count": 6 },
+            { "type": "monster", "count": 2 }
+          ],
+          "mapId": "toxiclaw_cavern"
+        },
+        {
+          "isCollectible": false,
           "name": "Prideholme",
           "continent": "Rethramis",
           "display": "Prideholme",
-          "content": "A small town frequented by pilgrims. As the holy city of Rethramis, it produced many archbishops.",
+          "content": "Prideholme, a small city, has produced numerous archbishops over a long period of time, and is the holy land of Rethramis, where many pilgrims visit every year.",
           "id": "zone0001",
           "lat": -220.60,
           "lng": 106.75,
@@ -335,6 +414,23 @@
             { "type": "story", "count": 4 }
           ],
           "mapId": "prideholme"
+        },
+        {
+          "isCollectible": false,
+          "name": "Ankumo Mountain",
+          "continent": "Rethramis",
+          "display": "Ankumo Mountain",
+          "content": "At the foot of Ankumo Mountain, there is an old cathedral and a sacred spring with healing power, which attracts many people.",
+          "id": "zone0003",
+          "lat": -37,
+          "lng": 148.73,
+          "markers": [
+            { "type": "mokoko",  "count": 5 },
+            { "type": "monster", "count": 4 },
+            { "type": "vista", "count": 1 },
+            { "type": "story", "count": 2 }
+          ],
+          "mapId": "ankumo_mountain"
         }
       ]
     }

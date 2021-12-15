@@ -12,6 +12,14 @@
         {
           "id": "log_hill",
           "mokokoIndex": 0
+        },
+        {
+          "id": "ankumo_mountain",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "toxiclaw_cavern",
+          "mokokoIndex": 0
         }
       ],
       "bookData": [

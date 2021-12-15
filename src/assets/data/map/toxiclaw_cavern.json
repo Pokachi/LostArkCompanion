@@ -1,0 +1,201 @@
+{
+  "type": "zone",
+  "name": "Toxiclaw Cavern",
+  "id": "toxiclaw_cavern",
+  "parent": "log_hill",
+  "continent": "Rethramis",
+  "continentId": "rethramis",
+  "icon": "./images/map/common/dungeon.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "zone0002"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0019",
+          "lat": -173.79,
+          "lng": 110.70
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0020",
+          "lat": -168.56,
+          "lng": 125.44
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0021",
+          "lat": -145.13,
+          "lng": 104.75
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0022",
+          "lat": -146.37,
+          "lng": 106.5
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0023",
+          "lat": -136.68,
+          "lng": 118.87
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0024",
+          "lat": -52.48,
+          "lng": 116.90
+        }
+      ]
+    },
+    {
+      "type": "monster",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Toxiclaw Explorer",
+          "display": "#3 Toxiclaw Explorer",
+          "id": "monster0003",
+          "multi": true,
+          "content": "TBD",
+          "locations": [
+            {
+              "zone": "log_hill",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -80,
+              "lng": 186.42
+            },
+            {
+              "zone": "log_hill",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -65.12,
+              "lng": 171.24
+            },
+            {
+              "zone": "log_hill",
+              "index": 2,
+              "indexOffset": 0,
+              "lat": -166.25,
+              "lng": 114.366
+            },
+            {
+              "zone": "log_hill",
+              "index": 3,
+              "indexOffset": 0,
+              "lat": -151.25,
+              "lng": 106.81
+            },
+            {
+              "zone": "toxiclaw_cavern",
+              "index": 4,
+              "indexOffset": -4,
+              "lat": -163.75,
+              "lng": 116.39
+            },
+            {
+              "zone": "toxiclaw_cavern",
+              "index": 5,
+              "indexOffset": -4,
+              "lat": -128.5,
+              "lng": 148.55
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Toxiclaw Elite Archer",
+          "display": "#10 Toxiclaw Elite Archer",
+          "id": "monster0010",
+          "multi": false,
+          "content": "TBD",
+          "lat": -134.31,
+          "lng": 121.06
+        }
+      ]
+    },
+    {
+      "type": "passage",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0003",
+          "lat": -151.62,
+          "lng": 108.75
+        },
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "Need to reach the star location and complete the quest \"Explore Toxiclaw Tavern\" to be able to break these barriers.",
+          "id": "passage0004",
+          "lat": -123.15,
+          "lng": 134.21
+        },
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0005",
+          "lat": -131.63,
+          "lng": 121.88
+        }
+      ]
+    },
+    {
+      "type": "special",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Special",
+          "content": "Reach here and complete the quest \"Explore Toxiclaw Tavern\" to be able to break the barriers south.",
+          "id": "special0001",
+          "lat": -102.43,
+          "lng": 129.68
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Log Hill",
+          "continent": "Rethramis",
+          "display": "Log Hill",
+          "content": "A hilly area near Prideholme filled with stonework from the Chain War era. The monument in the cathedral was originally found in East Oratory in this area.",
+          "id": "zone0002",
+          "lat": -220.33,
+          "lng": 160,
+          "markers": [
+            { "type": "mokoko",  "count": 9 },
+            { "type": "monster", "count": 3 },
+            { "type": "vista", "count": 4 },
+            { "type": "food", "count": 1 },
+            { "type": "story", "count": 2 }
+          ],
+          "mapId": "log_hill"
+        }
+      ]
+    }
+  ]
+}

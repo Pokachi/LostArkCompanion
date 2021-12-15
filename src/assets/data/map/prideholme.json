@@ -266,13 +266,13 @@
           "name": "Log Hill",
           "continent": "Rethramis",
           "display": "Log Hill",
-          "content": "A hill near Leonhart, where stone sculptures from the Iron Chain War era remain. The stone tablet of the cathedral was found in the old chapel here.",
+          "content": "A hilly area near Prideholme filled with stonework from the Chain War era. The monument in the cathedral was originally found in East Oratory in this area.",
           "id": "zone0002",
           "lat": -99.81,
           "lng": 225.27,
           "markers": [
             { "type": "mokoko",  "count": 9 },
-            { "type": "monster", "count": 2 },
+            { "type": "monster", "count": 3 },
             { "type": "vista", "count": 4 },
             { "type": "food", "count": 1 },
             { "type": "story", "count": 2 }

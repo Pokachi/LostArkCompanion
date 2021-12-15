@@ -1,0 +1,17 @@
+{
+  "type": "zone",
+  "name": "Ankumo Mountain",
+  "id": "ankumo_mountain",
+  "parent": "world",
+  "continent": "Rethramis",
+  "continentId": "rethramis",
+  "icon": "./images/map/ankumo_mountain/ankumo_mountain.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": []
+    }
+  ]
+}

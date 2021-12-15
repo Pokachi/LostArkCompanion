@@ -77,11 +77,19 @@
     "color": "deepskyblue"
   },
   "minuet": {
-    "anchor": [0, 0],
+    "anchor": [8, 8],
     "type": "minuet",
     "name": "Minuet",
     "toggleable": true,
     "color": "green",
     "icon": "./images/icons/minuet.png"
+  },
+  "special": {
+    "anchor": [8, 8],
+    "type": "special",
+    "name": "Special",
+    "toggleable": true,
+    "color": "yellow",
+    "icon": "./images/icons/special.png"
   }
 }

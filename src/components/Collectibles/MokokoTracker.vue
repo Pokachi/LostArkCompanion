@@ -28,7 +28,7 @@
     <div v-else class="text-white d-flex flex-grow-0 flex-wrap justify-content-center">
       <div v-for="zone of mokokoData.regions[selectedRegion].zones" :key="zone.id" class="d-inline-block ml-5 mr-5 mt-4  flex-width-mokoko text-center">
         <b-link @click="changeMap(zone.id)" v-if="zoneData[zone.id]">
-          <b-img :src="'./images/map/' + zone.id + '/' + zone.id + '.png'"/>
+          <b-img :src="zoneData[zone.id].icon"/>
           <h4 class="m-0 p-0 text-white"> {{ zoneData[zone.id].name }} </h4>
           <hr class="tooltiphr">
           <b-img src="./images/collectibles/mokoko.png" style="width: 16px"/>

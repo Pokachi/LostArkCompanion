@@ -26,6 +26,10 @@ Vue.mixin({
                 playerCollectibles[continentId].c = 0;
             }
 
+            if (playerCollectibles[continentId][id] === state) {
+                return;
+            }
+
             playerCollectibles[continentId][id] = state;
 
             if (state) {
