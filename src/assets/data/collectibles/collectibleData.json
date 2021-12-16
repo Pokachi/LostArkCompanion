@@ -18,6 +18,10 @@
           "mokokoIndex": 0
         },
         {
+          "id": "rethramis_border",
+          "mokokoIndex": 0
+        },
+        {
           "id": "toxiclaw_cavern",
           "mokokoIndex": 0
         },
@@ -62,18 +66,18 @@
             },
             {
               "location": "rethramis_border",
-              "id": "vista0007",
-              "image": "./images/collectibles/vista/vista0007.png"
+              "id": "rethramis_border_monastery",
+              "image": "./images/collectibles/vista/rethramis_border_monastery.png"
             },
             {
               "location": "rethramis_border",
-              "id": "vista0008",
-              "image": "./images/collectibles/vista/vista0008.png"
+              "id": "statue_of_the_goddess",
+              "image": "./images/collectibles/vista/statue_of_the_goddess.png"
             }
           ]
         },
         {
-          "name": "Food",
+          "name": "Cooking",
           "items": [
             {
               "location": "prideholme",
@@ -83,7 +87,7 @@
             },
             {
               "location": "rethramis_border",
-              "id": "food0002",
+              "id": "regria_flower_oil",
               "image": "./images/collectibles/vista/vista0002.png"
             },
             {

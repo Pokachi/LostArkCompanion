@@ -321,7 +321,7 @@
             },
             {
               "label": "Part 3",
-              "zone": "log_hill",
+              "zone": "rethramis_border",
               "marker": "a_knight_in_shining_armor_p3"
             }
           ],
@@ -362,6 +362,13 @@
               "indexOffset": -2,
               "lat": -158,
               "lng": 91.31
+            },
+            {
+              "zone": "rethramis_border",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -109.72,
+              "lng": 146.88
             }
           ]
         }
