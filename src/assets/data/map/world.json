@@ -21,7 +21,7 @@
           "continent": "Rethramis",
           "display": "Prideholme",
           "content": "Prideholme, a small city, has produced numerous archbishops over a long period of time, and is the holy land of Rethramis, where many pilgrims visit every year.",
-          "id": "zone0001",
+          "id": "prideholme",
           "lat": -189.51,
           "lng": 105.72,
           "markers": [
@@ -42,7 +42,7 @@
           "continent": "Rethramis",
           "display": "Log Hill",
           "content": "A hilly area near Prideholme filled with stonework from the Chain War era. The monument in the cathedral was originally found in East Oratory in this area.",
-          "id": "zone0002",
+          "id": "log_hill",
           "lat": -181.23,
           "lng": 108.59,
           "markers": [
@@ -62,7 +62,7 @@
           "continent": "Rethramis",
           "display": "Ankumo Mountain",
           "content": "At the foot of Ankumo Mountain, there is an old cathedral and a sacred spring with healing power, which attracts many people.",
-          "id": "zone0003",
+          "id": "ankumo_mountain",
           "lat": -188.62,
           "lng": 122.12,
           "markers": [

@@ -9,9 +9,9 @@
   "minZoom": 2,
   "maxZoom": 4,
   "adjacentZones": [
-    "zone0001",
-    "zone0003",
-    "dungeon0001"
+    "prideholme",
+    "ankumo_mountain",
+    "toxiclaw_cavern"
   ],
   "markers": [
     {
@@ -97,7 +97,7 @@
           "isCollectible": true,
           "name": "Alpha White Redbeak",
           "display": "#1 Alpha White Redbeak",
-          "id": "monster0001",
+          "id": "alpha_white_redbeak",
           "multi": true,
           "content": "2 spawn between the 3 locations.\nRespawn Timer: 10 seconds.",
           "locations": [
@@ -131,7 +131,7 @@
           "isCollectible": true,
           "name": "Alpha Coclaw",
           "display": "#2 Alpha Coclaw",
-          "id": "monster0002",
+          "id": "alpha_coclaw",
           "multi": true,
           "content": "2 spawn between the 3 locations.\nRespawn Timer: 20 seconds.",
           "locations": [
@@ -162,7 +162,7 @@
           "isCollectible": true,
           "name": "Toxiclaw Explorer",
           "display": "#3 Toxiclaw Explorer",
-          "id": "monster0003",
+          "id": "toxiclaw_explorer",
           "multi": true,
           "locations": [
             {
@@ -225,7 +225,7 @@
           "name": "Old Fishing Spot",
           "display": "#2 Old Fishing Spot",
           "content": "Right after you jump of the gap.",
-          "id": "vista0002",
+          "id": "old_fishing_spot",
           "lat": -185.62,
           "lng": 97.43
         },
@@ -234,7 +234,7 @@
           "name": "Church Ruins",
           "display": "#3 Church Ruins",
           "content": "Right in front of the pedestal.",
-          "id": "vista0003",
+          "id": "church_ruins",
           "lat": -150.42,
           "lng": 149.50
         },
@@ -243,7 +243,7 @@
           "name": "Waterfall Bridge",
           "display": "#4 Waterfall Bridge",
           "content": "",
-          "id": "vista0004",
+          "id": "waterfall_bridge",
           "lat": -123,
           "lng": 144.68
         },
@@ -252,7 +252,7 @@
           "name": "Collapsed Bridge",
           "display": "#5 Collapsed Bridge",
           "content": "",
-          "id": "vista0005",
+          "id": "collapsed_bridge",
           "lat": -119.12,
           "lng": 162.62
         }
@@ -267,7 +267,7 @@
           "display": "#5 Disgorged Lump",
           "content": "Used to cook Protein Packed White Bird Stew at Hely.\n Cost: 1400 silver",
           "image": "./images/map/log_hill/popup/disgorged_lump.png",
-          "id": "food0004",
+          "id": "disgorged_lump",
           "lat": -171.54,
           "lng": 144.06
         }
@@ -285,20 +285,20 @@
             {
               "label": "Part 1",
               "zone": "prideholme",
-              "marker": "story0002"
+              "marker": "sunflowers_for_my_love_p1"
             },
             {
               "label": "Part 2",
               "zone": "log_hill",
-              "marker": "story0005"
+              "marker": "sunflowers_for_my_love_p2"
             },
             {
               "label": "Part 3",
               "zone": "prideholme",
-              "marker": "story0003"
+              "marker": "sunflowers_for_my_love_p3"
             }
           ],
-          "id": "story0005",
+          "id": "sunflowers_for_my_love_p3",
           "lat": -174.63,
           "lng": 90.87
         },
@@ -311,20 +311,20 @@
             {
               "label": "Part 1",
               "zone": "log_hill",
-              "marker": "story0006"
+              "marker": "a_knight_in_shining_armor_p1"
             },
             {
               "label": "Part 2",
-              "zone": "log_hill",
-              "marker": "story0006"
+              "zone": "ankumo_mountain",
+              "marker": "a_knight_in_shining_armor_p2"
             },
             {
               "label": "Part 3",
               "zone": "log_hill",
-              "marker": "story0006"
+              "marker": "a_knight_in_shining_armor_p3"
             }
           ],
-          "id": "story0006",
+          "id": "a_knight_in_shining_armor_p1",
           "lat": -78.60,
           "lng": 159.79
         }
@@ -392,7 +392,7 @@
           "continent": "Rethramis",
           "display": "Toxiclaw Cavern",
           "content": "Insert Description Here.",
-          "id": "dungeon0001",
+          "id": "toxiclaw_cavern",
           "lat": -98.75,
           "lng": 180.55,
           "markers": [
@@ -407,7 +407,7 @@
           "continent": "Rethramis",
           "display": "Prideholme",
           "content": "Prideholme, a small city, has produced numerous archbishops over a long period of time, and is the holy land of Rethramis, where many pilgrims visit every year.",
-          "id": "zone0001",
+          "id": "prideholme",
           "lat": -220.60,
           "lng": 106.75,
           "markers": [
@@ -426,7 +426,7 @@
           "continent": "Rethramis",
           "display": "Ankumo Mountain",
           "content": "At the foot of Ankumo Mountain, there is an old cathedral and a sacred spring with healing power, which attracts many people.",
-          "id": "zone0003",
+          "id": "ankumo_mountain",
           "lat": -37,
           "lng": 148.73,
           "markers": [
