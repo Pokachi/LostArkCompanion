@@ -106,16 +106,8 @@
               "content": "Always spawn on dungeon start.",
               "index": 2,
               "indexOffset": -2,
-              "lat": 0,
-              "lng": 0
-            },
-            {
-              "zone": "aquiloks_tail",
-              "content": "Always spawn on dungeon start.",
-              "index": 3,
-              "indexOffset": -2,
-              "lat": 0,
-              "lng": 0
+              "lat": -158.86,
+              "lng": 101.88
             }
           ]
         },

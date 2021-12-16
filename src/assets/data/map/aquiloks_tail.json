@@ -20,48 +20,48 @@
           "isCollectible": true,
           "content": "",
           "id": "mokoko0046",
-          "lat": -126.26,
-          "lng": 146.86
+          "lat": -162.49,
+          "lng": 147.73
         },
         {
           "name": "Mokoko Bean",
           "isCollectible": true,
           "content": "",
           "id": "mokoko0047",
-          "lat": -110.12,
-          "lng": 127.36
+          "lat": -145.98,
+          "lng": 126.19
         },
         {
           "name": "Mokoko Bean",
           "isCollectible": true,
           "content": "",
           "id": "mokoko0048",
-          "lat": -126.11,
-          "lng": 109.87
+          "lat": -167.11,
+          "lng": 107.87
         },
         {
           "name": "Mokoko Bean",
           "isCollectible": true,
           "content": "",
           "id": "mokoko0049",
-          "lat": -127.93,
-          "lng": 110.61
+          "lat": -168.93,
+          "lng": 108.61
         },
         {
           "name": "Mokoko Bean",
           "isCollectible": true,
           "content": "",
           "id": "mokoko0050",
-          "lat": -127.05,
-          "lng": 85.68
+          "lat": -171.05,
+          "lng": 78.68
         },
         {
           "name": "Mokoko Bean",
           "isCollectible": true,
           "content": "",
           "id": "mokoko0051",
-          "lat": -129.43,
-          "lng": 89.93
+          "lat": -173.43,
+          "lng": 82.93
         }
       ]
     },
@@ -75,8 +75,41 @@
           "content": "Always spawn on dungeon start.",
           "id": "decomposed_infected",
           "multi": false,
-          "lat": -62.85,
-          "lng": 121.51
+          "lat": -108.18,
+          "lng": 110.69
+        },
+        {
+          "isCollectible": true,
+          "name": "Old Mera Snake",
+          "display": "#7 Old Mera Snake",
+          "id": "old_mera_snake",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "aquiloks_head",
+              "content": "Always spawn on dungeon start.",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -189.56,
+              "lng": 89
+            },
+            {
+              "zone": "aquiloks_head",
+              "content": "Always spawn on dungeon start.",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -152.25,
+              "lng": 86.23
+            },
+            {
+              "zone": "aquiloks_tail",
+              "content": "Always spawn on dungeon start.",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -158.86,
+              "lng": 101.88
+            }
+          ]
         }
       ]
     },
@@ -88,16 +121,16 @@
           "name": "Secret Passage",
           "content": "",
           "id": "passage0010",
-          "lat": -123.10,
-          "lng": 106.86
+          "lat": -163.10,
+          "lng": 104.86
         },
         {
           "isCollectible": false,
           "name": "Secret Passage",
           "content": "",
           "id": "passage0011",
-          "lat": -122.10,
-          "lng": 90.61
+          "lat": -164.64,
+          "lng": 84.71
         }
       ]
     },
@@ -111,8 +144,8 @@
           "display": "Rethramis Border",
           "content": "The border of Rethramis and Yudia guarded by the Border Guards. There's a monastery with a long history.",
           "id": "rethramis_border",
-          "lat": -215.54,
-          "lng": 125.30,
+          "lat": -207.96,
+          "lng": 163.21,
           "markers": [
             { "type": "mokoko",  "count": 10 },
             { "type": "monster", "count": 3 },
