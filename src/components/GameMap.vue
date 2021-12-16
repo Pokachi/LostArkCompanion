@@ -26,7 +26,7 @@
           <div v-if="iconData[marker.type] && !marker.world">
             <div v-for="(data) in marker.data" :key="data.id">
               <!-- single marker -->
-              <l-marker v-if="!data.locations" :lat-lng="data" :ref="data.id">
+              <l-marker v-if="!data.locations && (!playerData[marker.type] || !playerData[marker.type].h)" :lat-lng="data" :ref="data.id">
                 <l-icon :icon-anchor="iconData[marker.type].anchor">
                   <b-img v-if="iconData[marker.type].icon" fluid :src="iconData[marker.type].icon" :class="[playerData[marker.type] && playerData[marker.type][data.id] ? 'found' : '', playerData[marker.type] && playerData[marker.type].h ? 'hidden' : '' ]" />
                   <p :style="'color:' + iconData[marker.type].color + '!important;'" :class="[playerData[marker.type] && playerData[marker.type][data.id] ? 'found' : '', playerData[marker.type] && playerData[marker.type].h ? 'hidden' : '', 'icon-display-name']">
@@ -39,7 +39,7 @@
               </l-marker>
 
               <!-- multiple marker -->
-              <div v-else-if="data.locations" v-for="(location, lIndex) in data.locations" :key="lIndex">
+              <div v-else-if="data.locations && (!playerData[marker.type] || !playerData[marker.type].h)" v-for="(location, lIndex) in data.locations" :key="lIndex">
                 <l-marker v-if="location.zone === mapData.id"  :lat-lng="location" :ref="data.id">
                   <l-icon :icon-anchor="iconData[marker.type].anchor">
                     <b-img v-if="iconData[marker.type].icon" fluid :src="iconData[marker.type].icon" :class="[playerData[marker.type] && playerData[marker.type][data.id] ? 'found' : '', playerData[marker.type] && playerData[marker.type].h ? 'hidden' : '' ]" />
@@ -56,7 +56,7 @@
           </div>
 
           <!-- List of world map markers-->
-          <div v-if="marker.world">
+          <div v-if="marker.world && (!playerData[marker.type] || !playerData[marker.type].h)">
             <l-marker v-for="(data) in marker.data" :lat-lng="data" :key="data.id" :ref="data.id">
               <l-icon v-if="data.icon" :icon-anchor="data.anchor">
                 <b-img fluid :src="data.icon" :class="[playerData[marker.type] && playerData[marker.type][data.id] ? 'found' : '', playerData[marker.type] && playerData[marker.type].h ? 'hidden' : '' ]" />
