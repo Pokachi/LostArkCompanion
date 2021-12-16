@@ -72,6 +72,28 @@
             { "type": "story", "count": 2 }
           ],
           "mapId": "ankumo_mountain"
+        },
+        {
+          "icon": "./images/map/rethramis_border/rethramis_border.png",
+          "isCollectible": false,
+          "anchor": [30, 30],
+          "name": "Rethramis Border",
+          "continent": "Rethramis",
+          "display": "Rethramis Border",
+          "content": "The border of Rethramis and Yudia guarded by the Border Guards. There's a monastery with a long history.",
+          "id": "rethramis_border",
+          "lat": -176.68,
+          "lng": 120.31,
+          "markers": [
+            { "type": "mokoko",  "count": 10 },
+            { "type": "monster", "count": 3 },
+            { "type": "boss", "count": 1 },
+            { "type": "vista", "count": 2 },
+            { "type": "food", "count": 2 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 3 }
+          ],
+          "mapId": "rethramis_border"
         }
       ]
     }

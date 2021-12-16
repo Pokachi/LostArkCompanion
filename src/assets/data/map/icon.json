@@ -22,6 +22,14 @@
     "icon": "./images/icons/monster.png",
     "color": "#cf8b33"
   },
+  "boss": {
+    "anchor": [9, 9],
+    "type": "boss",
+    "name": "Boss",
+    "toggleable": true,
+    "icon": "./images/icons/boss.png",
+    "color": "#b12121"
+  },
   "merchant": {
     "anchor": [9, 9],
     "type": "merchant",

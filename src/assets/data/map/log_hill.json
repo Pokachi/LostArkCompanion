@@ -90,7 +90,8 @@
           "lng": 87.49
         }
       ]
-    },{
+    },
+    {
       "type": "monster",
       "data": [
         {
@@ -334,6 +335,7 @@
       "type": "merchant",
       "data": [
         {
+          "isCollectible": false,
           "name": "Ben",
           "display": "Ben",
           "id": "ben",
@@ -343,14 +345,23 @@
             {
               "zone": "log_hill",
               "index": 0,
+              "indexOffset": 0,
               "lat": -137.84,
               "lng": 134.62
             },
             {
               "zone": "log_hill",
               "index": 1,
+              "indexOffset": 0,
               "lat": -79.35,
               "lng": 156.00
+            },
+            {
+              "zone": "ankumo_mountain",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -158,
+              "lng": 91.31
             }
           ]
         }

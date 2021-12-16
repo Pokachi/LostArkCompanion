@@ -20,6 +20,10 @@
         {
           "id": "toxiclaw_cavern",
           "mokokoIndex": 0
+        },
+        {
+          "id": "aquiloks_head",
+          "mokokoIndex": 0
         }
       ],
       "bookData": [
@@ -53,8 +57,8 @@
             },
             {
               "location": "ankumo_mountain",
-              "id": "vista0006",
-              "image": "./images/collectibles/vista/vista0006.png"
+              "id": "valley_of_falling_waters",
+              "image": "./images/collectibles/vista/valley_of_falling_waters.png"
             },
             {
               "location": "rethramis_border",
@@ -78,17 +82,17 @@
               "grade": 3
             },
             {
-              "location": "log_hill",
+              "location": "rethramis_border",
               "id": "food0002",
               "image": "./images/collectibles/vista/vista0002.png"
             },
             {
-              "location": "log_hill",
+              "location": "rethramis_border",
               "id": "food0003",
               "image": "./images/collectibles/vista/vista0003.png"
             },
             {
-              "location": "log_hill",
+              "location": "prideholme",
               "id": "giant_wheat_sack",
               "image": "./images/collectibles/vista/vista0002.png"
             },
@@ -98,19 +102,14 @@
               "image": "./images/collectibles/vista/vista0002.png"
             },
             {
-              "location": "ankumo_mountain",
-              "id": "food0006",
+              "location": "aquiloks_head",
+              "id": "499-year-old-mera-wine",
               "image": "./images/collectibles/vista/vista0006.png"
             },
             {
-              "location": "rethramis_border",
+              "location": "prideholme",
               "id": "holy_potato_with_teeth_marks",
               "image": "./images/collectibles/vista/vista0002.png"
-            },
-            {
-              "location": "rethramis_border",
-              "id": "food0008",
-              "image": "./images/collectibles/vista/vista0008.png"
             }
           ]
         }

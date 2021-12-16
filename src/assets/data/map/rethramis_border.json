@@ -1,0 +1,44 @@
+{
+  "type": "zone",
+  "name": "Rethramis Border",
+  "id": "rethramis_border",
+  "parent": "world",
+  "continent": "Rethramis",
+  "continentId": "rethramis",
+  "icon": "./images/map/rethramis_border/rethramis_border.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "log_hill"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Ankumo Mountain",
+          "continent": "Rethramis",
+          "display": "Ankumo Mountain",
+          "content": "At the foot of Ankumo Mountain, there is an old cathedral and a sacred spring with healing power, which attracts many people.",
+          "id": "ankumo_mountain",
+          "lat": -222.31,
+          "lng": 127.55,
+          "markers": [
+            { "type": "mokoko",  "count": 5 },
+            { "type": "monster", "count": 4 },
+            { "type": "vista", "count": 1 },
+            { "type": "story", "count": 2 }
+          ],
+          "mapId": "ankumo_mountain"
+        }
+      ]
+    }
+  ]
+}
