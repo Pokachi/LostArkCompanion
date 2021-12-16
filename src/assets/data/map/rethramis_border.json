@@ -9,7 +9,8 @@
   "minZoom": 2,
   "maxZoom": 4,
   "adjacentZones": [
-    "log_hill"
+    "log_hill",
+    "aquiloks_tail"
   ],
   "markers": [
     {
@@ -333,6 +334,21 @@
     {
       "type": "zone",
       "data": [
+        {
+          "isCollectible": true,
+          "name": "Aquilok's Tail",
+          "continent": "Rethramis",
+          "display": "Aquilok's Tail",
+          "content": "Insert description here.",
+          "id": "aquiloks_tail",
+          "lat": -50.24,
+          "lng": 102.62,
+          "markers": [
+            { "type": "mokoko",  "count": 6 },
+            { "type": "monster", "count": 1 }
+          ],
+          "mapId": "aquiloks_tail"
+        },
         {
           "isCollectible": false,
           "name": "Ankumo Mountain",

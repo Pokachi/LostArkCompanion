@@ -1,0 +1,130 @@
+{
+  "type": "zone",
+  "name": "Aquilok's Tail",
+  "id": "aquiloks_tail",
+  "parent": "rethramis_border",
+  "continent": "Rethramis",
+  "continentId": "rethramis",
+  "icon": "./images/map/common/dungeon.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "rethramis_border"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0046",
+          "lat": -126.26,
+          "lng": 146.86
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0047",
+          "lat": -110.12,
+          "lng": 127.36
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0048",
+          "lat": -126.11,
+          "lng": 109.87
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0049",
+          "lat": -127.93,
+          "lng": 110.61
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0050",
+          "lat": -127.05,
+          "lng": 85.68
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0051",
+          "lat": -129.43,
+          "lng": 89.93
+        }
+      ]
+    },
+    {
+      "type": "monster",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Decomposed Infected",
+          "display": "#11 Decomposed Infected",
+          "content": "Always spawn on dungeon start.",
+          "id": "decomposed_infected",
+          "multi": false,
+          "lat": -62.85,
+          "lng": 121.51
+        }
+      ]
+    },
+    {
+      "type": "passage",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0010",
+          "lat": -123.10,
+          "lng": 106.86
+        },
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0011",
+          "lat": -122.10,
+          "lng": 90.61
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Rethramis Border",
+          "continent": "Rethramis",
+          "display": "Rethramis Border",
+          "content": "The border of Rethramis and Yudia guarded by the Border Guards. There's a monastery with a long history.",
+          "id": "rethramis_border",
+          "lat": -215.54,
+          "lng": 125.30,
+          "markers": [
+            { "type": "mokoko",  "count": 10 },
+            { "type": "monster", "count": 3 },
+            { "type": "boss", "count": 1 },
+            { "type": "vista", "count": 2 },
+            { "type": "food", "count": 2 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 3 }
+          ],
+          "mapId": "rethramis_border"
+        }
+      ]
+    }
+  ]
+}

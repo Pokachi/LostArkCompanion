@@ -28,6 +28,10 @@
         {
           "id": "aquiloks_head",
           "mokokoIndex": 0
+        },
+        {
+          "id": "aquiloks_tail",
+          "mokokoIndex": 0
         }
       ],
       "bookData": [
