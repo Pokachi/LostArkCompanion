@@ -99,7 +99,7 @@
           "display": "#1 Alpha White Redbeak",
           "id": "monster0001",
           "multi": true,
-          "content": "2 spawn between the 3 locations.\nRespawn Timer: 10 seconds",
+          "content": "2 spawn between the 3 locations.\nRespawn Timer: 10 seconds.",
           "locations": [
             {
               "image": "./images/map/log_hill/popup/alpha_white_redbeak.png",
@@ -133,7 +133,7 @@
           "display": "#2 Alpha Coclaw",
           "id": "monster0002",
           "multi": true,
-          "content": "2 spawn between the 3 locations.\nRespawn Timer: 20 seconds",
+          "content": "2 spawn between the 3 locations.\nRespawn Timer: 20 seconds.",
           "locations": [
             {
               "zone": "log_hill",
@@ -164,10 +164,10 @@
           "display": "#3 Toxiclaw Explorer",
           "id": "monster0003",
           "multi": true,
-          "content": "TBD",
           "locations": [
             {
               "zone": "log_hill",
+              "content": "2 spawn between location 1 to 4\nRespawn Timer: 20 seconds.",
               "index": 0,
               "indexOffset": 0,
               "lat": -80,
@@ -175,6 +175,7 @@
             },
             {
               "zone": "log_hill",
+              "content": "2 spawn between location 1 to 4\nRespawn Timer: 20 seconds.",
               "index": 1,
               "indexOffset": 0,
               "lat": -65.12,
@@ -182,6 +183,7 @@
             },
             {
               "zone": "log_hill",
+              "content": "2 spawn between location 1 to 4\nRespawn Timer: 20 seconds.",
               "index": 2,
               "indexOffset": 0,
               "lat": -166.25,
@@ -189,6 +191,7 @@
             },
             {
               "zone": "log_hill",
+              "content": "2 spawn between location 1 to 4\nRespawn Timer: 20 seconds.",
               "index": 3,
               "indexOffset": 0,
               "lat": -151.25,
@@ -196,17 +199,19 @@
             },
             {
               "zone": "toxiclaw_cavern",
+              "content": "Always spawn on dungeon start.",
               "index": 4,
               "indexOffset": -4,
-              "lat": -67.75,
-              "lng": 153.31
+              "lat": -163.75,
+              "lng": 116.39
             },
             {
               "zone": "toxiclaw_cavern",
+              "content": "Always spawn on dungeon start.",
               "index": 5,
               "indexOffset": -4,
-              "lat": -72.68,
-              "lng": 189.06
+              "lat": -128.5,
+              "lng": 148.55
             }
           ]
         }

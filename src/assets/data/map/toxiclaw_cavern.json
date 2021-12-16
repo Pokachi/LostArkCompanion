@@ -74,10 +74,10 @@
           "display": "#3 Toxiclaw Explorer",
           "id": "monster0003",
           "multi": true,
-          "content": "TBD",
           "locations": [
             {
               "zone": "log_hill",
+              "content": "2 spawn between location 1 to 4\nRespawn Timer: 20 seconds.",
               "index": 0,
               "indexOffset": 0,
               "lat": -80,
@@ -85,6 +85,7 @@
             },
             {
               "zone": "log_hill",
+              "content": "2 spawn between location 1 to 4\nRespawn Timer: 20 seconds.",
               "index": 1,
               "indexOffset": 0,
               "lat": -65.12,
@@ -92,6 +93,7 @@
             },
             {
               "zone": "log_hill",
+              "content": "2 spawn between location 1 to 4\nRespawn Timer: 20 seconds.",
               "index": 2,
               "indexOffset": 0,
               "lat": -166.25,
@@ -99,6 +101,7 @@
             },
             {
               "zone": "log_hill",
+              "content": "2 spawn between location 1 to 4\nRespawn Timer: 20 seconds.",
               "index": 3,
               "indexOffset": 0,
               "lat": -151.25,
@@ -106,6 +109,7 @@
             },
             {
               "zone": "toxiclaw_cavern",
+              "content": "Always spawn on dungeon start.",
               "index": 4,
               "indexOffset": -4,
               "lat": -163.75,
@@ -113,6 +117,7 @@
             },
             {
               "zone": "toxiclaw_cavern",
+              "content": "Always spawn on dungeon start.",
               "index": 5,
               "indexOffset": -4,
               "lat": -128.5,
@@ -124,9 +129,9 @@
           "isCollectible": true,
           "name": "Toxiclaw Elite Archer",
           "display": "#10 Toxiclaw Elite Archer",
+          "content": "Always spawn on dungeon start.",
           "id": "monster0010",
           "multi": false,
-          "content": "TBD",
           "lat": -134.31,
           "lng": 121.06
         }
