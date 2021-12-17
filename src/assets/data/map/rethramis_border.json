@@ -345,7 +345,7 @@
           "lng": 102.62,
           "markers": [
             { "type": "mokoko",  "count": 6 },
-            { "type": "monster", "count": 1 }
+            { "type": "monster", "count": 2 }
           ],
           "mapId": "aquiloks_tail"
         },

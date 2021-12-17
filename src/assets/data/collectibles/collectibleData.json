@@ -92,32 +92,32 @@
             {
               "location": "rethramis_border",
               "id": "regria_flower_oil",
-              "image": "./images/collectibles/vista/vista0002.png"
+              "image": "./images/items/vedas_prideholme_style_home_food.png"
             },
             {
               "location": "rethramis_border",
-              "id": "food0003",
-              "image": "./images/collectibles/vista/vista0003.png"
+              "id": "solar_tree_sprout",
+              "image": "./images/items/vedas_prideholme_style_home_food.png"
             },
             {
               "location": "prideholme",
               "id": "giant_wheat_sack",
-              "image": "./images/collectibles/vista/vista0002.png"
+              "image": "./images/items/vedas_prideholme_style_home_food.png"
             },
             {
               "location": "log_hill",
               "id": "disgorged_lump",
-              "image": "./images/collectibles/vista/vista0002.png"
+              "image": "./images/items/vedas_prideholme_style_home_food.png"
             },
             {
               "location": "aquiloks_head",
               "id": "499-year-old-mera-wine",
-              "image": "./images/collectibles/vista/vista0006.png"
+              "image": "./images/items/vedas_prideholme_style_home_food.png"
             },
             {
               "location": "prideholme",
               "id": "holy_potato_with_teeth_marks",
-              "image": "./images/collectibles/vista/vista0002.png"
+              "image": "./images/items/vedas_prideholme_style_home_food.png"
             }
           ]
         }

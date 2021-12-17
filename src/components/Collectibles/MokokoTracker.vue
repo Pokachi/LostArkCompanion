@@ -1,5 +1,5 @@
 <template>
-  <div class="appContent" v-if="mokokoCollectionData && dataReady">
+  <div class="app-content" v-if="mokokoCollectionData && dataReady">
     <h1 class="text-center pt-3 text-white">
       Mokoko Beans Tracker
     </h1>

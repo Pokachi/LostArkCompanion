@@ -1,5 +1,5 @@
 <template>
-<div class="appContent">
+<div class="app-content">
 
 </div>
 </template>
@@ -14,7 +14,7 @@ export default {
 div {
   background: #2d2d2d !important;
 }
-.appContent {
+.app-content {
   height: calc(100vh - 56px);
   width: 100%;
 }

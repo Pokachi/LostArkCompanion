@@ -1,5 +1,5 @@
 <template>
-  <div class="appContent" v-if="collectibleCollectionData && dataReady">
+  <div class="app-content" v-if="collectibleCollectionData && dataReady">
     <h1 class="text-center pt-3 text-white">
       Ignea Token (Adventure Tome) Tracker
     </h1>
