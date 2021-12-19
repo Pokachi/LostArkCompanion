@@ -9,7 +9,7 @@
   "affinity": {
     "anchor": [9, 9],
     "type": "affinity",
-    "name": "Affinity",
+    "name": "Rapport",
     "toggleable": true,
     "icon": "./images/icons/affinity.png",
     "color": "#fb3e47"
@@ -57,7 +57,7 @@
   "quest": {
     "anchor": [9, 9],
     "type": "quest",
-    "name": "Quest",
+    "name": "Another Story",
     "toggleable": true,
     "icon": "./images/icons/quest.png",
     "color": "#b42550"

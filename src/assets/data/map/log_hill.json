@@ -130,9 +130,9 @@
         },
         {
           "isCollectible": true,
-          "name": "Alpha Coclaw",
-          "display": "#2 Alpha Coclaw",
-          "id": "alpha_coclaw",
+          "name": "Alpha Croclaw",
+          "display": "#2 Alpha Croclaw",
+          "id": "alpha_croclaw",
           "multi": true,
           "content": "2 spawn between the 3 locations.\nRespawn Timer: 20 seconds.",
           "locations": [

@@ -220,7 +220,7 @@
           "name": "Tragedy Written in Stone",
           "display": "#1 Tragedy Written in Stone",
           "content": "Quest started by using the quest item \"Moss-Covered Log\".\n\n \"Moss-Covered Log\" is obtained by the side quest \"A Memory of What Was\", or dropped by Adult Plague Pest, Corpse Feeder, Gravekeeper Ghost, and Pandemon.",
-          "id": "song_for_a_hero",
+          "id": "tragedy_written_in_stone",
           "lat": -161.86,
           "lng": 118.18
         }

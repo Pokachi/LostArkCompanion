@@ -19,12 +19,12 @@
     </div>
 
     <div v-else class="text-white d-flex flex-grow-0 flex-wrap justify-content-center">
-      <div v-for="bookData of collectibleData.regions[selectedRegion].bookData" :key="bookData.name" class="d-inline-block ml-5 mr-5 mt-4 text-center p-2 darker-bg">
+      <div v-for="bookData of collectibleData.regions[selectedRegion].bookData" :key="bookData.name" class="d-inline-block ml-5 mr-5 mt-4 text-center p-2 darker-bg" style="height: fit-content">
         <h4> {{bookData.name}}</h4>
-        <div class="d-flex flex-wrap" style="width: 264px">
+        <div class="d-flex flex-wrap justify-content-center" :style="'width: 330px'">
           <div v-for="item of bookData.items" :key="item.id" :class="['border', 'position-relative']">
-            <b-link @click="changeMap(item.location, item.id)">
-              <b-img :style="[item.grade ? 'background-image: url(./images/items/background/icon_grade_' + item.grade + '.png)' : '', 'background-size: 100%']" :src="item.image" :class="[collectibleCollectionData[bookData.id] && collectibleCollectionData[bookData.id][selectedRegion] && collectibleCollectionData[bookData.id][selectedRegion][item.id] ? 'found' : '']"/>
+            <b-link @click="changeMap(item.location, item.startId ? item.startId : item.id, item.index)">
+              <b-img :style="[item.grade ? 'background-image: url(./images/items/background/icon_grade_' + item.grade + '.png)' : '', 'background-size: 100%', 'width: 64px']" :src="item.image" :class="[collectibleCollectionData[bookData.id] && collectibleCollectionData[bookData.id][selectedRegion] && collectibleCollectionData[bookData.id][selectedRegion][item.id] ? 'found' : '']"/>
             </b-link>
             <b-img v-if="collectibleCollectionData[bookData.id] && collectibleCollectionData[bookData.id][selectedRegion] && collectibleCollectionData[bookData.id][selectedRegion][item.id]" class="item-sub-icon" :src="'./images/other/check_mark.png'" :style="'width: 28px'"/>
           </div>
@@ -72,6 +72,30 @@ export default {
           this.collectibleCollectionData['vista'] = JSON.parse(localStorage.getItem('vista_collectibles'));
         } catch (e) {
           localStorage.removeItem('vista_collectibles');
+        }
+      }
+
+      if (localStorage.getItem('monster_collectibles')) {
+        try {
+          this.collectibleCollectionData['monster'] = JSON.parse(localStorage.getItem('monster_collectibles'));
+        } catch (e) {
+          localStorage.removeItem('monster_collectibles');
+        }
+      }
+
+      if (localStorage.getItem('boss_collectibles')) {
+        try {
+          this.collectibleCollectionData['boss'] = JSON.parse(localStorage.getItem('boss_collectibles'));
+        } catch (e) {
+          localStorage.removeItem('boss_collectibles');
+        }
+      }
+
+      if (localStorage.getItem('zone_collectibles')) {
+        try {
+          this.collectibleCollectionData['zone'] = JSON.parse(localStorage.getItem('zone_collectibles'));
+        } catch (e) {
+          localStorage.removeItem('zone_collectibles');
         }
       }
 
