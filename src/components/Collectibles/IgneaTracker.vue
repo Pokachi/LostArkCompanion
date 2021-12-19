@@ -64,7 +64,8 @@ export default {
       }
     },
     async importData() {
-      this.collectibleData = await import("@/assets/data/collectibles/collectibleData.json");
+      this.collectibleData = JSON.parse(JSON.stringify(await import("@/assets/data/collectibles/collectibleData.json")));
+      delete this.collectibleData.regions.sea;
       this.collectibleCollectionData = { };
 
       if (localStorage.getItem('food_collectibles')) {
