@@ -94,6 +94,29 @@
             { "type": "story", "count": 3 }
           ],
           "mapId": "rethramis_border"
+        },
+        {
+          "icon": "./images/map/saland_hill/saland_hill.png",
+          "isCollectible": false,
+          "anchor": [30, 30],
+          "name": "Saland Hill",
+          "continent": "Yudia",
+          "display": "Saland Hill",
+          "content": "A hilly area with a salt workshop that serves as the basis for Yudia's nomads. Bandits desiring salt recently occupied the place.",
+          "id": "saland_hill",
+          "lat": -185.03,
+          "lng": 129.84,
+          "markers": [
+            { "type": "mokoko",  "count": 9 },
+            { "type": "affinity", "count": 1 },
+            { "type": "monster", "count": 5 },
+            { "type": "boss", "count": 1 },
+            { "type": "vista", "count": 2 },
+            { "type": "food", "count": 5 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 13 }
+          ],
+          "mapId": "saland_hill"
         }
       ]
     }

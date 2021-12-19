@@ -142,7 +142,7 @@
           "isCollectible": true,
           "name": "Holy Potato with Teeth Marks",
           "display": "#7 Holy Potato with Teeth Marks",
-          "content": "Obtained from Siera after reaching trust level.\n Use the item \"Special Potato\" to obtain \"Holy Potato with Teeth Marks\"",
+          "content": "Obtained from Siera after reaching trust level.\n\n Use the item \"Special Potato\" to obtain \"Holy Potato with Teeth Marks\"",
           "id": "holy_potato_with_teeth_marks",
           "lat": -189.96,
           "lng": 114.22

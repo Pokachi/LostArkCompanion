@@ -365,6 +365,27 @@
             { "type": "story", "count": 2 }
           ],
           "mapId": "ankumo_mountain"
+        },
+        {
+          "isCollectible": false,
+          "name": "Saland Hill",
+          "continent": "Yudia",
+          "display": "Saland Hill",
+          "content": "A hilly area with a salt workshop that serves as the basis for Yudia's nomads. Bandits desiring salt recently occupied the place.",
+          "id": "saland_hill",
+          "lat": -24.94,
+          "lng": 135.12,
+          "markers": [
+            { "type": "mokoko",  "count": 9 },
+            { "type": "affinity", "count": 1 },
+            { "type": "monster", "count": 5 },
+            { "type": "boss", "count": 1 },
+            { "type": "vista", "count": 2 },
+            { "type": "food", "count": 5 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 13 }
+          ],
+          "mapId": "saland_hill"
         }
       ]
     }
