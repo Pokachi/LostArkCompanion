@@ -5,7 +5,7 @@
     </h1>
     <div class="text-center">
       <b-img src="./images/collectibles/ignea.png" style="width: 32px"/>
-      <h3 class="mt-0 mb-0 ml-1 mr-3 text-white d-inline-block align-middle">{{ 0 }}/{{ selectedRegion ? 1 : Object.keys(collectibleData.regions).length }}</h3>
+      <h3 class="mt-0 mb-0 ml-1 mr-3 text-white d-inline-block align-middle">{{ selectedRegion ? igneaData[selectedRegion] ? 1 : 0 : igneaData.c }}/{{ selectedRegion ? 1 : Object.keys(collectibleData.regions).length }}</h3>
       <b-dropdown id="dropdown-1" :text="selectedRegion ? collectibleData.regions[selectedRegion].name : 'Select Region'" class="m-md-2">
         <b-dropdown-item @click="selectRegion(null)">All</b-dropdown-item>
         <b-dropdown-item @click="selectRegion({ id:'rethramis', name: 'Rethramis'})">Rethramis</b-dropdown-item>
@@ -14,8 +14,15 @@
     </div>
     <hr class="generalhr">
 
-    <div v-if="!selectedRegion">
-
+    <div v-if="!selectedRegion" class="text-white d-flex flex-grow-0 flex-wrap justify-content-center">
+      <div v-for="region of collectibleData.regions" :key="region.id" class="d-inline-block ml-5 mr-5 mt-4  flex-width-mokoko text-center">
+        <b-link @click="selectRegion({id:region.id, name:region.name})">
+          <h4 class="m-0 p-0 text-white"> {{ region.name }} </h4>
+        </b-link>
+        <hr class="tooltiphr">
+        <b-img src="./images/collectibles/ignea.png" style="width: 16px"/>
+        <h6 class="mt-0 mb-0 ml-1 mr-3 text-white d-inline-block align-middle">{{ igneaData[region.id] ? 1 : 0 }}/1</h6>
+      </div>
     </div>
 
     <div v-else class="text-white d-flex flex-grow-0 flex-wrap justify-content-center">
@@ -40,6 +47,7 @@ export default {
   data: function () {
     return {
       selectedRegion: null,
+      igneaData: {},
       zoneData: null,
       zoneCollectibleData: null,
       collectibleData: null,
@@ -123,6 +131,23 @@ export default {
         }
       }
 
+      this.igneaData.c = 0;
+      for(const region of Object.keys(this.collectibleData.regions)) {
+        if (this.collectibleData.regions[region].bookData) {
+          let regionComplete = true
+          for (const bookData of this.collectibleData.regions[region].bookData) {
+            if (this.collectibleCollectionData[bookData.id] && this.collectibleCollectionData[bookData.id][region] && this.collectibleCollectionData[bookData.id][region].c !== bookData.items.length) {
+              regionComplete = false;
+              break;
+            }
+          }
+          this.igneaData[region] = regionComplete;
+          if (regionComplete) {
+            this.igneaData.c++;
+          }
+        }
+      }
+
       if(this.selectedRegion) {
         this.zoneCollectibleData = {};
         this.zoneData = {};
@@ -165,10 +190,18 @@ export default {
 </script>
 
 <style scoped>
-  .item-sub-icon {
-    position: absolute;
-    display: inline-block;
-    bottom: 0;
-    right: 0;
-  }
+a:hover {
+  text-decoration: none;
+}
+
+.flex-width-mokoko {
+  flex-basis: 10em;
+}
+
+.item-sub-icon {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+}
 </style>
