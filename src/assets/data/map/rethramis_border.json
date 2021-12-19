@@ -205,7 +205,7 @@
           "isCollectible": true,
           "name": "Solar Tree Sprout",
           "display": "#3 Solar Tree Sprout",
-          "content": "Used to Cook at Hely",
+          "content": "Used to cook Solar Tree Sprout Cider at Hely.\n Cost: 900 silver",
           "id": "solar_tree_sprout",
           "lat": -76.06,
           "lng": 143.16

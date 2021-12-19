@@ -22,10 +22,11 @@
       <div v-for="bookData of collectibleData.regions[selectedRegion].bookData" :key="bookData.name" class="d-inline-block ml-5 mr-5 mt-4 text-center p-2 darker-bg">
         <h4> {{bookData.name}}</h4>
         <div class="d-flex flex-wrap" style="width: 264px">
-          <div v-for="item of bookData.items" :key="item.id" :class="['border']">
+          <div v-for="item of bookData.items" :key="item.id" :class="['border', 'position-relative']">
             <b-link @click="changeMap(item.location, item.id)">
-              <b-img :style="[item.grade ? 'background-image: url(./images/items/background/icon_grade_' + item.grade + '.png)' : '', 'background-size: 100%']" :src="item.image"/>
+              <b-img :style="[item.grade ? 'background-image: url(./images/items/background/icon_grade_' + item.grade + '.png)' : '', 'background-size: 100%']" :src="item.image" :class="[collectibleCollectionData[bookData.id] && collectibleCollectionData[bookData.id][selectedRegion] && collectibleCollectionData[bookData.id][selectedRegion][item.id] ? 'found' : '']"/>
             </b-link>
+            <b-img v-if="collectibleCollectionData[bookData.id] && collectibleCollectionData[bookData.id][selectedRegion] && collectibleCollectionData[bookData.id][selectedRegion][item.id]" class="item-sub-icon" :src="'./images/other/check_mark.png'" :style="'width: 28px'"/>
           </div>
         </div>
       </div>
@@ -140,5 +141,10 @@ export default {
 </script>
 
 <style scoped>
-
+  .item-sub-icon {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+  }
 </style>
