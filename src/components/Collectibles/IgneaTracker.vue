@@ -22,7 +22,7 @@
       <div v-for="bookData of collectibleData.regions[selectedRegion].bookData" :key="bookData.name" class="d-inline-block ml-5 mr-5 mt-4 text-center p-2 darker-bg" style="height: fit-content">
         <h4> {{bookData.name}}</h4>
         <div class="d-flex flex-wrap justify-content-center" :style="'width: 330px'">
-          <div v-for="item of bookData.items" :key="item.id" :class="['border', 'position-relative']">
+          <div v-for="item of bookData.items" :key="item.id" :class="['border', 'border-dark', 'position-relative']">
             <b-link @click="changeMap(item.location, item.startId ? item.startId : item.id, item.index)">
               <b-img :style="[item.grade ? 'background-image: url(./images/items/background/icon_grade_' + item.grade + '.png)' : '', 'background-size: 100%', 'width: 64px']" :src="item.image" :class="[collectibleCollectionData[bookData.id] && collectibleCollectionData[bookData.id][selectedRegion] && collectibleCollectionData[bookData.id][selectedRegion][item.id] ? 'found' : '']"/>
             </b-link>
