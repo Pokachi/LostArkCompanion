@@ -136,7 +136,7 @@ export default {
         if (this.collectibleData.regions[region].bookData) {
           let regionComplete = true
           for (const bookData of this.collectibleData.regions[region].bookData) {
-            if (this.collectibleCollectionData[bookData.id] && this.collectibleCollectionData[bookData.id][region] && this.collectibleCollectionData[bookData.id][region].c !== bookData.items.length) {
+            if (!this.collectibleCollectionData[bookData.id] || !this.collectibleCollectionData[bookData.id][region] || this.collectibleCollectionData[bookData.id][region].c !== bookData.items.length) {
               regionComplete = false;
               break;
             }
