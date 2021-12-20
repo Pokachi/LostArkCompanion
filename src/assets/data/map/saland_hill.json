@@ -699,6 +699,22 @@
             { "type": "story", "count": 3 }
           ],
           "mapId": "rethramis_border"
+        },
+        {
+          "isCollectible": true,
+          "name": "Morai Ruins",
+          "continent": "Rethramis",
+          "display": "Morai Ruins",
+          "content": "Insert description here.",
+          "id": "morai_ruins",
+          "lat": -101.5,
+          "lng": 104.05,
+          "markers": [
+            { "type": "mokoko",  "count": 11 },
+            { "type": "monster", "count": 2 }
+          ],
+          "mapId": "morai_ruins"
+
         }
       ]
     }
