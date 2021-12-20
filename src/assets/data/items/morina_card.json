@@ -1,0 +1,12 @@
+{
+  "id": "morina_card",
+  "grade": 1,
+  "image": "./images/items/card.png",
+  "name": "Morina Card",
+  "type": "Card",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A young woman in Yudia who is trying to become a shaman.",
+  "cost": 5000,
+  "currency": "silver"
+}

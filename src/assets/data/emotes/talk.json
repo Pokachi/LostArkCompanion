@@ -1,0 +1,7 @@
+{
+  "id": "talk",
+  "name": "Talk",
+  "description": "Type /talk to talk animatedly with gestures.",
+  "acquisition":"Obtained By Default",
+  "acquisitionType": "default"
+}

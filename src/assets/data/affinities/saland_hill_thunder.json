@@ -47,16 +47,19 @@
     ],
     "interested": [
       {
-        "id": "ancient_gold_coin",
-        "count": 15
+        "id": "creation_fragment",
+        "count": 10
       }
     ],
     "friendly": [
       {
-        "id": "prideholme_neria_card"
+        "id": "thunder_card"
       }
     ],
     "trust": [
+      {
+        "id": "ritual_food_ingredient"
+      },
       {
         "id": "harmony_battle_engraving_recipe_pouch",
         "count": 3
@@ -66,26 +69,22 @@
   "likes": {
     "songs": [
       {
-        "id": "hearts_melody",
-        "points": 250
-      },
-      {
-        "id": "serenade_of_love",
-        "points": 275
+        "id": "song_of_resonance",
+        "points": 350
       }
     ],
     "emotes": [
       {
-        "id": "greet",
+        "id": "talk",
         "points": 250
       }
     ],
     "gifts": [
       {
-        "id": "prideholme_potato",
+        "id": "old_bone",
         "points": 450,
         "conditions": {
-          "kindness": 150
+          "wisdom": 150
         }
       },
       {
@@ -93,23 +92,11 @@
         "points": 330
       },
       {
-        "id": "elementals_feather",
+        "id": "faded_photo",
         "points": 330
       },
       {
-        "id": "fancier_bouquet",
-        "points": 330
-      },
-      {
-        "id": "glacial_beer",
-        "points": 330
-      },
-      {
-        "id": "goblin_yam",
-        "points": 330
-      },
-      {
-        "id": "lakebar_tomato_juice",
+        "id": "hawk_claws",
         "points": 330
       },
       {
@@ -117,27 +104,23 @@
         "points": 330
       },
       {
-        "id": "perfect_beer_stein",
+        "id": "prideholme_potato",
         "points": 330
       },
       {
-        "id": "stalwart_cage",
+        "id": "rhinestone",
         "points": 330
       },
       {
-        "id": "stern_scrap_iron",
+        "id": "round_glass_piece",
         "points": 330
       },
       {
-        "id": "tournament_entrance_certificate",
+        "id": "stamina_recovery_formula",
         "points": 330
       },
       {
         "id": "yudia_natural_salt",
-        "points": 330
-      },
-      {
-        "id": "raccoontaurus_milk",
         "points": 330
       },
       {
@@ -151,10 +134,6 @@
       {
         "id": "zagoras_ice_cap",
         "points": 324
-      },
-      {
-        "id": "paradise_parfait",
-        "points": 300
       }
     ]
   },

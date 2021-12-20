@@ -1,0 +1,13 @@
+{
+  "id": "old_bone",
+  "grade": 3,
+  "subIcon": "heart",
+  "image": "./images/items/old_bone.png",
+  "name": "Old Bone",
+  "type": "Affinity Item",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "<span style=\"color: #FFEC50\">An old bone found all across Arkesia. There is a theory that it belonged to a guardian that died in Chain War, but it's not very likely to be verified.<br><br><span style=\"color: #FFEC50\">Thunder and Albion would love this.</span>",
+  "cost": 18000,
+  "currency": "silver"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "stamina_recovery_formula",
+  "grade": 3,
+  "subIcon": "heart",
+  "image": "./images/items/stamina_recovery_formula.png",
+  "name": "Stamina Recovery Formula",
+  "type": "Affinity Item",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "<span style=\"color: #FFEC50\">A potion that is known to boost the energy inside the drinker. Formulated by the chemists in Arthetine, it was released after years of clinical trials. Although the effect it brings is unquestionable, its ambiguous indication of ingredients and foul smell make it hard to gulp down.<br><br><span style=\"color: #FFEC50\">Stranded Temma would love this.</span>",
+  "cost": 18000,
+  "currency": "silver"
+}

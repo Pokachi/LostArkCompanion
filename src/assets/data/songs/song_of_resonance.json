@@ -1,11 +1,11 @@
 {
-  "id": "music_of_resonance",
-  "name": "Music of Resonance",
+  "id": "song_of_resonance",
+  "name": "Song of Resonance",
   "cooldown": "5s",
   "description": "It opens hidden spaces.",
   "acquisition":"Treasure Hunter Igran - Peyto\n(16,500 Pirate Coin)",
   "acquisitionType": "exchange",
   "acquisitionContinentId": "sea",
   "acquisitionLocation": "peyto",
-  "acquisitionLink": "#/map?m=peyto&c=music_of_resonance"
+  "acquisitionLink": "#/map?m=peyto&c=song_of_resonance"
 }

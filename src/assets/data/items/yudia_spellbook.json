@@ -1,0 +1,12 @@
+{
+  "id": "yudia_spellbook",
+  "grade": 3,
+  "image": "./images/items/yudia_spellbook.png",
+  "name": "Yudia Spellbook",
+  "type": "Exchange Currency",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "<span style=\"color: #FFEC50\">A book containing a spell that appeases the spirits of the dead. The Yudians sing a song when people and animals die, praying for their rebirth.</span>",
+  "cost": 10000,
+  "currency": "silver"
+}

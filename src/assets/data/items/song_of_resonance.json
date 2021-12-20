@@ -1,8 +1,8 @@
 {
-  "id": "music_of_resonance",
+  "id": "song_of_resonance",
   "grade": 0,
-  "image": "./images/items/music_of_resonance.png",
-  "name": "Music of Resonance",
+  "image": "./images/items/song_of_resonance.png",
+  "name": "Song of Resonance",
   "type": "Song",
   "bound": "Binds when obtained",
   "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",

@@ -1,0 +1,13 @@
+{
+  "id": "sky_reflection_oil",
+  "grade": 4,
+  "subIcon": "heart",
+  "image": "./images/items/sky_reflection_oil.png",
+  "name": "Sky Reflection Oil",
+  "type": "Affinity Item",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "<span style=\"color: #FFEC50\">A liquid solution containing Mungka oil, salttree seed and solar salt. It is what Yudians use to protect their skin from burning under the blazing sun, so a lot of women consult Yudian merchants to get hold of this.",
+  "cost": 80000,
+  "currency": "silver"
+}

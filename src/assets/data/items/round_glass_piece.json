@@ -1,0 +1,13 @@
+{
+  "id": "round_glass_piece",
+  "grade": 3,
+  "subIcon": "heart",
+  "image": "./images/items/round_glass_piece.png",
+  "name": "Round Glass Piece",
+  "type": "Affinity Item",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "<span style=\"color: #FFEC50\">A piece of glass rounded out by the waves on the shore. It glitters like a gemstone under the sun. Unlike others, Mokokos find it very fascinating.<br><br><span style=\"color: #FFEC50\">Totoma would love this.</span>",
+  "cost": 18000,
+  "currency": "silver"
+}

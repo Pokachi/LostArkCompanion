@@ -1,0 +1,10 @@
+{
+  "id": "ritual_food_ingredient",
+  "grade": 4,
+  "image": "./images/items/ritual_food_ingredient.png",
+  "name": "Ritual Food Ingredient",
+  "type": "Cooking Ingredient",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A chest containing various ingredients needed for the rainmaking ritual.<br><br>Talk to Hella in Saland Hill.<br><br><span style=\"color: #FFFFAC\">It's a key ingredient in Rainmaking Ritual Food.</span>"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "thunder_card",
+  "grade": 2,
+  "image": "./images/items/card.png",
+  "name": "Thunder Card",
+  "type": "Card",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A nomad priestess who worships the sky. She can perform a ritual to appeal to the sky and make it rain.",
+  "cost": 8000,
+  "currency": "silver"
+}

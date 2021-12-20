@@ -1,0 +1,10 @@
+{
+  "id": "talk",
+  "grade": 0,
+  "image": "./images/items/talk.png",
+  "name": "Talk",
+  "type": "Emote",
+  "bound": "Binds when obtained",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "N/A"
+}
