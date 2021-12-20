@@ -332,6 +332,12 @@
     "yudia": {
       "name": "Yudia",
       "id": "yudia",
+      "zones": [
+        {
+          "id": "saland_hill",
+          "mokokoIndex": 0
+        }
+      ],
       "mokoko_total": 37
     },
     "west_luterra": {

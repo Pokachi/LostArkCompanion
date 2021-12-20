@@ -48,8 +48,6 @@ export default {
     return {
       selectedRegion: null,
       igneaData: {},
-      zoneData: null,
-      zoneCollectibleData: null,
       collectibleData: null,
       collectibleCollectionData: null,
       dataReady: false
@@ -145,21 +143,6 @@ export default {
           this.igneaData[region] = regionComplete;
           if (regionComplete) {
             this.igneaData.c++;
-          }
-        }
-      }
-
-      if(this.selectedRegion) {
-        this.zoneCollectibleData = {};
-        this.zoneData = {};
-        for (const zone of this.collectibleData.regions[this.selectedRegion].zones) {
-          const temp = JSON.parse(localStorage.getItem(zone.id + '_map'));
-          if (temp) {
-            this.zoneCollectibleData[zone.id] = temp;
-          }
-          const temp2 = await import("@/assets/data/map/" + zone.id + ".json");
-          if (temp2) {
-            this.zoneData[zone.id] = temp2;
           }
         }
       }
