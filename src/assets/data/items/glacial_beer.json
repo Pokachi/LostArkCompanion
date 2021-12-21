@@ -6,7 +6,7 @@
   "name": "Glacial Beer",
   "type": "Affinity Item",
   "bound": "Bound to Account on Pickup",
-  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
   "description": "<span style=\"color: #FFEC50\">An item used to increase Rapport with NPCs.</span><br><br>A special beer only found in Shushire area. It was made with the iceberg water of Shushire that is high in oxygen, so it is known that it has second-to-none cool, refreshing quality. It is best served with bits of the iceberg still floating on the surface.<br><br><span style=\"color: #FFEC50\">Kaysarr and Dath would love this.</span>",
   "cost": 18000,
   "currency": "silver"

@@ -6,7 +6,7 @@
   "name": "Lakebar Tomato Juice",
   "type": "Affinity Item",
   "bound": "Bound to Account on Pickup",
-  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
   "description": "<span style=\"color: #FFEC50\">An item used to increase Rapport with NPCs.</span><br><br>A juice made of fresh-picked tomatoes with clean water from Iron Lake. It's very refreshing.<br><br><span style=\"color: #FFEC50\">Wavestrand Port's Neria would love this.</span>",
   "cost": 18000,
   "currency": "silver"

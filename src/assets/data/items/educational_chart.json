@@ -1,0 +1,13 @@
+{
+  "id": "educational_chart",
+  "grade": 3,
+  "subIcon": "heart",
+  "image": "./images/items/educational_chart.png",
+  "name": "Educational Chart",
+  "type": "Affinity Item",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "<span style=\"color: #FFEC50\">A nautical map made for the education of youngsters. The scale of the map is inaccurate, so it's more decoration than of real use to sailors.<br><br><span style=\"color: #FFEC50\">Nabi would love this.</span>",
+  "cost": 18000,
+  "currency": "silver"
+}

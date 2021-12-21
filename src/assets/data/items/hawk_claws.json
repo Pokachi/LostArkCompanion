@@ -6,7 +6,7 @@
   "name": "Hawk Claws",
   "type": "Affinity Item",
   "bound": "Bound to Account on Pickup",
-  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
   "description": "<span style=\"color: #FFEC50\">A sharp claw of a hawk. Yudians are famous for their craft in taming hawks. They take the claws of their companion hawks as a charm when they die.<br><br><span style=\"color: #FFEC50\">Morina would love this.</span>",
   "cost": 18000,
   "currency": "silver"

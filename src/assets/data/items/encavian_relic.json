@@ -6,7 +6,7 @@
   "name": "Encavian Relic",
   "type": "Affinity Item",
   "bound": "Bound to Account on Pickup",
-  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
   "description": "<span style=\"color: #FFEC50\">Archaeologists and historians have a great interest in studying the relics of the old Encavia, which makes for great business for some merchants.<br><br><span style=\"color: #FFEC50\">Krissa would love this.</span>",
   "cost": 18000,
   "currency": "silver"

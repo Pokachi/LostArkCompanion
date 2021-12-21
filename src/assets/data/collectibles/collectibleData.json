@@ -336,6 +336,286 @@
         {
           "id": "saland_hill",
           "mokokoIndex": 0
+        },
+        {
+          "id": "ozhorn_hill",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "morai_ruins",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "sapira_cave",
+          "mokokoIndex": 0
+        }
+      ],
+      "bookData": [
+        {
+          "name": "Vista",
+          "id": "vista",
+          "items": [
+            {
+              "location": "saland_hill",
+              "id": "salt_works",
+              "image": "./images/collectibles/vista/salt_works.png"
+            },
+            {
+              "location": "saland_hill",
+              "id": "nomad_camp",
+              "image": "./images/collectibles/vista/nomad_camp.png"
+            },
+            {
+              "location": "ozhorn_hill",
+              "id": "blood_soaked_salt_road",
+              "image": "./images/collectibles/vista/blood_soaked_salt_road.png"
+            }
+          ]
+        },
+        {
+          "name": "Cooking",
+          "id": "food",
+          "items": [
+            {
+              "location": "saland_hill",
+              "id": "salt_grilled_saltbug",
+              "image": "./images/items/salt_grilled_saltbug.png",
+              "grade": 3
+            },
+            {
+              "location": "saland_hill",
+              "id": "natural_mungka_jerky",
+              "image": "./images/items/natural_mungka_jerky.png",
+              "grade": 3
+            },
+            {
+              "location": "saland_hill",
+              "id": "salt_worm_poop",
+              "image": "./images/items/worm_poop_coffee.png",
+              "grade": 3
+            },
+            {
+              "location": "sapira_cave",
+              "id": "hidden_cavatian_liquor_bottle",
+              "image": "./images/items/age_old_cavatian_wine.png",
+              "grade": 3
+            },
+            {
+              "location": "ozhorn_hill",
+              "id": "old_encavian_food_chest",
+              "image": "./images/items/salted_food_box.png",
+              "grade": 3
+            },
+            {
+              "location": "saland_hill",
+              "id": "ritual_food_ingredient",
+              "image": "./images/items/rainmaking_ritual_food.png",
+              "grade": 4
+            },
+            {
+              "location": "saland_hill",
+              "id": "salt_cracker",
+              "image": "./images/items/salt_cracker.png",
+              "grade": 4
+            }
+          ]
+        },
+        {
+          "name": "Monster",
+          "id": "monster",
+          "items": [
+            {
+              "location": "saland_hill",
+              "id": "boss_mungka",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "saland_hill",
+              "id": "hardshelled_saltbug",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "saland_hill",
+              "id": "old_salt_rock_turtle",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "saland_hill",
+              "id": "salt_desert_bandit_fighter",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "saland_hill",
+              "id": "boss_paingolin",
+              "image": "./images/collectibles/monster.png",
+              "index": 2
+            },
+            {
+              "location": "saland_hill",
+              "id": "stinging_wallou_cactus",
+              "image": "./images/collectibles/monster.png",
+              "index": 2
+            },
+            {
+              "location": "ozhorn_hill",
+              "id": "reanimated_chieftain",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "saland_hill",
+              "id": "dirty_salt_worm",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "ozhorn_hill",
+              "id": "whitesand_bolchi_boss",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "ozhorn_hill",
+              "id": "strong_worm_fist",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "ozhorn_hill",
+              "id": "alluring_shaman",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "sapira_cave",
+              "id": "dirty_mucus_lump",
+              "image": "./images/collectibles/monster.png"
+            },
+            {
+              "location": "sapira_cave",
+              "id": "corrupt_red_eyed_rock_demon",
+              "image": "./images/collectibles/monster.png"
+            },
+            {
+              "location": "morai_ruins",
+              "id": "lonely_morai_clay_soldier",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "morai_ruins",
+              "id": "morai_clay_shaman_chief",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            }
+          ]
+        },
+        {
+          "name": "Dungeon",
+          "id": "zone",
+          "items": [
+            {
+              "location": "saland_hill",
+              "id": "morai_ruins",
+              "image": "./images/collectibles/dungeon.png"
+            },
+            {
+              "location": "ozhorn_hill",
+              "id": "sapira_cave",
+              "image": "./images/collectibles/dungeon.png"
+            }
+          ]
+        },
+        {
+          "name": "Boss",
+          "id": "boss",
+          "items": [
+            {
+              "location": "saland_hill",
+              "id": "salt_giant",
+              "image": "./images/collectibles/monster.png"
+            }
+          ]
+        },
+        {
+          "name": "Rapport",
+          "id": "affinity",
+          "items": [
+            {
+              "location": "saland_hill",
+              "id": "saland_hill_thunder",
+              "image": "./images/affinity/saland_hill_thunder_1.png"
+            },
+            {
+              "location": "ozhorn_hill",
+              "id": "ozhorn_hill_morina",
+              "image": "./images/affinity/ozhorn_hill_morina_1.png"
+            }
+          ]
+        },
+        {
+          "name": "Another Story",
+          "id": "quest",
+          "items": [
+            {
+              "location": "saland_hill",
+              "id": "eliminating_the_bandits",
+              "image": "./images/collectibles/quest.png"
+            },
+            {
+              "location": "ozhorn_hill",
+              "id": "source_of_demons",
+              "image": "./images/collectibles/quest.png"
+            }
+          ]
+        },
+        {
+          "name": "Hidden Story",
+          "id": "story",
+          "items": [
+            {
+              "location": "ozhorn_hill",
+              "id": "the_mirage",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "saland_hill",
+              "id": "the_ominous_prediction",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "saland_hill",
+              "startId": "spending_an_eternity_together_p1",
+              "id": "spending_an_eternity_together_p3",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "saland_hill",
+              "id": "flawless_marksmanship",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "saland_hill",
+              "id": "the_origin_of_the_name",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "saland_hill",
+              "startId": "tododo_song_p1",
+              "id": "tododo_song_p4",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "saland_hill",
+              "startId": "solar_salt_candy_p1",
+              "id": "solar_salt_candy_p3",
+              "image": "./images/collectibles/story.png"
+            }
+          ]
         }
       ],
       "mokoko_total": 37

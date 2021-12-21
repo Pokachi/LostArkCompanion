@@ -6,7 +6,7 @@
   "name": "Faded Photo",
   "type": "Affinity Item",
   "bound": "Bound to Account on Pickup",
-  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
   "description": "<span style=\"color: #FFEC50\">메투스제도의 한 저택에서 찍어온 심령 사진. 사진기사는 살아 돌아온 것이 다행이라며 이 불길한 사진을 판매했다. 그러나 아무도 이 사진을 진짜 유령이라 믿는 사람은 없는 것 같다.<br><br><span style=\"color: #FFEC50\">Yuul and Zahara would love this.</span>",
   "cost": 18000,
   "currency": "silver"

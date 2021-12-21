@@ -6,7 +6,7 @@
   "name": "Colorful Claw Toy",
   "type": "Affinity Item",
   "bound": "Bound to Account on Pickup",
-  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
   "description": "<span style=\"color: #FFEC50\">This item was mass-produced by a toy company that expected it to be a hot seller. Soon, however, the company started to struggle with the massively piled-up inventory, and eventually ended up going broke. It's hard to say that it's likable.<br><br><span style=\"color: #FFEC50\">Neth and Berver would love this.</span>",
   "cost": 18000,
   "currency": "silver"

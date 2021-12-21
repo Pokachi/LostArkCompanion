@@ -90,7 +90,7 @@
           "isCollectible": true,
           "display": "Morina",
           "content": "",
-          "id": "saland_hill_thunder",
+          "id": "ozhorn_hill_morina",
           "lat": -141.29,
           "lng": 234.33
         }
@@ -125,9 +125,9 @@
         },
         {
           "isCollectible": true,
-          "name": "Reanimated Chieftan",
-          "display": "#7 Reanimated Chieftan",
-          "id": "reanimated_chieftan",
+          "name": "Reanimated Chieftain",
+          "display": "#7 Reanimated Chieftain",
+          "id": "reanimated_chieftain",
           "multi": true,
           "content": "Respawn Timer: 20 seconds.",
           "locations": [

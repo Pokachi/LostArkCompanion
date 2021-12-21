@@ -6,7 +6,7 @@
   "name": "Retharamis Holy Water",
   "type": "Affinity Item",
   "bound": "Bound to Account on Pickup",
-  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
   "description": "<span style=\"color: #FFEC50\">An item used to increase Rapport with NPCs.</span><br><br>An item only found in the monastery in Rethramis. You can cast evil away just by spraying it or more simply just carrying it around.<br><br><span style=\"color: #FFEC50\">Payla would love this.</span>",
   "cost": 10000,
   "currency": "silver"

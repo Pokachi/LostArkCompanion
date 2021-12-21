@@ -1,0 +1,7 @@
+{
+  "id": "agree",
+  "name": "Agree",
+  "description": "Type /agree to nod your head in agreement.",
+  "acquisition":"Obtained By Default",
+  "acquisitionType": "default"
+}

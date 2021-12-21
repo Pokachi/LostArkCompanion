@@ -6,7 +6,7 @@
   "name": "Stern Scrap Iron",
   "type": "Affinity Item",
   "bound": "Bound to Account on Pickup",
-  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
   "description": "<span style=\"color: #FFEC50\">An item used to increase Rapport with NPCs.</span><br><br>A piece of scrap metal processed in Stern. Though not as hard as the steel from Yorn which is every blacksmith's dream, it has its strength in reasonable pricing made possible through mass production in Stern.<br><br><span style=\"color: #FFEC50\">Sasha and Orne would love this.</span>",
   "cost": 18000,
   "currency": "silver"

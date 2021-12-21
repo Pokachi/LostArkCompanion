@@ -1,0 +1,13 @@
+{
+  "id": "finest_spirit",
+  "grade": 3,
+  "subIcon": "heart",
+  "image": "./images/items/finest_spirit.png",
+  "name": "Finest Spirit",
+  "type": "Affinity Item",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "<span style=\"color: #FFEC50\">A lute made in Anikka that is known to have the clearest sound in the world. It's a little bit expensive, but it would fetch a great amount of affection if given to the right romanticist.<br><br><span style=\"color: #FFEC50\">Siera would love this.</span>",
+  "cost": 18000,
+  "currency": "silver"
+}
