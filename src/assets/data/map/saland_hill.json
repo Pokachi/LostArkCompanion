@@ -9,7 +9,9 @@
   "minZoom": 2,
   "maxZoom": 4,
   "adjacentZones": [
-    "rethramis_border"
+    "rethramis_border",
+    "morai_ruins",
+    "ozhorn_hill"
   ],
   "markers": [
     {
@@ -106,6 +108,82 @@
     {
       "type": "monster",
       "data": [
+        {
+          "isCollectible": true,
+          "name": "Stinging Wallou Cactus",
+          "display": "#6 Stinging Wallou Cactus",
+          "id": "stinging_wallou_cactus",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "ozhorn_hill",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -200.5,
+              "lng": 113.63
+            },
+            {
+              "zone": "ozhorn_hill",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -189.69,
+              "lng": 107.25
+            },
+            {
+              "zone": "saland_hill",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -85.06,
+              "lng": 98.38
+            },
+            {
+              "zone": "saland_hill",
+              "index": 3,
+              "indexOffset": -2,
+              "lat": -83.5,
+              "lng": 92.75
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Boss Paingolin",
+          "display": "#5 Boss Paingolin",
+          "id": "boss_paingolin",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "ozhorn_hill",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -113.71,
+              "lng": 110.88
+            },
+            {
+              "zone": "ozhorn_hill",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -89.96,
+              "lng": 84
+            },
+            {
+              "zone": "saland_hill",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -75.25,
+              "lng": 141.5
+            },
+            {
+              "zone": "saland_hill",
+              "index": 3,
+              "indexOffset": -2,
+              "lat": -65.06,
+              "lng": 147.44
+            }
+          ]
+        },
         {
           "isCollectible": true,
           "name": "Boss Mungka",
@@ -672,6 +750,13 @@
               "indexOffset": 0,
               "lat": -166.63,
               "lng": 124
+            },
+            {
+              "zone": "ozhorn_hill",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -124.75,
+              "lng": 130.36
             }
           ]
         }
@@ -703,7 +788,7 @@
         {
           "isCollectible": true,
           "name": "Morai Ruins",
-          "continent": "Rethramis",
+          "continent": "Yudia",
           "display": "Morai Ruins",
           "content": "Insert description here.",
           "id": "morai_ruins",
@@ -714,7 +799,26 @@
             { "type": "monster", "count": 2 }
           ],
           "mapId": "morai_ruins"
-
+        },
+        {
+          "isCollectible": true,
+          "name": "Ozhorn Hill",
+          "continent": "Yudia",
+          "display": "Ozhorn Hill",
+          "content": "An area where the traces remain of the ancient kingdom of Encavia that flourished with magick. Many archaeologists aseek this place.",
+          "id": "ozhorn_hill",
+          "lat": -60.69,
+          "lng": 86.31,
+          "markers": [
+            { "type": "mokoko",  "count": 8 },
+            { "type": "affinity", "count": 1 },
+            { "type": "monster", "count": 6 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 1 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "ozhorn_hill"
         }
       ]
     }

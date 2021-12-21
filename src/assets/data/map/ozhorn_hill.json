@@ -1,0 +1,411 @@
+{
+  "type": "zone",
+  "name": "Ozhorn Hill",
+  "id": "ozhorn_hill",
+  "parent": "world",
+  "continent": "Yudia",
+  "continentId": "yudia",
+  "icon": "./images/map/ozhorn_hill/ozhorn_hill.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "saland_hill",
+    "sapira_cave"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0072",
+          "lat": -122,
+          "lng": 201.25
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0073",
+          "lat": -162.25,
+          "lng": 143.94
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0074",
+          "lat": -200.44,
+          "lng": 134.81
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0075",
+          "lat": -166.63,
+          "lng": 114.94
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0076",
+          "lat": -157.88,
+          "lng": 65.38
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0077",
+          "lat": -135.19,
+          "lng": 34.31
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0078",
+          "lat": -84.75,
+          "lng": 79.63
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0079",
+          "lat": -93.63,
+          "lng": 102.06
+        }
+      ]
+    },
+    {
+      "type": "affinity",
+      "data": [
+        {
+          "name": "Morina",
+          "isCollectible": true,
+          "display": "Morina",
+          "content": "",
+          "id": "saland_hill_thunder",
+          "lat": -141.29,
+          "lng": 234.33
+        }
+      ]
+    },
+    {
+      "type": "monster",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Whitesand Bolchi Boss",
+          "display": "#9 Whitesand Bolchi Boss",
+          "id": "whitesand_bolchi_boss",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "ozhorn_hill",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -114.44,
+              "lng": 190.56
+            },
+            {
+              "zone": "ozhorn_hill",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -97.75,
+              "lng": 182.75
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Reanimated Chieftan",
+          "display": "#7 Reanimated Chieftan",
+          "id": "reanimated_chieftan",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "ozhorn_hill",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -178.5,
+              "lng": 145.75
+            },
+            {
+              "zone": "ozhorn_hill",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -145.98,
+              "lng": 176.5
+            },
+            {
+              "zone": "sapira_cave",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -58.69,
+              "lng": 116.75
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Strong Worm Fist",
+          "display": "#10 Strong Worm Fist",
+          "id": "strong_worm_fist",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "ozhorn_hill",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -172.75,
+              "lng": 61.56
+            },
+            {
+              "zone": "ozhorn_hill",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -145.13,
+              "lng": 56.81
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Alluring Shaman",
+          "display": "#11 Alluring Shaman",
+          "id": "alluring_shaman",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "ozhorn_hill",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -121.33,
+              "lng": 48.77
+            },
+            {
+              "zone": "ozhorn_hill",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -115.75,
+              "lng": 42.31
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Stinging Wallou Cactus",
+          "display": "#6 Stinging Wallou Cactus",
+          "id": "stinging_wallou_cactus",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "ozhorn_hill",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -200.5,
+              "lng": 113.63
+            },
+            {
+              "zone": "ozhorn_hill",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -189.69,
+              "lng": 107.25
+            },
+            {
+              "zone": "saland_hill",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -85.06,
+              "lng": 98.38
+            },
+            {
+              "zone": "saland_hill",
+              "index": 3,
+              "indexOffset": -2,
+              "lat": -83.5,
+              "lng": 92.75
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Boss Paingolin",
+          "display": "#5 Boss Paingolin",
+          "id": "boss_paingolin",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "ozhorn_hill",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -113.71,
+              "lng": 110.88
+            },
+            {
+              "zone": "ozhorn_hill",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -89.96,
+              "lng": 84
+            },
+            {
+              "zone": "saland_hill",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -75.25,
+              "lng": 141.5
+            },
+            {
+              "zone": "saland_hill",
+              "index": 3,
+              "indexOffset": -2,
+              "lat": -65.06,
+              "lng": 147.44
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vista",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Blood-soaked Salt Road",
+          "display": "#1 Blood-soaked Salt Road",
+          "content": "",
+          "id": "blood_soaked_salt_road",
+          "lat": -75.6,
+          "lng": 101.92
+        }
+      ]
+    },
+    {
+      "type": "food",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Old Encavian Food Chest",
+          "display": "#5 Old Encavian Food Chest",
+          "content": "Used to cook Salted Food Box at Hella.\n Cost: 1400 silver",
+          "id": "old_encavian_food_chest",
+          "lat": -187.67,
+          "lng": 151.17
+        }
+      ]
+    },
+    {
+      "type": "quest",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Source of Demons",
+          "display": "#2 Source of Demons",
+          "content": "Can be obtained after the main story quest \"Armen and the Demon\"",
+          "id": "source_of_demons",
+          "lat": -120.75,
+          "lng": 91.56
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "The Mirage",
+          "display": "#1 The Mirage",
+          "content": "",
+          "id": "the_mirage",
+          "lat": -195.38,
+          "lng": 122.81
+        }
+      ]
+    },
+    {
+      "type": "merchant",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Lucas",
+          "display": "Lucas",
+          "id": "lucas",
+          "content": "Sells the following items",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "saland_hill",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -166.63,
+              "lng": 124
+            },
+            {
+              "zone": "ozhorn_hill",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -124.75,
+              "lng": 130.36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Sapira Cave",
+          "continent": "Yudia",
+          "display": "Sapira Cave",
+          "content": "Insert description here.",
+          "id": "sapira_cave",
+          "lat": -148.31,
+          "lng": 22.5,
+          "markers": [
+            { "type": "mokoko",  "count": 9 },
+            { "type": "monster", "count": 3 },
+            { "type": "food", "count": 1 }
+          ],
+          "mapId": "sapira_cave"
+        },
+        {
+          "isCollectible": false,
+          "name": "Saland Hill",
+          "continent": "Yudia",
+          "display": "Saland Hill",
+          "content": "A hilly area with a salt workshop that serves as the basis for Yudia's nomads. Bandits desiring salt recently occupied the place.",
+          "id": "saland_hill",
+          "lat": -169.31,
+          "lng": 225,
+          "markers": [
+            { "type": "mokoko",  "count": 9 },
+            { "type": "affinity", "count": 1 },
+            { "type": "monster", "count": 7 },
+            { "type": "boss", "count": 1 },
+            { "type": "vista", "count": 2 },
+            { "type": "food", "count": 5 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 13 }
+          ],
+          "mapId": "saland_hill"
+        }
+      ]
+    }
+  ]
+}

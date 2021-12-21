@@ -10,7 +10,8 @@
   "maxZoom": 4,
   "adjacentZones": [
     "ankumo_mountain",
-    "aquiloks_tail"
+    "aquiloks_tail",
+    "saland_hill"
   ],
   "markers": [
     {
@@ -378,7 +379,7 @@
           "markers": [
             { "type": "mokoko",  "count": 9 },
             { "type": "affinity", "count": 1 },
-            { "type": "monster", "count": 5 },
+            { "type": "monster", "count": 7 },
             { "type": "boss", "count": 1 },
             { "type": "vista", "count": 2 },
             { "type": "food", "count": 5 },

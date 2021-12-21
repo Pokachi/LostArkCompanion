@@ -96,7 +96,7 @@
     "anchor": [8, 8],
     "type": "special",
     "name": "Special",
-    "toggleable": true,
+    "toggleable": false,
     "color": "yellow",
     "icon": "./images/icons/special.png"
   }

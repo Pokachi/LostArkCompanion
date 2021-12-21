@@ -1,0 +1,234 @@
+{
+  "type": "zone",
+  "name": "Sapira Cave",
+  "id": "sapira_cave",
+  "parent": "ozhorn_hill",
+  "continent": "Yudia",
+  "continentId": "yudia",
+  "icon": "./images/map/common/dungeon.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "ozhorn_hill"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0080",
+          "lat": -153.75,
+          "lng": 132.81
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0081",
+          "lat": -189,
+          "lng": 173.06
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0082",
+          "lat": -66.15,
+          "lng": 167.65
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0083",
+          "lat": -65.13,
+          "lng": 187.25
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0084",
+          "lat": -95.83,
+          "lng": 110.69
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0085",
+          "lat": -97.4,
+          "lng": 106.31
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0086",
+          "lat": -93,
+          "lng": 88.5
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0087",
+          "lat": -38.38,
+          "lng": 107.38
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0088",
+          "lat": -37.31,
+          "lng": 110.13
+        }
+      ]
+    },
+    {
+      "type": "monster",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Reanimated Chieftan",
+          "display": "#7 Reanimated Chieftan",
+          "id": "reanimated_chieftan",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "ozhorn_hill",
+              "content": "Respawn Timer: 20 seconds.",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -178.5,
+              "lng": 145.75
+            },
+            {
+              "zone": "ozhorn_hill",
+              "content": "Respawn Timer: 20 seconds.",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -145.98,
+              "lng": 176.5
+            },
+            {
+              "zone": "sapira_cave",
+              "content": "Always spawn on dungeon start.",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -58.69,
+              "lng": 116.75
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Dirty Mucus Lump",
+          "display": "#12 Dirty Mucus Lump",
+          "content": "Always spawn on dungeon start.",
+          "id": "dirty_mucus_lump",
+          "multi": false,
+          "lat": -165.31,
+          "lng": 187.75
+        },
+        {
+          "isCollectible": true,
+          "name": "Corrupt Red-eyed Rock Demon",
+          "display": "#13 Corrupt Red-eyed Rock Demon",
+          "content": "Always spawn on dungeon start.",
+          "id": "corrupt_red_eyed_rock_demon",
+          "multi": false,
+          "lat": -83.75,
+          "lng": 196.5
+        }
+      ]
+    },
+    {
+      "type": "food",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Hidden Cavatian Liquor Bottle",
+          "display": "#4 Hidden Cavatian Liquor Bottle",
+          "content": "Used to cook Age-old Cavatian Wine at Hella.\n Cost: 1400 silver",
+          "id": "hidden_cavatian_liquor_bottle",
+          "lat": -164.63,
+          "lng": 187.38
+        }
+      ]
+    },
+    {
+      "type": "passage",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0019",
+          "lat": -101.88,
+          "lng": 115.25
+        },
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0020",
+          "lat": -45.13,
+          "lng": 115.25
+        }
+      ]
+    },
+    {
+      "type": "special",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Special",
+          "display": "Lever (1/2)",
+          "content": "Use the 2 levers to access the secret area.",
+          "id": "special0002",
+          "lat": -97.44,
+          "lng": 119.19
+        },
+        {
+          "isCollectible": false,
+          "name": "Special",
+          "display": "Lever (2/2)",
+          "content": "Use the 2 levers to access the secret area.",
+          "id": "special0003",
+          "lat": -118.63,
+          "lng": 105.44
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Ozhorn Hill",
+          "continent": "Yudia",
+          "display": "Ozhorn Hill",
+          "content": "An area where the traces remain of the ancient kingdom of Encavia that flourished with magick. Many archaeologists aseek this place.",
+          "id": "ozhorn_hill",
+          "lat": -126,
+          "lng": 53,
+          "markers": [
+            { "type": "mokoko",  "count": 8 },
+            { "type": "affinity", "count": 1 },
+            { "type": "monster", "count": 6 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 1 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "ozhorn_hill"
+        }
+      ]
+    }
+  ]
+}

@@ -109,7 +109,7 @@
           "markers": [
             { "type": "mokoko",  "count": 9 },
             { "type": "affinity", "count": 1 },
-            { "type": "monster", "count": 5 },
+            { "type": "monster", "count": 7 },
             { "type": "boss", "count": 1 },
             { "type": "vista", "count": 2 },
             { "type": "food", "count": 5 },
@@ -117,6 +117,28 @@
             { "type": "story", "count": 13 }
           ],
           "mapId": "saland_hill"
+        },
+        {
+          "icon": "./images/map/ozhorn_hill/ozhorn_hill.png",
+          "isCollectible": false,
+          "anchor": [30, 30],
+          "name": "Ozhorn Hill",
+          "continent": "Yudia",
+          "display": "Ozhorn Hill",
+          "content": "An area where the traces remain of the ancient kingdom of Encavia that flourished with magick. Many archaeologists aseek this place.",
+          "id": "ozhorn_hill",
+          "lat": -179.69,
+          "lng": 127.66,
+          "markers": [
+            { "type": "mokoko",  "count": 8 },
+            { "type": "affinity", "count": 1 },
+            { "type": "monster", "count": 6 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 1 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "ozhorn_hill"
         }
       ]
     }
