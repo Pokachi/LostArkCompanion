@@ -7,7 +7,7 @@
   "type": "Affinity Item",
   "bound": "Bound to Account on Pickup",
   "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
-  "description": "<span style=\"color: #FFEC50\">A hat that the farmers in Dyorika Plain wear to avoid the blazing sun. Its unique design made it a popular souvenir that those visiting Luterra buy to remember their journey by.<br><br><span style=\"color: #FFEC50\">Selfa would love this.</span>",
+  "description": "<span style=\"color: #FFEC50\">An item used to increase Rapport with NPCs.</span><br><br>A hat that the farmers in Dyorika Plain wear to avoid the blazing sun. Its unique design made it a popular souvenir that those visiting Luterra buy to remember their journey by.<br><br><span style=\"color: #FFEC50\">Selfa would love this.</span>",
   "cost": 18000,
   "currency": "silver"
 }
