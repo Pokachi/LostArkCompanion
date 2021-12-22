@@ -3,8 +3,9 @@
   "name": "Forest's Minuet",
   "cooldown": "5s",
   "description": "It reveals hidden paths by moving thorny vines.",
-  "acquisition":"It's Okay, Miss Fairy - Lullaby Island",
-  "acquisitionType": "blue_quest",
+  "acquisition": "It's Okay, Miss Fairy - Lullaby Island",
+  "additionalInfo": "-Requires Song of Resonance-",
+  "acquisitionType": "purple_quest",
   "acquisitionContinentId": "sea",
   "acquisitionLocation": "lullaby_island",
   "acquisitionLink": "#/map?m=lullaby_island&c=forests_minuet"

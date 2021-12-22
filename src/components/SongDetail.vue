@@ -19,17 +19,25 @@
           <b-form-checkbox v-if="songData.acquisitionType !== 'default'" v-model="playerSongData[songId]" name="check-button" switch v-on:input="updateCollectible('song', songId, $event, songData.acquisitionContinentId, songData.acquisitionLocation);">Acquired: </b-form-checkbox>
         </div>
       </div>
-      <b-link v-if="songData.acquisitionLink" class="d-inline-block" :href="songData.acquisitionLink">
-        <b-img v-if="songData.acquisitionType && songData.acquisitionType!=='exchange'" :src="'./images/icons/' + songData.acquisitionType + '.png'" class="pb-1"/>
-        <span :class="['d-inline-block', 'acquisition-text', songData.acquisitionType ? songData.acquisitionType : '', 'ml-1']">
-          {{songData.acquisition}}
-        </span>
-      </b-link>
+      <div  v-if="songData.acquisitionLink" >
+        <b-link class="d-inline-block" :href="songData.acquisitionLink">
+          <b-img v-if="songData.acquisitionType && songData.acquisitionType!=='exchange'" :src="'./images/icons/' + songData.acquisitionType + '.png'" class="pb-1"/>
+          <span :class="['d-inline-block', 'acquisition-text', songData.acquisitionType ? songData.acquisitionType : '', 'ml-1']">
+            {{songData.acquisition}}
+          </span>
+        </b-link>
+        <div class="text-white" v-if="songData.additionalInfo">
+          {{ songData.additionalInfo }}
+        </div>
+      </div>
       <div v-else>
         <b-img v-if="songData.acquisitionType !== 'default'" :src="'./images/icons/' + songData.acquisitionType + '.png'" class="pb-1"/>
         <span :class="['d-inline-block', 'acquisition-text', songData.acquisitionType ? songData.acquisitionType : '', 'ml-1']">
           {{songData.acquisition}}
         </span>
+        <div class="text-white" v-if="songData.additionalInfo">
+          {{ songData.additionalInfo }}
+        </div>
       </div>
     </div>
   </div>
