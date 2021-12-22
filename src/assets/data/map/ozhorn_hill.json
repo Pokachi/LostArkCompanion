@@ -10,7 +10,8 @@
   "maxZoom": 4,
   "adjacentZones": [
     "saland_hill",
-    "sapira_cave"
+    "sapira_cave",
+    "mount_zagoras"
   ],
   "markers": [
     {
@@ -129,10 +130,10 @@
           "display": "#7 Reanimated Chieftain",
           "id": "reanimated_chieftain",
           "multi": true,
-          "content": "Respawn Timer: 20 seconds.",
           "locations": [
             {
               "zone": "ozhorn_hill",
+              "content": "Respawn Timer: 20 seconds.",
               "index": 0,
               "indexOffset": 0,
               "lat": -178.5,
@@ -140,6 +141,7 @@
             },
             {
               "zone": "ozhorn_hill",
+              "content": "Respawn Timer: 20 seconds.",
               "index": 1,
               "indexOffset": 0,
               "lat": -145.98,
@@ -147,6 +149,7 @@
             },
             {
               "zone": "sapira_cave",
+              "content": "Always spawn on dungeon start.",
               "index": 2,
               "indexOffset": -2,
               "lat": -58.69,
@@ -404,6 +407,25 @@
             { "type": "story", "count": 13 }
           ],
           "mapId": "saland_hill"
+        },
+        {
+          "isCollectible": false,
+          "name": "Mount Zagoras",
+          "continent": "West Luterra",
+          "display": "Mount Zagoras",
+          "content": "A rugged mountain range intruding into West Luterra. The Zagoras Fortress guards the border and is famous for producing excellent spearmen.",
+          "id": "mount_zagoras",
+          "lat": -33.38,
+          "lng": 119.81,
+          "markers": [
+            { "type": "mokoko",  "count": 12 },
+            { "type": "monster", "count": 3 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 2 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 4 }
+          ],
+          "mapId": "mount_zagoras"
         }
       ]
     }

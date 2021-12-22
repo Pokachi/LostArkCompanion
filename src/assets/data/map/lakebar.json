@@ -1,0 +1,88 @@
+{
+  "type": "zone",
+  "name": "Lakebar",
+  "id": "lakebar",
+  "parent": "world",
+  "continent": "West Luterra",
+  "continentId": "west_luterra",
+  "icon": "./images/map/mount_zagoras/lakebar.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "mount_zagoras"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0100",
+          "lat": -73.13,
+          "lng": 103.54
+        }
+      ]
+    },
+    {
+      "type": "monster",
+      "data": [
+      ]
+    },
+    {
+      "type": "vista",
+      "data": [
+      ]
+    },
+    {
+      "type": "food",
+      "data": [
+      ]
+    },
+    {
+      "type": "quest",
+      "data": [
+      ]
+    },
+    {
+      "type": "story",
+      "data": [
+      ]
+    },
+    {
+      "type": "merchant",
+      "data": [
+      ]
+    },
+    {
+      "type": "passage",
+      "data": [
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Mount Zagoras",
+          "continent": "West Luterra",
+          "display": "Mount Zagoras",
+          "content": "A rugged mountain range intruding into West Luterra. The Zagoras Fortress guards the border and is famous for producing excellent spearmen.",
+          "id": "mount_zagoras",
+          "lat": -121.38,
+          "lng": 246.15,
+          "markers": [
+            { "type": "mokoko",  "count": 12 },
+            { "type": "monster", "count": 3 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 2 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 4 }
+          ],
+          "mapId": "mount_zagoras"
+        }
+      ]
+    }
+  ]
+}

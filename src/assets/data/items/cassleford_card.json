@@ -1,0 +1,12 @@
+{
+  "id": "cassleford_card",
+  "grade": 2,
+  "image": "./images/items/card.png",
+  "name": "Cassleford Card",
+  "type": "Card",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "An experienced and stately knight. Thirain's reliable supporter.",
+  "cost": 8000,
+  "currency": "silver"
+}

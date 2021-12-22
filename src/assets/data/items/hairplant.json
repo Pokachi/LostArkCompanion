@@ -1,0 +1,13 @@
+{
+  "id": "hairplant",
+  "grade": 3,
+  "subIcon": "heart",
+  "image": "./images/items/hairplant.png",
+  "name": "Hairplant",
+  "type": "Cooking ingredient",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A herb sold by Wandering Merchants in West Luterra.\nIts name was coined from its resemblance to Human hair. Popularly used as a hair growth remedy in the west.<br><br><span style=\"color: #FFEC50\">An essential ingredient for Medrick Hair Loss Solution.</span>",
+  "cost": 777,
+  "currency": "silver"
+}

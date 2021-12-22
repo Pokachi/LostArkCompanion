@@ -1,0 +1,446 @@
+{
+  "type": "zone",
+  "name": "Mount Zagoras",
+  "id": "mount_zagoras",
+  "parent": "world",
+  "continent": "West Luterra",
+  "continentId": "west_luterra",
+  "icon": "./images/map/mount_zagoras/mount_zagoras.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "ozhorn_hill",
+    "lakebar"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0089",
+          "lat": -179.31,
+          "lng": 150.05
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0090",
+          "lat": -205.25,
+          "lng": 134.92
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0091",
+          "lat": -215.06,
+          "lng": 122.74
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0092",
+          "lat": -216.88,
+          "lng": 120.99
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0093",
+          "lat": -217.06,
+          "lng": 122.93
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0094",
+          "lat": -162.04,
+          "lng": 89.9
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0095",
+          "lat": -135.46,
+          "lng": 47.13
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0096",
+          "lat": -78,
+          "lng": 191.93
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0097",
+          "lat": -117.38,
+          "lng": 234.99
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0098",
+          "lat": -75.81,
+          "lng": 100.48
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0099",
+          "lat": -71.88,
+          "lng": 101.97
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0100",
+          "lat": -73.13,
+          "lng": 103.54
+        }
+      ]
+    },
+    {
+      "type": "monster",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Alpha Mane Tiger",
+          "display": "#1 Alpha Mane Tiger",
+          "id": "alpha_mane_tiger",
+          "multi": true,
+          "content": "2 spawn between the 3 locations.\nRespawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "mount_zagoras",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -159.88,
+              "lng": 132.31
+            },
+            {
+              "zone": "mount_zagoras",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -129.31,
+              "lng": 163.8
+            },
+            {
+              "zone": "mount_zagoras",
+              "index": 2,
+              "indexOffset": 0,
+              "lat": -113.44,
+              "lng": 170.8
+            }
+          ]
+        },{
+          "isCollectible": true,
+          "name": "Resentful Spirit Knight",
+          "display": "#8 Resentful Spirit Knight",
+          "id": "resentful_spirit_knight",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "mount_zagoras",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -77.92,
+              "lng": 205.94
+            },
+            {
+              "zone": "mount_zagoras",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -86.38,
+              "lng": 188.68
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Alpha Lake Boar",
+          "display": "#1 Alpha Lake Boar",
+          "id": "alpha_lake_boar",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "mount_zagoras",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -183.48,
+              "lng": 153.26
+            },
+            {
+              "zone": "mount_zagoras",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -173.38,
+              "lng": 160.36
+            },
+            {
+              "zone": "lakebar",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": 0,
+              "lng": 0
+            },
+            {
+              "zone": "lakebar",
+              "index": 3,
+              "indexOffset": -2,
+              "lat": 0,
+              "lng": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vista",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Zagoras Fortress Entrance",
+          "display": "#1 Zagoras Fortress Entrance",
+          "content": "",
+          "id": "zagoras_fortress_entrance",
+          "lat": -131.06,
+          "lng": 144.24
+        }
+      ]
+    },
+    {
+      "type": "food",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Hairplant",
+          "display": "#7 Hairplant",
+          "content": "Used to cook Ripening Anti Hair Loss Agent at Heron.\nThen wait 10 minute for it to become Medrick Hair Loss Solution\n Cost: 1700 silver",
+          "id": "hairplant",
+          "lat": -103.88,
+          "lng": 110.43
+        },
+        {
+          "isCollectible": true,
+          "name": "Boar BBQ",
+          "display": "#1 Boar BBQ",
+          "content": "",
+          "id": "boar_bbq",
+          "lat": -191.19,
+          "lng": 164.49
+        }
+      ]
+    },
+    {
+      "type": "quest",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Heart Engraved on the Headstone",
+          "display": "#1 Heart Engraved on the Headstone",
+          "content": "Can be obtained after the main story quest \"The Declaration\"",
+          "id": "heart_engraved_on_the_headstone",
+          "lat": -104.13,
+          "lng": 115.99
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Well Ghost Story (1/3)",
+          "display": "#6 Well Ghost Story (1/3)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "mount_zagoras",
+              "marker": "well_ghost_story_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "mount_zagoras",
+              "marker": "well_ghost_story_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "mount_zagoras",
+              "marker": "well_ghost_story_p3"
+            }
+          ],
+          "id": "well_ghost_story_p1",
+          "lat": -98.75,
+          "lng": 123.11
+        },
+        {
+          "isCollectible": false,
+          "name": "Well Ghost Story (2/3)",
+          "display": "#6 Well Ghost Story (2/3)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "mount_zagoras",
+              "marker": "well_ghost_story_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "mount_zagoras",
+              "marker": "well_ghost_story_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "mount_zagoras",
+              "marker": "well_ghost_story_p3"
+            }
+          ],
+          "id": "well_ghost_story_p2",
+          "lat": -110.5,
+          "lng": 109.37
+        },
+        {
+          "isCollectible": true,
+          "name": "Well Ghost Story (3/3)",
+          "display": "#6 Well Ghost Story (3/3)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "mount_zagoras",
+              "marker": "well_ghost_story_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "mount_zagoras",
+              "marker": "well_ghost_story_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "mount_zagoras",
+              "marker": "well_ghost_story_p3"
+            }
+          ],
+          "id": "well_ghost_story_p3",
+          "lat": -57.25,
+          "lng": 183.8
+        },
+        {
+          "isCollectible": true,
+          "name": "Knight's Oath",
+          "display": "#3 Knight's Oath",
+          "content": "",
+          "id": "the_mirage",
+          "lat": -96.6,
+          "lng": 115.97
+        }
+      ]
+    },
+    {
+      "type": "merchant",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Malone",
+          "display": "Malone",
+          "id": "malone",
+          "content": "Sells the following items",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "mount_zagoras",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -104.56,
+              "lng": 110.74
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "passage",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0021",
+          "lat": -212.25,
+          "lng": 123.87
+        },
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0022",
+          "lat": -68.5,
+          "lng": 99.81
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Ozhorn Hill",
+          "continent": "Yudia",
+          "display": "Ozhorn Hill",
+          "content": "An area where the traces remain of the ancient kingdom of Encavia that flourished with magick. Many archaeologists aseek this place.",
+          "id": "ozhorn_hill",
+          "lat": -226.25,
+          "lng": 145.95,
+          "markers": [
+            { "type": "mokoko",  "count": 8 },
+            { "type": "affinity", "count": 1 },
+            { "type": "monster", "count": 6 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 1 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "ozhorn_hill"
+        },
+        {
+          "isCollectible": false,
+          "name": "Lakebar",
+          "continent": "West Luterra",
+          "display": "Lakebar",
+          "content": "An area with a beautiful lake. In commemoration of Lynnis, there are many peddlers visiting here to trade unusual ingredients.",
+          "id": "lakebar",
+          "lat": -143.81,
+          "lng": 23.05,
+          "markers": [
+            { "type": "mokoko",  "count": 11 },
+            { "type": "affinity", "count": 1 },
+            { "type": "monster", "count": 2 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 2 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "lakebar"
+        }
+      ]
+    }
+  ]
+}
