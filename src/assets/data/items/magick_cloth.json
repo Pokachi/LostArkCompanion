@@ -1,0 +1,13 @@
+{
+  "id": "magick_cloth",
+  "grade": 3,
+  "subIcon": "heart",
+  "image": "./images/items/magick_cloth.png",
+  "name": "Magick Cloth",
+  "type": "Affinity Item",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "<span style=\"color: #FFEC50\">An item used to increase Rapport with NPCs.</span><br><br>Sylvains in Vern often fabricate their clothes into magical clothing materials that are known to have beautiful colors and otherworldly smoothness, along with a piece of relief from the magical protection they provide.<br><br><span style=\"color: #FFEC50\">Ealyn and Tanay would love this.</span>",
+  "cost": 18000,
+  "currency": "silver"
+}

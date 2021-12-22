@@ -1,0 +1,143 @@
+{
+  "type": "zone",
+  "name": "Brilliant Ridge",
+  "id": "brilliant_ridge",
+  "parent": "lakebar",
+  "continent": "West Luterra",
+  "continentId": "west_luterra",
+  "icon": "./images/map/common/dungeon.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "lakebar"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0112",
+          "lat": -174.94,
+          "lng": 103.74
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0113",
+          "lat": -165.5,
+          "lng": 147.36
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0114",
+          "lat": -111.38,
+          "lng": 39.95
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0115",
+          "lat": -117,
+          "lng": 36.2
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0116",
+          "lat": -119,
+          "lng": 34.45
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0117",
+          "lat": -85.38,
+          "lng": 68.74
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0118",
+          "lat": -172.38,
+          "lng": 179.8
+        }
+      ]
+    },
+    {
+      "type": "vista",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Monument of King Luterra",
+          "display": "#2 Monument of King Luterra",
+          "content": "",
+          "id": "monument_of_king_luterra",
+          "lat": -32.94,
+          "lng": 139.49
+        }
+      ]
+    },
+    {
+      "type": "passage",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "Kill the boss and come back to unlock this secret passage.",
+          "id": "passage0024",
+          "lat": -116.25,
+          "lng": 54.07
+        }
+      ]
+    },
+    {
+      "type": "special",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Special",
+          "content": "Kill the boss here to unlock the secret passage.",
+          "display": "Kill the boss here to unlock the secret passage.",
+          "id": "special0004",
+          "lat": -82.87,
+          "lng": 92.49
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Lakebar",
+          "continent": "West Luterra",
+          "display": "Lakebar",
+          "content": "An area with a beautiful lake. In commemoration of Lynnis, there are many peddlers visiting here to trade unusual ingredients.",
+          "id": "lakebar",
+          "lat": -194.75,
+          "lng": 181.19,
+          "markers": [
+            { "type": "mokoko",  "count": 11 },
+            { "type": "affinity", "count": 1 },
+            { "type": "monster", "count": 2 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 2 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "lakebar"
+        }
+      ]
+    }
+  ]
+}

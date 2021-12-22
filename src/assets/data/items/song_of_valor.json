@@ -1,0 +1,10 @@
+{
+  "id": "song_of_valor",
+  "grade": 0,
+  "image": "./images/items/song_of_valor.png",
+  "name": "Song of Valor",
+  "type": "Song",
+  "bound": "Binds when obtained",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "It is the national anthem of Luterra, the country of knights, which has the power to fill a heart with courage even in the deepest despairs."
+}

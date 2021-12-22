@@ -1,0 +1,7 @@
+{
+  "id": "applause",
+  "name": "Applause",
+  "description": "Type /applause to clap your hands.",
+  "acquisition":"Obtained By Default",
+  "acquisitionType": "default"
+}

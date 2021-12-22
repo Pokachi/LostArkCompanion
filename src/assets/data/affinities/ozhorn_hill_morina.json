@@ -58,18 +58,18 @@
       },
       {
         "id": "azenaporium_brooch",
-        "points": 330
-      },
-      {
-        "id": "educational_chart",
-        "points": 330
+        "points": 360
       },
       {
         "id": "faded_photo",
-        "points": 330
+        "points": 360
       },
       {
-        "id": "finest_spirit",
+        "id": "old_bone",
+        "points": 360
+      },
+      {
+        "id": "educational_chart",
         "points": 330
       },
       {
@@ -86,10 +86,6 @@
       },
       {
         "id": "mysterious_mouth",
-        "points": 330
-      },
-      {
-        "id": "old_bone",
         "points": 330
       },
       {
@@ -119,6 +115,10 @@
       {
         "id": "zagoras_ice_cap",
         "points": 324
+      },
+      {
+        "id": "finest_spirit",
+        "points": 300
       }
     ]
   },

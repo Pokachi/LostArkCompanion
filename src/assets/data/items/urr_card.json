@@ -1,0 +1,12 @@
+{
+  "id": "urr_card",
+  "grade": 1,
+  "image": "./images/items/card.png",
+  "name": "Urr Card",
+  "type": "Card",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "An Umar blacksmith in Lakebar. Just a touch of his hammer can turn an ordinary weapon into a masterpiece.",
+  "cost": 5000,
+  "currency": "silver"
+}

@@ -147,7 +147,8 @@
               "lng": 170.8
             }
           ]
-        },{
+        },
+        {
           "isCollectible": true,
           "name": "Resentful Spirit Knight",
           "display": "#8 Resentful Spirit Knight",
@@ -197,15 +198,15 @@
               "zone": "lakebar",
               "index": 2,
               "indexOffset": -2,
-              "lat": 0,
-              "lng": 0
+              "lat": -152.25,
+              "lng": 126.43
             },
             {
               "zone": "lakebar",
               "index": 3,
               "indexOffset": -2,
-              "lat": 0,
-              "lng": 0
+              "lat": -127.63,
+              "lng": 106.56
             }
           ]
         }
@@ -234,8 +235,23 @@
           "display": "#7 Hairplant",
           "content": "Used to cook Ripening Anti Hair Loss Agent at Heron.\nThen wait 10 minute for it to become Medrick Hair Loss Solution\n Cost: 1700 silver",
           "id": "hairplant",
-          "lat": -103.88,
-          "lng": 110.43
+          "multi": true,
+          "locations": [
+            {
+              "zone": "mount_zagoras",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -103.88,
+              "lng": 110.43
+            },
+            {
+              "zone": "lakebar",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -99.88,
+              "lng": 172.92
+            }
+          ]
         },
         {
           "isCollectible": true,
@@ -371,6 +387,13 @@
               "indexOffset": 0,
               "lat": -104.56,
               "lng": 110.74
+            },
+            {
+              "zone": "lakebar",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -100,
+              "lng": 171.99
             }
           ]
         }

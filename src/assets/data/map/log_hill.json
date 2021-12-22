@@ -381,7 +381,7 @@
           "isCollectible": false,
           "name": "Forest's Minuet",
           "display": "Forest's Minuet",
-          "content": "Kill the nearby golem to reveal the passage",
+          "content": "",
           "id": "minute0001",
           "lat": -65.73,
           "lng": 89.65

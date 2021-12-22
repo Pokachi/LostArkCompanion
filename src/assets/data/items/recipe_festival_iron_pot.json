@@ -2,7 +2,7 @@
   "id": "recipe_festival_iron_pot",
   "grade": 2,
   "subIcon": "home",
-  "image": "./images/items/recipe_festival_iron_pot.png",
+  "image": "./images/items/stronghold_recipe.png",
   "name": "Crafting Recipe: Festival Iron Pot",
   "type": "Crafting Recipe",
   "bound": "Binds when obtained",

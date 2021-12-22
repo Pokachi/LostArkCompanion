@@ -1,0 +1,13 @@
+{
+  "id": "truth_mushroom",
+  "grade": 3,
+  "subIcon": "heart",
+  "image": "./images/items/truth_mushroom.png",
+  "name": "진실 버섯",
+  "type": "Affinity Item",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "<span style=\"color: #FFEC50\">An item used to increase Rapport with NPCs.</span><br><br>먹으면 진실을 술술 말하게 된다는 마성의 버섯.<br>이 버섯을 먹은 자, 진실만을 이야기 할지어다!<br><br><span style=\"color: #FFEC50\">Madame Deirdre would love this.</span>",
+  "cost": 18000,
+  "currency": "silver"
+}

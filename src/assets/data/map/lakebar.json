@@ -9,7 +9,8 @@
   "minZoom": 2,
   "maxZoom": 4,
   "adjacentZones": [
-    "mount_zagoras"
+    "mount_zagoras",
+    "brilliant_ridge"
   ],
   "markers": [
     {
@@ -19,45 +20,353 @@
           "name": "Mokoko Bean",
           "isCollectible": true,
           "content": "",
-          "id": "mokoko0100",
-          "lat": -73.13,
-          "lng": 103.54
+          "id": "mokoko0101",
+          "lat": -155.31,
+          "lng": 216.62
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0102",
+          "lat": -175.92,
+          "lng": 115.01
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0103",
+          "lat": -222.06,
+          "lng": 154.86
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0104",
+          "lat": -217.02,
+          "lng": 130.93
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0105",
+          "lat": -200.31,
+          "lng": 90.06
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0106",
+          "lat": -125.38,
+          "lng": 105.62
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0107",
+          "lat": -171.56,
+          "lng": 84.99
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0108",
+          "lat": -173.56,
+          "lng": 85.62
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0109",
+          "lat": -61.19,
+          "lng": 116.99
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0110",
+          "lat": -85.33,
+          "lng": 191.42
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0111",
+          "lat": -84.44,
+          "lng": 193.86
+        }
+      ]
+    },
+    {
+      "type": "affinity",
+      "data": [
+        {
+          "name": "Artisan Urr",
+          "isCollectible": true,
+          "display": "Artisan Urr",
+          "content": "",
+          "id": "lakebar_artisan_urr",
+          "lat": -114.75,
+          "lng": 148.43
         }
       ]
     },
     {
       "type": "monster",
       "data": [
+        {
+          "isCollectible": true,
+          "name": "Elite Raid Group Supplier",
+          "display": "#9 Elite Raid Group Supplier",
+          "id": "elite_raid_group_supplier",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "lakebar",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -207.13,
+              "lng": 159.35
+            },
+            {
+              "zone": "lakebar",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -205.38,
+              "lng": 126.23
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Ferocious Red Kran",
+          "display": "#10 Ferocious Red Kran",
+          "id": "ferocious_red_kran",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "lakebar",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -125.21,
+              "lng": 18.23
+            },
+            {
+              "zone": "lakebar",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -122.58,
+              "lng": 32.59
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Alpha Lake Boar",
+          "display": "#1 Alpha Lake Boar",
+          "id": "alpha_lake_boar",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "mount_zagoras",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -183.48,
+              "lng": 153.26
+            },
+            {
+              "zone": "mount_zagoras",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -173.38,
+              "lng": 160.36
+            },
+            {
+              "zone": "lakebar",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -152.25,
+              "lng": 126.43
+            },
+            {
+              "zone": "lakebar",
+              "index": 3,
+              "indexOffset": -2,
+              "lat": -127.63,
+              "lng": 106.56
+            }
+          ]
+        }
       ]
     },
     {
       "type": "vista",
       "data": [
+        {
+          "isCollectible": true,
+          "name": "Old Lakebar Tree",
+          "display": "#2 Old Lakebar Tree",
+          "content": "",
+          "id": "old_lakebar_tree",
+          "lat": -94.27,
+          "lng": 194.31
+        }
       ]
     },
     {
       "type": "food",
       "data": [
+        {
+          "isCollectible": true,
+          "name": "Hairplant",
+          "display": "#7 Hairplant",
+          "content": "Used to cook Ripening Anti Hair Loss Agent at Heron.\nThen wait 10 minute for it to become Medrick Hair Loss Solution\n\n Cost: 1700 silver",
+          "id": "hairplant",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "mount_zagoras",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -103.88,
+              "lng": 110.43
+            },
+            {
+              "zone": "lakebar",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -99.88,
+              "lng": 172.92
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Lakebar Freshwater Fish Stew",
+          "display": "#2 Lakebar Freshwater Fish Stew",
+          "content": "",
+          "id": "lakebar_freshwater_fish_stew",
+          "lat": -122.69,
+          "lng": 156.49
+        }
       ]
     },
     {
       "type": "quest",
       "data": [
+        {
+          "isCollectible": true,
+          "name": "The Peddler of Luterra",
+          "display": "#2 The Peddler of Luterra",
+          "content": "Can be obtained after the main story quest \"The Spirit of Luterra\"",
+          "id": "the_peddler_of_luterra",
+          "lat": -175.63,
+          "lng": 118.74
+        }
       ]
     },
     {
       "type": "story",
       "data": [
+        {
+          "isCollectible": false,
+          "name": "What Makes a Hero (1/4)",
+          "display": "#1 What Makes a Hero (1/4)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "lakebar",
+              "marker": "what_makes_a_hero_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "medrick_monastery",
+              "marker": "what_makes_a_hero_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "bilbrin_forest",
+              "marker": "what_makes_a_hero_p3"
+            },
+            {
+              "label": "Part 4",
+              "zone": "battlebound_plains",
+              "marker": "what_makes_a_hero_p4"
+            }
+          ],
+          "id": "what_makes_a_hero_p1",
+          "lat": -121.67,
+          "lng": 154.2
+        }
       ]
     },
     {
       "type": "merchant",
       "data": [
+        {
+          "isCollectible": false,
+          "name": "Malone",
+          "display": "Malone",
+          "id": "malone",
+          "content": "Sells the following items",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "mount_zagoras",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -104.56,
+              "lng": 110.74
+            },
+            {
+              "zone": "lakebar",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -100,
+              "lng": 171.99
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "minuet",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Forest's Minuet",
+          "display": "Forest's Minuet",
+          "content": "",
+          "id": "minute0002",
+          "lat": -169.56,
+          "lng": 82.55
+        }
       ]
     },
     {
       "type": "passage",
       "data": [
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0023",
+          "lat": -66.44,
+          "lng": 159.74
+        }
       ]
     },
     {
@@ -81,6 +390,21 @@
             { "type": "story", "count": 4 }
           ],
           "mapId": "mount_zagoras"
+        },
+        {
+          "isCollectible": false,
+          "name": "Brilliant Ridge",
+          "continent": "West Luterra",
+          "display": "Brilliant Ridge",
+          "content": "Insert description here.",
+          "id": "brilliant_ridge",
+          "lat": -138.25,
+          "lng": 12.23,
+          "markers": [
+            { "type": "mokoko",  "count": 7 },
+            { "type": "vista", "count": 1 }
+          ],
+          "mapId": "brilliant_ridge"
         }
       ]
     }

@@ -139,6 +139,49 @@
             { "type": "story", "count": 1 }
           ],
           "mapId": "ozhorn_hill"
+        },
+        {
+          "icon": "./images/map/mount_zagoras/mount_zagoras.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Mount Zagoras",
+          "continent": "West Luterra",
+          "display": "Mount Zagoras",
+          "content": "A rugged mountain range intruding into West Luterra. The Zagoras Fortress guards the border and is famous for producing excellent spearmen.",
+          "id": "mount_zagoras",
+          "lat": -192.58,
+          "lng": 136.37,
+          "markers": [
+            { "type": "mokoko",  "count": 12 },
+            { "type": "monster", "count": 3 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 2 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 4 }
+          ],
+          "mapId": "mount_zagoras"
+        },
+        {
+          "icon": "./images/map/lakebar/lakebar.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Lakebar",
+          "continent": "West Luterra",
+          "display": "Lakebar",
+          "content": "An area with a beautiful lake. In commemoration of Lynnis, there are many peddlers visiting here to trade unusual ingredients.",
+          "id": "lakebar",
+          "lat": -187.86,
+          "lng": 139.37,
+          "markers": [
+            { "type": "mokoko",  "count": 11 },
+            { "type": "affinity", "count": 1 },
+            { "type": "monster", "count": 2 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 2 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "lakebar"
         }
       ]
     }

@@ -91,6 +91,10 @@
         }
       },
       {
+        "id": "model_of_luterras_sword",
+        "points": 360
+      },
+      {
         "id": "azenaporium_brooch",
         "points": 330
       },
@@ -128,10 +132,6 @@
       },
       {
         "id": "halite_statue",
-        "points": 330
-      },
-      {
-        "id": "model_of_luterras_sword",
         "points": 330
       },
       {
