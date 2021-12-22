@@ -1,0 +1,382 @@
+{
+  "type": "zone",
+  "name": "Medrick Monastery",
+  "id": "medrick_monastery",
+  "parent": "world",
+  "continent": "West Luterra",
+  "continentId": "west_luterra",
+  "icon": "./images/map/medrick_monastery/medrick_monastery.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "lakebar"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0119",
+          "lat": -207.75,
+          "lng": 137.55
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0120",
+          "lat": -185.63,
+          "lng": 143.18
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0121",
+          "lat": -165.63,
+          "lng": 155.93
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0122",
+          "lat": -142.38,
+          "lng": 176.42
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0123",
+          "lat": -133.5,
+          "lng": 157.68
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0124",
+          "lat": -178.5,
+          "lng": 96.65
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0125",
+          "lat": -177,
+          "lng": 96.03
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0126",
+          "lat": -123.6,
+          "lng": 106.05
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0127",
+          "lat": -123.54,
+          "lng": 108.05
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0128",
+          "lat": -89.94,
+          "lng": 49.62
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0129",
+          "lat": -97.85,
+          "lng": 172.9
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0130",
+          "lat": -112.1,
+          "lng": 177.78
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0131",
+          "lat": -24.69,
+          "lng": 142.86
+        }
+      ]
+    },
+    {
+      "type": "monster",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Raging Elemental",
+          "display": "#7 Raging Elemental",
+          "id": "raging_elemental",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "medrick_monastery",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -179.21,
+              "lng": 69.39
+            },
+            {
+              "zone": "medrick_monastery",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -136.44,
+              "lng": 96.38
+            },
+            {
+              "zone": "battlebound_plains",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": 0,
+              "lng": 0
+            },
+            {
+              "zone": "battlebound_plains",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": 0,
+              "lng": 0
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Boss Red Poisonous Locust",
+          "display": "#3 Boss Red Poisonous Locust",
+          "id": "boss_red_poisonous_locust",
+          "multi": true,
+          "content": "2 spawn between the 3 locations.\nRespawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "medrick_monastery",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -99.58,
+              "lng": 168.14
+            },
+            {
+              "zone": "medrick_monastery",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -48.71,
+              "lng": 157.06
+            },
+            {
+              "zone": "medrick_monastery",
+              "index": 2,
+              "indexOffset": 0,
+              "lat": -38.83,
+              "lng": 141.82
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vista",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Medric Bridge",
+          "display": "#3 Medric Bridge",
+          "content": "",
+          "id": "medric_bridge",
+          "lat": -82.13,
+          "lng": 78.31
+        }
+      ]
+    },
+    {
+      "type": "food",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Hairplant",
+          "display": "#7 Hairplant",
+          "content": "Used to cook Ripening Anti Hair Loss Agent at Heron.\nThen wait 10 minute for it to become Medrick Hair Loss Solution\n\n Cost: 1700 silver",
+          "id": "hairplant",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "mount_zagoras",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -103.88,
+              "lng": 110.43
+            },
+            {
+              "zone": "lakebar",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -99.88,
+              "lng": 172.92
+            },
+            {
+              "zone": "medrick_monastery",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -149.44,
+              "lng": 130.87
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Special Egg Rice Recipe",
+          "display": "#4 Special Egg Rice Recipe",
+          "content": "Used to cook Efferin's Egg Rice at Heron.\nCost: 1400 silver",
+          "id": "boar_bbq",
+          "lat": -145.65,
+          "lng": 134.76
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "What Makes a Hero (2/4)",
+          "display": "#1 What Makes a Hero (2/4)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "lakebar",
+              "marker": "what_makes_a_hero_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "medrick_monastery",
+              "marker": "what_makes_a_hero_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "bilbrin_forest",
+              "marker": "what_makes_a_hero_p3"
+            },
+            {
+              "label": "Part 4",
+              "zone": "battlebound_plains",
+              "marker": "what_makes_a_hero_p4"
+            }
+          ],
+          "id": "what_makes_a_hero_p2",
+          "lat": -143.88,
+          "lng": 142.74
+        }
+      ]
+    },
+    {
+      "type": "merchant",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Malone",
+          "display": "Malone",
+          "id": "malone",
+          "content": "Sells the following items",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "mount_zagoras",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -104.56,
+              "lng": 110.74
+            },
+            {
+              "zone": "lakebar",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -100,
+              "lng": 171.99
+            },
+            {
+              "zone": "medrick_monastery",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -150.44,
+              "lng": 131.89
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "passage",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0025",
+          "lat": -128.65,
+          "lng": 103.95
+        }
+      ]
+    },
+    {
+      "type": "resonance",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Song of Resonance",
+          "display": "Song of Resonance",
+          "content": "",
+          "id": "resonance0001",
+          "lat": -180.75,
+          "lng": 92.18
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Lakebar",
+          "continent": "West Luterra",
+          "display": "Lakebar",
+          "content": "An area with a beautiful lake. In commemoration of Lynnis, there are many peddlers visiting here to trade unusual ingredients.",
+          "id": "lakebar",
+          "lat": -232.63,
+          "lng": 134.02,
+          "markers": [
+            { "type": "mokoko",  "count": 11 },
+            { "type": "affinity", "count": 1 },
+            { "type": "monster", "count": 2 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 2 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "lakebar"
+        }
+      ]
+    }
+  ]
+}

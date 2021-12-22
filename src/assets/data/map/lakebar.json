@@ -5,12 +5,13 @@
   "parent": "world",
   "continent": "West Luterra",
   "continentId": "west_luterra",
-  "icon": "./images/map/mount_zagoras/lakebar.png",
+  "icon": "./images/map/lakebar/lakebar.png",
   "minZoom": 2,
   "maxZoom": 4,
   "adjacentZones": [
     "mount_zagoras",
-    "brilliant_ridge"
+    "brilliant_ridge",
+    "medrick_monastery"
   ],
   "markers": [
     {
@@ -249,6 +250,13 @@
               "indexOffset": -1,
               "lat": -99.88,
               "lng": 172.92
+            },
+            {
+              "zone": "medrick_monastery",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -149.44,
+              "lng": 130.87
             }
           ]
         },
@@ -337,6 +345,13 @@
               "indexOffset": -1,
               "lat": -100,
               "lng": 171.99
+            },
+            {
+              "zone": "medrick_monastery",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -150.44,
+              "lng": 131.89
             }
           ]
         }
@@ -390,6 +405,24 @@
             { "type": "story", "count": 4 }
           ],
           "mapId": "mount_zagoras"
+        },
+        {
+          "isCollectible": false,
+          "name": "Medrick Monastery",
+          "continent": "West Luterra",
+          "display": "Medrick Monastery",
+          "content": "It is a historic monastery dedicated to the Lord Regulus and has maintained a friendly relationship with the Luterran royal family.",
+          "id": "medrick_monastery",
+          "lat": -7.75,
+          "lng": 138.20,
+          "markers": [
+            { "type": "mokoko",  "count": 13 },
+            { "type": "monster", "count": 2 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 2 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "medrick_monastery"
         },
         {
           "isCollectible": false,

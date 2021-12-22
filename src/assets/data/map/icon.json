@@ -87,10 +87,18 @@
   "minuet": {
     "anchor": [8, 8],
     "type": "minuet",
-    "name": "Minuet",
+    "name": "Forest's Minuet",
     "toggleable": true,
     "color": "green",
     "icon": "./images/icons/minuet.png"
+  },
+  "resonance": {
+    "anchor": [8, 8],
+    "type": "resonance",
+    "name": "Song of Resonance",
+    "toggleable": true,
+    "color": "orange",
+    "icon": "./images/icons/resonance.png"
   },
   "special": {
     "anchor": [8, 8],

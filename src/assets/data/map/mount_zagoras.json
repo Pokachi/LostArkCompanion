@@ -250,6 +250,13 @@
               "indexOffset": -1,
               "lat": -99.88,
               "lng": 172.92
+            },
+            {
+              "zone": "medrick_monastery",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -149.44,
+              "lng": 130.87
             }
           ]
         },
@@ -394,6 +401,13 @@
               "indexOffset": -1,
               "lat": -100,
               "lng": 171.99
+            },
+            {
+              "zone": "medrick_monastery",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -150.44,
+              "lng": 131.89
             }
           ]
         }
