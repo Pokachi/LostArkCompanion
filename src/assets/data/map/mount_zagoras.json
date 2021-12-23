@@ -264,6 +264,13 @@
               "indexOffset": -3,
               "lat": -132.19,
               "lng": 161.49
+            },
+            {
+              "zone": "battlebound_plains",
+              "index": 4,
+              "indexOffset": -4,
+              "lat": -175.75,
+              "lng": 129.48
             }
           ]
         },
@@ -378,7 +385,7 @@
           "name": "Knight's Oath",
           "display": "#3 Knight's Oath",
           "content": "",
-          "id": "the_mirage",
+          "id": "knights_oath",
           "lat": -96.6,
           "lng": 115.97
         }
@@ -422,6 +429,13 @@
               "indexOffset": -3,
               "lat": -132.75,
               "lng": 162.11
+            },
+            {
+              "zone": "battlebound_plains",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -177.31,
+              "lng": 130.86
             }
           ]
         }

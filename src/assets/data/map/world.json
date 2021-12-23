@@ -196,7 +196,7 @@
           "lng": 135.43,
           "markers": [
             { "type": "mokoko",  "count": 13 },
-            { "type": "monster", "count": 2 },
+            { "type": "monster", "count": 3 },
             { "type": "vista", "count": 1 },
             { "type": "food", "count": 2 },
             { "type": "story", "count": 1 }
@@ -237,7 +237,7 @@
           "lng": 143.53,
           "markers": [
             { "type": "mokoko",  "count": 7 },
-            { "type": "monster", "count": 1 },
+            { "type": "monster", "count": 3 },
             { "type": "vista", "count": 1 },
             { "type": "food", "count": 1 },
             { "type": "story", "count": 2 }

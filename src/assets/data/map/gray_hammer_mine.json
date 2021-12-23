@@ -125,6 +125,7 @@
           "locations": [
             {
               "zone": "gray_hammer_mine",
+              "content": "Always spawn on dungeon start.",
               "index": 0,
               "indexOffset": 0,
               "lat": -161.5,
@@ -132,6 +133,7 @@
             },
             {
               "zone": "gray_hammer_mine",
+              "content": "Always spawn on dungeon start.",
               "index": 1,
               "indexOffset": 0,
               "lat": -143.56,
@@ -139,6 +141,7 @@
             },
             {
               "zone": "medrick_monastery",
+              "content": "Respawn Timer: 20 seconds.",
               "index": 2,
               "indexOffset": -2,
               "lat": -207.94,
@@ -146,6 +149,7 @@
             },
             {
               "zone": "medrick_monastery",
+              "content": "Respawn Timer: 20 seconds.",
               "index": 3,
               "indexOffset": -2,
               "lat": -188.25,
@@ -153,17 +157,19 @@
             },
             {
               "zone": "battlebound_plains",
+              "content": "Respawn Timer: 20 seconds.",
               "index": 4,
               "indexOffset": -4,
-              "lat": 0,
-              "lng": 0
+              "lat": -130.77,
+              "lng": 103.93
             },
             {
               "zone": "battlebound_plains",
+              "content": "Respawn Timer: 20 seconds.",
               "index": 5,
               "indexOffset": -4,
-              "lat": 0,
-              "lng": 0
+              "lat": -95.63,
+              "lng": 74.11
             }
           ]
         },
@@ -365,7 +371,7 @@
           "lng": 141.48
         },
         {
-          "isCollectible": false,
+          "isCollectible": true,
           "name": "Sleight of Hand (5/5)",
           "display": "#7 Sleight of Hand (5/5)",
           "content": "",

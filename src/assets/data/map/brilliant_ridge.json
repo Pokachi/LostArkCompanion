@@ -129,7 +129,7 @@
           "markers": [
             { "type": "mokoko",  "count": 11 },
             { "type": "affinity", "count": 1 },
-            { "type": "monster", "count": 2 },
+            { "type": "monster", "count": 3 },
             { "type": "vista", "count": 1 },
             { "type": "food", "count": 2 },
             { "type": "quest", "count": 1 },

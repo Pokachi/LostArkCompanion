@@ -10,7 +10,8 @@
   "maxZoom": 4,
   "adjacentZones": [
     "medrick_monastery",
-    "gray_hammer_mine"
+    "gray_hammer_mine",
+    "battlebound_plains"
   ],
   "markers": [
     {
@@ -196,7 +197,7 @@
             },
             {
               "zone": "bilbrin_forest",
-              "index": 1,
+              "index": 2,
               "indexOffset": 0,
               "lat": -26.63,
               "lng": 131.22
@@ -289,6 +290,13 @@
               "indexOffset": -3,
               "lat": -132.19,
               "lng": 161.49
+            },
+            {
+              "zone": "battlebound_plains",
+              "index": 4,
+              "indexOffset": -4,
+              "lat": -175.75,
+              "lng": 129.48
             }
           ]
         }
@@ -419,6 +427,13 @@
               "indexOffset": -3,
               "lat": -132.75,
               "lng": 162.11
+            },
+            {
+              "zone": "battlebound_plains",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -177.31,
+              "lng": 130.86
             }
           ]
         }
@@ -456,7 +471,7 @@
           "lng": 220.12,
           "markers": [
             { "type": "mokoko",  "count": 7 },
-            { "type": "monster", "count": 1 },
+            { "type": "monster", "count": 3 },
             { "type": "vista", "count": 1 },
             { "type": "food", "count": 1 },
             { "type": "story", "count": 2 }
@@ -464,7 +479,7 @@
           "mapId": "battlebound_plains"
         },
         {
-          "isCollectible": false,
+          "isCollectible": true,
           "name": "Gray Hammer Mine",
           "continent": "West Luterra",
           "display": "Gray Hammer Mine",

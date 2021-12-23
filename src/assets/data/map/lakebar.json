@@ -264,6 +264,13 @@
               "indexOffset": -3,
               "lat": -132.19,
               "lng": 161.49
+            },
+            {
+              "zone": "battlebound_plains",
+              "index": 4,
+              "indexOffset": -4,
+              "lat": -175.75,
+              "lng": 129.48
             }
           ]
         },
@@ -366,6 +373,13 @@
               "indexOffset": -3,
               "lat": -132.75,
               "lng": 162.11
+            },
+            {
+              "zone": "battlebound_plains",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -177.31,
+              "lng": 130.86
             }
           ]
         }
@@ -431,7 +445,7 @@
           "lng": 138.20,
           "markers": [
             { "type": "mokoko",  "count": 13 },
-            { "type": "monster", "count": 2 },
+            { "type": "monster", "count": 3 },
             { "type": "vista", "count": 1 },
             { "type": "food", "count": 2 },
             { "type": "story", "count": 1 }
@@ -439,7 +453,7 @@
           "mapId": "medrick_monastery"
         },
         {
-          "isCollectible": false,
+          "isCollectible": true,
           "name": "Brilliant Ridge",
           "continent": "West Luterra",
           "display": "Brilliant Ridge",

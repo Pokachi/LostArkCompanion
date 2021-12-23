@@ -623,6 +623,321 @@
     "west_luterra": {
       "name": "West Luterra",
       "id": "west_luterra",
+      "zones": [
+        {
+          "id": "mount_zagoras",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "lakebar",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "medrick_monastery",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "bilbrin_forest",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "battlebound_plains",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "brilliant_ridge",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "gray_hammer_mine",
+          "mokokoIndex": 0
+        }
+      ],
+      "bookData": [
+        {
+          "name": "Vista",
+          "id": "vista",
+          "items": [
+            {
+              "location": "mount_zagoras",
+              "id": "zagoras_fortress_entrance",
+              "image": "./images/collectibles/vista/zagoras_fortress_entrance.png"
+            },
+            {
+              "location": "lakebar",
+              "id": "old_lakebar_tree",
+              "image": "./images/collectibles/vista/old_lakebar_tree.png"
+            },
+            {
+              "location": "medrick_monastery",
+              "id": "medric_bridge",
+              "image": "./images/collectibles/vista/medric_bridge.png"
+            },
+            {
+              "location": "bilbrin_forest",
+              "id": "rakuni_forest",
+              "image": "./images/collectibles/vista/rakuni_forest.png"
+            },
+            {
+              "location": "battlebound_plains",
+              "id": "battlebound_plains",
+              "image": "./images/collectibles/vista/battlebound_plains.png"
+            },
+            {
+              "location": "brilliant_ridge",
+              "id": "monument_of_king_luterra",
+              "image": "./images/collectibles/vista/monument_of_king_luterra.png"
+            },
+            {
+              "location": "gray_hammer_mine",
+              "id": "gray_hammer_mine",
+              "image": "./images/collectibles/vista/gray_hammer_mine.png"
+            }
+          ]
+        },
+        {
+          "name": "Cooking",
+          "id": "food",
+          "items": [
+            {
+              "location": "mount_zagoras",
+              "id": "boar_bbq",
+              "image": "./images/items/boar_bbq.png",
+              "grade": 3
+            },
+            {
+              "location": "lakebar",
+              "id": "lakebar_freshwater_fish_stew",
+              "image": "./images/items/lakebar_freshwater_fish_stew.png",
+              "grade": 3
+            },
+            {
+              "location": "gray_hammer_mine",
+              "id": "tightly_covered_rum",
+              "image": "./images/items/miners_rum.png",
+              "grade": 3
+            },
+            {
+              "location": "medrick_monastery",
+              "id": "special_egg_rice_recipe",
+              "image": "./images/items/efferins_egg_rice.png",
+              "grade": 3
+            },
+            {
+              "location": "bilbrin_forest",
+              "id": "maneating_bears_gall_bladder",
+              "image": "./images/items/bear_gallbladder_skewer.png",
+              "grade": 3
+            },
+            {
+              "location": "bilbrin_forest",
+              "id": "wriggling_tentacle_sashimi",
+              "image": "./images/items/wriggling_tentacle_sashimi.png",
+              "grade": 4
+            },
+            {
+              "location": "mount_zagoras",
+              "id": "hairplant",
+              "index": 0,
+              "image": "./images/items/medrick_hair_loss_solution.png",
+              "grade": 4
+            }
+          ]
+        },
+        {
+          "name": "Monster",
+          "id": "monster",
+          "items": [
+            {
+              "location": "mount_zagoras",
+              "id": "alpha_mane_tiger",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "mount_zagoras",
+              "id": "alpha_lake_boar",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "medrick_monastery",
+              "id": "boss_red_poisonous_locust",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "medrick_monastery",
+              "id": "raging_rock_of_darkness",
+              "image": "./images/collectibles/monster.png",
+              "index": 2
+            },
+            {
+              "location": "bilbrin_forest",
+              "id": "agile_rakuni",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "bilbrin_forest",
+              "id": "redhand_warlock",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "medrick_monastery",
+              "id": "raging_elemental",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "mount_zagoras",
+              "id": "resentful_spirit_knight",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "lakebar",
+              "id": "elite_raid_group_supplier",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "lakebar",
+              "id": "ferocious_red_kran",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "battlebound_plains",
+              "id": "hellhound_of_obscured_chaos",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "gray_hammer_mine",
+              "id": "elite_grayhammer_mugger",
+              "image": "./images/collectibles/monster.png"
+            },
+            {
+              "location": "gray_hammer_mine",
+              "id": "elite_grayhammer_explorer",
+              "image": "./images/collectibles/monster.png"
+            },
+            {
+              "location": "bilbrin_forest",
+              "id": "alpha_moonlight_wolf",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "bilbrin_forest",
+              "id": "alpha_red_rock_bear",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            }
+          ]
+        },
+        {
+          "name": "Dungeon",
+          "id": "zone",
+          "items": [
+            {
+              "location": "lakebar",
+              "id": "brilliant_ridge",
+              "image": "./images/collectibles/dungeon.png"
+            },
+            {
+              "location": "bilbrin_forest",
+              "id": "gray_hammer_mine",
+              "image": "./images/collectibles/dungeon.png"
+            }
+          ]
+        },
+        {
+          "name": "Boss",
+          "id": "boss",
+          "items": [
+            {
+              "location": "bilbrin_forest",
+              "id": "rovlen",
+              "image": "./images/collectibles/monster.png"
+            }
+          ]
+        },
+        {
+          "name": "Rapport",
+          "id": "affinity",
+          "items": [
+            {
+              "location": "lakebar",
+              "id": "lakebar_artisan_urr",
+              "image": "./images/affinity/lakebar_artisan_urr_1.png"
+            }
+          ]
+        },
+        {
+          "name": "Another Story",
+          "id": "quest",
+          "items": [
+            {
+              "location": "mount_zagoras",
+              "id": "heart_engraved_on_the_headstone",
+              "image": "./images/collectibles/quest.png"
+            },
+            {
+              "location": "lakebar",
+              "id": "the_peddler_of_luterra",
+              "image": "./images/collectibles/quest.png"
+            }
+          ]
+        },
+        {
+          "name": "Hidden Story",
+          "id": "story",
+          "items": [
+            {
+              "location": "lakebar",
+              "startId": "what_makes_a_hero_p1",
+              "id": "what_makes_a_hero_p4",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "bilbrin_forest",
+              "startId": "lost_letter_p1",
+              "id": "lost_letter_p2",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "mount_zagoras",
+              "id": "knights_oath",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "bilbrin_forest",
+              "id": "the_tiger_of_bilbrin",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "battlebound_plains",
+              "id": "regents_donkey_ears",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "mount_zagoras",
+              "startId": "well_ghost_story_p1",
+              "id": "well_ghost_story_p3",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "gray_hammer_mine",
+              "startId": "sleight_of_hand_p1",
+              "id": "sleight_of_hand_p5",
+              "image": "./images/collectibles/story.png"
+            }
+          ]
+        }
+      ],
       "mokoko_total": 71
     },
     "east_luterra": {
