@@ -9,7 +9,8 @@
   "minZoom": 2,
   "maxZoom": 4,
   "adjacentZones": [
-    "lakebar"
+    "lakebar",
+    "bilbrin_forest"
   ],
   "markers": [
     {
@@ -126,6 +127,57 @@
       "data": [
         {
           "isCollectible": true,
+          "name": "Raging Rock of Darkness",
+          "display": "#4 Raging Rock of Darkness",
+          "id": "raging_rock_of_darkness",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "gray_hammer_mine",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -161.5,
+              "lng": 161.61
+            },
+            {
+              "zone": "gray_hammer_mine",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -143.56,
+              "lng": 190.99
+            },
+            {
+              "zone": "medrick_monastery",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -207.94,
+              "lng": 133.87
+            },
+            {
+              "zone": "medrick_monastery",
+              "index": 3,
+              "indexOffset": -2,
+              "lat": -188.25,
+              "lng": 152.11
+            },
+            {
+              "zone": "battlebound_plains",
+              "index": 4,
+              "indexOffset": -4,
+              "lat": 0,
+              "lng": 0
+            },
+            {
+              "zone": "battlebound_plains",
+              "index": 5,
+              "indexOffset": -4,
+              "lat": 0,
+              "lng": 0
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
           "name": "Raging Elemental",
           "display": "#7 Raging Elemental",
           "id": "raging_elemental",
@@ -240,6 +292,13 @@
               "indexOffset": -2,
               "lat": -149.44,
               "lng": 130.87
+            },
+            {
+              "zone": "bilbrin_forest",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -132.19,
+              "lng": 161.49
             }
           ]
         },
@@ -321,6 +380,13 @@
               "indexOffset": -2,
               "lat": -150.44,
               "lng": 131.89
+            },
+            {
+              "zone": "bilbrin_forest",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -132.75,
+              "lng": 162.11
             }
           ]
         }
@@ -375,6 +441,25 @@
             { "type": "story", "count": 1 }
           ],
           "mapId": "lakebar"
+        },
+        {
+          "isCollectible": false,
+          "name": "Bilbrin Forest",
+          "continent": "West Luterra",
+          "display": "Bilbrin Forest",
+          "content": "It is a tranquil and dense forest that covers the sky, and the residents of this area make a living by hunting. It is also famous for producing excellent archers.",
+          "id": "bilbrin_forest",
+          "lat": -23.25,
+          "lng": 132.93,
+          "markers": [
+            { "type": "mokoko",  "count": 9 },
+            { "type": "monster", "count": 4 },
+            { "type": "boss", "count": 1 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 3 },
+            { "type": "story", "count": 4 }
+          ],
+          "mapId": "bilbrin_forest"
         }
       ]
     }

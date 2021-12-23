@@ -175,13 +175,74 @@
           "markers": [
             { "type": "mokoko",  "count": 11 },
             { "type": "affinity", "count": 1 },
-            { "type": "monster", "count": 2 },
+            { "type": "monster", "count": 3 },
             { "type": "vista", "count": 1 },
             { "type": "food", "count": 2 },
             { "type": "quest", "count": 1 },
             { "type": "story", "count": 1 }
           ],
           "mapId": "lakebar"
+        },
+        {
+          "icon": "./images/map/medrick_monastery/medrick_monastery.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Medrick Monastery",
+          "continent": "West Luterra",
+          "display": "Medrick Monastery",
+          "content": "It is a historic monastery dedicated to the Lord Regulus and has maintained a friendly relationship with the Luterran royal family.",
+          "id": "medrick_monastery",
+          "lat": -183.44,
+          "lng": 135.43,
+          "markers": [
+            { "type": "mokoko",  "count": 13 },
+            { "type": "monster", "count": 2 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 2 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "medrick_monastery"
+        },
+        {
+          "icon": "./images/map/bilbrin_forest/bilbrin_forest.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Bilbrin Forest",
+          "continent": "West Luterra",
+          "display": "Bilbrin Forest",
+          "content": "It is a tranquil and dense forest that covers the sky, and the residents of this area make a living by hunting. It is also famous for producing excellent archers.",
+          "id": "bilbrin_forest",
+          "lat": -178.59,
+          "lng": 136.81,
+          "markers": [
+            { "type": "mokoko",  "count": 9 },
+            { "type": "monster", "count": 4 },
+            { "type": "boss", "count": 1 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 3 },
+            { "type": "story", "count": 4 }
+          ],
+          "mapId": "bilbrin_forest"
+        },
+        {
+          "icon": "./images/map/battlebound_plains/battlebound_plains.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Battlebound Plains",
+          "continent": "West Luterra",
+          "display": "Battlebound Plains",
+          "content": "Ancient relics and demonic traces can be found in this battlefield where the Demons were defeated in the Chain War.",
+          "id": "battlebound_plains",
+          "lat": -181.81,
+          "lng": 143.53,
+          "markers": [
+            { "type": "mokoko",  "count": 7 },
+            { "type": "monster", "count": 1 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 1 },
+            { "type": "story", "count": 2 }
+          ],
+          "mapId": "battlebound_plains"
         }
       ]
     }

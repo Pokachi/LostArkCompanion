@@ -257,6 +257,13 @@
               "indexOffset": -2,
               "lat": -149.44,
               "lng": 130.87
+            },
+            {
+              "zone": "bilbrin_forest",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -132.19,
+              "lng": 161.49
             }
           ]
         },
@@ -408,6 +415,13 @@
               "indexOffset": -2,
               "lat": -150.44,
               "lng": 131.89
+            },
+            {
+              "zone": "bilbrin_forest",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -132.75,
+              "lng": 162.11
             }
           ]
         }
@@ -469,7 +483,7 @@
           "markers": [
             { "type": "mokoko",  "count": 11 },
             { "type": "affinity", "count": 1 },
-            { "type": "monster", "count": 2 },
+            { "type": "monster", "count": 3 },
             { "type": "vista", "count": 1 },
             { "type": "food", "count": 2 },
             { "type": "quest", "count": 1 },

@@ -257,6 +257,13 @@
               "indexOffset": -2,
               "lat": -149.44,
               "lng": 130.87
+            },
+            {
+              "zone": "bilbrin_forest",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -132.19,
+              "lng": 161.49
             }
           ]
         },
@@ -352,6 +359,13 @@
               "indexOffset": -2,
               "lat": -150.44,
               "lng": 131.89
+            },
+            {
+              "zone": "bilbrin_forest",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -132.75,
+              "lng": 162.11
             }
           ]
         }
