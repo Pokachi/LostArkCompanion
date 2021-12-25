@@ -1,0 +1,10 @@
+{
+  "id": "laugh",
+  "grade": 0,
+  "image": "./images/items/laugh.png",
+  "name": "Laugh",
+  "type": "Emote",
+  "bound": "Binds when obtained",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "N/A"
+}

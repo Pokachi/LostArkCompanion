@@ -1,0 +1,12 @@
+{
+  "id": "dry_aged_meat",
+  "grade": 2,
+  "image": "./images/items/dry_aged_meat.png",
+  "name": "Dry-aged Meat",
+  "type": "Cooking ingredient",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A slab of steak meat that wandering merchants secured for Cook Hyde.<br><br><span style=\"color: #FFEC50\">It's an ingredient in Thirain T-bone Steak.</span>",
+  "cost": 777,
+  "currency": "silver"
+}

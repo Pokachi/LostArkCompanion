@@ -1,0 +1,11 @@
+{
+  "id": "recipe_armor_display_rack",
+  "grade": 2,
+  "subIcon": "home",
+  "image": "./images/items/stronghold_recipe.png",
+  "name": "Crafting Recipe: Armor Display Rack",
+  "type": "Crafting Recipe",
+  "bound": "Binds when obtained",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "Used to learn the crafting method: Armor Display Rack."
+}

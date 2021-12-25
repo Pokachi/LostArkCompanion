@@ -262,6 +262,26 @@
             { "type": "story", "count": 1 }
           ],
           "mapId": "luterra_castle"
+        },
+        {
+          "icon": "./images/map/dyorika_plain/dyorika_plain.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Dyorika Plain",
+          "continent": "East Luterra",
+          "display": "Dyorika Plain",
+          "content": "A fertile plain maintained by Nahun's descendants. It is famous for its fine grain and fine horses.",
+          "id": "dyorika_plain",
+          "lat": -176.03,
+          "lng": 144.75,
+          "markers": [
+            { "type": "mokoko",  "count": 11 },
+            { "type": "affinity",  "count": 3 },
+            { "type": "monster",  "count": 2 },
+            { "type": "vista",  "count": 1 },
+            { "type": "food",  "count": 1 }
+          ],
+          "mapId": "dyorika_plain"
         }
       ]
     }

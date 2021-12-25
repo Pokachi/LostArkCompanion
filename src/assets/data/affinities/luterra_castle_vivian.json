@@ -85,6 +85,10 @@
         }
       },
       {
+        "id": "transparent_pearl",
+        "points": 360
+      },
+      {
         "id": "bruug_steak",
         "points": 330
       },
@@ -134,10 +138,6 @@
       },
       {
         "id": "tournament_entrance_certificate",
-        "points": 330
-      },
-      {
-        "id": "transparent_pearl",
         "points": 330
       },
       {

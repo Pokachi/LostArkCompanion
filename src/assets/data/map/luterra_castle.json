@@ -10,7 +10,8 @@
   "maxZoom": 4,
   "adjacentZones": [
     "battlebound_plains",
-    "kadan_cathedral_basement"
+    "kadan_cathedral_basement",
+    "dyorika_plain"
   ],
   "markers": [
     {

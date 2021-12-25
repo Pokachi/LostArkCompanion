@@ -1,0 +1,12 @@
+{
+  "id": "meehan_card",
+  "grade": 2,
+  "image": "./images/items/card.png",
+  "name": "Meehan Card",
+  "type": "Card",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "The lord of Mount Zagoras. He's fiercely loyal to Thirain.",
+  "cost": 8000,
+  "currency": "silver"
+}

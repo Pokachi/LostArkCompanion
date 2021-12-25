@@ -3,7 +3,7 @@
   "grade": 3,
   "subIcon": "heart",
   "image": "./images/items/paytons_customs_and_rituals.png",
-  "name": "Bruug Steak",
+  "name": "Payton's Customs and Rituals",
   "type": "Affinity Item",
   "bound": "Bound to Account on Pickup",
   "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",

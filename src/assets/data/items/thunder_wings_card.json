@@ -1,0 +1,12 @@
+{
+  "id": "thunder_wings_card",
+  "grade": 3,
+  "image": "./images/items/card.png",
+  "name": "Thunder Wings Card",
+  "type": "Card",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A demonic beast surrounded by lightning. Its deafening roar can be heard for miles.",
+  "cost": 40000,
+  "currency": "silver"
+}

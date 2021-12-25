@@ -1,0 +1,10 @@
+{
+  "id": "respect",
+  "name": "Respect",
+  "description": "Type /respect to take a knee.",
+  "acquisition":"Ealyn's Gift - Vern Castle",
+  "acquisitionType": "blue_quest",
+  "acquisitionContinentId": "north_vern",
+  "acquisitionLocation": "vern_castle",
+  "acquisitionLink": "#/map?m=vern_castle&c=respect"
+}

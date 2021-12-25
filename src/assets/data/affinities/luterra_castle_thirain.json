@@ -194,11 +194,19 @@
         }
       },
       {
-        "id": "azenaporium_brooch",
-        "points": 330
+        "id": "broken_dagger",
+        "points": 360
       },
       {
-        "id": "broken_dagger",
+        "id": "queens_knights_application",
+        "points": 360
+      },
+      {
+        "id": "tournament_entrance_certificate",
+        "points": 360
+      },
+      {
+        "id": "azenaporium_brooch",
         "points": 330
       },
       {
@@ -218,15 +226,7 @@
         "points": 330
       },
       {
-        "id": "queens_knights_application",
-        "points": 330
-      },
-      {
         "id": "stalwart_cage",
-        "points": 330
-      },
-      {
-        "id": "tournament_entrance_certificate",
         "points": 330
       },
       {

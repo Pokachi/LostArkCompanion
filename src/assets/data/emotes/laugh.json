@@ -1,0 +1,10 @@
+{
+  "id": "laugh",
+  "name": "Laugh",
+  "description": "Type /laugh to laugh out loud.",
+  "acquisition":"Naphta - Flowering Orchard\n(6000 silver)",
+  "acquisitionType": "exchange",
+  "acquisitionContinentId": "east_luterra",
+  "acquisitionLocation": "flowering_orchard",
+  "acquisitionLink": "#/map?m=flowering_orchard&c=laugh"
+}

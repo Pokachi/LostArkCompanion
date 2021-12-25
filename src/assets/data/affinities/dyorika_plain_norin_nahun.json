@@ -1,0 +1,186 @@
+{
+  "name": "Norin Nahun",
+  "id": "dyorika_plain_norin_nahun",
+  "description": "A son of Monterque Nahun who dreams of being a Luterra Knight. He is calm and reasonable, but he knows little about love.",
+  "continent": "East Luterra",
+  "location": "Dyorika Plain",
+  "subLocation": "Monterque Manor",
+  "birthDate": "3/2",
+  "imageCount": 1,
+  "condition": {
+    "quest": "Her Response",
+    "questType": "yellow_quest",
+    "questLink": "https://lostarkcodex.com/us/quest/809109/"
+  },
+  "quests": [
+    {
+      "name": "Love So Sincere",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Interested 1*",
+        "stageId": "interested"
+      }
+    },
+    {
+      "name": "About Nahun",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Friendly 1",
+        "stageId": "friendly"
+      }
+    },
+    {
+      "name": "Aspirations",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Friendly 1",
+        "stageId": "friendly"
+      }
+    }
+  ],
+  "rewards": {
+    "normal": [
+      {
+        "id": "ancient_gold_coin",
+        "count": 2
+      }
+    ],
+    "interested": [
+      {
+        "id": "ancient_gold_coin",
+        "count": 5
+      }
+    ],
+    "friendly": [
+      {
+        "id": "100_gold_coin"
+      }
+    ],
+    "trust": [
+      {
+        "id": "vitality_increase_potion"
+      },
+      {
+        "id": "harmony_battle_engraving_recipe_pouch",
+        "count": 2
+      }
+    ]
+  },
+  "likes": {
+    "songs": [
+      {
+        "id": "serenade_of_love",
+        "points": 275
+      }
+    ],
+    "emotes": [
+      {
+        "id": "respect",
+        "points": 275
+      }
+    ],
+    "gifts": [
+      {
+        "id": "model_of_luterras_sword",
+        "points": 450,
+        "conditions": {
+          "courage": 150
+        }
+      },
+      {
+        "id": "broken_dagger",
+        "points": 360
+      },
+      {
+        "id": "queens_knights_application",
+        "points": 360
+      },
+      {
+        "id": "tournament_entrance_certificate",
+        "points": 360
+      },
+      {
+        "id": "azenaporium_brooch",
+        "points": 330
+      },
+      {
+        "id": "community_figurine",
+        "points": 330
+      },
+      {
+        "id": "machine_repair_set",
+        "points": 330
+      },
+      {
+        "id": "paytons_customs_and_rituals",
+        "points": 330
+      },
+      {
+        "id": "prideholme_potato",
+        "points": 330
+      },
+      {
+        "id": "soundstone_of_dawn",
+        "points": 330
+      },
+      {
+        "id": "stalwart_cage",
+        "points": 330
+      },
+      {
+        "id": "liebeheims_rose",
+        "points": 324
+      },
+      {
+        "id": "lobster_dish",
+        "points": 324
+      },
+      {
+        "id": "zagoras_ice_cap",
+        "points": 324
+      }
+    ]
+  },
+  "levels": [
+    {
+      "name": "Normal 1",
+      "stage": "normal",
+      "expRequired": 100
+    },
+    {
+      "name": "Normal 2",
+      "stage": "normal",
+      "expRequired": 200
+    },
+    {
+      "name": "Interested 1",
+      "stage": "interested",
+      "expRequired": 500
+    },
+    {
+      "name": "Interested 2",
+      "stage": "interested",
+      "expRequired": 700
+    },
+    {
+      "name": "Interested 3",
+      "stage": "interested",
+      "expRequired": 800
+    },
+    {
+      "name": "Friendly 1",
+      "stage": "friendly",
+      "expRequired": 900
+    },
+    {
+      "name": "Friendly 2",
+      "stage": "friendly",
+      "expRequired": 1200
+    },
+    {
+      "name": "Friendly 3",
+      "stage": "friendly",
+      "expRequired": 1500
+    }
+  ]
+}

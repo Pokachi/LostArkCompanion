@@ -1,0 +1,12 @@
+{
+  "id": "morpheo_card",
+  "grade": 1,
+  "image": "./images/items/card.png",
+  "name": "Morpheo Card",
+  "type": "Card",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "An old woman who lives in an orchard of pear trees. She has a warm heart.",
+  "cost": 5000,
+  "currency": "silver"
+}
