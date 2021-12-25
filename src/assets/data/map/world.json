@@ -303,6 +303,26 @@
             { "type": "story", "count": 1 }
           ],
           "mapId": "sunbright_hill"
+        },
+        {
+          "icon": "./images/map/flowering_orchard/flowering_orchard.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Flowering Orchard",
+          "continent": "East Luterra",
+          "display": "Flowering Orchard",
+          "content": "A land of vast orchards and greenery. It is located in the center of the Luoden River that runs through Luterra.",
+          "id": "flowering_orchard",
+          "lat": -190.37,
+          "lng": 155.75,
+          "markers": [
+            { "type": "mokoko",  "count": 10 },
+            { "type": "monster", "count": 1 },
+            { "type": "vista",  "count": 1 },
+            { "type": "food", "count": 1 },
+            { "type": "story", "count": 3 }
+          ],
+          "mapId": "flowering_orchard"
         }
       ]
     }

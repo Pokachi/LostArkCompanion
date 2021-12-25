@@ -1,0 +1,341 @@
+{
+  "type": "zone",
+  "name": "Flowering Orchard",
+  "id": "flowering_orchard",
+  "parent": "world",
+  "continent": "east_luterra",
+  "continentId": "East Luterra",
+  "icon": "./images/map/flowering_orchard/flowering_orchard.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "sunbright_hill"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0201",
+          "lat": -214.49,
+          "lng": 118.36
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0202",
+          "lat": -179.31,
+          "lng": 91.5
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0203",
+          "lat": -130.74,
+          "lng": 84.55
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0204",
+          "lat": -110.05,
+          "lng": 69.87
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0205",
+          "lat": -135.44,
+          "lng": 31.08
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0206",
+          "lat": -159.74,
+          "lng": 138
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0207",
+          "lat": -152.95,
+          "lng": 206.85
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0208",
+          "lat": -131.2,
+          "lng": 226.29
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0209",
+          "lat": -64.05,
+          "lng": 114.99
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0210",
+          "lat": -41.87,
+          "lng": 127.11
+        }
+      ]
+    },
+    {
+      "type": "monster",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Creepy Orchard Weevil",
+          "display": "#4 Creepy Orchard Weevil",
+          "id": "creepy_orchard_weevil",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "flowering_orchard",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -173.93,
+              "lng": 89.12
+            },
+            {
+              "zone": "flowering_orchard",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -192.17,
+              "lng": 66.87
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vista",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Ruined Village",
+          "display": "#3 Ruined Village",
+          "content": "",
+          "id": "ruined_village",
+          "lat": -64.78,
+          "lng": 85.33
+        }
+      ]
+    },
+    {
+      "type": "food",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Dry-aged Meat",
+          "display": "#5 Dry-aged Meat",
+          "content": "Used to cook Thirain T-Bone Steak at Hyde.\nCost: 1400 silver",
+          "id": "dry_aged_meat",
+          "multi": true,"locations": [
+            {
+              "zone": "dyorika_plain",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -145.38,
+              "lng": 181.97
+            },
+            {
+              "zone": "sunbright_hill",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -110.86,
+              "lng": 131.3
+            },
+            {
+              "zone": "flowering_orchard",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -72.37,
+              "lng": 184.48
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Pear Trees and Him (1/3)",
+          "display": "#6 Pear Trees and Him (1/3)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "sunbright_hill",
+              "marker": "pear_trees_and_him_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "sunbright_hill",
+              "marker": "pear_trees_and_him_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "sunbright_hill",
+              "marker": "pear_trees_and_him_p3"
+            }
+          ],
+          "id": "pear_trees_and_him_p1",
+          "lat": -169.43,
+          "lng": 100.16
+        },
+        {
+          "isCollectible": false,
+          "name": "Pear Trees and Him (2/3)",
+          "display": "#6 Pear Trees and Him (2/3)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "sunbright_hill",
+              "marker": "pear_trees_and_him_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "sunbright_hill",
+              "marker": "pear_trees_and_him_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "sunbright_hill",
+              "marker": "pear_trees_and_him_p3"
+            }
+          ],
+          "id": "pear_trees_and_him_p2",
+          "lat": -184.24,
+          "lng": 97.05
+        },
+        {
+          "isCollectible": true,
+          "name": "Pear Trees and Him (3/3)",
+          "display": "#6 Pear Trees and Him (3/3)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "sunbright_hill",
+              "marker": "pear_trees_and_him_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "sunbright_hill",
+              "marker": "pear_trees_and_him_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "sunbright_hill",
+              "marker": "pear_trees_and_him_p3"
+            }
+          ],
+          "id": "pear_trees_and_him_p3",
+          "lat": -185.8,
+          "lng": 72.87
+        }
+      ]
+    },
+    {
+      "type": "merchant",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Morris",
+          "display": "Morris",
+          "id": "morris",
+          "content": "Sells the following items",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "dyorika_plain",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -146.72,
+              "lng": 181.65
+            },
+            {
+              "zone": "sunbright_hill",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -111.62,
+              "lng": 130.36
+            },
+            {
+              "zone": "flowering_orchard",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -73.74,
+              "lng": 184.06
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Sunbright Hill",
+          "continent": "East Luterra",
+          "display": "Sunbright Hill",
+          "content": "The capital city named after the founding King Luterra, one of the Sidereals that put an end to the Chain War.",
+          "id": "sunbright_hill",
+          "lat": -228.42,
+          "lng": 132.37,
+          "markers": [
+            { "type": "mokoko",  "count": 10 },
+            { "type": "monster", "count": 1 },
+            { "type": "boss", "count": 1 },
+            { "type": "vista",  "count": 1 },
+            { "type": "food", "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "sunbright_hill"
+        },
+        {
+          "isCollectible": false,
+          "name": "Blackrose Chapel",
+          "continent": "East Luterra",
+          "display": "Blackrose Chapel",
+          "content": "An old church house wrapped in dried out rose vines. In the past, it was a place where Luterran cults held meetings and prayed.",
+          "id": "blackrose_chapel",
+          "lat": -19.12,
+          "lng": 108.12,
+          "markers": [
+            { "type": "mokoko",  "count": 13 },
+            { "type": "monster", "count": 2 },
+            { "type": "vista",  "count": 1 },
+            { "type": "food", "count": 1 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "blackrose_chapel"
+        }
+      ]
+    }
+  ]
+}

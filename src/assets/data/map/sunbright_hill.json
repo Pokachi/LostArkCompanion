@@ -166,21 +166,28 @@
           "content": "Used to cook Thirain T-Bone Steak at Hyde.\nCost: 1400 silver",
           "id": "dry_aged_meat",
           "multi": true,"locations": [
-          {
-            "zone": "dyorika_plain",
-            "index": 0,
-            "indexOffset": 0,
-            "lat": -145.38,
-            "lng": 181.97
-          },
-          {
-            "zone": "sunbright_hill",
-            "index": 1,
-            "indexOffset": -1,
-            "lat": -110.86,
-            "lng": 131.3
-          }
-        ]
+            {
+              "zone": "dyorika_plain",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -145.38,
+              "lng": 181.97
+            },
+            {
+              "zone": "sunbright_hill",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -110.86,
+              "lng": 131.3
+            },
+            {
+              "zone": "flowering_orchard",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -72.37,
+              "lng": 184.48
+            }
+          ]
         }
       ]
     },
@@ -218,10 +225,17 @@
             },
             {
               "zone": "sunbright_hill",
-              "index": 0,
-              "indexOffset": 0,
+              "index": 1,
+              "indexOffset": -1,
               "lat": -111.62,
               "lng": 130.36
+            },
+            {
+              "zone": "flowering_orchard",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -73.74,
+              "lng": 184.06
             }
           ]
         }
