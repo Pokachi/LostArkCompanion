@@ -282,6 +282,27 @@
             { "type": "food",  "count": 1 }
           ],
           "mapId": "dyorika_plain"
+        },
+        {
+          "icon": "./images/map/sunbright_hill/sunbright_hill.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Sunbright Hill",
+          "continent": "East Luterra",
+          "display": "Sunbright Hill",
+          "content": "The capital city named after the founding King Luterra, one of the Sidereals that put an end to the Chain War.",
+          "id": "sunbright_hill",
+          "lat": -172,
+          "lng": 149.51,
+          "markers": [
+            { "type": "mokoko",  "count": 10 },
+            { "type": "monster", "count": 1 },
+            { "type": "boss", "count": 1 },
+            { "type": "vista",  "count": 1 },
+            { "type": "food", "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "sunbright_hill"
         }
       ]
     }

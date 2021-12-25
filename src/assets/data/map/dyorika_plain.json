@@ -9,7 +9,7 @@
   "minZoom": 2,
   "maxZoom": 4,
   "adjacentZones": [
-    "luterra",
+    "luterra_castle",
     "sunbright_hill"
   ],
   "markers": [
@@ -214,8 +214,22 @@
           "display": "#5 Dry-aged Meat",
           "content": "Used to cook Thirain T-Bone Steak at Hyde.\nCost: 1400 silver",
           "id": "dry_aged_meat",
-          "lat": -145.38,
-          "lng": 181.97
+          "multi": true,"locations": [
+            {
+              "zone": "dyorika_plain",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -145.38,
+              "lng": 181.97
+            },
+            {
+              "zone": "sunbright_hill",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -110.86,
+              "lng": 131.3
+            }
+          ]
         }
       ]
     },
@@ -236,6 +250,13 @@
               "indexOffset": 0,
               "lat": -146.72,
               "lng": 181.65
+            },
+            {
+              "zone": "sunbright_hill",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -111.62,
+              "lng": 130.36
             }
           ]
         }
@@ -278,7 +299,7 @@
             { "type": "food", "count": 1 },
             { "type": "story", "count": 1 }
           ],
-          "mapId": "luterra_castle"
+          "mapId": "sunbright_hill"
         }
       ]
     }

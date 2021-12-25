@@ -1,0 +1,286 @@
+{
+  "type": "zone",
+  "name": "Sunbright Hill",
+  "id": "sunbright_hill",
+  "parent": "world",
+  "continent": "east_luterra",
+  "continentId": "East Luterra",
+  "icon": "./images/map/sunbright_hill/sunbright_hill.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "dyorika_plain",
+    "lastra_forest",
+    "flowering_orchard"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0181",
+          "lat": -198.42,
+          "lng": 175.92
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0182",
+          "lat": -165.89,
+          "lng": 213.33
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0183",
+          "lat": -146.86,
+          "lng": 142.68
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0184",
+          "lat": -159.8,
+          "lng": 131.62
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0185",
+          "lat": -134.1,
+          "lng": 110.89
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0186",
+          "lat": -121.75,
+          "lng": 90.48
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0187",
+          "lat": -181.58,
+          "lng": 89.51
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0188",
+          "lat": -146.49,
+          "lng": 36.31
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0189",
+          "lat": -106.3,
+          "lng": 122.36
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0190",
+          "lat": -77.12,
+          "lng": 161.04
+        }
+      ]
+    },
+    {
+      "type": "monster",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Scherrit Army Gladiator",
+          "display": "#2 Scherrit Army Gladiator",
+          "id": "scherrit_army_gladiator",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "sunbright_hill",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -189.61,
+              "lng": 97.62
+            },
+            {
+              "zone": "sunbright_hill",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -181.24,
+              "lng": 90.43
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "boss",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Wili-Wili",
+          "display": "Wili-Wili",
+          "id": "wili_wili",
+          "content": "",
+          "lat": -40.17,
+          "lng": 135.51
+        }
+      ]
+    },
+    {
+      "type": "vista",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Sunflower Bed",
+          "display": "#1 Sunflower Bed",
+          "content": "",
+          "id": "sunflower_bed",
+          "lat": -93.11,
+          "lng": 132.73
+        }
+      ]
+    },
+    {
+      "type": "food",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Dry-aged Meat",
+          "display": "#5 Dry-aged Meat",
+          "content": "Used to cook Thirain T-Bone Steak at Hyde.\nCost: 1400 silver",
+          "id": "dry_aged_meat",
+          "multi": true,"locations": [
+          {
+            "zone": "dyorika_plain",
+            "index": 0,
+            "indexOffset": 0,
+            "lat": -145.38,
+            "lng": 181.97
+          },
+          {
+            "zone": "sunbright_hill",
+            "index": 1,
+            "indexOffset": -1,
+            "lat": -110.86,
+            "lng": 131.3
+          }
+        ]
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Sacred Rituals of the Harvesters",
+          "display": "#1 Sacred Rituals of the Harvesters",
+          "content": "",
+          "id": "sacred_rituals_of_the_harvesters",
+          "lat": -126.36,
+          "lng": 34.87
+        }
+      ]
+    },
+    {
+      "type": "merchant",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Morris",
+          "display": "Morris",
+          "id": "morris",
+          "content": "Sells the following items",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "dyorika_plain",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -146.72,
+              "lng": 181.65
+            },
+            {
+              "zone": "sunbright_hill",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -111.62,
+              "lng": 130.36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Dyorika Plain",
+          "continent": "East Luterra",
+          "display": "Dyorika Plain",
+          "content": "A fertile plain maintained by Nahun's descendants. It is famous for its fine grain and fine horses.",
+          "id": "dyorika_plain",
+          "lat": -227.47,
+          "lng": 140.48,
+          "markers": [
+            { "type": "mokoko",  "count": 11 },
+            { "type": "affinity",  "count": 3 },
+            { "type": "monster",  "count": 2 },
+            { "type": "vista",  "count": 1 },
+            { "type": "food",  "count": 1 }
+          ],
+          "mapId": "dyorika_plain"
+        },
+        {
+          "isCollectible": false,
+          "name": "Flowering Orchard",
+          "continent": "East Luterra",
+          "display": "Flowering Orchard",
+          "content": "A land of vast orchards and greenery. It is located in the center of the Luoden River that runs through Luterra.",
+          "id": "flowering_orchard",
+          "lat": -102.55,
+          "lng": 206.49,
+          "markers": [
+            { "type": "mokoko",  "count": 10 },
+            { "type": "monster", "count": 1 },
+            { "type": "vista",  "count": 1 },
+            { "type": "food", "count": 1 },
+            { "type": "story", "count": 3 }
+          ],
+          "mapId": "flowering_orchard"
+        },
+        {
+          "isCollectible": false,
+          "name": "Lastra Forest",
+          "continent": "East Luterra",
+          "display": "Lastra Forest",
+          "content": "Insert Description Here.",
+          "id": "lastra_forest",
+          "lat": -63.54,
+          "lng": 192.4,
+          "markers": [
+            { "type": "mokoko",  "count": 7 }
+          ],
+          "mapId": "lastra_forest"
+        }
+      ]
+    }
+  ]
+}
