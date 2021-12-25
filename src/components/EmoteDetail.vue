@@ -18,17 +18,25 @@
           <b-form-checkbox v-if="emoteData.acquisitionType !== 'default'" v-model="playerEmoteData[emoteId]" name="check-button" switch v-on:input="updateCollectible('emote', emoteId, $event, emoteData.acquisitionContinentId, emoteData.acquisitionLocation);">Acquired: </b-form-checkbox>
         </div>
       </div>
-      <b-link v-if="emoteData.acquisitionLink" class="d-inline-block" :href="emoteData.acquisitionLink">
-        <b-img v-if="emoteData.acquisitionType" :src="'./images/icons/' + emoteData.acquisitionType + '.png'" class="pb-1"/>
-        <span :class="['d-inline-block', 'acquisition-text', emoteData.acquisitionType ? emoteData.acquisitionType : '', 'ml-1']">
-          {{emoteData.acquisition}}
-        </span>
-      </b-link>
+      <div  v-if="emoteData.acquisitionLink" >
+        <b-link class="d-inline-block" :href="emoteData.acquisitionLink">
+          <b-img v-if="emoteData.acquisitionType && emoteData.acquisitionType!=='exchange' && emoteData.acquisitionType!=='adventures_tome'" :src="'./images/icons/' + emoteData.acquisitionType + '.png'" class="pb-1"/>
+          <span :class="['d-inline-block', 'acquisition-text', emoteData.acquisitionType ? emoteData.acquisitionType : '', 'ml-1']">
+            {{emoteData.acquisition}}
+          </span>
+        </b-link>
+        <div class="text-white" v-if="emoteData.additionalInfo">
+          {{ emoteData.additionalInfo }}
+        </div>
+      </div>
       <div v-else>
         <b-img v-if="emoteData.acquisitionType !== 'default'" :src="'./images/icons/' + emoteData.acquisitionType + '.png'" class="pb-1"/>
         <span :class="['d-inline-block', 'acquisition-text', emoteData.acquisitionType ? emoteData.acquisitionType : '', 'ml-1']">
           {{emoteData.acquisition}}
         </span>
+        <div class="text-white" v-if="emoteData.additionalInfo">
+          {{ emoteData.additionalInfo }}
+        </div>
       </div>
     </div>
   </div>

@@ -1,0 +1,11 @@
+{
+  "id": "ancient_platinum_coin",
+  "grade": 3,
+  "subIcon": "bag",
+  "image": "./images/items/ancient_platinum_coin.png",
+  "name": "Ancient Platinum Coin",
+  "type": "Normal Silver Coin",
+  "bound": "Binds when obtained",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A platinum coin that was very rare even in the time it was used as a currency. It makes a very valuable sell to merchants. <br><span style=\"color: #FFFFAC\">Obtain 20,000 silver when used.</span>"
+}

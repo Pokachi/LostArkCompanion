@@ -1,0 +1,13 @@
+{
+  "id": "transparent_pearl",
+  "grade": 3,
+  "subIcon": "heart",
+  "image": "./images/items/top_grade_fur.png",
+  "name": "Top-Grade Fur",
+  "type": "Affinity Item",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "<span style=\"color: #FFEC50\">An item used to increase Rapport with NPCs.</span><br><br>The transparent pearls of Wavestrand Port were used as a currency among those that didn't have the actual money. Now that the pearls became rare, most of them are used to craft the accessories of rich people.<br><br><span style=\"color: #FFEC50\">Elia would love this.</span>",
+  "cost": 18000,
+  "currency": "silver"
+}

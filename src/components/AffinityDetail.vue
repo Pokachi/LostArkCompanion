@@ -1,7 +1,7 @@
 <template>
   <div v-if="affinityData && Object.keys(itemData).length !== 0">
     <div class="d-flex">
-      <b-img v-if="affinityData.imageCount === 1" :src="'./images/affinity/' + affinityId + '_1.png'" class="affinity-portrait" />
+      <b-img v-if="affinityData.imageCount === 1" :src="'./images/affinity/' + affinityId + '_1.png'" class="affinity-portrait" style="height: 142px"/>
       <b-carousel v-model="slide"
                   :interval="10000"
                   controls
@@ -16,6 +16,12 @@
         ></b-carousel-slide>
         <b-carousel-slide v-if="affinityData.imageCount >= 3"
             :img-src="'./images/affinity/' + affinityId + '_3.png'"
+        ></b-carousel-slide>
+        <b-carousel-slide v-if="affinityData.imageCount >= 4"
+                          :img-src="'./images/affinity/' + affinityId + '_4.png'"
+        ></b-carousel-slide>
+        <b-carousel-slide v-if="affinityData.imageCount >= 5"
+                          :img-src="'./images/affinity/' + affinityId + '_5.png'"
         ></b-carousel-slide>
       </b-carousel>
 
@@ -42,6 +48,24 @@
               {{affinityData.condition.quest}}
             </span>
           </b-link>
+          <div v-if="affinityData.condition.charisma || affinityData.condition.wisdom || affinityData.condition.courage || affinityData.condition.kindness" class="d-flex ml-auto mr-auto">
+            <div v-if="affinityData.condition.charisma" class="position-relative ml-auto mr-auto" style="width: 25px; height: 25px">
+              <b-img style="width: 18px; height: 18px" :src="'./images/other/charisma.png'" alt="Charisma" class="mt-1"/>
+              <span class="stats-number"> {{affinityData.condition.charisma}} </span>
+            </div>
+            <div v-if="affinityData.condition.wisdom" class="position-relative ml-auto mr-auto" style="width: 25px; height: 25px">
+              <b-img style="width: 18px; height: 18px" :src="'./images/other/wisdom.png'" alt="Wisdom" class="mt-1"/>
+              <span class="stats-number"> {{affinityData.condition.wisdom}} </span>
+            </div>
+            <div v-if="affinityData.condition.courage" class="position-relative ml-auto mr-auto" style="width: 25px; height: 25px">
+              <b-img style="width: 18px; height: 18px" :src="'./images/other/courage.png'" alt="Courage" class="mt-1"/>
+              <span class="stats-number"> {{affinityData.condition.courage}} </span>
+            </div>
+            <div  v-if="affinityData.condition.kindness" class="position-relative ml-auto mr-auto" style="width: 25px; height: 25px">
+              <b-img style="width: 18px; height: 18px" :src="'./images/other/kindness.png'" alt="Kindness" class="mt-1"/>
+              <span class="stats-number"> {{affinityData.condition.kindness}} </span>
+            </div>
+          </div>
         </div>
       </b-tab>
       <b-tab title="Rewards">

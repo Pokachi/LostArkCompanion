@@ -1,0 +1,10 @@
+{
+  "id": "affection",
+  "name": "Affection",
+  "description": "Type /affection to make a heart with your hands.",
+  "acquisition":"A Great Discovery - Totopia",
+  "acquisitionType": "chain_quest",
+  "acquisitionContinentId": "sea",
+  "acquisitionLocation": "totopia",
+  "acquisitionLink": "#/map?m=totopia&c=affection"
+}

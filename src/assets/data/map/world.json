@@ -243,6 +243,25 @@
             { "type": "story", "count": 2 }
           ],
           "mapId": "battlebound_plains"
+        },
+        {
+          "icon": "./images/map/luterra_castle/luterra_castle.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Luterra Castle",
+          "continent": "East Luterra",
+          "display": "Luterra Castle",
+          "content": "The capital city named after the founding King Luterra, one of the Sidereals that put an end to the Chain War.",
+          "id": "luterra_castle",
+          "lat": -185.07,
+          "lng": 148.97,
+          "markers": [
+            { "type": "mokoko",  "count": 9 },
+            { "type": "affinity", "count": 3 },
+            { "type": "food", "count": 5 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "luterra_castle"
         }
       ]
     }

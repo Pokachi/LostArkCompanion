@@ -1,0 +1,8 @@
+{
+  "id": "advance",
+  "name": "Advance",
+  "description": "Type /advance to point the way forward.",
+  "acquisition":"[Adventure's Tome] Arthetine 40%",
+  "acquisitionType": "adventures_tome",
+  "acquisitionLink": "#/collectibles/ignea?r=arthetine"
+}

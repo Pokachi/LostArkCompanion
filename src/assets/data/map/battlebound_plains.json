@@ -377,6 +377,23 @@
             { "type": "story", "count": 4 }
           ],
           "mapId": "bilbrin_forest"
+        },
+        {
+          "isCollectible": false,
+          "name": "Luterra Castle",
+          "continent": "East Luterra",
+          "display": "Luterra Castle",
+          "content": "The capital city named after the founding King Luterra, one of the Sidereals that put an end to the Chain War.",
+          "id": "luterra_castle",
+          "lat": -70.87,
+          "lng": 192.63,
+          "markers": [
+            { "type": "mokoko",  "count": 9 },
+            { "type": "affinity", "count": 3 },
+            { "type": "food", "count": 5 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "luterra_castle"
         }
       ]
     }

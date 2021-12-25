@@ -33,7 +33,7 @@
             <b-link @click="changeMap(item.location, item.startId ? item.startId : item.id, item.index)">
               <b-img :style="[item.grade ? 'background-image: url(./images/items/background/icon_grade_' + item.grade + '.png)' : '', 'background-size: 100%', 'width: 64px']" :src="item.image" :class="[collectibleCollectionData[bookData.id] && collectibleCollectionData[bookData.id][selectedRegion] && collectibleCollectionData[bookData.id][selectedRegion][item.id] ? 'found' : '']"/>
             </b-link>
-            <b-img v-if="collectibleCollectionData[bookData.id] && collectibleCollectionData[bookData.id][selectedRegion] && collectibleCollectionData[bookData.id][selectedRegion][item.id]" class="item-sub-icon" :src="'./images/other/check_mark.png'" :style="'width: 28px'"/>
+            <b-img v-if="isMarkerDone(bookData, item)" class="item-sub-icon" :src="'./images/other/check_mark.png'" :style="'width: 28px'"/>
           </div>
         </div>
       </div>
@@ -54,6 +54,22 @@ export default {
     }
   },
   methods: {
+    isMarkerDone(bookData, item) {
+      if (bookData.id && this.collectibleCollectionData[bookData.id] && this.collectibleCollectionData[bookData.id][this.selectedRegion] && this.collectibleCollectionData[bookData.id][this.selectedRegion][item.id]) {
+        return true;
+      }
+
+      if (item.ids) {
+        for (const id of bookData.ids) {
+          if (!this.collectibleCollectionData[bookData.id] || !this.collectibleCollectionData[bookData.id][this.selectedRegion] || !this.collectibleCollectionData[bookData.id][this.selectedRegion][id]) {
+            return false;
+          }
+        }
+        return true;
+      }
+
+      return false;
+    },
     selectRegion(region) {
       if (region) {
         this.$router.push({query: {r: region.id}})

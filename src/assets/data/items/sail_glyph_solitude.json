@@ -1,0 +1,10 @@
+{
+  "id": "sail_glyph_solitude",
+  "grade": 1,
+  "image": "./images/items/sail_glyph_solitude.png",
+  "name": "Sail Glyph: Solitude",
+  "type": "Sail Glyph",
+  "bound": "Binds when obtained",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A sail glyph that you can use to customize the sail of your ship.\nYou can replace the sail glyph in Docking Mode, and used sail glyphs become bound to your Account.<br>Applicable to Estoque, White Wind, Brahms, and Tragon."
+}

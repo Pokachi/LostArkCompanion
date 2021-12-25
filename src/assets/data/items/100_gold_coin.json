@@ -1,0 +1,11 @@
+{
+  "id": "100_gold_coin",
+  "grade": 3,
+  "subIcon": "bag",
+  "image": "./images/items/100_gold_coin.png",
+  "name": "100-Gold Coin",
+  "type": "Normal Gold Coin",
+  "bound": "Binds when obtained",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A shiny golden coin of great value.<br><span style=\"color: #FFFFAC\">Obtain 100 gold when used.</span>"
+}

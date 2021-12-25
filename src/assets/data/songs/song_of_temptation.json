@@ -1,0 +1,9 @@
+{
+  "id": "song_of_temptation",
+  "name": "Song of Temptation",
+  "cooldown": "5s",
+  "description": "Can charm the target.",
+  "acquisition": "[Adventure's Tome] Yudia 60%",
+  "acquisitionType": "adventures_tome",
+  "acquisitionLink": "#/collectibles/ignea?r=yudia"
+}

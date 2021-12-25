@@ -1,0 +1,7 @@
+{
+  "id": "encourage",
+  "name": "Encourage",
+  "description": "Type /encourage to inspire others.",
+  "acquisition":"Obtained By Default",
+  "acquisitionType": "default"
+}

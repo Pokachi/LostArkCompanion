@@ -1,0 +1,10 @@
+{
+  "id": "cute",
+  "name": "Cute",
+  "description": "Type /cute to show interest.",
+  "acquisition":"Yurei - Peyto\n(5000 silver)",
+  "acquisitionType": "exchange",
+  "acquisitionContinentId": "sea",
+  "acquisitionLocation": "peyto",
+  "acquisitionLink": "#/map?m=peyto&c=cute"
+}

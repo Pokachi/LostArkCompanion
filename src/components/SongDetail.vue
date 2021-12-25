@@ -21,7 +21,7 @@
       </div>
       <div  v-if="songData.acquisitionLink" >
         <b-link class="d-inline-block" :href="songData.acquisitionLink">
-          <b-img v-if="songData.acquisitionType && songData.acquisitionType!=='exchange'" :src="'./images/icons/' + songData.acquisitionType + '.png'" class="pb-1"/>
+          <b-img v-if="songData.acquisitionType && songData.acquisitionType!=='exchange' && songData.acquisitionType!=='adventures_tome'" :src="'./images/icons/' + songData.acquisitionType + '.png'" class="pb-1"/>
           <span :class="['d-inline-block', 'acquisition-text', songData.acquisitionType ? songData.acquisitionType : '', 'ml-1']">
             {{songData.acquisition}}
           </span>

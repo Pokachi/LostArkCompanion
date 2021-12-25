@@ -1,0 +1,13 @@
+{
+  "id": "paytons_customs_and_rituals",
+  "grade": 3,
+  "subIcon": "heart",
+  "image": "./images/items/paytons_customs_and_rituals.png",
+  "name": "Bruug Steak",
+  "type": "Affinity Item",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "<span style=\"color: #FFEC50\">An item used to increase Rapport with NPCs.</span><br><br>척박한 페이튼에서 살아남는 방법에 대해 쓰여진 책. 어린 데런들은 그림자 수도원에 입단하면 이 책을 가장 먼저 정독한다. 대륙의 보통 사람이라면 상상할 수 없는 극한의 생존법이 상세하게 쓰여있다.<br><br><span style=\"color: #FFEC50\">루티아와 루드벡의 마음에 쏙 들 듯 하다.</span>",
+  "cost": 18000,
+  "currency": "silver"
+}

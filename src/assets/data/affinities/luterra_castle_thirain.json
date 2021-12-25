@@ -1,0 +1,292 @@
+{
+  "name": "Thirain",
+  "id": "luterra_castle_thirain",
+  "description": "A descendant of Sidereal Luterra and the worthy successor to Luterra's throne. He wrested control of Luterra Castle and the throne back from the evil Regent Scherrit.",
+  "continent": "East Luterra",
+  "location": "Luterra Castle",
+  "subLocation": "Luterra Palace",
+  "birthDate": "9/8",
+  "imageCount": 5,
+  "condition": {
+    "quest": "To the Glorious Wall",
+    "questType": "orange_quest",
+    "questLink": "https://lostarkcodex.com/us/quest/807005/"
+  },
+  "quests": [
+    {
+      "name": "Thirain's Conundrum",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/801301/",
+      "conditions": {
+        "stage": "Normal 1",
+        "stageId": "normal"
+      }
+    },
+    {
+      "name": "About Scherrit",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Normal 1",
+        "stageId": "normal"
+      }
+    },
+    {
+      "name": "The Bachelor",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/801302/",
+      "conditions": {
+        "stage": "Normal 2?",
+        "stageId": "normal",
+        "charisma": 140,
+        "kindness": 140,
+        "wisdom": 140,
+        "courage": 140
+      }
+    },
+    {
+      "name": "Thirain's Confidence",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/801303/",
+      "conditions": {
+        "stage": "Interested 2",
+        "stageId": "interested"
+      }
+    },
+    {
+      "name": "About Chivalry",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Interested 2",
+        "stageId": "interested",
+        "wisdom": 150
+      }
+    },
+    {
+      "name": "Thirain's Dream",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Interested 2",
+        "stageId": "interested"
+      }
+    },
+    {
+      "name": "Anguished Thirain",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/801304/",
+      "conditions": {
+        "stage": "Interested 3",
+        "stageId": "interested"
+      }
+    },
+    {
+      "name": "The King and Us",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/801305/",
+      "conditions": {
+        "stage": "Friendly 1",
+        "stageId": "friendly",
+        "charisma": 180,
+        "kindness": 180,
+        "wisdom": 180,
+        "courage": 180
+      }
+    },
+    {
+      "name": "Thirain's Order",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Friendly 1",
+        "stageId": "friendly",
+        "courage": 210
+      }
+    },
+    {
+      "name": "Sidereal",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Friendly 1",
+        "stageId": "friendly"
+      }
+    },
+    {
+      "name": "Remember Them",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/801306/",
+      "conditions": {
+        "stage": "Friendly 2",
+        "stageId": "friendly"
+      }
+    },
+    {
+      "name": "Determined Thirain",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/801307/",
+      "conditions": {
+        "stage": "friendly 3",
+        "stageId": "friendly"
+      }
+    }
+  ],
+  "rewards": {
+    "normal": [
+      {
+        "id": "ancient_gold_coin",
+        "count": 15
+      }
+    ],
+    "interested": [
+      {
+        "id": "ancient_platinum_coin"
+      },
+      {
+        "id": "100_gold_coin",
+        "count": 2
+      }
+    ],
+    "friendly": [
+      {
+        "id": "sail_glyph_solitude"
+      },
+      {
+        "id": "100_gold_coin",
+        "count": 5
+      },
+      {
+        "id": "stat_increase_potion"
+      }
+    ],
+    "trust": [
+      {
+        "id": "king_thirain_card"
+      },
+      {
+        "id": "kindness_potion"
+      }
+    ]
+  },
+  "likes": {
+    "songs": [
+      {
+        "id": "song_of_valor",
+        "points": 250
+      },
+      {
+        "id": "song_of_temptation",
+        "points": 375
+      }
+    ],
+    "emotes": [
+      {
+        "id": "encourage",
+        "points": 250
+      },
+      {
+        "id": "advance",
+        "points": 400
+      }
+    ],
+    "gifts": [
+      {
+        "id": "model_of_luterras_sword",
+        "points": 450,
+        "conditions": {
+          "courage": 150
+        }
+      },
+      {
+        "id": "azenaporium_brooch",
+        "points": 330
+      },
+      {
+        "id": "broken_dagger",
+        "points": 330
+      },
+      {
+        "id": "community_figurine",
+        "points": 330
+      },
+      {
+        "id": "glacial_beer",
+        "points": 330
+      },
+      {
+        "id": "paytons_customs_and_rituals",
+        "points": 330
+      },
+      {
+        "id": "prideholme_potato",
+        "points": 330
+      },
+      {
+        "id": "queens_knights_application",
+        "points": 330
+      },
+      {
+        "id": "stalwart_cage",
+        "points": 330
+      },
+      {
+        "id": "tournament_entrance_certificate",
+        "points": 330
+      },
+      {
+        "id": "liebeheims_rose",
+        "points": 324
+      },
+      {
+        "id": "lobster_dish",
+        "points": 324
+      },
+      {
+        "id": "zagoras_ice_cap",
+        "points": 324
+      },
+      {
+        "id": "goblin_yam",
+        "points": 300
+      }
+    ]
+  },
+  "levels": [
+    {
+      "name": "Normal 1",
+      "stage": "normal",
+      "expRequired": 600
+    },
+    {
+      "name": "Normal 2",
+      "stage": "normal",
+      "expRequired": 2000
+    },
+    {
+      "name": "Interested 1",
+      "stage": "interested",
+      "expRequired": 7100
+    },
+    {
+      "name": "Interested 2",
+      "stage": "interested",
+      "expRequired": 11000
+    },
+    {
+      "name": "Interested 3",
+      "stage": "interested",
+      "expRequired": 12000
+    },
+    {
+      "name": "Friendly 1",
+      "stage": "friendly",
+      "expRequired": 15000
+    },
+    {
+      "name": "Friendly 2",
+      "stage": "friendly",
+      "expRequired": 15000
+    },
+    {
+      "name": "Friendly 3",
+      "stage": "friendly",
+      "expRequired": 15000
+    }
+  ]
+}
