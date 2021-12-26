@@ -344,6 +344,27 @@
             { "type": "story", "count": 1 }
           ],
           "mapId": "blackrose_chapel"
+        },
+        {
+          "icon": "./images/map/leyar_terrace/leyar_terrace.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Leyar Terrace",
+          "continent": "East Luterra",
+          "display": "Leyar Terrace",
+          "content": "The Realm of Elementals, located where the Luoden River stalks. The Ancient Elemental Laia created a fountain here for the Elementals. In the past, King Luterra helped purify the terrace by building an Azenaporium here to communicate with the Elementals.",
+          "id": "leyar_terrace",
+          "lat": -178.81,
+          "lng": 161.72,
+          "markers": [
+            { "type": "mokoko",  "count": 8 },
+            { "type": "monster", "count": 4 },
+            { "type": "vista",  "count": 2 },
+            { "type": "food", "count": 1 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 5 }
+          ],
+          "mapId": "leyar_terrace"
         }
       ]
     }

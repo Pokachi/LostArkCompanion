@@ -219,6 +219,13 @@
               "indexOffset": 0,
               "lat": -182.13,
               "lng": 165.13
+            },
+            {
+              "zone": "leyar_terrace",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -192.81,
+              "lng": 101.92
             }
           ]
         }
@@ -269,6 +276,13 @@
               "indexOffset": 0,
               "lat": -183.19,
               "lng": 164.31
+            },
+            {
+              "zone": "leyar_terrace",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -194.06,
+              "lng": 101.19
             }
           ]
         }
@@ -349,3 +363,7 @@
           ],
           "mapId": "leyar_terrace"
         }
+      ]
+    }
+  ]
+}
