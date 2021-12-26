@@ -11,7 +11,7 @@
       <div v-if="data.markerLink" class="popup-sidebar pr-3 text-center">
         <h5> Quest Chain </h5>
         <div v-for="link in data.markerLink" :key="link.label">
-          <b-link v-on:click="changeMap(link.zone, link.marker)"> {{ link.label }} </b-link>
+          <b-link v-on:click="changeMap(link.zone, link.marker, link.index)"> {{ link.label }} </b-link>
         </div>
       </div>
 

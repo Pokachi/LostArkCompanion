@@ -384,6 +384,25 @@
             { "type": "food", "count": 1 }
           ],
           "mapId": "boreas_domain"
+        },
+        {
+          "icon": "./images/map/wavestrand_port/wavestrand_port.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Borea's Domain",
+          "continent": "East Luterra",
+          "display": "Wavestrand Port",
+          "content": "The port city responsible for nearly all of Luterra's trade. It's bustling with commerce to and from other continents.",
+          "id": "wavestrand_port",
+          "lat": -173.59,
+          "lng": 161.84,
+          "markers": [
+            { "type": "mokoko",  "count": 6 },
+            { "type": "affinity",  "count": 2 },
+            { "type": "food", "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "wavestrand_port"
         }
       ]
     }

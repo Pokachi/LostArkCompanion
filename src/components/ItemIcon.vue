@@ -10,7 +10,7 @@
     <b-popover v-if="!hide_popover" custom-class="item-popover text-left" :target="id" triggers="hover" :container="'popover-container-'+id">
       <h4 :class="['font-grade-' + data.grade, 'title', 'mb-0']"> {{data.name}} </h4>
       <hr class="bg-light mb-0 mt-0">
-      <div v-if="data.type !== 'Card'" :class="['d-flex', 'align-middle', 'text-left', 'pl-3', 'item-icon-popup' + data.grade, 'mb-2']">
+      <div v-if="data.type !== 'Card' && data.type !== 'Ship Crew'" :class="['d-flex', 'align-middle', 'text-left', 'pl-3', 'item-icon-popup' + data.grade, 'mb-2']">
         <div style="width: 64px; height: 64px" class="mt-2 mb-2">
           <b-img :src="data.image"/>
           <b-img v-if="data.subIcon" class="item-sub-icon-popup" :src="'./images/items/subicon/icon_' + data.subIcon + '.png'" />
@@ -20,8 +20,11 @@
           <div v-if="data.cooldown"> {{ 'Cooldown: ' + data.cooldown}} </div>
         </div>
       </div>
-      <div v-else>
+      <div v-else-if="data.type === 'Card'">
         <b-img :style="'background-image: url(./images/items/card/' + data.id + '.png)'" :class="['item-card']" :src="'./images/items/card/frame/frame_grade_' + data.grade + '.png'" />
+      </div>
+      <div v-else >
+        <b-img :style="['background-image: url(./images/items/background/icon_grade_' + data.grade + '.png)', 'height: 178px', 'width: 85px']" :class="['item-crew']" :src="'./images/items/crew/' + data.id + '.png'" />
       </div>
       <p v-if="data.bound" v-html="data.bound" class="text-left pl-3"/>
       <p v-html="data.description" class="text-left pl-3 pr-3 description"></p>
@@ -146,6 +149,11 @@ export default {
 .item-card {
   background-size: 95%;
   background-position: 0.25rem 0.5rem;
+  background-repeat: no-repeat;
+}
+
+.item-crew {
+  background-size: cover;
   background-repeat: no-repeat;
 }
 

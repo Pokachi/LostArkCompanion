@@ -1,7 +1,6 @@
 {
   "id": "ancient_gold_coin",
   "grade": 0,
-  "subIcon": "bag",
   "image": "./images/items/ancient_gold_coin.png",
   "name": "Ancient Gold Coin",
   "type": "Normal Silver Coin",

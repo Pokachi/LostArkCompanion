@@ -209,7 +209,8 @@
             {
               "label": "Hot Choco...",
               "zone": "blackrose_chapel",
-              "marker": "hot_chocolate_coffee"
+              "marker": "hot_chocolate_coffee",
+              "index": 0
             }
           ],
           "locations": [

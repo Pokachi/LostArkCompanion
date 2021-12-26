@@ -1,7 +1,6 @@
 {
   "id": "ancient_platinum_coin",
   "grade": 3,
-  "subIcon": "bag",
   "image": "./images/items/ancient_platinum_coin.png",
   "name": "Ancient Platinum Coin",
   "type": "Normal Silver Coin",

@@ -1,0 +1,186 @@
+{
+  "type": "zone",
+  "name": "Wavestrand Port",
+  "id": "wavestrand_port",
+  "parent": "world",
+  "continent": "east_luterra",
+  "continentId": "East Luterra",
+  "icon": "./images/map/wavestrand_port/wavestrand_port.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "boreas_domain",
+    "world",
+    "croconys_seashore"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0251",
+          "lat": -149.46,
+          "lng": 85.35
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0252",
+          "lat": -139.27,
+          "lng": 108.35
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0253",
+          "lat": -104.69,
+          "lng": 84.06
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0254",
+          "lat": -87.5,
+          "lng": 65.38
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0255",
+          "lat": -129.13,
+          "lng": 144.19
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0256",
+          "lat": -155.81,
+          "lng": 137
+        }
+      ]
+    },
+    {
+      "type": "affinity",
+      "data": [
+        {
+          "name": "Neria",
+          "isCollectible": true,
+          "display": "Neria",
+          "content": "",
+          "id": "wavestrand_port_neria",
+          "lat": -141.75,
+          "lng": 91.38
+        },
+        {
+          "name": "Cals",
+          "isCollectible": true,
+          "display": "Cals",
+          "content": "",
+          "id": "wavestrand_port_cals",
+          "lat": -122.63,
+          "lng": 96.75
+        }
+      ]
+    },
+    {
+      "type": "food",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Gelato",
+          "display": "#7 Gelato (1/2)",
+          "content": "Used to cook Melting Gelato at Hyde for 1700 silver. \n\n Wait 24 hours to for it to become Fully Melted Gelato.",
+          "id": "gelato",
+          "lat": -158.33,
+          "lng": 127.1,
+          "markerLink": [
+            {
+              "label": "Gelato",
+              "zone": "wavestrand_port",
+              "marker": "gelato"
+            },
+            {
+              "label": "Hot Choco...",
+              "zone": "blackrose_chapel",
+              "marker": "hot_chocolate_coffee",
+              "index": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Noble Life",
+          "display": "#5 Noble Life",
+          "content": "",
+          "id": "noble_life",
+          "lat": -93.54,
+          "lng": 26.79
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Borea's Domain",
+          "continent": "East Luterra",
+          "display": "Borea's Domain",
+          "content": "Luterran Castle is the farthest province in the Far East. Guarded by the Knight Halrock, also called the Eastern Shield, this estate has remained neutral despite the tyranny of Regent Scherrit.",
+          "id": "boreas_domain",
+          "lat": -154.75,
+          "lng": 64.75,
+          "markers": [
+            { "type": "mokoko",  "count": 11 },
+            { "type": "monster", "count": 4 },
+            { "type": "vista",  "count": 1 },
+            { "type": "food", "count": 1 }
+          ],
+          "mapId": "boreas_domain"
+        },
+        {
+          "isCollectible": false,
+          "name": "Croconys Seashore",
+          "continent": "East Luterra",
+          "display": "Croconys Seashore",
+          "content": "A secluded beach in East Luterra. Blackfang, a notorious pirate, is said to hide somewhere in the area.",
+          "id": "croconys_seashore",
+          "lat": -187.88,
+          "lng": 98.88,
+          "markers": [
+            { "type": "mokoko",  "count": 18 },
+            { "type": "monster", "count": 1 },
+            { "type": "vista",  "count": 3 },
+            { "type": "food", "count": 4 }
+          ],
+          "mapId": "croconys_seashore"
+        },
+        {
+          "isCollectible": false,
+          "name": "Open Sea",
+          "continent": "Sea",
+          "display": "Open Sea",
+          "content": "",
+          "id": "world",
+          "lat": -114.625 ,
+          "lng": 211.13,
+          "markers": [],
+          "mapId": "world"
+        }
+      ]
+    }
+  ]
+}

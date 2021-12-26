@@ -1,0 +1,237 @@
+{
+  "name": "Neria",
+  "id": "wavestrand_port_neria",
+  "description": "A lady working at Neria's Tavern in Wavestrand Port. She is a heavy drinker famous for her stunning beauty.",
+  "continent": "East Luterra",
+  "location": "Wavestrand Port",
+  "subLocation": "Neria's Tavern",
+  "birthDate": "8/10",
+  "imageCount": 3,
+  "condition": {
+    "quest": "Set Sail!",
+    "questType": "orange_quest",
+    "questLink": "https://lostarkcodex.com/us/quest/818006/",
+    "charisma": 30
+  },
+  "quests": [
+    {
+      "name": "The Flower of Wave...",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/818308/",
+      "conditions": {
+        "stage": "Normal 1",
+        "stageId": "normal"
+      }
+    },
+    {
+      "name": "About the Pirates",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Normal 1",
+        "stageId": "normal"
+      }
+    },
+    {
+      "name": "Excuse Me, Everyone!",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/818309/",
+      "conditions": {
+        "stage": "Normal 2",
+        "stageId": "normal"
+      }
+    },
+    {
+      "name": "As Sticky as Seaweed",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/818310/",
+      "conditions": {
+        "stage": "Interested 1",
+        "stageId": "interested",
+        "charisma": 180
+      }
+    },
+    {
+      "name": "About Cals",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Interested 1",
+        "stageId": "interested"
+      }
+    },
+    {
+      "name": "Forever and Ever",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/818311/",
+      "conditions": {
+        "stage": "Interested 2",
+        "stageId": "interested"
+      }
+    },
+    {
+      "name": "Favorite Type",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Friendly 1",
+        "stageId": "friendly"
+      }
+    },
+    {
+      "name": "About Beauty",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Friendly 1",
+        "stageId": "friendly",
+        "charisma": 190
+      }
+    }
+  ],
+  "rewards": {
+    "normal": [
+      {
+        "id": "ancient_gold_coin",
+        "count": 8
+      }
+    ],
+    "interested": [
+      {
+        "id": "ancient_gold_coin",
+        "count": 15
+      }
+    ],
+    "friendly": [
+      {
+        "id": "wavestrand_port_neria_card"
+      }
+    ],
+    "trust": [
+      {
+        "id": "recipe_fishing_table"
+      },
+      {
+        "id": "100_gold_coin",
+        "count": 6
+      }
+    ]
+  },
+  "likes": {
+    "songs": [
+      {
+        "id": "serenade_of_love",
+        "points": 275
+      },
+      {
+        "id": "song_of_resonance",
+        "points": 350
+      }
+    ],
+    "emotes": [
+      {
+        "id": "shy",
+        "points": 300
+      }
+    ],
+    "gifts": [
+      {
+        "id": "lakebar_tomato_juice",
+        "points": 450,
+        "conditions": {
+          "charisma": 150
+        }
+      },
+      {
+        "id": "glacial_beer",
+        "points": 360
+      },
+      {
+        "id": "azenaporium_brooch",
+        "points": 330
+      },
+      {
+        "id": "fancier_bouquet",
+        "points": 330
+      },
+      {
+        "id": "model_of_luterras_sword",
+        "points": 330
+      },
+      {
+        "id": "mokoko_carrot",
+        "points": 330
+      },
+      {
+        "id": "perfect_beer_stein",
+        "points": 330
+      },
+      {
+        "id": "prideholme_potato",
+        "points": 330
+      },
+      {
+        "id": "raccoontaurus_milk",
+        "points": 330
+      },
+      {
+        "id": "tournament_entrance_certificate",
+        "points": 330
+      },
+      {
+        "id": "liebeheims_rose",
+        "points": 324
+      },
+      {
+        "id": "lobster_dish",
+        "points": 324
+      },
+      {
+        "id": "zagoras_ice_cap",
+        "points": 324
+      },
+      {
+        "id": "magick_cloth",
+        "points": 300
+      }
+    ]
+  },
+  "levels": [
+    {
+      "name": "Normal 1",
+      "stage": "normal",
+      "expRequired": 400
+    },
+    {
+      "name": "Normal 2",
+      "stage": "normal",
+      "expRequired": 1100
+    },
+    {
+      "name": "Interested 1",
+      "stage": "interested",
+      "expRequired": 3400
+    },
+    {
+      "name": "Interested 2",
+      "stage": "interested",
+      "expRequired": 5200
+    },
+    {
+      "name": "Interested 3",
+      "stage": "interested",
+      "expRequired": 6800
+    },
+    {
+      "name": "Friendly 1",
+      "stage": "friendly",
+      "expRequired": 7000
+    },
+    {
+      "name": "Friendly 2",
+      "stage": "friendly",
+      "expRequired": 7000
+    },
+    {
+      "name": "Friendly 3",
+      "stage": "friendly",
+      "expRequired": 7000
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "id": "advance",
   "grade": 0,
   "image": "./images/items/advance.png",
-  "name": "Affection",
+  "name": "Advance",
   "type": "Emote",
   "bound": "Binds when obtained",
   "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",

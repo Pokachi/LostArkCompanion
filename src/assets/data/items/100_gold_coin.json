@@ -1,7 +1,6 @@
 {
   "id": "100_gold_coin",
   "grade": 3,
-  "subIcon": "bag",
   "image": "./images/items/100_gold_coin.png",
   "name": "100-Gold Coin",
   "type": "Normal Gold Coin",

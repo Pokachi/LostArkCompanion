@@ -1,0 +1,10 @@
+{
+  "id": "beg",
+  "name": "Beg",
+  "description": "Type /beg to beg with both hands.",
+  "acquisition":"Lina the Lovely - Runaways Island",
+  "acquisitionType": "purple_quest",
+  "acquisitionContinentId": "sea",
+  "acquisitionLocation": "runaways_island",
+  "acquisitionLink": "#/map?m=runaways_island&c=beg"
+}

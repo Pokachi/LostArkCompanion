@@ -1,0 +1,10 @@
+{
+  "id": "estoque_blueprint",
+  "grade": 1,
+  "image": "./images/items/ship_blueprint.png",
+  "name": "Estoque Blueprint",
+  "type": "Ship Upgrade Material",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A blueprint that shows the design of the Estoque ship."
+}

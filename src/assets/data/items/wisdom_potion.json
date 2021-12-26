@@ -1,0 +1,11 @@
+{
+  "id": "wisdom_potion",
+  "grade": 3,
+  "image": "./images/items/wisdom_potion.png",
+  "name": "Wisdom Potion",
+  "type": "Special Potion",
+  "cooldown": "1s",
+  "bound": "Binds when obtained",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "Upon acquiring, automatically obtain <span style=\"color:#6FFFCF\">10</span> Wisdom."
+}
