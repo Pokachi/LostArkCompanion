@@ -9,7 +9,8 @@
   "minZoom": 2,
   "maxZoom": 4,
   "adjacentZones": [
-    "blackrose_chapel"
+    "blackrose_chapel",
+    "boreas_domain"
   ],
   "markers": [
     {
@@ -241,6 +242,13 @@
               "indexOffset": -1,
               "lat": -192.81,
               "lng": 101.92
+            },
+            {
+              "zone": "boreas_domain",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -165.94,
+              "lng": 146
             }
           ]
         }
@@ -422,6 +430,13 @@
               "indexOffset": -1,
               "lat": -194.06,
               "lng": 101.19
+            },
+            {
+              "zone": "boreas_domain",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -167.13,
+              "lng": 145.63
             }
           ]
         }

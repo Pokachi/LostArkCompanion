@@ -365,6 +365,25 @@
             { "type": "story", "count": 5 }
           ],
           "mapId": "leyar_terrace"
+        },
+        {
+          "icon": "./images/map/boreas_domain/boreas_domain.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Borea's Domain",
+          "continent": "East Luterra",
+          "display": "Borea's Domain",
+          "content": "Luterran Castle is the farthest province in the Far East. Guarded by the Knight Halrock, also called the Eastern Shield, this estate has remained neutral despite the tyranny of Regent Scherrit.",
+          "id": "boreas_domain",
+          "lat": -177.28,
+          "lng": 154.31,
+          "markers": [
+            { "type": "mokoko",  "count": 11 },
+            { "type": "monster", "count": 4 },
+            { "type": "vista",  "count": 1 },
+            { "type": "food", "count": 1 }
+          ],
+          "mapId": "boreas_domain"
         }
       ]
     }
