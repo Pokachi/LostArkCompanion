@@ -1,0 +1,12 @@
+{
+  "id": "nox_card",
+  "grade": 2,
+  "image": "./images/items/card.png",
+  "name": "Nox Card",
+  "type": "Card",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A Redfin Pirate who carries a big cannon on his shoulder. He guards their spoils in Stormcry Grotto.",
+  "cost": 8000,
+  "currency": "silver"
+}

@@ -323,6 +323,27 @@
             { "type": "story", "count": 3 }
           ],
           "mapId": "flowering_orchard"
+        },
+        {
+          "icon": "./images/map/blackrose_chapel/blackrose_chapel.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Blackrose Chapel",
+          "continent": "East Luterra",
+          "display": "Blackrose Chapel",
+          "content": "An old church house wrapped in dried out rose vines. In the past, it was a place where Luterran cults held meetings and prayed.",
+          "id": "blackrose_chapel",
+          "lat": -183.28,
+          "lng": 156.22,
+          "markers": [
+            { "type": "mokoko",  "count": 13 },
+            { "type": "monster", "count": 2 },
+            { "type": "vista",  "count": 1 },
+            { "type": "food", "count": 1 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "blackrose_chapel"
         }
       ]
     }

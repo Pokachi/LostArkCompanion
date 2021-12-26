@@ -1,0 +1,12 @@
+{
+  "id": "seria_card",
+  "grade": 2,
+  "image": "./images/items/card.png",
+  "name": "Seria Card",
+  "type": "Card",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A kind, goodhearted member of the Sacrian Order. She takes care of those who have been attacked.",
+  "cost": 8000,
+  "currency": "silver"
+}

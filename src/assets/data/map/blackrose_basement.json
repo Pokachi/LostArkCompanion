@@ -1,0 +1,144 @@
+{
+  "type": "zone",
+  "name": "Blackrose Basement",
+  "id": "blackrose_basement",
+  "parent": "blackrose_chapel",
+  "continent": "East Luterra",
+  "continentId": "east_luterra",
+  "icon": "./images/map/common/dungeon.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "blackrose_chapel"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0224",
+          "lat": -177.63,
+          "lng": 71.06
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0225",
+          "lat": -94.69,
+          "lng": 67
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0226",
+          "lat": -92.14,
+          "lng": 169.52
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0227",
+          "lat": -58.25,
+          "lng": 90.81
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0228",
+          "lat": -58.44,
+          "lng": 92.81
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0229",
+          "lat": -63.25,
+          "lng": 91.69
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0230",
+          "lat": -60.63,
+          "lng": 143.38
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0231",
+          "lat": -61.81,
+          "lng": 145.31
+        }
+      ]
+    },
+    {
+      "type": "passage",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "Do not kill any civilians on the map to enter. They are red named, but do not argo to you.",
+          "id": "passage0033",
+          "lat": -62.56,
+          "lng": 95.38
+        },
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "Kill all cultists on the map to enter. They are red named, and they argo to you.",
+          "id": "passage0034",
+          "lat": -64.63,
+          "lng": 141.94
+        }
+      ]
+    },
+    {
+      "type": "special",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Special",
+          "content": "Click the secret passage tooltip to see more info.",
+          "display": "Kill all cultists, but do not kill any civilians to collect all mokoko beans.",
+          "id": "special0007",
+          "lat": -125.7,
+          "lng": 118.5
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Blackrose Chapel",
+          "continent": "East Luterra",
+          "display": "Blackrose Chapel",
+          "content": "An old church house wrapped in dried out rose vines. In the past, it was a place where Luterran cults held meetings and prayed.",
+          "id": "blackrose_chapel",
+          "lat": -151.75,
+          "lng": 32.63,
+          "markers": [
+            { "type": "mokoko",  "count": 13 },
+            { "type": "monster", "count": 2 },
+            { "type": "vista",  "count": 1 },
+            { "type": "food", "count": 1 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "blackrose_chapel"
+        }
+      ]
+    }
+  ]
+}
