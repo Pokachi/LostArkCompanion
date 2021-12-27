@@ -422,6 +422,26 @@
             { "type": "food", "count": 4 }
           ],
           "mapId": "croconys_seashore"
+        },
+        {
+          "icon": "./images/map/seaswept_woods/seaswept_woods.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Seaswept Woods",
+          "continent": "Tortoyk",
+          "display": "Seaswept Woods",
+          "content": "A beach where the scent of the sea swilrs around the forest. Redfin pirates occupy these woods.",
+          "id": "seaswept_woods",
+          "lat": -155.03,
+          "lng": 181.91,
+          "markers": [
+            { "type": "monster", "count": 3 },
+            { "type": "vista",  "count": 2 },
+            { "type": "food", "count": 1 },
+            { "type": "quest", "count": 2 },
+            { "type": "story", "count": 2 }
+          ],
+          "mapId": "seaswept_woods"
         }
       ]
     }

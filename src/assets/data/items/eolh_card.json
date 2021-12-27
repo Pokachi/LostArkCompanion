@@ -1,0 +1,12 @@
+{
+  "id": "eolh_card",
+  "grade": 2,
+  "image": "./images/items/card.png",
+  "name": "Eolh Card",
+  "type": "Card",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A Guardian of Tortoyk's Heart. It woke from its slumber within the stone to conduct the Guardian's Test.",
+  "cost": 8000,
+  "currency": "silver"
+}

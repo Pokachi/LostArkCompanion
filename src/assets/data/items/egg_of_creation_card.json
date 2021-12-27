@@ -1,0 +1,12 @@
+{
+  "id": "egg_of_creation_card",
+  "grade": 1,
+  "image": "./images/items/card.png",
+  "name": "Egg of Creation Card",
+  "type": "Card",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A mysterious egg created inside Tortoyk's body. All kinds of lives are hatched from them.",
+  "cost": 5000,
+  "currency": "silver"
+}
