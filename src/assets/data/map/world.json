@@ -442,6 +442,24 @@
             { "type": "story", "count": 2 }
           ],
           "mapId": "seaswept_woods"
+        },
+        {
+          "icon": "./images/map/mokoko_village/mokoko_village.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Mokoko Village",
+          "continent": "Tortoyk",
+          "display": "Mokoko Village",
+          "content": "A town of small and cute dwarves. Get smaller to enter the village.",
+          "id": "mokoko_village",
+          "lat": -153.63,
+          "lng": 183.44,
+          "markers": [
+            { "type": "affinity", "count": 3 },
+            { "type": "food", "count": 3 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "mokoko_village"
         }
       ]
     }

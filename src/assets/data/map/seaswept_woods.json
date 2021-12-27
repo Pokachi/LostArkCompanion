@@ -9,7 +9,8 @@
   "minZoom": 2,
   "maxZoom": 4,
   "adjacentZones": [
-    "world"
+    "world",
+    "mokoko_village"
   ],
   "markers": [
     {
@@ -244,7 +245,7 @@
           "mapId": "world"
         },
         {
-          "isCollectible": true,
+          "isCollectible": false,
           "name": "Mokoko Village",
           "continent": "Tortoyk",
           "display": "Mokoko Village",

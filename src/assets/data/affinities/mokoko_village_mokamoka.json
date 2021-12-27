@@ -1,0 +1,227 @@
+{
+  "name": "Mokamoka",
+  "id": "mokoko_village_mokamoka",
+  "description": "A family man. He is a true gourmet who appreciates the simple joys of cooking and eating delicious food.",
+  "continent": "Tortoyk",
+  "location": "Mokoko Village",
+  "subLocation": "Village Chief's Home",
+  "birthDate": "8/28",
+  "imageCount": 1,
+  "condition": {
+    "quest": "The Village's Pride and Joy",
+    "questType": "blue_quest",
+    "questLink": "https://lostarkcodex.com/us/quest/1005008/",
+    "courage": 10,
+    "kindness": 10
+  },
+  "quests": [
+    {
+      "name": "About Exciting Adventures",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Interested 1*",
+        "stageId": "interested"
+      }
+    },
+    {
+      "name": "Tortoyk the Giant",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Friendly 1",
+        "stageId": "friendly"
+      }
+    },
+    {
+      "name": "Tough Guy Secret",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Friendly 1",
+        "stageId": "friendly"
+      }
+    }
+  ],
+  "rewards": {
+    "normal": [
+      {
+        "id": "ancient_gold_coin",
+        "count": 3
+      }
+    ],
+    "interested": [
+      {
+        "id": "ancient_gold_coin",
+        "count": 6
+      }
+    ],
+    "friendly": [
+      {
+        "id": "stat_increase_potion"
+      },
+      {
+        "id": "creation_fragment",
+        "count": 10
+      }
+    ],
+    "trust": [
+      {
+        "id": "mokamoka_card"
+      },
+      {
+        "id": "joy"
+      }
+    ]
+  },
+  "likes": {
+    "songs": [
+      {
+        "id": "song_of_valor",
+        "points": 250
+      }
+    ],
+    "emotes": [
+      {
+        "id": "encourage",
+        "points": 250
+      }
+    ],
+    "gifts": [
+      {
+        "id": "mokoko_carrot",
+        "points": 450,
+        "conditions": {
+          "kindness": 150
+        }
+      },
+      {
+        "id": "encavian_relic",
+        "points": 360
+      },
+      {
+        "id": "model_of_luterras_sword",
+        "points": 360
+      },
+      {
+        "id": "queens_knights_application",
+        "points": 360
+      },
+      {
+        "id": "colorful_claw_toy",
+        "points": 330
+      },
+      {
+        "id": "dyorika_straw_hat",
+        "points": 330
+      },
+      {
+        "id": "educational_chart",
+        "points": 330
+      },
+      {
+        "id": "faded_photo",
+        "points": 330
+      },
+      {
+        "id": "goblin_yam",
+        "points": 330
+      },
+      {
+        "id": "magick_cloth",
+        "points": 330
+      },
+      {
+        "id": "oversize_ladybug_doll",
+        "points": 330
+      },
+      {
+        "id": "paytons_customs_and_rituals",
+        "points": 330
+      },
+      {
+        "id": "paradise_parfait",
+        "points": 330
+      },
+      {
+        "id": "rethramis_holy_water",
+        "points": 330
+      },
+      {
+        "id": "raccoontaurus_milk",
+        "points": 330
+      },
+      {
+        "id": "round_glass_piece",
+        "points": 330
+      },
+      {
+        "id": "tournament_entrance_certificate",
+        "points": 330
+      },
+      {
+        "id": "liebeheims_rose",
+        "points": 324
+      },
+      {
+        "id": "lobster_dish",
+        "points": 324
+      },
+      {
+        "id": "zagoras_ice_cap",
+        "points": 324
+      },
+      {
+        "id": "divine_tear_orpeggio",
+        "points": 300
+      },
+      {
+        "id": "finest_spirit",
+        "points": 300
+      },
+      {
+        "id": "glacial_beer",
+        "points": 300
+      }
+    ]
+  },
+  "levels": [
+    {
+      "name": "Normal 1",
+      "stage": "normal",
+      "expRequired": 200
+    },
+    {
+      "name": "Normal 2",
+      "stage": "normal",
+      "expRequired": 500
+    },
+    {
+      "name": "Interested 1",
+      "stage": "interested",
+      "expRequired": 1400
+    },
+    {
+      "name": "Interested 2",
+      "stage": "interested",
+      "expRequired": 1900
+    },
+    {
+      "name": "Interested 3",
+      "stage": "interested",
+      "expRequired": 2300
+    },
+    {
+      "name": "Friendly 1",
+      "stage": "friendly",
+      "expRequired": 2700
+    },
+    {
+      "name": "Friendly 2",
+      "stage": "friendly",
+      "expRequired": 4000
+    },
+    {
+      "name": "Friendly 3",
+      "stage": "friendly",
+      "expRequired": 4800
+    }
+  ]
+}

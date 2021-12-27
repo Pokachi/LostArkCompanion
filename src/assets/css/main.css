@@ -35,6 +35,10 @@
     font-size: 1rem;
 }
 
+.affinity {
+    color: red;
+}
+
 .blue_quest {
     color: rgb(66, 223, 231);
 }

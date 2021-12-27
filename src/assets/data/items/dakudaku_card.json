@@ -1,0 +1,12 @@
+{
+  "id": "dakudaku_card",
+  "grade": 1,
+  "image": "./images/items/card.png",
+  "name": "Dakudaku Card",
+  "type": "Card",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A Mokoko with a strong sense of responsibility who lives in Mokoko Village. He loves his family.",
+  "cost": 8000,
+  "currency": "silver"
+}

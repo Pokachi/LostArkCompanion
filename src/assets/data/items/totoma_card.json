@@ -1,0 +1,12 @@
+{
+  "id": "totoma_card",
+  "grade": 2,
+  "image": "./images/items/card.png",
+  "name": "Totoma Card",
+  "type": "Card",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "The benevolent chief of Mokoko Village. He struggles to protect his people against the pirate invasion.",
+  "cost": 8000,
+  "currency": "silver"
+}

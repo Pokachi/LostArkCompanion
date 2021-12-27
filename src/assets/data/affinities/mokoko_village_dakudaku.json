@@ -1,0 +1,210 @@
+{
+  "name": "Dakudaku",
+  "id": "mokoko_village_dakudaku",
+  "description": "A family man. He is a true gourmet who appreciates the simple joys of cooking and eating delicious food.",
+  "continent": "Tortoyk",
+  "location": "Mokoko Village",
+  "subLocation": "Whistle Plaza",
+  "birthDate": "10/27",
+  "imageCount": 1,
+  "condition": {
+    "quest": "Some Small Thanks!",
+    "questType": "chain_quest",
+    "questLink": "https://lostarkcodex.com/us/quest/1001106/"
+  },
+  "quests": [
+    {
+      "name": "Relationship with Matimati",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Interested 1*",
+        "stageId": "interested"
+      }
+    },
+    {
+      "name": "About Hobbies",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Friendly 1",
+        "stageId": "friendly"
+      }
+    },
+    {
+      "name": "Favorite Things",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Friendly 1",
+        "stageId": "friendly"
+      }
+    }
+  ],
+  "rewards": {
+    "normal": [
+      {
+        "id": "ancient_gold_coin",
+        "count": 2
+      }
+    ],
+    "interested": [
+      {
+        "id": "ancient_gold_coin",
+        "count": 5
+      }
+    ],
+    "friendly": [
+      {
+        "id": "dakudaku_card"
+      }
+    ],
+    "trust": [
+      {
+        "id": "stat_increase_potion"
+      },
+      {
+        "id": "eurus_blueprint",
+        "count": 3
+      }
+    ]
+  },
+  "likes": {
+    "songs": [
+      {
+        "id": "song_of_resonance",
+        "points": 350
+      }
+    ],
+    "emotes": [
+      {
+        "id": "agree",
+        "points": 250
+      }
+    ],
+    "gifts": [
+      {
+        "id": "oversize_ladybug_doll",
+        "points": 450,
+        "conditions": {
+          "kindness": 150
+        }
+      },
+      {
+        "id": "mokoko_carrot",
+        "points": 360
+      },
+      {
+        "id": "bruug_steak",
+        "points": 330
+      },
+      {
+        "id": "colorful_claw_toy",
+        "points": 330
+      },
+      {
+        "id": "divine_tear_orpeggio",
+        "points": 330
+      },
+      {
+        "id": "fragrant_peach",
+        "points": 330
+      },
+      {
+        "id": "goblin_yam",
+        "points": 330
+      },
+      {
+        "id": "halite_statue",
+        "points": 330
+      },
+      {
+        "id": "lakebar_tomato_juice",
+        "points": 330
+      },
+      {
+        "id": "mysterious_mouth",
+        "points": 330
+      },
+      {
+        "id": "paradise_parfait",
+        "points": 330
+      },
+      {
+        "id": "perfect_beer_stein",
+        "points": 330
+      },
+      {
+        "id": "prideholme_potato",
+        "points": 330
+      },
+      {
+        "id": "raccoontaurus_milk",
+        "points": 330
+      },
+      {
+        "id": "round_glass_piece",
+        "points": 330
+      },
+      {
+        "id": "stamina_recovery_formula",
+        "points": 330
+      },
+      {
+        "id": "yudia_natural_salt",
+        "points": 330
+      },
+      {
+        "id": "liebeheims_rose",
+        "points": 324
+      },
+      {
+        "id": "lobster_dish",
+        "points": 324
+      },
+      {
+        "id": "zagoras_ice_cap",
+        "points": 324
+      }
+    ]
+  },
+  "levels": [
+    {
+      "name": "Normal 1",
+      "stage": "normal",
+      "expRequired": 100
+    },
+    {
+      "name": "Normal 2",
+      "stage": "normal",
+      "expRequired": 200
+    },
+    {
+      "name": "Interested 1",
+      "stage": "interested",
+      "expRequired": 500
+    },
+    {
+      "name": "Interested 2",
+      "stage": "interested",
+      "expRequired": 700
+    },
+    {
+      "name": "Interested 3",
+      "stage": "interested",
+      "expRequired": 800
+    },
+    {
+      "name": "Friendly 1",
+      "stage": "friendly",
+      "expRequired": 900
+    },
+    {
+      "name": "Friendly 2",
+      "stage": "friendly",
+      "expRequired": 1200
+    },
+    {
+      "name": "Friendly 3",
+      "stage": "friendly",
+      "expRequired": 1500
+    }
+  ]
+}

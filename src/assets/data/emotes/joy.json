@@ -1,0 +1,10 @@
+{
+  "id": "joy",
+  "name": "Joy",
+  "description": "Type /joy to show your happiness.",
+  "acquisition":"Mokamoka Trust Level - Mokoko Village",
+  "acquisitionType": "affinity",
+  "acquisitionContinentId": "tortoyk",
+  "acquisitionLocation": "mokoko_village",
+  "acquisitionLink": "#/map?m=mokoko_village&c=joy"
+}
