@@ -75,7 +75,8 @@
     "type": "passage",
     "name": "Secret Passage",
     "toggleable": true,
-    "icon": "./images/icons/passage.png"
+    "icon": "./images/icons/passage.png",
+    "color": "lightblue"
   },
   "zone": {
     "anchor": [0, 0],

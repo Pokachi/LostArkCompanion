@@ -150,7 +150,8 @@
           "display": "#5 Dry-aged Meat",
           "content": "Used to cook Thirain T-Bone Steak at Hyde.\nCost: 1400 silver",
           "id": "dry_aged_meat",
-          "multi": true,"locations": [
+          "multi": true,
+          "locations": [
             {
               "zone": "dyorika_plain",
               "index": 0,

@@ -234,6 +234,20 @@
               "indexOffset": -2,
               "lat": -165.94,
               "lng": 146
+            },
+            {
+              "zone": "croconys_seashore",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -152.88,
+              "lng": 50.25
+            },
+            {
+              "zone": "croconys_seashore",
+              "index": 4,
+              "indexOffset": -3,
+              "lat": -82.1,
+              "lng": 172.9
             }
           ]
         }
@@ -298,6 +312,20 @@
               "indexOffset": -2,
               "lat": -167.13,
               "lng": 145.63
+            },
+            {
+              "zone": "croconys_seashore",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -153.94,
+              "lng": 49.56
+            },
+            {
+              "zone": "croconys_seashore",
+              "index": 4,
+              "indexOffset": -3,
+              "lat": -83.25,
+              "lng": 172.31
             }
           ]
         }
@@ -346,7 +374,7 @@
           "mapId": "flowering_orchard"
         },
         {
-          "isCollectible": false,
+          "isCollectible": true,
           "name": "Blackrose Basement",
           "continent": "East Luterra",
           "display": "Blackrose Basement",

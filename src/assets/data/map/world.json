@@ -403,6 +403,25 @@
             { "type": "story", "count": 1 }
           ],
           "mapId": "wavestrand_port"
+        },
+        {
+          "icon": "./images/map/croconys_seashore/croconys_seashore.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Croconys Seashore",
+          "continent": "East Luterra",
+          "display": "Croconys Seashore",
+          "content": "A secluded beach in East Luterra. Blackfang, a notorious pirate, is said to hide somewhere in the area.",
+          "id": "croconys_seashore",
+          "lat": -168.59,
+          "lng": 160.31,
+          "markers": [
+            { "type": "mokoko",  "count": 18 },
+            { "type": "monster", "count": 1 },
+            { "type": "vista",  "count": 3 },
+            { "type": "food", "count": 4 }
+          ],
+          "mapId": "croconys_seashore"
         }
       ]
     }

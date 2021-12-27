@@ -30,7 +30,7 @@
                 <l-icon :icon-anchor="iconData[marker.type].anchor">
                   <b-img v-if="iconData[marker.type].icon" fluid :src="iconData[marker.type].icon" :class="[playerData[marker.type] && playerData[marker.type][data.id] ? 'found' : '', playerData[marker.type] && playerData[marker.type].h ? 'hidden' : '' ]" />
                   <p :style="'color:' + iconData[marker.type].color + '!important;'" :class="[playerData[marker.type] && playerData[marker.type][data.id] ? 'found' : '', playerData[marker.type] && playerData[marker.type].h ? 'hidden' : '', 'icon-display-name']">
-                    {{ data.display }}
+                    <span v-html="data.display" />
                   </p>
                 </l-icon>
                 <l-popup class="text-light">
@@ -44,7 +44,7 @@
                   <l-icon :icon-anchor="iconData[marker.type].anchor">
                     <b-img v-if="iconData[marker.type].icon" fluid :src="iconData[marker.type].icon" :class="[playerData[marker.type] && playerData[marker.type][data.id] ? 'found' : '', playerData[marker.type] && playerData[marker.type].h ? 'hidden' : '' ]" />
                     <p :style="'color:' + iconData[marker.type].color + '!important;'" :class="[playerData[marker.type] && playerData[marker.type][data.id] ? 'found' : '', playerData[marker.type] && playerData[marker.type].h ? 'hidden' : '', 'icon-display-name']">
-                      {{ data.display }}
+                      <span v-html="data.display" />
                     </p>
                   </l-icon>
                   <l-popup class="text-light">
@@ -61,7 +61,7 @@
               <l-icon v-if="data.icon" :icon-anchor="data.anchor">
                 <b-img fluid :src="data.icon" :class="[playerData[marker.type] && playerData[marker.type][data.id] ? 'found' : '', playerData[marker.type] && playerData[marker.type].h ? 'hidden' : '' ]" />
                 <p :style="'color:' + marker.color + '!important;'" :class="[playerData[marker.type] && playerData[marker.type][data.id] ? 'found' : '', playerData[marker.type] && playerData[marker.type].h ? 'hidden' : '', 'icon-display-name']">
-                  {{ data.display }}
+                  <span v-html="data.display" />
                 </p>
               </l-icon>
               <l-popup class="text-light">
