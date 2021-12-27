@@ -31,7 +31,7 @@
         <div class="d-flex flex-wrap justify-content-center" :style="'width: 330px'">
           <div v-for="item of bookData.items" :key="item.id" :class="['border', 'border-dark', 'position-relative']">
             <b-link @click="changeMap(item.location, item.startId ? item.startId : item.id, item.index)">
-              <b-img :style="[item.grade ? 'background-image: url(./images/items/background/icon_grade_' + item.grade + '.png)' : '', 'background-size: 100%', 'width: 64px']" :src="item.image" :class="[collectibleCollectionData[bookData.id] && collectibleCollectionData[bookData.id][selectedRegion] && collectibleCollectionData[bookData.id][selectedRegion][item.id] ? 'found' : '']"/>
+              <b-img :style="[item.grade ? 'background-image: url(./images/items/background/icon_grade_' + item.grade + '.png)' : '', 'background-size: 100%', 'width: 64px']" :src="item.image" :class="[isMarkerDone(bookData, item) ? 'found' : '']"/>
             </b-link>
             <b-img v-if="isMarkerDone(bookData, item)" class="item-sub-icon" :src="'./images/other/check_mark.png'" :style="'width: 28px'"/>
           </div>
@@ -55,12 +55,12 @@ export default {
   },
   methods: {
     isMarkerDone(bookData, item) {
-      if (bookData.id && this.collectibleCollectionData[bookData.id] && this.collectibleCollectionData[bookData.id][this.selectedRegion] && this.collectibleCollectionData[bookData.id][this.selectedRegion][item.id]) {
+      if (!item.ids && bookData.id && this.collectibleCollectionData[bookData.id] && this.collectibleCollectionData[bookData.id][this.selectedRegion] && this.collectibleCollectionData[bookData.id][this.selectedRegion][item.id]) {
         return true;
       }
 
       if (item.ids) {
-        for (const id of bookData.ids) {
+        for (const id of item.ids) {
           if (!this.collectibleCollectionData[bookData.id] || !this.collectibleCollectionData[bookData.id][this.selectedRegion] || !this.collectibleCollectionData[bookData.id][this.selectedRegion][id]) {
             return false;
           }
@@ -151,7 +151,7 @@ export default {
         if (this.collectibleData.regions[region].bookData) {
           let regionComplete = true
           for (const bookData of this.collectibleData.regions[region].bookData) {
-            if (!this.collectibleCollectionData[bookData.id] || !this.collectibleCollectionData[bookData.id][region] || this.collectibleCollectionData[bookData.id][region].c !== bookData.items.length) {
+            if (!this.collectibleCollectionData[bookData.id] || !this.collectibleCollectionData[bookData.id][region] || (bookData.count && bookData.count !== this.collectibleCollectionData[bookData.id][region].c) || (!bookData.count && this.collectibleCollectionData[bookData.id][region].c !== bookData.items.length)) {
               regionComplete = false;
               break;
             }

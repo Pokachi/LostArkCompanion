@@ -943,6 +943,407 @@
     "east_luterra": {
       "name": "East Luttera",
       "id": "east_luterra",
+      "zones": [
+        {
+          "id": "luterra_castle",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "kadan_cathedral_basement",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "dyorika_plain",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "sunbright_hill",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "flowering_orchard",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "blackrose_chapel",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "boreas_domain",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "leyar_terrace",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "wavestrand_port",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "croconys_seashore",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "lastra_forest",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "king_luterras_tomb",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "blackrose_basement",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "stormcry_grotto",
+          "mokokoIndex": 0
+        }
+      ],
+      "bookData": [
+        {
+          "name": "Vista",
+          "id": "vista",
+          "items": [
+            {
+              "location": "dyorika_plain",
+              "id": "cliff_overlooking_nahuns_brithplace",
+              "image": "./images/collectibles/vista/cliff_overlooking_nahuns_brithplace.png"
+            },
+            {
+              "location": "sunbright_hill",
+              "id": "sunflower_bed",
+              "image": "./images/collectibles/vista/sunflower_bed.png"
+            },
+            {
+              "location": "flowering_orchard",
+              "id": "ruined_village",
+              "image": "./images/collectibles/vista/ruined_village.png"
+            },
+            {
+              "location": "blackrose_chapel",
+              "id": "cliffside_graveyard",
+              "image": "./images/collectibles/vista/cliffside_graveyard.png"
+            },
+            {
+              "location": "leyar_terrace",
+              "id": "azenaporium",
+              "image": "./images/collectibles/vista/azenaporium.png"
+            },
+            {
+              "location": "leyar_terrace",
+              "id": "the_waterfall_in_the_land_of_puruus",
+              "image": "./images/collectibles/vista/the_waterfall_in_the_land_of_puruus.png"
+            },
+            {
+              "location": "boreas_domain",
+              "id": "ruined_fortress",
+              "image": "./images/collectibles/vista/ruined_fortress.png"
+            },
+            {
+              "location": "croconys_seashore",
+              "id": "shipwreck",
+              "image": "./images/collectibles/vista/shipwreck.png"
+            },
+            {
+              "location": "croconys_seashore",
+              "id": "unattended_bandits_encampment",
+              "image": "./images/collectibles/vista/unattended_bandits_encampment.png"
+            },
+            {
+              "location": "croconys_seashore",
+              "id": "beautiful_shore",
+              "image": "./images/collectibles/vista/beautiful_shore.png"
+            }
+          ]
+        },
+        {
+          "name": "Cooking",
+          "id": "food",
+          "count": 10,
+          "items": [
+            {
+              "location": "luterra_castle",
+              "id": "dusty_rainbow_candy",
+              "image": "./images/items/dusty_rainbow_candy.png",
+              "grade": 3
+            },
+            {
+              "location": "luterra_castle",
+              "id": "foundation_centennial_wine",
+              "image": "./images/items/foundation_centennial_wine.png",
+              "grade": 3
+            },
+            {
+              "location": "luterra_castle",
+              "id": "luterran_courtesies",
+              "ids": ["luterran_courtesies", "sirloin"],
+              "image": "./images/items/luterran_course_meal.png",
+              "grade": 3
+            },
+            {
+              "location": "croconys_seashore",
+              "id": "rock_cave_shellfish",
+              "ids": ["rock_cave_shellfish", "rock_cave_shrimp"],
+              "image": "./images/items/gourmet_seafood_stew.png",
+              "grade": 3
+            },
+            {
+              "location": "dyorika_plain",
+              "id": "dry_aged_meat",
+              "index": 0,
+              "image": "./images/items/thirain_t_bone_steak.png",
+              "grade": 3
+            },
+            {
+              "location": "luterra_castle",
+              "id": "donut_maiden",
+              "image": "./images/items/donut_maiden.png",
+              "grade": 4
+            },
+            {
+              "location": "wavestrand_port",
+              "id": "gelato",
+              "ids": ["gelato", "hot_chocolate_coffee"],
+              "image": "./images/items/fully_melted_gelato.png",
+              "grade": 4
+            }
+          ]
+        },
+        {
+          "name": "Monster",
+          "id": "monster",
+          "items": [
+            {
+              "location": "dyorika_plain",
+              "id": "bulky_crow",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "sunbright_hill",
+              "id": "scherrit_army_gladiator",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "dyorika_plain",
+              "id": "sturdy_red_eared_mythical_bird",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "flowering_orchard",
+              "id": "creepy_orchard_weevil",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "blackrose_chapel",
+              "id": "giant_black_rose_spider",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "blackrose_chapel",
+              "id": "wicked_heretic_preacher",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "leyar_terrace",
+              "id": "evil_legion_giant_commander",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "leyar_terrace",
+              "id": "controlled_water_tornado_elemental",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "leyar_terrace",
+              "id": "giant_puruu_warrior",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "leyar_terrace",
+              "id": "mad_alpha_flamingo",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "boreas_domain",
+              "id": "cruel_trill",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "boreas_domain",
+              "id": "frenzied_imp_mage",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "boreas_domain",
+              "id": "lonesome_gerod",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "boreas_domain",
+              "id": "frenzied_agarus",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "croconys_seashore",
+              "id": "predator_croc",
+              "image": "./images/collectibles/monster.png"
+            }
+          ]
+        },
+        {
+          "name": "Dungeon",
+          "id": "zone",
+          "items": [
+            {
+              "location": "sunbright_hill",
+              "id": "lastra_forest",
+              "image": "./images/collectibles/dungeon.png"
+            },
+            {
+              "location": "blackrose_chapel",
+              "id": "blackrose_basement",
+              "image": "./images/collectibles/dungeon.png"
+            },
+            {
+              "location": "croconys_seashore",
+              "id": "stormcry_grotto",
+              "image": "./images/collectibles/dungeon.png"
+            }
+          ]
+        },
+        {
+          "name": "Boss",
+          "id": "boss",
+          "items": [
+            {
+              "location": "sunbright_hill",
+              "id": "wili_wili",
+              "image": "./images/collectibles/monster.png"
+            }
+          ]
+        },
+        {
+          "name": "Rapport",
+          "id": "affinity",
+          "items": [
+            {
+              "location": "luterra_castle",
+              "id": "luterra_castle_thirain",
+              "image": "./images/affinity/luterra_castle_thirain_1.png"
+            },
+            {
+              "location": "luterra_castle",
+              "id": "luterra_castle_neria",
+              "image": "./images/affinity/luterra_castle_neria_1.png"
+            },
+            {
+              "location": "luterra_castle",
+              "id": "luterra_castle_vivian",
+              "image": "./images/affinity/luterra_castle_vivian_1.png"
+            },
+            {
+              "location": "dyorika_plain",
+              "id": "dyorika_plain_norin_nahun",
+              "image": "./images/affinity/dyorika_plain_norin_nahun_1.png"
+            },
+            {
+              "location": "dyorika_plain",
+              "id": "dyorika_plain_elia_nahun",
+              "image": "./images/affinity/dyorika_plain_elia_nahun_1.png"
+            },
+            {
+              "location": "dyorika_plain",
+              "id": "dyorika_plain_apprentice_blacksmith_turner",
+              "image": "./images/affinity/dyorika_plain_apprentice_blacksmith_turner_1.png"
+            },
+            {
+              "location": "wavestrand_port",
+              "id": "wavestrand_port_neria",
+              "image": "./images/affinity/wavestrand_port_neria_1.png"
+            },
+            {
+              "location": "wavestrand_port",
+              "id": "wavestrand_port_cals",
+              "image": "./images/affinity/wavestrand_port_cals_1.png"
+            }
+          ]
+        },
+        {
+          "name": "Another Story",
+          "id": "quest",
+          "items": [
+            {
+              "location": "leyar_terrace",
+              "id": "the_bones_wisdom",
+              "image": "./images/collectibles/quest.png"
+            },
+            {
+              "location": "blackrose_chapel",
+              "id": "your_savior",
+              "image": "./images/collectibles/quest.png"
+            }
+          ]
+        },
+        {
+          "name": "Hidden Story",
+          "id": "story",
+          "items": [
+            {
+              "location": "sunbright_hill",
+              "id": "sacred_rituals_of_the_harvesters",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "luterra_castle",
+              "id": "head_maids_secret",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "blackrose_chapel",
+              "id": "the_name_of_the_black_rose",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "leyar_terrace",
+              "id": "pathos_of_a_genius",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "wavestrand_port",
+              "id": "noble_life",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "flowering_orchard",
+              "startId": "pear_trees_and_him_p1",
+              "id": "pear_trees_and_him_p3",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "leyar_terrace",
+              "startId": "origin_of_the_puruus_p1",
+              "id": "origin_of_the_puruus_p4",
+              "image": "./images/collectibles/story.png"
+            }
+          ]
+        }
+      ],
       "mokoko_total": 127
     },
     "anikka": {

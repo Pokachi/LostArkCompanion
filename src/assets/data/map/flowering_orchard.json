@@ -3,8 +3,8 @@
   "name": "Flowering Orchard",
   "id": "flowering_orchard",
   "parent": "world",
-  "continent": "east_luterra",
-  "continentId": "East Luterra",
+  "continent": "East Luterra",
+  "continentId": "east_luterra",
   "icon": "./images/map/flowering_orchard/flowering_orchard.png",
   "minZoom": 2,
   "maxZoom": 4,
@@ -188,17 +188,17 @@
           "markerLink": [
             {
               "label": "Part 1",
-              "zone": "sunbright_hill",
+              "zone": "flowering_orchard",
               "marker": "pear_trees_and_him_p1"
             },
             {
               "label": "Part 2",
-              "zone": "sunbright_hill",
+              "zone": "flowering_orchard",
               "marker": "pear_trees_and_him_p2"
             },
             {
               "label": "Part 3",
-              "zone": "sunbright_hill",
+              "zone": "flowering_orchard",
               "marker": "pear_trees_and_him_p3"
             }
           ],
@@ -214,17 +214,17 @@
           "markerLink": [
             {
               "label": "Part 1",
-              "zone": "sunbright_hill",
+              "zone": "flowering_orchard",
               "marker": "pear_trees_and_him_p1"
             },
             {
               "label": "Part 2",
-              "zone": "sunbright_hill",
+              "zone": "flowering_orchard",
               "marker": "pear_trees_and_him_p2"
             },
             {
               "label": "Part 3",
-              "zone": "sunbright_hill",
+              "zone": "flowering_orchard",
               "marker": "pear_trees_and_him_p3"
             }
           ],
@@ -240,17 +240,17 @@
           "markerLink": [
             {
               "label": "Part 1",
-              "zone": "sunbright_hill",
+              "zone": "flowering_orchard",
               "marker": "pear_trees_and_him_p1"
             },
             {
               "label": "Part 2",
-              "zone": "sunbright_hill",
+              "zone": "flowering_orchard",
               "marker": "pear_trees_and_him_p2"
             },
             {
               "label": "Part 3",
-              "zone": "sunbright_hill",
+              "zone": "flowering_orchard",
               "marker": "pear_trees_and_him_p3"
             }
           ],

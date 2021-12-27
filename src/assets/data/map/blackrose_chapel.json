@@ -3,8 +3,8 @@
   "name": "Blackrose Chapel",
   "id": "blackrose_chapel",
   "parent": "world",
-  "continent": "east_luterra",
-  "continentId": "East Luterra",
+  "continent": "East Luterra",
+  "continentId": "east_luterra",
   "icon": "./images/map/blackrose_chapel/blackrose_chapel.png",
   "minZoom": 2,
   "maxZoom": 4,
@@ -261,7 +261,7 @@
           "name": "Your Savior",
           "display": "#2 Your Savior",
           "content": "Last of the chain quest that started from \"Save Me\".\n\n \"Save me\" can be started after the chain quest \"A Light Cast over the Dark Fields\"",
-          "id": "eliminating_the_bandits",
+          "id": "your_savior",
           "lat": -174,
           "lng": 166
         }
