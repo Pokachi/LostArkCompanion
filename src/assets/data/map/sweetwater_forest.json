@@ -1,0 +1,316 @@
+{
+  "type": "zone",
+  "name": "Sweetwater Forest",
+  "id": "sweetwater_forest",
+  "parent": "world",
+  "continent": "Tortoyk",
+  "continentId": "tortoyk",
+  "icon": "./images/map/sweetwater_forest/sweetwater_forest.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "mokoko_village",
+    "pirate_den"
+  ],
+  "markers": [
+    {
+      "type": "monster",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Loyal Hybee Guardian",
+          "display": "#3 Loyal Hybee Guardian",
+          "id": "loyal_hybee_guardian",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "sweetwater_forest",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -155.88,
+              "lng": 172.44
+            },
+            {
+              "zone": "sweetwater_forest",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -156.13,
+              "lng": 180.44
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Elite Red Mist Pirate",
+          "display": "#13 Elite Red Mist Pirate",
+          "id": "elite_red_mist_pirate",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "sweetwater_forest",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -149.19,
+              "lng": 158.75
+            },
+            {
+              "zone": "sweetwater_forest",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -140.5,
+              "lng": 157.06
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Extremely Fierce Crow",
+          "display": "#14 Extremely Fierce Crow",
+          "id": "extremely_fierce_crow",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "sweetwater_forest",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -107.63,
+              "lng": 122.44
+            },
+            {
+              "zone": "sweetwater_forest",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -112,
+              "lng": 135.75
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Fierce Mantis",
+          "display": "#15 Fierce Mantis",
+          "id": "fierce_mantis",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "sweetwater_forest",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -121.81,
+              "lng": 123.75
+            },
+            {
+              "zone": "sweetwater_forest",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -119.69,
+              "lng": 117.06
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vista",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Vertical Rotary Elevator",
+          "display": "#3 Vertical Rotary Elevator",
+          "content": "",
+          "id": "vertical_rotary_elevator",
+          "lat": -212.38,
+          "lng": 125.56
+        },
+        {
+          "isCollectible": true,
+          "name": "Path to Pirates' Den",
+          "display": "#4 Path to Pirates' Den",
+          "content": "",
+          "id": "path_to_pirates_den",
+          "lat": -38.06,
+          "lng": 135.81
+        }
+      ]
+    },
+    {
+      "type": "food",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Plenty Plenty Mokoko Gift Package",
+          "display": "#2 Plenty Plenty Mokoko Gift Package",
+          "content": "",
+          "id": "plenty_plenty_mokoko_gift_package",
+          "lat": -156.88,
+          "lng": 160
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Shape of Love (1/3)",
+          "display": "#7 Shape of Love (1/3)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "sweetwater_forest",
+              "marker": "shape_of_love_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "sweetwater_forest",
+              "marker": "shape_of_love_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "skyreach_steppe",
+              "marker": "shape_of_love_p3"
+            }
+          ],
+          "id": "shape_of_love_p1",
+          "lat": -138,
+          "lng": 101.5
+        },
+        {
+          "isCollectible": false,
+          "name": "Shape of Love (2/3)",
+          "display": "#7 Shape of Love (2/3)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "sweetwater_forest",
+              "marker": "shape_of_love_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "sweetwater_forest",
+              "marker": "shape_of_love_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "skyreach_steppe",
+              "marker": "shape_of_love_p3"
+            }
+          ],
+          "id": "shape_of_love_p2",
+          "lat": -191.19,
+          "lng": 151.5
+        },
+        {
+          "isCollectible": true,
+          "name": "The Great Cipher of Mokokos",
+          "display": "#1 The Great Cipher of Mokokos",
+          "content": "",
+          "id": "the_great_cipher_of_mokokos",
+          "lat": -212.13,
+          "lng": 123.31
+        },
+        {
+          "isCollectible": false,
+          "name": "Road to Becoming a Naruni Expert (2/4)",
+          "display": "#4 Road to Becoming a Naruni Expert (2/4)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "seaswept_woods",
+              "marker": "road_to_becoming_a_naruni_expert_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "sweetwater_forest",
+              "marker": "road_to_becoming_a_naruni_expert_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "skyreach_steppe",
+              "marker": "road_to_becoming_a_naruni_expert_p3"
+            },
+            {
+              "label": "Part 4",
+              "zone": "forest_of_giants",
+              "marker": "road_to_becoming_a_naruni_expert_p4"
+            }
+          ],
+          "id": "road_to_becoming_a_naruni_expert_p2",
+          "lat": -53.31,
+          "lng": 126.56
+        }
+      ]
+    },
+    {
+      "type": "merchant",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Oliver",
+          "display": "Oliver",
+          "id": "oliver",
+          "content": "Sells the following items",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "seaswept_woods",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -128.31,
+              "lng": 139.56
+            },
+            {
+              "zone": "sweetwater_forest",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -129.5 ,
+              "lng": 126.25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Mokoko Village",
+          "continent": "Tortoyk",
+          "display": "Mokoko Village",
+          "content": "A town of small and cute dwarves. Get smaller to enter the village.",
+          "id": "mokoko_village",
+          "lat": -208.63,
+          "lng": 122,
+          "markers": [
+            { "type": "affinity", "count": 3 },
+            { "type": "food", "count": 3 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "mokoko_village"
+        },
+        {
+          "isCollectible": false,
+          "name": "Pirate Den",
+          "continent": "Tortoyk",
+          "display": "Pirate Den",
+          "content": "",
+          "id": "pirate_den",
+          "lat": -32.75,
+          "lng": 136.5,
+          "markers": [
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "pirate_den"
+        }
+      ]
+    }
+  ]
+}

@@ -224,6 +224,13 @@
               "indexOffset": 0,
               "lat": -128.31,
               "lng": 139.56
+            },
+            {
+              "zone": "sweetwater_forest",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -129.5 ,
+              "lng": 126.25
             }
           ]
         }

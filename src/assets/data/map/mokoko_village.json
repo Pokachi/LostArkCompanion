@@ -9,7 +9,8 @@
   "minZoom": 2,
   "maxZoom": 4,
   "adjacentZones": [
-    "seaswept_woods"
+    "seaswept_woods",
+    "sweetwater_forest"
   ],
   "markers": [
     {
