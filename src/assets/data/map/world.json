@@ -460,6 +460,45 @@
             { "type": "story", "count": 1 }
           ],
           "mapId": "mokoko_village"
+        },
+        {
+          "icon": "./images/map/sweetwater_forest/sweetwater_forest.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Sweetwater Forest",
+          "continent": "Tortoyk",
+          "display": "Sweetwater Forest",
+          "content": "Forest with ripe fruits and sweet honey. Hybees protect the Golden Apple Tree.",
+          "id": "sweetwater_forest",
+          "lat": -153.84,
+          "lng": 186.66,
+          "markers": [
+            { "type": "monster", "count": 4 },
+            { "type": "vista",  "count": 2 },
+            { "type": "food", "count": 1 },
+            { "type": "story", "count": 4 }
+          ],
+          "mapId": "sweetwater_forest"
+        },
+        {
+          "icon": "./images/map/skyreach_steppe/skyreach_steppe.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Skyreach Steppe",
+          "continent": "Tortoyk",
+          "display": "Skyreach Steppe",
+          "content": "A forest formed on the grasped hands of Tortoyk. Giant living boulders roam this place.",
+          "id": "skyreach_steppe",
+          "lat": -151.25,
+          "lng": 184.5,
+          "markers": [
+            { "type": "monster", "count": 5 },
+            { "type": "boss", "count": 1 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 1 },
+            { "type": "story", "count": 6 }
+          ],
+          "mapId": "skyreach_steppe"
         }
       ]
     }

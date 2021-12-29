@@ -9,7 +9,8 @@
   "minZoom": 2,
   "maxZoom": 4,
   "adjacentZones": [
-    "sweetwater_forest"
+    "sweetwater_forest",
+    "forest_of_giants"
   ],
   "markers": [
     {
