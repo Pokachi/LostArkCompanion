@@ -10,7 +10,8 @@
   "maxZoom": 4,
   "adjacentZones": [
     "mokoko_village",
-    "pirate_den"
+    "pirate_den",
+    "skyreach_steppe"
   ],
   "markers": [
     {
@@ -272,6 +273,13 @@
               "indexOffset": -1,
               "lat": -129.5 ,
               "lng": 126.25
+            },
+            {
+              "zone": "skyreach_steppe",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -203.56,
+              "lng": 75.31
             }
           ]
         }
@@ -295,6 +303,24 @@
             { "type": "story", "count": 1 }
           ],
           "mapId": "mokoko_village"
+        },
+        {
+          "isCollectible": false,
+          "name": "Skyreach Steppe",
+          "continent": "Tortoyk",
+          "display": "Skyreach Steppe",
+          "content": "A forest formed on the grasped hands of Tortoyk. Giant living boulders roam this place.",
+          "id": "skyreach_steppe",
+          "lat": -120.5,
+          "lng": 53.92,
+          "markers": [
+            { "type": "monster", "count": 5 },
+            { "type": "boss", "count": 1 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 1 },
+            { "type": "story", "count": 6 }
+          ],
+          "mapId": "skyreach_steppe"
         },
         {
           "isCollectible": false,

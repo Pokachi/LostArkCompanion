@@ -231,6 +231,13 @@
               "indexOffset": -1,
               "lat": -129.5 ,
               "lng": 126.25
+            },
+            {
+              "zone": "skyreach_steppe",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -203.56,
+              "lng": 75.31
             }
           ]
         }
