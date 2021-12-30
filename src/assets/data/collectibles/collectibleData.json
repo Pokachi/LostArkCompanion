@@ -1346,6 +1346,319 @@
       ],
       "mokoko_total": 127
     },
+    "tortoyk": {
+      "name": "Tortoyk",
+      "id": "tortoyk",
+      "zones": [
+        {
+          "id": "seaswept_woods"
+        },
+        {
+          "id": "mokoko_village"
+        },
+        {
+          "id": "sweetwater_forest"
+        },
+        {
+          "id": "skyreach_steppe"
+        },
+        {
+          "id": "forest_of_giants"
+        }
+      ],
+      "bookData": [
+        {
+          "name": "Vista",
+          "id": "vista",
+          "items": [
+            {
+              "location": "seaswept_woods",
+              "id": "cashew_tree_forest",
+              "image": "./images/collectibles/vista/cashew_tree_forest.png"
+            },
+            {
+              "location": "seaswept_woods",
+              "id": "giant_cashew_tree",
+              "image": "./images/collectibles/vista/giant_cashew_tree.png"
+            },
+            {
+              "location": "sweetwater_forest",
+              "id": "vertical_rotary_elevator",
+              "image": "./images/collectibles/vista/vertical_rotary_elevator.png"
+            },
+            {
+              "location": "sweetwater_forest",
+              "id": "path_to_pirates_den",
+              "image": "./images/collectibles/vista/path_to_pirates_den.png"
+            },
+            {
+              "location": "skyreach_steppe",
+              "id": "entryway_to_grave_of_the_guardian",
+              "image": "./images/collectibles/vista/entryway_to_grave_of_the_guardian.png"
+            },
+            {
+              "location": "forest_of_giants",
+              "id": "hand_of_tortoyk",
+              "image": "./images/collectibles/vista/hand_of_tortoyk.png"
+            }
+          ]
+        },
+        {
+          "name": "Cooking",
+          "id": "food",
+          "items": [
+            {
+              "location": "mokoko_village",
+              "id": "sweet_o_sweet_honey",
+              "image": "./images/items/pow_pow_honey_health_tonic.png",
+              "grade": 3
+            },
+            {
+              "location": "sweetwater_forest",
+              "id": "plenty_plenty_mokoko_gift_package",
+              "image": "./images/items/plenty_plenty_mokoko_gift_package.png",
+              "grade": 3
+            },
+            {
+              "location": "mokoko_village",
+              "id": "cashew_fruit",
+              "image": "./images/items/cashew_cashew_smoothie.png",
+              "grade": 3
+            },
+            {
+              "location": "mokoko_village",
+              "id": "boiled_mokoko_egg",
+              "image": "./images/items/eggy_eggy_soft_boiled_egg.png",
+              "grade": 3
+            },
+            {
+              "location": "seaswept_woods",
+              "id": "honeycomb",
+              "image": "./images/items/sweet_sweet_royal_jelly.png",
+              "grade": 3
+            },
+            {
+              "location": "tortoyks_heart",
+              "id": "egg_of_creation_shell",
+              "image": "./images/items/crunch_crunch_fried_shell.png",
+              "grade": 4
+            },
+            {
+              "location": "skyreach_steppe",
+              "id": "shattered_dip_and_pour_bowl",
+              "image": "./images/items/half_and_half_dip_and_pour.png",
+              "grade": 4
+            }
+          ]
+        },
+        {
+          "name": "Monster",
+          "id": "monster",
+          "items": [
+            {
+              "location": "seaswept_woods",
+              "id": "hardshelled_forest_locarok",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "seaswept_woods",
+              "id": "violent_monkey_boss",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "sweetwater_forest",
+              "id": "loyal_hybee_guardian",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "skyreach_steppe",
+              "id": "alpha_red_beak_rock_bird",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "skyreach_steppe",
+              "id": "red_mist_scout",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "skyreach_steppe",
+              "id": "mysterious_tree_monster",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "skyreach_steppe",
+              "id": "red_mist_bombardier",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "skyreach_steppe",
+              "id": "awakened_flappy",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "forest_of_giants",
+              "id": "hardshelled_red_rock_pebbling",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "forest_of_giants",
+              "id": "bloodshot_cyclops",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "forest_of_giants",
+              "id": "red_mist_sorcerer",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "seaswept_woods",
+              "id": "righteous_hybee_recon",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "sweetwater_forest",
+              "id": "elite_red_mist_pirate",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "sweetwater_forest",
+              "id": "extremely_fierce_crow",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "sweetwater_forest",
+              "id": "fierce_mantis",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            }
+          ]
+        },
+        {
+          "name": "Dungeon",
+          "id": "zone",
+          "items": [
+            {
+              "location": "sweetwater_forest",
+              "id": "pirate_den",
+              "image": "./images/collectibles/dungeon.png"
+            },
+            {
+              "location": "forest_of_giants",
+              "id": "tortoyks_heart",
+              "image": "./images/collectibles/dungeon.png"
+            }
+          ]
+        },
+        {
+          "name": "Boss",
+          "id": "boss",
+          "items": [
+            {
+              "location": "skyreach_steppe",
+              "id": "caspiel",
+              "image": "./images/collectibles/monster.png"
+            }
+          ]
+        },
+        {
+          "name": "Rapport",
+          "id": "affinity",
+          "items": [
+            {
+              "location": "mokoko_village",
+              "id": "mokoko_village_totoma",
+              "image": "./images/affinity/mokoko_village_totoma_1.png"
+            },
+            {
+              "location": "mokoko_village",
+              "id": "mokoko_village_mokamoka",
+              "image": "./images/affinity/mokoko_village_mokamoka_1.png"
+            },
+            {
+              "location": "mokoko_village",
+              "id": "mokoko_village_dakudaku",
+              "image": "./images/affinity/mokoko_village_dakudaku_1.png"
+            }
+          ]
+        },
+        {
+          "name": "Another Story",
+          "id": "quest",
+          "items": [
+            {
+              "location": "seaswept_woods",
+              "id": "some_small_thanks",
+              "image": "./images/collectibles/quest.png"
+            },
+            {
+              "location": "seaswept_woods",
+              "id": "who_was_he",
+              "image": "./images/collectibles/quest.png"
+            }
+          ]
+        },
+        {
+          "name": "Hidden Story",
+          "id": "story",
+          "items": [
+            {
+              "location": "sweetwater_forest",
+              "id": "the_great_cipher_of_mokokos",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "skyreach_steppe",
+              "id": "the_horrifying_monster",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "seaswept_woods",
+              "startId": "cowls_moving_locarok_p1",
+              "id": "cowls_moving_locarok_p2",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "seaswept_woods",
+              "startId": "road_to_becoming_a_naruni_expert_p1",
+              "id": "road_to_becoming_a_naruni_expert_p4",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "skyreach_steppe",
+              "id": "the_adventures_soul",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "skyreach_steppe",
+              "startId": "pirate_king_in_waiting_p1",
+              "id": "pirate_king_in_waiting_p3",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "sweetwater_forest",
+              "startId": "shape_of_love_p1",
+              "id": "shape_of_love_p3",
+              "image": "./images/collectibles/story.png"
+            }
+          ]
+        }
+      ],
+      "mokoko_total": 0
+    },
     "anikka": {
       "name": "Anikka",
       "id": "anikka",

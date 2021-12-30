@@ -330,7 +330,7 @@
           "mapId": "skyreach_steppe"
         },
         {
-          "isCollectible": false,
+          "isCollectible": true,
           "name": "Pirate Den",
           "continent": "Tortoyk",
           "display": "Pirate Den",

@@ -62,7 +62,8 @@ export default {
       }
     },
     async importData() {
-      this.mokokoData = await import("@/assets/data/collectibles/collectibleData.json");
+      this.mokokoData = JSON.parse(JSON.stringify(await import("@/assets/data/collectibles/collectibleData.json")));
+      delete this.mokokoData.regions.tortoyk;
       this.mokokoCollectionData = {
         c: 0
       };
