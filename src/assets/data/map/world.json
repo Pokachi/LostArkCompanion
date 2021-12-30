@@ -538,6 +538,25 @@
             { "type": "story", "count": 5 }
           ],
           "mapId": "port_city_changhun"
+        },
+        {
+          "icon": "./images/map/delphi_township/delphi_township.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Delphi Township",
+          "continent": "Anikka",
+          "display": "Delphi Township",
+          "content": "",
+          "id": "delphi_township",
+          "lat": -136.84,
+          "lng": 214.28,
+          "markers": [
+            { "type": "mokoko",  "count": 4 },
+            { "type": "monster", "count": 3 },
+            { "type": "vista", "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "delphi_township"
         }
       ]
     }

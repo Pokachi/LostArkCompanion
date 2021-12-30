@@ -1,0 +1,12 @@
+{
+  "id": "sir_druden_card",
+  "grade": 1,
+  "image": "./images/items/card.png",
+  "name": "Sir Druden Card",
+  "type": "Card",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A master of Anikka who loves alcohol. Adept at various schools of magick, he's abandoned his body and possessed a painting to fight fiends.",
+  "cost": 5000,
+  "currency": "silver"
+}

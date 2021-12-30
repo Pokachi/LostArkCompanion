@@ -1,0 +1,12 @@
+{
+  "id": "tournament_entrance_stamp",
+  "grade": 3,
+  "image": "./images/items/tournament_entrance_stamp.png",
+  "name": "Tournament Entrance Stamp",
+  "type": "Exchange Currency",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A stamp used to certify one's participation in Anikka's internationally famous fighting tournament. It authenticates the tournament entrance documents and increases their value as collectibles.",
+  "cost": 10000,
+  "currency": "silver"
+}

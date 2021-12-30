@@ -1,0 +1,218 @@
+{
+  "type": "zone",
+  "name": "Delphi Township",
+  "id": "delphi_township",
+  "parent": "world",
+  "continent": "Anikka",
+  "continentId": "anikka",
+  "icon": "./images/map/delphi_township/delphi_township.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "port_city_changhun"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0291",
+          "lat": -159,
+          "lng": 134.8
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0292",
+          "lat": -172.75,
+          "lng": 122.93
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0293",
+          "lat": -151.25,
+          "lng": 36
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0294",
+          "lat": -172.94,
+          "lng": 51.37
+        }
+      ]
+    },
+    {
+      "type": "monster",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Lazy Crop Thief",
+          "display": "#9 Lazy Crop Thief",
+          "id": "lazy_crop_thief",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "delphi_township",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -135.56,
+              "lng": 208.3
+            },
+            {
+              "zone": "delphi_township",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -155.44,
+              "lng": 226.55
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Giant Ollac",
+          "display": "#10 Giant Ollac",
+          "id": "giant_ollac",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "delphi_township",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -104.5,
+              "lng": 124.55
+            },
+            {
+              "zone": "delphi_township",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -88.38,
+              "lng": 143.67
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Giant White Lion Mask",
+          "display": "#11 Giant White Lion Mask",
+          "id": "giant_white_lion_mask",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "delphi_township",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -121.88,
+              "lng": 48.87
+            },
+            {
+              "zone": "delphi_township",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -153,
+              "lng": 62.43
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vista",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Gate",
+          "display": "#10 Gate",
+          "content": "",
+          "id": "gate",
+          "lat": -171.63,
+          "lng": 118.36
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "World in My Eyes",
+          "display": "#1 World in My Eyes",
+          "content": "",
+          "id": "world_in_my_eyes",
+          "lat": -125.13,
+          "lng": 213.55
+        }
+      ]
+    },
+    {
+      "type": "merchant",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Mac",
+          "display": "Mac",
+          "id": "mac",
+          "content": "Sells the following items",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "delphi_township",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -193,
+              "lng": 131.68
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Port City Changhun",
+          "continent": "Annika",
+          "display": "Port City Changhun",
+          "content": "Changhun, a beautiful city full of oriental flavor, is a huge trading city built in a port, with merchant ships lined up for trade.",
+          "id": "port_city_changhun",
+          "lat": -232.5,
+          "lng": 108.99,
+          "markers": [
+            { "type": "mokoko", "count": 4 },
+            { "type": "affinity", "count": 1 },
+            { "type": "vista",  "count": 2 },
+            { "type": "food",  "count": 4 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 5 }
+          ],
+          "mapId": "port_city_changhun"
+        },
+        {
+          "isCollectible": true,
+          "name": "Moonmist Manor",
+          "continent": "Annika",
+          "display": "Moonmist Manor",
+          "content": "",
+          "id": "moonmist_manor",
+          "lat": -167.9,
+          "lng": 55.97,
+          "markers": [
+            { "type": "mokoko", "count": 10 }
+          ],
+          "mapId": "moonmist_manor"
+        }
+      ]
+    }
+  ]
+}

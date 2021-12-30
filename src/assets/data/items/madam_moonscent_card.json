@@ -1,0 +1,12 @@
+{
+  "id": "madam_moonscent_card",
+  "grade": 1,
+  "image": "./images/items/card.png",
+  "name": "Madam Moonscent Card",
+  "type": "Card",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "One of the three masters of Anikka. She leads the scrollmaidens.",
+  "cost": 5000,
+  "currency": "silver"
+}
