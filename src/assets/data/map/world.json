@@ -517,6 +517,27 @@
             { "type": "story", "count": 1 }
           ],
           "mapId": "forest_of_giants"
+        },
+        {
+          "icon": "./images/map/port_city_changhun/port_city_changhun.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Port City Changhun",
+          "continent": "Annika",
+          "display": "Port City Changhun",
+          "content": "Changhun, a beautiful city full of oriental flavor, is a huge trading city built in a port, with merchant ships lined up for trade.",
+          "id": "port_city_changhun",
+          "lat": -133.63,
+          "lng": 203.34,
+          "markers": [
+            { "type": "mokoko", "count": 4 },
+            { "type": "affinity", "count": 1 },
+            { "type": "vista",  "count": 2 },
+            { "type": "food",  "count": 4 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 5 }
+          ],
+          "mapId": "port_city_changhun"
         }
       ]
     }

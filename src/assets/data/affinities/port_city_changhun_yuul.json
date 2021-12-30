@@ -1,0 +1,204 @@
+{
+  "name": "Yuul",
+  "id": "port_city_changhun_yuul",
+  "description": "The manager of the Changhun Tournament. She is a lively, cheerful young woman.",
+  "continent": "Anikka",
+  "location": "Port City Changhun",
+  "birthDate": "1/5",
+  "imageCount": 1,
+  "condition": {
+    "quest": "Rain, Stars, Wind",
+    "questType": "purple_quest",
+    "questLink": "https://lostarkcodex.com/us/quest/705124/"
+  },
+  "quests": [
+    {
+      "name": "Changhun Tournament",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Interested 1*",
+        "stageId": "interested"
+      }
+    },
+    {
+      "name": "Favorite Things",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Friendly 1",
+        "stageId": "friendly"
+      }
+    },
+    {
+      "name": "The Secret Behind...",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Friendly 1",
+        "stageId": "friendly"
+      }
+    }
+  ],
+  "rewards": {
+    "normal": [
+      {
+        "id": "ancient_gold_coin",
+        "count": 3
+      }
+    ],
+    "interested": [
+      {
+        "id": "phoenix_plume",
+        "count": 5
+      }
+    ],
+    "friendly": [
+      {
+        "id": "yuul_card"
+      }
+    ],
+    "trust": [
+      {
+        "id": "charisma_potion"
+      },
+      {
+        "id": "vitality_increase_potion"
+      }
+    ]
+  },
+  "likes": {
+    "songs": [
+      {
+        "id": "song_of_resonance",
+        "points": 350
+      }
+    ],
+    "emotes": [
+      {
+        "id": "talk",
+        "points": 250
+      }
+    ],
+    "gifts": [
+      {
+        "id": "faded_photo",
+        "points": 450,
+        "conditions": {
+          "courage": 150
+        }
+      },
+      {
+        "id": "model_of_luterras_sword",
+        "points": 360
+      },
+      {
+        "id": "paradise_parfait",
+        "points": 360
+      },
+      {
+        "id": "raccoontaurus_milk",
+        "points": 360
+      },
+      {
+        "id": "azenaporium_brooch",
+        "points": 330
+      },
+      {
+        "id": "colorful_claw_toy",
+        "points": 330
+      },
+      {
+        "id": "educational_chart",
+        "points": 330
+      },
+      {
+        "id": "encavian_relic",
+        "points": 330
+      },
+      {
+        "id": "goblin_yam",
+        "points": 330
+      },
+      {
+        "id": "magick_cloth",
+        "points": 330
+      },
+      {
+        "id": "mysterious_mouth",
+        "points": 330
+      },
+      {
+        "id": "paytons_customs_and_rituals",
+        "points": 330
+      },
+      {
+        "id": "prideholme_potato",
+        "points": 330
+      },
+      {
+        "id": "queens_knights_application",
+        "points": 330
+      },
+      {
+        "id": "rethramis_holy_water",
+        "points": 330
+      },
+      {
+        "id": "tournament_entrance_certificate",
+        "points": 330
+      },
+      {
+        "id": "liebeheims_rose",
+        "points": 324
+      },
+      {
+        "id": "lobster_dish",
+        "points": 324
+      },
+      {
+        "id": "zagoras_ice_cap",
+        "points": 324
+      }
+    ]
+  },
+  "levels": [
+    {
+      "name": "Normal 1",
+      "stage": "normal",
+      "expRequired": 200
+    },
+    {
+      "name": "Normal 2",
+      "stage": "normal",
+      "expRequired": 500
+    },
+    {
+      "name": "Interested 1",
+      "stage": "interested",
+      "expRequired": 1400
+    },
+    {
+      "name": "Interested 2",
+      "stage": "interested",
+      "expRequired": 1900
+    },
+    {
+      "name": "Interested 3",
+      "stage": "interested",
+      "expRequired": 2300
+    },
+    {
+      "name": "Friendly 1",
+      "stage": "friendly",
+      "expRequired": 2700
+    },
+    {
+      "name": "Friendly 2",
+      "stage": "friendly",
+      "expRequired": 4000
+    },
+    {
+      "name": "Friendly 3",
+      "stage": "friendly",
+      "expRequired": 4800
+    }
+  ]
+}
