@@ -1,0 +1,223 @@
+{
+  "type": "zone",
+  "name": "Forest of Giants",
+  "id": "forest_of_giants",
+  "parent": "world",
+  "continent": "Tortoyk",
+  "continentId": "tortoyk",
+  "icon": "./images/map/forest_of_giants/forest_of_giants.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "skyreach_steppe"
+  ],
+  "markers": [
+    {
+      "type": "monster",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Hardshelled Red Rock Pebbling",
+          "display": "#9 Hardshelled Red Rock Pebbling",
+          "id": "hardshelled_red_rock_pebbling",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "forest_of_giants",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -176.06,
+              "lng": 140.99
+            },
+            {
+              "zone": "forest_of_giants",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -175.94,
+              "lng": 146.05
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Bloodshot Cyclops",
+          "display": "#10 Bloodshot Cyclops",
+          "id": "bloodshot_cyclops",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "forest_of_giants",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -152.79,
+              "lng": 151.93
+            },
+            {
+              "zone": "forest_of_giants",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -150.10,
+              "lng": 168.05
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Red Mist Sorcerer",
+          "display": "#11 Red Mist Sorcerer",
+          "id": "red_mist_sorcerer",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "forest_of_giants",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -34.13,
+              "lng": 150.8
+            },
+            {
+              "zone": "forest_of_giants",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -25,
+              "lng": 141.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vista",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Hand of Tortoyk",
+          "display": "#6 Hand of Tortoyk",
+          "content": "",
+          "id": "hand_of_tortoyk",
+          "lat": -104,
+          "lng": 136.3
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Road to Becoming a Naruni Expert (4/4)",
+          "display": "#4 Road to Becoming a Naruni Expert (4/4)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "seaswept_woods",
+              "marker": "road_to_becoming_a_naruni_expert_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "sweetwater_forest",
+              "marker": "road_to_becoming_a_naruni_expert_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "skyreach_steppe",
+              "marker": "road_to_becoming_a_naruni_expert_p3"
+            },
+            {
+              "label": "Part 4",
+              "zone": "forest_of_giants",
+              "marker": "road_to_becoming_a_naruni_expert_p4"
+            }
+          ],
+          "id": "road_to_becoming_a_naruni_expert_p4",
+          "lat": -173.25,
+          "lng": 108.74
+        }
+      ]
+    },
+    {
+      "type": "merchant",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Oliver",
+          "display": "Oliver",
+          "id": "oliver",
+          "content": "Sells the following items",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "seaswept_woods",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -128.31,
+              "lng": 139.56
+            },
+            {
+              "zone": "sweetwater_forest",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -129.5 ,
+              "lng": 126.25
+            },
+            {
+              "zone": "skyreach_steppe",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -203.56,
+              "lng": 75.31
+            },
+            {
+              "zone": "forest_of_giants",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -147.88,
+              "lng": 127.55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Skyreach Steppe",
+          "continent": "Tortoyk",
+          "display": "Skyreach Steppe",
+          "content": "A forest formed on the grasped hands of Tortoyk. Giant living boulders roam this place.",
+          "id": "skyreach_steppe",
+          "lat": -235.13,
+          "lng": 112.13,
+          "markers": [
+            { "type": "monster", "count": 5 },
+            { "type": "boss", "count": 1 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 1 },
+            { "type": "story", "count": 6 }
+          ],
+          "mapId": "skyreach_steppe"
+        },
+        {
+          "isCollectible": true,
+          "name": "Tortoyk's Heart",
+          "continent": "Tortoyk",
+          "display": "Tortoyk's Heart",
+          "content": "",
+          "id": "tortoyks_heart",
+          "lat": -63.13,
+          "lng": 162.36,
+          "markers": [
+            { "type": "food", "count": 1 }
+          ],
+          "mapId": "tortoyks_heart"
+        }
+      ]
+    }
+  ]
+}

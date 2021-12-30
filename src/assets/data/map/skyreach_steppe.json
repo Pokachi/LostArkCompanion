@@ -338,6 +338,13 @@
               "indexOffset": -2,
               "lat": -203.56,
               "lng": 75.31
+            },
+            {
+              "zone": "forest_of_giants",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -147.88,
+              "lng": 127.55
             }
           ]
         }

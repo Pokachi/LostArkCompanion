@@ -499,6 +499,24 @@
             { "type": "story", "count": 6 }
           ],
           "mapId": "skyreach_steppe"
+        },
+        {
+          "icon": "./images/map/forest_of_giants/forest_of_giants.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Forest of Giants",
+          "continent": "Tortoyk",
+          "display": "Forest of Giants",
+          "content": "A sacred forest that Giants are believed to have come from. It is where the torso of sleeping Tortoyk lies.",
+          "id": "forest_of_giants",
+          "lat": -150.22,
+          "lng": 186.53,
+          "markers": [
+            { "type": "monster", "count": 3 },
+            { "type": "vista",  "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "forest_of_giants"
         }
       ]
     }
