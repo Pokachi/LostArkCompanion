@@ -1,0 +1,136 @@
+{
+  "type": "zone",
+  "name": "Yeon's Barrier",
+  "id": "yeons_barrier",
+  "parent": "rattan_hill",
+  "continent": "Anikka",
+  "continentId": "anikka",
+  "icon": "./images/map/common/dungeon.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "rattan_hill"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0315",
+          "lat": -147.25,
+          "lng": 38.25
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0316",
+          "lat": -91.92,
+          "lng": 26.79
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0317",
+          "lat": -64.87,
+          "lng": 71.61
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0318",
+          "lat": -62,
+          "lng": 135.12
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0319",
+          "lat": -106.38,
+          "lng": 108.46
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0320",
+          "lat": -111.02,
+          "lng": 100.28
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0321",
+          "lat": -165.56,
+          "lng": 208.01
+        }
+      ]
+    },
+    {
+      "type": "food",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Sealed Special Sauce",
+          "display": "#3 Sealed Special Sauce",
+          "content": "Used to cook Secret Yeon-Style Marinated Special at Hely.\n Cost: 900 silver",
+          "image": "./images/map/log_hill/popup/disgorged_lump.png",
+          "id": "disgorged_lump",
+          "lat": -96.13,
+          "lng": 113.93
+        }
+      ]
+    },
+    {
+      "type": "passage",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0044",
+          "lat": -92.5,
+          "lng": 28.87
+        },
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0045",
+          "lat": -110.63,
+          "lng": 107.74
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Rattan Hill",
+          "continent": "Anikka",
+          "display": "Rattan Hill",
+          "content": "",
+          "id": "rattan_hill",
+          "lat": -199.88,
+          "lng": 30.31,
+          "markers": [
+            { "type": "mokoko",  "count": 10 },
+            { "type": "monster", "count": 3 },
+            { "type": "vista", "count": 2 },
+            { "type": "food", "count": 1 },
+            { "type": "story", "count": 2 }
+          ],
+          "mapId": "rattan_hill"
+        }
+      ]
+    }
+  ]
+}

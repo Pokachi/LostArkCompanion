@@ -1,0 +1,371 @@
+{
+  "type": "zone",
+  "name": "Rattan Hill",
+  "id": "rattan_hill",
+  "parent": "world",
+  "continent": "Anikka",
+  "continentId": "anikka",
+  "icon": "./images/map/rattan_hill/rattan_hill.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "port_city_changhun",
+    "yeons_barrier"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0305",
+          "lat": -233.69,
+          "lng": 120.49
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0306",
+          "lat": -234.69,
+          "lng": 119.05
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0307",
+          "lat": -241.75,
+          "lng": 121.8
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0308",
+          "lat": -180.81,
+          "lng": 167.92
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0309",
+          "lat": -167.38,
+          "lng": 141.62
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0310",
+          "lat": -142.38,
+          "lng": 67.12
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0311",
+          "lat": -118.88,
+          "lng": 142.80
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0312",
+          "lat": -71.85,
+          "lng": 100.83
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0313",
+          "lat": -27.35,
+          "lng": 144.64
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0314",
+          "lat": -27.04,
+          "lng": 133.39
+        }
+      ]
+    },
+    {
+      "type": "monster",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Twisted Sorcerer's Ghost",
+          "display": "#1 Twisted Sorcerer's Ghost",
+          "id": "twisted_sorcerers_ghost",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "rattan_hill",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -133.38,
+              "lng": 59.5
+            },
+            {
+              "zone": "rattan_hill",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -148.69,
+              "lng": 82.87
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Brigand Veteran",
+          "display": "#2 Brigand Veteran",
+          "id": "brigand_veteran",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "rattan_hill",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -88.38,
+              "lng": 93.12
+            },
+            {
+              "zone": "rattan_hill",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -68.31,
+              "lng": 102.24
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Strange Wooden Doll",
+          "display": "#3 Strange Wooden Doll",
+          "id": "strange_wooden_doll",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "rattan_hill",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -103.88,
+              "lng": 176.22
+            },
+            {
+              "zone": "rattan_hill",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -144.75,
+              "lng": 130.98
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vista",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Wisteria",
+          "display": "#3 Wisteria",
+          "content": "",
+          "id": "wisteria",
+          "lat": -151.44,
+          "lng": 159.05
+        },
+        {
+          "isCollectible": true,
+          "name": "Abandoned House",
+          "display": "#4 Abandoned House",
+          "content": "",
+          "id": "abandoned_house",
+          "lat": -148.13,
+          "lng": 100.37
+        }
+      ]
+    },
+    {
+      "type": "food",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Deer Hind Hoof",
+          "display": "#5 Deer Hind Hoof",
+          "content": "Used to cook Deer Hind Hooves Stew at Sobin.\n Cost: 1400 silver",
+          "id": "deer_hind_hoof",
+          "lat": -187.33,
+          "lng": 151.95
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Letter to You 10 Years from Now",
+          "display": "#3 Letter to You 10 Years from Now",
+          "content": "",
+          "id": "letter_to_you_10_years_from_now",
+          "lat": -123.69,
+          "lng": 121.61
+        },
+        {
+          "isCollectible": false,
+          "name": "The Surging Yearning (1/3)",
+          "display": "#2 The Surging Yearning (1/3)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "rattan_hill",
+              "marker": "the_surging_yearning_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "melody_forest",
+              "marker": "the_surging_yearning_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "prisma_valley",
+              "marker": "the_surging_yearning_p3"
+            }
+          ],
+          "id": "the_surging_yearning_p1",
+          "lat": -115.06,
+          "lng": 121.61
+        }
+      ]
+    },
+    {
+      "type": "merchant",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Mac",
+          "display": "Mac",
+          "id": "mac",
+          "content": "Sells the following items",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "delphi_township",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -193,
+              "lng": 131.68
+            },
+            {
+              "zone": "rattan_hill",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -142.81,
+              "lng": 96.37
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "minuet",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Forest's Minuet",
+          "display": "Forest's Minuet",
+          "content": "",
+          "id": "minute0004",
+          "lat": -28.31,
+          "lng": 150.61
+        }
+      ]
+    },
+    {
+      "type": "passage",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0043",
+          "lat": -228.06,
+          "lng": 121.62
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Port City Changhun",
+          "continent": "Annika",
+          "display": "Port City Changhun",
+          "content": "Changhun, a beautiful city full of oriental flavor, is a huge trading city built in a port, with merchant ships lined up for trade.",
+          "id": "port_city_changhun",
+          "lat": -233.13,
+          "lng": 143.68,
+          "markers": [
+            { "type": "mokoko", "count": 4 },
+            { "type": "affinity", "count": 1 },
+            { "type": "vista",  "count": 2 },
+            { "type": "food",  "count": 4 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 5 }
+          ],
+          "mapId": "port_city_changhun"
+        },
+        {
+          "isCollectible": false,
+          "name": "Melody Forest",
+          "continent": "Annika",
+          "display": "Melody Forest",
+          "content": "Changhun, a beautiful city full of oriental flavor, is a huge trading city built in a port, with merchant ships lined up for trade.",
+          "id": "melody_forest",
+          "lat": -48,
+          "lng": 196.72,
+          "markers": [
+            { "type": "mokoko", "count": 8 },
+            { "type": "affinity", "count": 1 },
+            { "type": "monster",  "count": 3 },
+            { "type": "boss",  "count": 1 },
+            { "type": "vista",  "count": 2 },
+            { "type": "food",  "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "melody_forest"
+        },
+        {
+          "isCollectible": true,
+          "name": "Yeon's Barrier",
+          "continent": "Annika",
+          "display": "Yeon's Barrier",
+          "content": "",
+          "id": "yeons_barrier",
+          "lat": -115.94,
+          "lng": 210.24,
+          "markers": [
+            { "type": "mokoko", "count": 7 },
+            { "type": "food",  "count": 1 }
+          ],
+          "mapId": "yeons_barrier"
+        }
+      ]
+    }
+  ]
+}

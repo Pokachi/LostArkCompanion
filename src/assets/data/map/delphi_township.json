@@ -173,6 +173,13 @@
               "indexOffset": 0,
               "lat": -193,
               "lng": 131.68
+            },
+            {
+              "zone": "rattan_hill",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -142.81,
+              "lng": 96.37
             }
           ]
         }
@@ -219,7 +226,7 @@
           "name": "Prisma Valley",
           "continent": "Anikka",
           "display": "Prisma Valley",
-          "content": "",
+          "content": "A Guardian is said to sleep in Prisma Valley, where ascetics and martial arts trainees come to forget about material things and hone their skills.",
           "id": "prisma_valley",
           "lat": -25,
           "lng": 122.48,

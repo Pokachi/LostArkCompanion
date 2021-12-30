@@ -546,7 +546,7 @@
           "name": "Delphi Township",
           "continent": "Anikka",
           "display": "Delphi Township",
-          "content": "",
+          "content": "Delphi Township is the oldest region in Anikka, and respects courtesy and tradition. Since ancient times, it has been used as a test site for selecting the grandmaster who is respected by everyone.",
           "id": "delphi_township",
           "lat": -136.84,
           "lng": 214.28,
@@ -557,6 +557,26 @@
             { "type": "story", "count": 1 }
           ],
           "mapId": "delphi_township"
+        },
+        {
+          "icon": "./images/map/rattan_hill/rattan_hill.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Rattan Hill",
+          "continent": "Anikka",
+          "display": "Rattan Hill",
+          "content": "It is a quiet and tranquil place with a magnificent large and beautiful wisteria that is hundreds of years old. The Yeon Clan has been practicing here as a base for generations.",
+          "id": "rattan_hill",
+          "lat": -122.97,
+          "lng": 209.59,
+          "markers": [
+            { "type": "mokoko",  "count": 10 },
+            { "type": "monster", "count": 3 },
+            { "type": "vista", "count": 2 },
+            { "type": "food", "count": 1 },
+            { "type": "story", "count": 2 }
+          ],
+          "mapId": "rattan_hill"
         }
       ]
     }

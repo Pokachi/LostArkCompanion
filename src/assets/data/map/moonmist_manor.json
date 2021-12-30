@@ -5,7 +5,7 @@
   "parent": "delphi_township",
   "continent": "Anikka",
   "continentId": "anikka",
-  "icon": "./images/map/moonmist_manor/moonmist_manor.png",
+  "icon": "./images/map/common/dungeon.png",
   "minZoom": 2,
   "maxZoom": 4,
   "adjacentZones": [
