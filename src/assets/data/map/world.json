@@ -470,8 +470,8 @@
           "display": "Sweetwater Forest",
           "content": "Forest with ripe fruits and sweet honey. Hybees protect the Golden Apple Tree.",
           "id": "sweetwater_forest",
-          "lat": -153.84,
-          "lng": 186.66,
+          "lat": -153.75,
+          "lng": 186.09,
           "markers": [
             { "type": "monster", "count": 4 },
             { "type": "vista",  "count": 2 },
@@ -489,8 +489,8 @@
           "display": "Skyreach Steppe",
           "content": "A forest formed on the grasped hands of Tortoyk. Giant living boulders roam this place.",
           "id": "skyreach_steppe",
-          "lat": -151.25,
-          "lng": 184.5,
+          "lat": -151.06,
+          "lng": 184.78,
           "markers": [
             { "type": "monster", "count": 5 },
             { "type": "boss", "count": 1 },
@@ -509,8 +509,8 @@
           "display": "Forest of Giants",
           "content": "A sacred forest that Giants are believed to have come from. It is where the torso of sleeping Tortoyk lies.",
           "id": "forest_of_giants",
-          "lat": -150.22,
-          "lng": 186.53,
+          "lat": -150.78,
+          "lng": 186.24,
           "markers": [
             { "type": "monster", "count": 3 },
             { "type": "vista",  "count": 1 },

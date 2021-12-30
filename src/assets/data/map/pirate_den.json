@@ -2,7 +2,7 @@
   "type": "zone",
   "name": "Pirate Den",
   "id": "pirate_den",
-  "parent": "world",
+  "parent": "sweetwater_forest",
   "continent": "Tortoyk",
   "continentId": "tortoyk",
   "icon": "./images/map/pirate_den/pirate_den.png",
