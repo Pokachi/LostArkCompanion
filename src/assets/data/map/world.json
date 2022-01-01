@@ -577,6 +577,47 @@
             { "type": "story", "count": 2 }
           ],
           "mapId": "rattan_hill"
+        },
+        {
+          "icon": "./images/map/melody_forest/melody_forest.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Melody Forest",
+          "continent": "Annika",
+          "display": "Melody Forest",
+          "content": "Changhun, a beautiful city full of oriental flavor, is a huge trading city built in a port, with merchant ships lined up for trade.",
+          "id": "melody_forest",
+          "lat": -133.55,
+          "lng": 227.03,
+          "markers": [
+            { "type": "mokoko", "count": 8 },
+            { "type": "affinity", "count": 1 },
+            { "type": "monster",  "count": 3 },
+            { "type": "boss",  "count": 1 },
+            { "type": "vista",  "count": 2 },
+            { "type": "food",  "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "melody_forest"
+        },
+        {
+          "icon": "./images/map/twilight_mists/twilight_mists.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Twilight Mists",
+          "continent": "Anikka",
+          "display": "Twilight Mists",
+          "content": "Thick mist flows on the dizzying peak in this rugged upland of Anikka. Ascetics stationed here protect the world from a past disaster that may repeat itself.",
+          "id": "twilight_mists",
+          "lat": -125.66,
+          "lng": 228.81,
+          "markers": [
+            { "type": "mokoko",  "count": 10 },
+            { "type": "monster", "count": 3 },
+            { "type": "boss", "count": 1 },
+            { "type": "vista", "count": 2 }
+          ],
+          "mapId": "twilight_mists"
         }
       ]
     }

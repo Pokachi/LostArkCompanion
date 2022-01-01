@@ -284,6 +284,13 @@
               "indexOffset": -2,
               "lat": -181.94,
               "lng": 58.68
+            },
+            {
+              "zone": "twilight_mists",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -106.81,
+              "lng": 104.99
             }
           ]
         }

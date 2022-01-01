@@ -10,7 +10,8 @@
   "maxZoom": 4,
   "adjacentZones": [
     "rattan_hill",
-    "jeoks_barrier"
+    "jeoks_barrier",
+    "twilight_mists"
   ],
   "markers": [
     {
@@ -286,6 +287,13 @@
               "indexOffset": -2,
               "lat": -181.94,
               "lng": 58.68
+            },
+            {
+              "zone": "twilight_mists",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -106.81,
+              "lng": 104.99
             }
           ]
         }
@@ -324,6 +332,23 @@
             { "type": "story", "count": 2 }
           ],
           "mapId": "rattan_hill"
+        },
+        {
+          "isCollectible": false,
+          "name": "Twilight Mists",
+          "continent": "Anikka",
+          "display": "Twilight Mists",
+          "content": "Thick mist flows on the dizzying peak in this rugged upland of Anikka. Ascetics stationed here protect the world from a past disaster that may repeat itself.",
+          "id": "twilight_mists",
+          "lat": -25.17,
+          "lng": 111.44,
+          "markers": [
+            { "type": "mokoko",  "count": 10 },
+            { "type": "monster", "count": 3 },
+            { "type": "boss", "count": 1 },
+            { "type": "vista", "count": 2 }
+          ],
+          "mapId": "twilight_mists"
         },
         {
           "isCollectible": true,

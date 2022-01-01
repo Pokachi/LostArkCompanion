@@ -1,0 +1,316 @@
+{
+  "type": "zone",
+  "name": "Twilight Mists",
+  "id": "twilight_mists",
+  "parent": "world",
+  "continent": "Anikka",
+  "continentId": "anikka",
+  "icon": "./images/map/twilight_mists/twilight_mists.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "melody_forest",
+    "prisma_valley"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0337",
+          "lat": -184.38,
+          "lng": 95.7
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0338",
+          "lat": -181.5,
+          "lng": 95.2
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0339",
+          "lat": -139.29,
+          "lng": 134.82
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0340",
+          "lat": -149.19,
+          "lng": 92.93
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0341",
+          "lat": -141.88,
+          "lng": 44.47
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0342",
+          "lat": -136.94,
+          "lng": 66.62
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0343",
+          "lat": -127.9,
+          "lng": 77.14
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0344",
+          "lat": -112.85,
+          "lng": 144.53
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0345",
+          "lat": -59.33,
+          "lng": 106.24
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0346",
+          "lat": -43.85,
+          "lng": 141.4
+        }
+      ]
+    },
+    {
+      "type": "monster",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Notorious Red Robed Shaman",
+          "display": "#6 Notorious Red Robed Shaman",
+          "id": "notorious_red_robed_shaman",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "twilight_mists",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -74.71,
+              "lng": 136.8
+            },
+            {
+              "zone": "twilight_mists",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -51,
+              "lng": 135.18
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Rugged Tombstone",
+          "display": "#7 Rugged Tombstone",
+          "id": "rugged_tombstone",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "twilight_mists",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -144.88,
+              "lng": 144.24
+            },
+            {
+              "zone": "twilight_mists",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -165.63,
+              "lng": 135.37
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Hardshelled Flying Bird",
+          "display": "#8 Hardshelled Flying Bird",
+          "id": "hardshelled_flying_bird",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "twilight_mists",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -75.25,
+              "lng": 198.30
+            },
+            {
+              "zone": "twilight_mists",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -43.13,
+              "lng": 171.49
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "boss",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Chuo",
+          "display": "Chuo",
+          "id": "chuo",
+          "content": "",
+          "lat": -136.69,
+          "lng": 144.49
+        }
+      ]
+    },
+    {
+      "type": "vista",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Hill",
+          "display": "#7 Hill",
+          "content": "",
+          "id": "hill",
+          "lat": -212.69,
+          "lng": 178.61
+        },
+        {
+          "isCollectible": true,
+          "name": "Entrance to Bleak Edge",
+          "display": "#8 Entrance to Bleak Edge",
+          "content": "",
+          "id": "entrance_to_bleak_edge",
+          "lat": -144.94,
+          "lng": 93.68
+        }
+      ]
+    },
+    {
+      "type": "merchant",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Mac",
+          "display": "Mac",
+          "id": "mac",
+          "content": "Sells the following items",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "delphi_township",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -193,
+              "lng": 131.68
+            },
+            {
+              "zone": "rattan_hill",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -142.81,
+              "lng": 96.37
+            },
+            {
+              "zone": "melody_forest",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -181.94,
+              "lng": 58.68
+            },
+            {
+              "zone": "twilight_mists",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -106.81,
+              "lng": 104.99
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "passage",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0048",
+          "lat": -184.38,
+          "lng": 93.37
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Prisma Valley",
+          "continent": "Anikka",
+          "display": "Prisma Valley",
+          "content": "A Guardian is said to sleep in Prisma Valley, where ascetics and martial arts trainees come to forget about material things and hone their skills.",
+          "id": "prisma_valley",
+          "lat": -89.88,
+          "lng": 60.43,
+          "markers": [
+            { "type": "mokoko",  "count": 7 },
+            { "type": "affinity", "count": 1 },
+            { "type": "monster", "count": 3 },
+            { "type": "vista", "count": 1 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 3 }
+          ],
+          "mapId": "prisma_valley"
+        },
+        {
+          "isCollectible": false,
+          "name": "Melody Forest",
+          "continent": "Annika",
+          "display": "Melody Forest",
+          "content": "Changhun, a beautiful city full of oriental flavor, is a huge trading city built in a port, with merchant ships lined up for trade.",
+          "id": "melody_forest",
+          "lat": -225.38,
+          "lng": 174.74,
+          "markers": [
+            { "type": "mokoko", "count": 8 },
+            { "type": "affinity", "count": 1 },
+            { "type": "monster",  "count": 3 },
+            { "type": "boss",  "count": 1 },
+            { "type": "vista",  "count": 2 },
+            { "type": "food",  "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "melody_forest"
+        }
+      ]
+    }
+  ]
+}
