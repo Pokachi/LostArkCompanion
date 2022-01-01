@@ -1,0 +1,397 @@
+{
+  "type": "zone",
+  "name": "Prisma Valley",
+  "id": "prisma_valley",
+  "parent": "world",
+  "continent": "Anikka",
+  "continentId": "anikka",
+  "icon": "./images/map/prisma_valley/prisma_valley.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "twilight_mists",
+    "delphi_township"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0337",
+          "lat": -184.38,
+          "lng": 95.7
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0338",
+          "lat": -181.5,
+          "lng": 95.2
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0339",
+          "lat": -139.29,
+          "lng": 134.82
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0340",
+          "lat": -149.19,
+          "lng": 92.93
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0341",
+          "lat": -141.88,
+          "lng": 44.47
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0342",
+          "lat": -136.94,
+          "lng": 66.62
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0343",
+          "lat": -127.9,
+          "lng": 77.14
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0344",
+          "lat": -112.85,
+          "lng": 144.53
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0345",
+          "lat": -59.33,
+          "lng": 106.24
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0346",
+          "lat": -43.85,
+          "lng": 141.4
+        }
+      ]
+    },
+    {
+      "type": "affinity",
+      "data": [
+        {
+          "name": "Sorang",
+          "isCollectible": true,
+          "display": "Sorang",
+          "content": "",
+          "id": "prisma_valley_sorang",
+          "lat": -125.56,
+          "lng": 75.75
+        }
+      ]
+    },
+    {
+      "type": "monster",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Alpha Wind Fox",
+          "display": "#5 Alpha Wind Fox",
+          "id": "alpha_wind_fox",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "prisma_valley",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -139.94,
+              "lng": 204.24
+            },
+            {
+              "zone": "prisma_valley",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -183.29,
+              "lng": 211.26
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Giant Fire Dokkaebi",
+          "display": "#12 Giant Fire Dokkaebi",
+          "id": "giant_fire_dokkaebi",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "prisma_valley",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -186.5,
+              "lng": 121.99
+            },
+            {
+              "zone": "prisma_valley",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -174.75,
+              "lng": 104.37
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Giant Red Lion Mask",
+          "display": "#13 Giant Red Lion Mask",
+          "id": "giant_red_lion_mask",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "prisma_valley",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -160.94,
+              "lng": 76.94
+            },
+            {
+              "zone": "prisma_valley",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -165.63,
+              "lng": 108.61
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vista",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Cloud Cliff",
+          "display": "#9 Cloud Cliff",
+          "content": "",
+          "id": "cloud_cliff",
+          "lat": -106.75,
+          "lng": 130.55
+        }
+      ]
+    },
+    {
+      "type": "quest",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "The Keeper Lives On",
+          "display": "#1 The Keeper Lives On",
+          "content": "Can be started after the main story quest \"At The Threshold\"",
+          "id": "the_keepr_lives_on",
+          "lat": -98.38,
+          "lng": 106.37
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Qualifications of the Grand Master (3/3)",
+          "display": "#7 Qualifications of the Grand Master (3/3)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "port_city_changhun",
+              "marker": "qualifications_of_the_grand_master_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "port_city_changhun",
+              "marker": "qualifications_of_the_grand_master_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "prisma_valley",
+              "marker": "qualifications_of_the_grand_master_p3"
+            }
+          ],
+          "id": "qualifications_of_the_grand_master_p3",
+          "lat": -116.81,
+          "lng": 35.87
+        },
+        {
+          "isCollectible": true,
+          "name": "The Surging Yearning (3/3)",
+          "display": "#2 The Surging Yearning (3/3)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "rattan_hill",
+              "marker": "the_surging_yearning_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "melody_forest",
+              "marker": "the_surging_yearning_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "prisma_valley",
+              "marker": "the_surging_yearning_p3"
+            }
+          ],
+          "id": "the_surging_yearning_p3",
+          "lat": -185.81,
+          "lng": 199.43
+        },
+        {
+          "isCollectible": true,
+          "name": "World in My Eyes",
+          "display": "#1 World in My Eyes",
+          "content": "",
+          "id": "world_in_my_eyes",
+          "lat": -203.44,
+          "lng": 144.74
+        }
+      ]
+    },
+    {
+      "type": "merchant",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Mac",
+          "display": "Mac",
+          "id": "mac",
+          "content": "Sells the following items",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "delphi_township",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -193,
+              "lng": 131.68
+            },
+            {
+              "zone": "rattan_hill",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -142.81,
+              "lng": 96.37
+            },
+            {
+              "zone": "melody_forest",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -181.94,
+              "lng": 58.68
+            },
+            {
+              "zone": "twilight_mists",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -106.81,
+              "lng": 104.99
+            },
+            {
+              "zone": "prisma_valley",
+              "index": 4,
+              "indexOffset": -4,
+              "lat": -127.25,
+              "lng": 202.12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "passage",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0052",
+          "lat": -91.52,
+          "lng": 138.66
+        },
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0053",
+          "lat": -103.02,
+          "lng": 137.78
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Delphi Township",
+          "continent": "Anikka",
+          "display": "Delphi Township",
+          "content": "Delphi Township is the oldest region in Anikka, and respects courtesy and tradition. Since ancient times, it has been used as a test site for selecting the grandmaster who is respected by everyone.",
+          "id": "delphi_township",
+          "lat": -227.69,
+          "lng": 151.12,
+          "markers": [
+            { "type": "mokoko",  "count": 4 },
+            { "type": "monster", "count": 3 },
+            { "type": "vista", "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "delphi_township"
+        },
+        {
+          "isCollectible": false,
+          "name": "Twilight Mists",
+          "continent": "Anikka",
+          "display": "Twilight Mists",
+          "content": "Thick mist flows on the dizzying peak in this rugged upland of Anikka. Ascetics stationed here protect the world from a past disaster that may repeat itself.",
+          "id": "twilight_mists",
+          "lat": -95.69,
+          "lng": 166.06,
+          "markers": [
+            { "type": "mokoko",  "count": 10 },
+            { "type": "monster", "count": 3 },
+            { "type": "boss", "count": 1 },
+            { "type": "vista", "count": 2 }
+          ],
+          "mapId": "twilight_mists"
+        }
+      ]
+    }
+  ]
+}

@@ -291,6 +291,13 @@
               "indexOffset": -3,
               "lat": -106.81,
               "lng": 104.99
+            },
+            {
+              "zone": "prisma_valley",
+              "index": 4,
+              "indexOffset": -4,
+              "lat": -127.25,
+              "lng": 202.12
             }
           ]
         }

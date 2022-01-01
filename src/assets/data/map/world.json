@@ -618,6 +618,27 @@
             { "type": "vista", "count": 2 }
           ],
           "mapId": "twilight_mists"
+        },
+        {
+          "icon": "./images/map/prisma_valley/prisma_valley.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Prisma Valley",
+          "continent": "Anikka",
+          "display": "Prisma Valley",
+          "content": "A Guardian is said to sleep in Prisma Valley, where ascetics and martial arts trainees come to forget about material things and hone their skills.",
+          "id": "prisma_valley",
+          "lat": -121.06,
+          "lng": 240.02,
+          "markers": [
+            { "type": "mokoko",  "count": 7 },
+            { "type": "affinity", "count": 1 },
+            { "type": "monster", "count": 3 },
+            { "type": "vista", "count": 1 },
+            { "type": "quest", "count": 1 },
+            { "type": "story", "count": 3 }
+          ],
+          "mapId": "prisma_valley"
         }
       ]
     }
