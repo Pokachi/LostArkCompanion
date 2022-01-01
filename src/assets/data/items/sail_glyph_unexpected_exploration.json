@@ -1,8 +1,8 @@
 {
-  "id": "sail_glyph_solitude",
+  "id": "sail_glyph_unexpected_exploration",
   "grade": 1,
-  "image": "./images/items/sail_glyph_solitude.png",
-  "name": "Sail Glyph: Solitude",
+  "image": "./images/items/sail_glyph_unexpected_exploration.png",
+  "name": "Sail Glyph: Unexpected Exploration",
   "type": "Sail Glyph",
   "bound": "Binds when obtained",
   "destruction": "<span style=\"color: #C24B46\">Cannot be dismantled</span>",

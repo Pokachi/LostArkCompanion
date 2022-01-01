@@ -272,4 +272,9 @@ export default {
   text-transform: capitalize;
 }
 
+.affinity-friend {
+  color: #ca8a88;
+  text-transform: capitalize;
+}
+
 </style>

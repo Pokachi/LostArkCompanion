@@ -1,0 +1,10 @@
+{
+  "id": "3rd_giants_heart",
+  "grade": 3,
+  "image": "./images/items/giants_heart.png",
+  "name": "3rd Giant's Heart",
+  "type": "Collectible",
+  "bound": "Binds when obtained",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "An enormous heart that exudes condensed energy from giants. It looks like a huge rock, but it has a faint heartbeat.<br>Can be exchanged for various items through Librarian Minerva on Wisdom Isle.<br><span style=\"color: #FFFFAC\">Giant's Hearts can only be registered once per Account.</span>"
+}

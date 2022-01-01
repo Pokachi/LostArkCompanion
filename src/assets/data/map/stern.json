@@ -139,7 +139,7 @@
           "isCollectible": true,
           "display": "Bastian",
           "content": "",
-          "id": "stern_mercenary_bastian",
+          "id": "stern_bastian",
           "lat": -27.56,
           "lng": 131.62
         },
@@ -148,7 +148,7 @@
           "isCollectible": true,
           "display": "Sasha",
           "content": "",
-          "id": "stern_mercenary_sasha",
+          "id": "stern_sasha",
           "lat": -27.63,
           "lng": 133.18
         }

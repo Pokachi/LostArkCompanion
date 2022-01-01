@@ -1,0 +1,318 @@
+{
+  "name": "Sasha",
+  "id": "stern_sasha",
+  "description": "The Treasurer of Arthetine who is famous for her fashion sense and outspoken attitude. She speaks slowly but with confidence, and is in charge of all financial affairs in Arthetine.",
+  "continent": "Arthetine",
+  "location": "Origins of Stern",
+  "subLocation": "Town Hall",
+  "birthDate": "2/14",
+  "imageCount": 5,
+  "condition": {
+    "quest": "Confrontation",
+    "questType": "blue_quest",
+    "questLink": "https://lostarkcodex.com/us/quest/305005/",
+    "charisma": 90,
+    "wisdom": 90
+  },
+  "quests": [
+    {
+      "name": "Drowning in Paper",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/305309/",
+      "conditions": {
+        "stage": "Normal 1",
+        "stageId": "normal"
+      }
+    },
+    {
+      "name": "The Birth of Arthetine",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Normal 1",
+        "stageId": "normal"
+      }
+    },
+    {
+      "name": "Under the Influence",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/305310/",
+      "conditions": {
+        "stage": "Normal 2?",
+        "stageId": "normal",
+        "charisma": 190,
+        "wisdom": 190
+      }
+    },
+    {
+      "name": "Final Warning",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/305311/",
+      "conditions": {
+        "stage": "Interested 2",
+        "stageId": "interested"
+      }
+    },
+    {
+      "name": "Pressing Problems",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Interested 2",
+        "stageId": "interested",
+        "kindness": 140
+      }
+    },
+    {
+      "name": "The Death of Krause",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Interested 2",
+        "stageId": "interested"
+      }
+    },
+    {
+      "name": "Just Out of Reach",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/305312/",
+      "conditions": {
+        "stage": "Interested 3",
+        "stageId": "interested"
+      }
+    },
+    {
+      "name": "Stage Takeover!",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/305313/",
+      "conditions": {
+        "stage": "Friendly 1",
+        "stageId": "friendly",
+        "charisma": 180,
+        "wisdom": 180
+      }
+    },
+    {
+      "name": "How to Relieve Stress",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Friendly 1",
+        "stageId": "friendly",
+        "charisma": 249
+      }
+    },
+    {
+      "name": "A Confession",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Friendly 1",
+        "stageId": "friendly"
+      }
+    },
+    {
+      "name": "The Hard Way",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/801306/",
+      "conditions": {
+        "stage": "Friendly 2",
+        "stageId": "friendly"
+      }
+    },
+    {
+      "name": "Arthetine's Treasurer",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/801307/",
+      "conditions": {
+        "stage": "friendly 3",
+        "stageId": "friendly"
+      }
+    }
+  ],
+  "rewards": {
+    "normal": [
+      {
+        "id": "ancient_gold_coin",
+        "count": 15
+      }
+    ],
+    "interested": [
+      {
+        "id": "ancient_platinum_coin"
+      }
+    ],
+    "friendly": [
+      {
+        "id": "sasha_card"
+      },
+      {
+        "id": "100_gold_coin",
+        "count": 5
+      }
+    ],
+    "trust": [
+      {
+        "id": "3rd_giants_heart"
+      },
+      {
+        "id": "100_gold_coin",
+        "count": 12
+      },
+      {
+        "id": "harmony_battle_engraving_recipe_pouch",
+        "count": 4
+      }
+    ],
+    "friend": [
+      {
+        "id": "greater_vitality_increase_potion"
+      },
+      {
+        "id": "100_gold_coin",
+        "count": 18
+      },
+      {
+        "id": "phoenix_plume",
+        "count": 20
+      },
+      {
+        "id": "ancient_platinum_coin",
+        "count": 5
+      }
+    ]
+  },
+  "likes": {
+    "songs": [
+      {
+        "id": "song_of_starlight",
+        "points": 325
+      },
+      {
+        "id": "song_of_temptation",
+        "points": 375
+      }
+    ],
+    "emotes": [
+      {
+        "id": "laugh",
+        "points": 275
+      },
+      {
+        "id": "shy",
+        "points": 300
+      }
+    ],
+    "gifts": [
+      {
+        "id": "stern_scrap_iron",
+        "points": 450,
+        "conditions": {
+          "charisma": 150
+        }
+      },
+      {
+        "id": "machine_repair_set",
+        "points": 390
+      },
+      {
+        "id": "magick_crystal",
+        "points": 360
+      },
+      {
+        "id": "old_bone",
+        "points": 360
+      },
+      {
+        "id": "black_rose",
+        "points": 330
+      },
+      {
+        "id": "glacial_beer",
+        "points": 330
+      },
+      {
+        "id": "halite_statue",
+        "points": 330
+      },
+      {
+        "id": "hoyte_100_year_anniversary_bookmark",
+        "points": 330
+      },
+      {
+        "id": "soundstone_of_dawn",
+        "points": 330
+      },
+      {
+        "id": "stalwart_cage",
+        "points": 330
+      },
+      {
+        "id": "tournament_entrance_certificate",
+        "points": 330
+      },
+      {
+        "id": "yudia_natural_salt",
+        "points": 330
+      },
+      {
+        "id": "liebeheims_rose",
+        "points": 324
+      },
+      {
+        "id": "lobster_dish",
+        "points": 324
+      },
+      {
+        "id": "zagoras_ice_cap",
+        "points": 324
+      },
+      {
+        "id": "goblin_yam",
+        "points": 300
+      }
+    ]
+  },
+  "levels": [
+    {
+      "name": "Normal 1",
+      "stage": "normal",
+      "expRequired": 600
+    },
+    {
+      "name": "Normal 2",
+      "stage": "normal",
+      "expRequired": 2000
+    },
+    {
+      "name": "Interested 1",
+      "stage": "interested",
+      "expRequired": 7100
+    },
+    {
+      "name": "Interested 2",
+      "stage": "interested",
+      "expRequired": 11000
+    },
+    {
+      "name": "Interested 3",
+      "stage": "interested",
+      "expRequired": 12000
+    },
+    {
+      "name": "Friendly 1",
+      "stage": "friendly",
+      "expRequired": 15000
+    },
+    {
+      "name": "Friendly 2",
+      "stage": "friendly",
+      "expRequired": 15000
+    },
+    {
+      "name": "Friendly 3",
+      "stage": "friendly",
+      "expRequired": 15000
+    },
+    {
+      "name": "Trust",
+      "stage": "trust",
+      "expRequired": 26000
+    }
+  ]
+}

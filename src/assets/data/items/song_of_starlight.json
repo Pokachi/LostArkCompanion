@@ -1,0 +1,10 @@
+{
+  "id": "song_of_starlight",
+  "grade": 0,
+  "image": "./images/items/song_of_starlight.png",
+  "name": "Song of Starlight",
+  "type": "Song",
+  "bound": "Binds when obtained",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "It's a beautiful song passed on from the Starkeeper."
+}

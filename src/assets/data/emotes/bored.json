@@ -1,0 +1,8 @@
+{
+  "id": "bored",
+  "name": "Bored",
+  "description": "Type /bored to yawn.",
+  "acquisition":"[Adventure's Tome] Rethramis 70%",
+  "acquisitionType": "adventures_tome",
+  "acquisitionLink": "#/collectibles/ignea?r=rethramis"
+}

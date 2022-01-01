@@ -1,0 +1,211 @@
+{
+  "name": "Mercenary Zeira",
+  "id": "stern_mercenary_zeira",
+  "description": "A writer who works in secret. She writes engaging novels based on various dark rumors and legends circulating throughout Arthetine.",
+  "continent": "Arthetine",
+  "location": "Origins of Stern",
+  "subLocation": "Palke Plaza",
+  "birthDate": "1/25",
+  "imageCount": 1,
+  "condition": {
+    "quest": "Her Secret Vocation",
+    "questType": "yellow_quest",
+    "questLink": "https://lostarkcodex.com/us/quest/305119/",
+    "wisdom": 30
+  },
+  "quests": [
+    {
+      "name": "The Lonely Writer's Life",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Interested 1*",
+        "stageId": "interested"
+      }
+    },
+    {
+      "name": "About the New Book",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Friendly 1",
+        "stageId": "friendly"
+      }
+    },
+    {
+      "name": "A Controversial Novel",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Friendly 1",
+        "stageId": "friendly"
+      }
+    }
+  ],
+  "rewards": {
+    "normal": [
+      {
+        "id": "ancient_gold_coin",
+        "count": 3
+      }
+    ],
+    "interested": [
+      {
+        "id": "creation_fragment",
+        "count": 5
+      }
+    ],
+    "friendly": [
+      {
+        "id": "zeira_card"
+      }
+    ],
+    "trust": [
+      {
+        "id": "100_gold_coin",
+        "count": 2
+      },
+      {
+        "id": "creation_fragment",
+        "count": 12
+      },
+      {
+        "id": "vitality_increase_potion"
+      }
+    ]
+  },
+  "likes": {
+    "songs": [
+      {
+        "id": "song_of_resonance",
+        "points": 350
+      }
+    ],
+    "emotes": [
+      {
+        "id": "laugh",
+        "points": 250
+      }
+    ],
+    "gifts": [
+      {
+        "id": "hoyte_100_year_anniversary_bookmark",
+        "points": 450,
+        "conditions": {
+          "kindness": 150
+        }
+      },
+      {
+        "id": "tournament_entrance_certificate",
+        "points": 360
+      },
+      {
+        "id": "anikka_lute",
+        "points": 330
+      },
+      {
+        "id": "black_rose",
+        "points": 330
+      },
+      {
+        "id": "community_figurine",
+        "points": 330
+      },
+      {
+        "id": "encavian_relic",
+        "points": 330
+      },
+      {
+        "id": "faded_photo",
+        "points": 330
+      },
+      {
+        "id": "glacial_beer",
+        "points": 330
+      },
+      {
+        "id": "machine_repair_set",
+        "points": 330
+      },
+      {
+        "id": "moonlight_butterfly",
+        "points": 330
+      },
+      {
+        "id": "paradise_parfait",
+        "points": 330
+      },
+      {
+        "id": "round_glass_piece",
+        "points": 330
+      },
+      {
+        "id": "small_music_box",
+        "points": 330
+      },
+      {
+        "id": "stern_scrap_iron",
+        "points": 330
+      },
+      {
+        "id": "torso_sculpture",
+        "points": 330
+      },
+      {
+        "id": "liebeheims_rose",
+        "points": 324
+      },
+      {
+        "id": "lobster_dish",
+        "points": 324
+      },
+      {
+        "id": "zagoras_ice_cap",
+        "points": 324
+      },
+      {
+        "id": "mysterious_mouth",
+        "points": 300
+      }
+    ]
+  },
+  "levels": [
+    {
+      "name": "Normal 1",
+      "stage": "normal",
+      "expRequired": 200
+    },
+    {
+      "name": "Normal 2",
+      "stage": "normal",
+      "expRequired": 500
+    },
+    {
+      "name": "Interested 1",
+      "stage": "interested",
+      "expRequired": 1400
+    },
+    {
+      "name": "Interested 2",
+      "stage": "interested",
+      "expRequired": 1900
+    },
+    {
+      "name": "Interested 3",
+      "stage": "interested",
+      "expRequired": 2300
+    },
+    {
+      "name": "Friendly 1",
+      "stage": "friendly",
+      "expRequired": 2700
+    },
+    {
+      "name": "Friendly 2",
+      "stage": "friendly",
+      "expRequired": 4000
+    },
+    {
+      "name": "Friendly 3",
+      "stage": "friendly",
+      "expRequired": 4800
+    }
+  ]
+}
