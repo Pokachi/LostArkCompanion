@@ -11,7 +11,8 @@
   "adjacentZones": [
     "melody_forest",
     "prisma_valley",
-    "foul_hollow"
+    "foul_hollow",
+    "bleak_edge"
   ],
   "markers": [
     {
@@ -324,6 +325,21 @@
             { "type": "story", "count": 1 }
           ],
           "mapId": "foul_hollow"
+        },
+        {
+          "isCollectible": false,
+          "name": "Bleak Edge",
+          "continent": "Annika",
+          "display": "Bleak Edge",
+          "content": "",
+          "id": "bleak_edge",
+          "lat": -137.94,
+          "lng": 75.49,
+          "markers": [
+            { "type": "mokoko", "count": 5 },
+            { "type": "food", "count": 1 }
+          ],
+          "mapId": "bleak_edge"
         }
       ]
     }
