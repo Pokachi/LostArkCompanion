@@ -1,0 +1,10 @@
+{
+  "id": "cheers",
+  "name": "Cheers",
+  "description": "Type /cheers to celebrate in triumph.",
+  "acquisition":"Master's Drinking Table - Melody Forest",
+  "acquisitionType": "blue_quest",
+  "acquisitionContinentId": "anikka",
+  "acquisitionLocation": "melody_forest",
+  "acquisitionLink": "#/map?m=melody_forest&c=cheer"
+}

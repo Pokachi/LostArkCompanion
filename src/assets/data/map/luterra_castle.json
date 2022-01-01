@@ -139,7 +139,7 @@
           "isCollectible": true,
           "name": "Foundation Centennial Wine",
           "display": "#2 Foundation Centennial Wine",
-          "content": "Purchase the food from Patrick\nCost: 8000 silver",
+          "content": "Purchase the food from Patrick\nCost: 8,000 silver",
           "id": "foundation_centennial_wine",
           "lat": -204.06,
           "lng": 138.12

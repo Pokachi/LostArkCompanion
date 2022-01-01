@@ -1,0 +1,260 @@
+{
+  "name": "Neria",
+  "id": "stern_neria",
+  "description": "A woman working at Neria's Tavern in Stern. Her grace and amazing voice earned her the nickname Prima Donna.",
+  "continent": "Arthetine",
+  "location": "Origins of Stern",
+  "subLocation": "Neria's Tavern",
+  "birthDate": "11/11",
+  "imageCount": 3,
+  "condition": {
+    "quest": "What's In A Name",
+    "questType": "yellow_quest",
+    "questLink": "https://lostarkcodex.com/us/quest/202124/",
+    "charisma": 60,
+    "wisdom": 50
+  },
+  "quests": [
+    {
+      "name": "Cracks to Crevices",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/305305/",
+      "conditions": {
+        "stage": "Normal 1",
+        "stageId": "normal",
+        "charisma": 80,
+        "wisdom": 70
+      }
+    },
+    {
+      "name": "Cykins",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Normal 1",
+        "stageId": "normal"
+      }
+    },
+    {
+      "name": "Past Lives",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/305306/",
+      "conditions": {
+        "stage": "Normal 2",
+        "stageId": "normal",
+        "charisma": 150,
+        "wisdom": 130
+      }
+    },
+    {
+      "name": "Echoes of a Voice",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/305307/",
+      "conditions": {
+        "stage": "Interested 1",
+        "stageId": "interested",
+        "charisma": 210,
+        "wisdom": 180
+      }
+    },
+    {
+      "name": "About the Newspapers",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Interested 1",
+        "stageId": "interested",
+        "kindness": 110
+      }
+    },
+    {
+      "name": "The Voice of Stern",
+      "type": "pink_quest",
+      "link": "https://lostarkcodex.com/us/quest/305308/",
+      "conditions": {
+        "stage": "Interested 2",
+        "stageId": "interested"
+      }
+    },
+    {
+      "name": "About Music",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Friendly 1",
+        "stageId": "friendly"
+      }
+    },
+    {
+      "name": "About Traveling",
+      "type": "dialogue",
+      "conditions": {
+        "stage": "Friendly 1",
+        "stageId": "friendly"
+      }
+    }
+  ],
+  "rewards": {
+    "normal": [
+      {
+        "id": "ancient_gold_coin",
+        "count": 8
+      }
+    ],
+    "interested": [
+      {
+        "id": "ancient_gold_coin",
+        "count": 15
+      }
+    ],
+    "friendly": [
+      {
+        "id": "stern_neria_card"
+      }
+    ],
+    "trust": [
+      {
+        "id": "100_gold_coin",
+        "count": 6
+      },
+      {
+        "id": "harmony_battle_engraving_recipe_pouch",
+        "count": 3
+      }
+    ]
+  },
+  "likes": {
+    "songs": [
+      {
+        "id": "serenade_of_love",
+        "points": 275
+      }
+    ],
+    "emotes": [
+      {
+        "id": "cheers",
+        "points": 250
+      },
+      {
+        "id": "pray",
+        "points": 275
+      }
+    ],
+    "gifts": [
+      {
+        "id": "exquisite_music_box",
+        "points": 450,
+        "conditions": {
+          "charisma": 150
+        }
+      },
+      {
+        "id": "fancier_bouquet",
+        "points": 360
+      },
+      {
+        "id": "anikka_lute",
+        "points": 330
+      },
+      {
+        "id": "colorful_claw_toy",
+        "points": 330
+      },
+      {
+        "id": "community_figurine",
+        "points": 330
+      },
+      {
+        "id": "glacial_beer",
+        "points": 330
+      },
+      {
+        "id": "halite_statue",
+        "points": 330
+      },
+      {
+        "id": "hoyte_100_year_anniversary_bookmark",
+        "points": 330
+      },
+      {
+        "id": "machine_repair_set",
+        "points": 330
+      },
+      {
+        "id": "moonlight_butterfly",
+        "points": 330
+      },
+      {
+        "id": "oversize_ladybug_doll",
+        "points": 330
+      },
+      {
+        "id": "small_music_box",
+        "points": 330
+      },
+      {
+        "id": "stern_scrap_iron",
+        "points": 330
+      },
+      {
+        "id": "torso_sculpture",
+        "points": 330
+      },
+      {
+        "id": "tournament_entrance_certificate",
+        "points": 330
+      },
+      {
+        "id": "liebeheims_rose",
+        "points": 324
+      },
+      {
+        "id": "lobster_dish",
+        "points": 324
+      },
+      {
+        "id": "zagoras_ice_cap",
+        "points": 324
+      }
+    ]
+  },
+  "levels": [
+    {
+      "name": "Normal 1",
+      "stage": "normal",
+      "expRequired": 400
+    },
+    {
+      "name": "Normal 2",
+      "stage": "normal",
+      "expRequired": 1100
+    },
+    {
+      "name": "Interested 1",
+      "stage": "interested",
+      "expRequired": 3400
+    },
+    {
+      "name": "Interested 2",
+      "stage": "interested",
+      "expRequired": 5200
+    },
+    {
+      "name": "Interested 3",
+      "stage": "interested",
+      "expRequired": 6800
+    },
+    {
+      "name": "Friendly 1",
+      "stage": "friendly",
+      "expRequired": 7000
+    },
+    {
+      "name": "Friendly 2",
+      "stage": "friendly",
+      "expRequired": 7000
+    },
+    {
+      "name": "Friendly 3",
+      "stage": "friendly",
+      "expRequired": 7000
+    }
+  ]
+}

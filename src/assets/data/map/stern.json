@@ -1,0 +1,394 @@
+{
+  "type": "zone",
+  "name": "Stern",
+  "id": "stern",
+  "parent": "world",
+  "continent": "Arthetine",
+  "continentId": "arthetine",
+  "icon": "./images/map/stern/stern.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "arid_path"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0366",
+          "lat": -147.13,
+          "lng": 71.85
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0367",
+          "lat": -134.81,
+          "lng": 34.02
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0368",
+          "lat": -189.94,
+          "lng": 116.81
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0369",
+          "lat": -174.69,
+          "lng": 153.67
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0370",
+          "lat": -150.04,
+          "lng": 220.51
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0371",
+          "lat": -97.79,
+          "lng": 204.32
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0372",
+          "lat": -79.44,
+          "lng": 97.62
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0373",
+          "lat": -28.92,
+          "lng": 132.2
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0374",
+          "lat": -27.6,
+          "lng": 137.2
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0375",
+          "lat": -30.79,
+          "lng": 146.88
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0376",
+          "lat": -21.23,
+          "lng": 141.14
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0377",
+          "lat": -20.85,
+          "lng": 146.88
+        }
+      ]
+    },
+    {
+      "type": "affinity",
+      "data": [
+        {
+          "name": "Neria",
+          "isCollectible": true,
+          "display": "Neria",
+          "content": "",
+          "id": "stern_neria",
+          "lat": -175.81,
+          "lng": 154.93
+        },
+        {
+          "name": "Mercenary Zeira",
+          "isCollectible": true,
+          "display": "Mercenary Zeira",
+          "content": "",
+          "id": "stern_mercenary_zeira",
+          "lat": -174.56,
+          "lng": 56.5
+        },
+        {
+          "name": "Bastian",
+          "isCollectible": true,
+          "display": "Bastian",
+          "content": "",
+          "id": "stern_mercenary_bastian",
+          "lat": -27.56,
+          "lng": 131.62
+        },
+        {
+          "name": "Sasha",
+          "isCollectible": true,
+          "display": "Sasha",
+          "content": "",
+          "id": "stern_mercenary_sasha",
+          "lat": -27.63,
+          "lng": 133.18
+        }
+      ]
+    },
+    {
+      "type": "vista",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Zagoras Fortress Entrance",
+          "display": "#1 Zagoras Fortress Entrance",
+          "content": "",
+          "id": "zagoras_fortress_entrance",
+          "lat": -195.1,
+          "lng": 88.58
+        }
+      ]
+    },
+    {
+      "type": "food",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Cykin Combat Ration Type A",
+          "display": "#2 Cykin Combat Ration Type A",
+          "content": "Purchase the food from Malina\nCost: 30,000 silver",
+          "id": "cykin_combat_ration_type_a",
+          "lat": -179.31,
+          "lng": 149.49
+        },
+        {
+          "isCollectible": true,
+          "name": "Unknown Liquid XD-6353",
+          "display": "#6 Unknown Liquid XD-6353",
+          "content": "1. Purchase 22 Unknown Crystals from Deberry for 70 silver each.\n2. Cook 3x IX-IX1X1I12123X1 for 400 silver each.\n3. Cook 4x IX-ILIL121lIILI1 for 400 silver each.\n4. Cook 5x IX-XX1XX31456XX11 for 400 silver each.\n5. Cook 6x NMNNNMNMNMNM-vwurnmn for 400 silver each.\n6. Cook 4x II-1I1I11I1I for 400 silver each.\n7. Use all the ingrediants to cook Boiling Liquid for 1700 silver.\n8. Wait 5 minute for it to turn into Unknown Liquid XD-6353.",
+          "id": "unknown_liquid_xd_6353",
+          "lat": -182.29,
+          "lng": 151.72
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "The Answer to the Agony (1/4)",
+          "display": "#2 The Answer to the Agony (1/4)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "stern",
+              "marker": "the_answer_to_the_agony_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "stern",
+              "marker": "the_answer_to_the_agony_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "stern",
+              "marker": "the_answer_to_the_agony_p3"
+            },
+            {
+              "label": "Part 4",
+              "zone": "stern_underground",
+              "marker": "the_answer_to_the_agony_p4"
+            }
+          ],
+          "id": "the_answer_to_the_agony_p1",
+          "lat": -151.25,
+          "lng": 53.93
+        },
+        {
+          "isCollectible": false,
+          "name": "The Answer to the Agony (2/4)",
+          "display": "#2 The Answer to the Agony (2/4)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "stern",
+              "marker": "the_answer_to_the_agony_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "stern",
+              "marker": "the_answer_to_the_agony_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "stern",
+              "marker": "the_answer_to_the_agony_p3"
+            },
+            {
+              "label": "Part 4",
+              "zone": "stern_underground",
+              "marker": "the_answer_to_the_agony_p4"
+            }
+          ],
+          "id": "the_answer_to_the_agony_p2",
+          "lat": -194.48,
+          "lng": 164.75
+        },
+        {
+          "isCollectible": false,
+          "name": "The Answer to the Agony (3/4)",
+          "display": "#2 The Answer to the Agony (3/4)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "stern",
+              "marker": "the_answer_to_the_agony_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "stern",
+              "marker": "the_answer_to_the_agony_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "stern",
+              "marker": "the_answer_to_the_agony_p3"
+            },
+            {
+              "label": "Part 4",
+              "zone": "stern_underground",
+              "marker": "the_answer_to_the_agony_p4"
+            }
+          ],
+          "id": "the_answer_to_the_agony_p3",
+          "lat": -129.23,
+          "lng": 219.05
+        },
+        {
+          "isCollectible": false,
+          "name": "The Greatest Evolution Form in Arthetine (1/3)",
+          "display": "#7 The Greatest Evolution Form in Arthetine (1/3)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "stern",
+              "marker": "the_greatest_evolution_form_in_arthetine_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "stern",
+              "marker": "the_greatest_evolution_form_in_arthetine_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "stern",
+              "marker": "the_greatest_evolution_form_in_arthetine_p3"
+            }
+          ],
+          "id": "the_greatest_evolution_form_in_arthetine_p1",
+          "lat": -96.81,
+          "lng": 197.8
+        },
+        {
+          "isCollectible": false,
+          "name": "The Greatest Evolution Form in Arthetine (2/3)",
+          "display": "#7 The Greatest Evolution Form in Arthetine (2/3)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "stern",
+              "marker": "the_greatest_evolution_form_in_arthetine_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "stern",
+              "marker": "the_greatest_evolution_form_in_arthetine_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "stern",
+              "marker": "the_greatest_evolution_form_in_arthetine_p3"
+            }
+          ],
+          "id": "the_greatest_evolution_form_in_arthetine_p2",
+          "lat": -106.75,
+          "lng": 207.55
+        },
+        {
+          "isCollectible": false,
+          "name": "The Greatest Evolution Form in Arthetine (3/3)",
+          "display": "#7 The Greatest Evolution Form in Arthetine (3/3)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "stern",
+              "marker": "the_greatest_evolution_form_in_arthetine_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "stern",
+              "marker": "the_greatest_evolution_form_in_arthetine_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "stern",
+              "marker": "the_greatest_evolution_form_in_arthetine_p3"
+            }
+          ],
+          "id": "the_greatest_evolution_form_in_arthetine_p3",
+          "lat": -102.69,
+          "lng": 211.55
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Arid Path",
+          "continent": "Arthetine",
+          "display": "Arid Path",
+          "content": "A port built in the desert facing the sea. Designed to enable active trade with other continents, it is connected to the capital Stern by train.",
+          "id": "arid_path",
+          "lat": -197.13,
+          "lng": 79.99,
+          "markers": [
+            { "type": "mokoko",  "count": 7 },
+            { "type": "monster", "count": 2 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "arid_path"
+        }
+      ]
+    }
+  ]
+}

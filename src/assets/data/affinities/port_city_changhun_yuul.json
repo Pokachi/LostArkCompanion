@@ -9,7 +9,9 @@
   "condition": {
     "quest": "Rain, Stars, Wind",
     "questType": "purple_quest",
-    "questLink": "https://lostarkcodex.com/us/quest/705124/"
+    "questLink": "https://lostarkcodex.com/us/quest/705124/",
+    "kindness": 10,
+    "wisdom": 10
   },
   "quests": [
     {

@@ -133,7 +133,7 @@
           "isCollectible": true,
           "name": "Veda's Prideholme-style",
           "display": "#1 Veda's Prideholme-style",
-          "content": "Purchase the food from Veda.\n Cost: 3000 silver",
+          "content": "Purchase the food from Veda.\n Cost: 3,000 silver",
           "id": "vedas_prideholme_style",
           "lat": -70.08,
           "lng": 126.73

@@ -247,7 +247,7 @@
             {
               "location": "rethramis_border",
               "id": "rudric",
-              "image": "./images/collectibles/monster.png"
+              "image": "./images/collectibles/boss.png"
             }
           ]
         },
@@ -537,7 +537,7 @@
             {
               "location": "saland_hill",
               "id": "salt_giant",
-              "image": "./images/collectibles/monster.png"
+              "image": "./images/collectibles/boss.png"
             }
           ]
         },
@@ -861,7 +861,7 @@
             {
               "location": "bilbrin_forest",
               "id": "rovlen",
-              "image": "./images/collectibles/monster.png"
+              "image": "./images/collectibles/boss.png"
             }
           ]
         },
@@ -1234,7 +1234,7 @@
             {
               "location": "sunbright_hill",
               "id": "wili_wili",
-              "image": "./images/collectibles/monster.png"
+              "image": "./images/collectibles/boss.png"
             }
           ]
         },
@@ -1570,7 +1570,7 @@
             {
               "location": "skyreach_steppe",
               "id": "caspiel",
-              "image": "./images/collectibles/monster.png"
+              "image": "./images/collectibles/boss.png"
             }
           ]
         },
@@ -1935,12 +1935,12 @@
             {
               "location": "twilight_mists",
               "id": "chuo",
-              "image": "./images/collectibles/monster.png"
+              "image": "./images/collectibles/boss.png"
             },
             {
               "location": "melody_forest",
               "id": "chaotic_chuo",
-              "image": "./images/collectibles/monster.png"
+              "image": "./images/collectibles/boss.png"
             }
           ]
         },
