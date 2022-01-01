@@ -167,7 +167,7 @@ export default {
       var coord = event.latlng;
       var lat = coord.lat;
       var lng = coord.lng;
-      console.log("You clicked the map at latitude: " + lat + " and longitude: " + lng);
+      console.log("You clicked the map at latitude: " + lat.toFixed(2) + " and longitude: " + lng.toFixed(2));
     },
     toggleMarker(type) {
       if (!this.playerData[type]) {

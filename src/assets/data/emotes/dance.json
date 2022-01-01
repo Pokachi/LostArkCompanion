@@ -1,0 +1,7 @@
+{
+  "id": "dance",
+  "name": "Dance",
+  "description": "Type /dance to boogie to the beat.",
+  "acquisition":"Obtained By Default",
+  "acquisitionType": "default"
+}

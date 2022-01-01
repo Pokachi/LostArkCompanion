@@ -1,0 +1,345 @@
+{
+  "type": "zone",
+  "name": "Melody Forest",
+  "id": "melody_forest",
+  "parent": "world",
+  "continent": "Anikka",
+  "continentId": "anikka",
+  "icon": "./images/map/melody_forest/melody_forest.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "rattan_hill"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0322",
+          "lat": -169.04,
+          "lng": 126.16
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0323",
+          "lat": -135.65,
+          "lng": 76.9
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0324",
+          "lat": -92.4,
+          "lng": 141.83
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0325",
+          "lat": -57.25,
+          "lng": 138.49
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0326",
+          "lat": -105.79,
+          "lng": 206.44
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0327",
+          "lat": -45.15,
+          "lng": 182.72
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0328",
+          "lat": -42.02,
+          "lng": 194.72
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0329",
+          "lat": -34.71,
+          "lng": 187.91
+        }
+      ]
+    },
+    {
+      "type": "affinity",
+      "data": [
+        {
+          "name": "Ryeon's Ghost",
+          "isCollectible": true,
+          "display": "Ryeon's Ghost",
+          "content": "",
+          "id": "melody_forest_ryeons_ghost",
+          "lat": -131.94,
+          "lng": 200.04
+        }
+      ]
+    },
+    {
+      "type": "monster",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Twisted Nightmare Eyes",
+          "display": "#4 Twisted Nightmare Eyes",
+          "id": "twisted_nightmare_eyes",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "melody_forest",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -171.81,
+              "lng": 181.05
+            },
+            {
+              "zone": "melody_forest",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -139.5,
+              "lng": 193.17
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Earthbound Hydra",
+          "display": "#14 Earthbound Hydra",
+          "id": "earthbound_hydra",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "melody_forest",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -63.42,
+              "lng": 174.18
+            },
+            {
+              "zone": "melody_forest",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -88.60,
+              "lng": 140.02
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Unliving Soldier",
+          "display": "#15 Unliving Soldier",
+          "id": "unliving_soldier",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "melody_forest",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -174.94,
+              "lng": 155.80
+            },
+            {
+              "zone": "melody_forest",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -136.81,
+              "lng": 148.74
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "boss",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Chaotic Chuo",
+          "display": "Chaotic Chuo",
+          "id": "chaotic_chuo",
+          "content": "",
+          "lat": -80.06,
+          "lng": 148.05
+        }
+      ]
+    },
+    {
+      "type": "vista",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Demonic Portal Hole",
+          "display": "#5 Demonic Portal Hole",
+          "content": "",
+          "id": "demonic_portal_hole",
+          "lat": -168.94,
+          "lng": 122.56
+        },
+        {
+          "isCollectible": true,
+          "name": "Spring of Echoes",
+          "display": "#6 Spring of Echoes",
+          "content": "",
+          "id": "spring_of_echoes",
+          "lat": -110.88,
+          "lng": 163.05
+        }
+      ]
+    },
+    {
+      "type": "food",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Jeok Clan Miracle Drug",
+          "display": "#2 Jeok Clan Miracle Drug",
+          "content": "",
+          "id": "jeok_clan_miracle_drug",
+          "lat": -109.81,
+          "lng": 44.62
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "The Surging Yearning (2/3)",
+          "display": "#2 The Surging Yearning (2/3)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "rattan_hill",
+              "marker": "the_surging_yearning_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "melody_forest",
+              "marker": "the_surging_yearning_p2"
+            },
+            {
+              "label": "Part 3",
+              "zone": "prisma_valley",
+              "marker": "the_surging_yearning_p3"
+            }
+          ],
+          "id": "the_surging_yearning_p2",
+          "lat": -67.35,
+          "lng": 207.92
+        }
+      ]
+    },
+    {
+      "type": "merchant",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Mac",
+          "display": "Mac",
+          "id": "mac",
+          "content": "Sells the following items",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "delphi_township",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -193,
+              "lng": 131.68
+            },
+            {
+              "zone": "rattan_hill",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -142.81,
+              "lng": 96.37
+            },
+            {
+              "zone": "melody_forest",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -181.94,
+              "lng": 58.68
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "passage",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0046",
+          "lat": -55.06,
+          "lng": 178.36
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Rattan Hill",
+          "continent": "Anikka",
+          "display": "Rattan Hill",
+          "content": "It is a quiet and tranquil place with a magnificent large and beautiful wisteria that is hundreds of years old. The Yeon Clan has been practicing here as a base for generations.",
+          "id": "rattan_hill",
+          "lat": -203.44,
+          "lng": 121.30,
+          "markers": [
+            { "type": "mokoko",  "count": 10 },
+            { "type": "monster", "count": 3 },
+            { "type": "vista", "count": 2 },
+            { "type": "food", "count": 1 },
+            { "type": "story", "count": 2 }
+          ],
+          "mapId": "rattan_hill"
+        },
+        {
+          "isCollectible": true,
+          "name": "Jeok's Barrier",
+          "continent": "Anikka",
+          "display": "Jeok's Barrier",
+          "content": "",
+          "id": "jeoks_barrier",
+          "lat": -110.25,
+          "lng": 233.51,
+          "markers": [
+            { "type": "mokoko",  "count": 7 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "jeoks_barrier"
+        }
+      ]
+    }
+  ]
+}

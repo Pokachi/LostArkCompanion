@@ -10,7 +10,8 @@
   "maxZoom": 4,
   "adjacentZones": [
     "port_city_changhun",
-    "yeons_barrier"
+    "yeons_barrier",
+    "melody_forest"
   ],
   "markers": [
     {
@@ -276,6 +277,13 @@
               "indexOffset": -1,
               "lat": -142.81,
               "lng": 96.37
+            },
+            {
+              "zone": "melody_forest",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -181.94,
+              "lng": 58.68
             }
           ]
         }
