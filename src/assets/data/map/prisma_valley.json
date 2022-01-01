@@ -20,81 +20,57 @@
           "name": "Mokoko Bean",
           "isCollectible": true,
           "content": "",
-          "id": "mokoko0337",
-          "lat": -184.38,
-          "lng": 95.7
+          "id": "mokoko0352",
+          "lat": -50.88,
+          "lng": 118.55
         },
         {
           "name": "Mokoko Bean",
           "isCollectible": true,
           "content": "",
-          "id": "mokoko0338",
-          "lat": -181.5,
-          "lng": 95.2
+          "id": "mokoko0353",
+          "lat": -78.38,
+          "lng": 90.06
         },
         {
           "name": "Mokoko Bean",
           "isCollectible": true,
           "content": "",
-          "id": "mokoko0339",
-          "lat": -139.29,
-          "lng": 134.82
+          "id": "mokoko0354",
+          "lat": -86.19,
+          "lng": 141.30
         },
         {
           "name": "Mokoko Bean",
           "isCollectible": true,
           "content": "",
-          "id": "mokoko0340",
-          "lat": -149.19,
-          "lng": 92.93
+          "id": "mokoko0355",
+          "lat": -100.06,
+          "lng": 146.3
         },
         {
           "name": "Mokoko Bean",
           "isCollectible": true,
           "content": "",
-          "id": "mokoko0341",
-          "lat": -141.88,
-          "lng": 44.47
+          "id": "mokoko0356",
+          "lat": -104.31,
+          "lng": 125.50
         },
         {
           "name": "Mokoko Bean",
           "isCollectible": true,
           "content": "",
-          "id": "mokoko0342",
-          "lat": -136.94,
-          "lng": 66.62
+          "id": "mokoko0357",
+          "lat": -127.63,
+          "lng": 96.11
         },
         {
           "name": "Mokoko Bean",
           "isCollectible": true,
           "content": "",
-          "id": "mokoko0343",
-          "lat": -127.9,
-          "lng": 77.14
-        },
-        {
-          "name": "Mokoko Bean",
-          "isCollectible": true,
-          "content": "",
-          "id": "mokoko0344",
-          "lat": -112.85,
-          "lng": 144.53
-        },
-        {
-          "name": "Mokoko Bean",
-          "isCollectible": true,
-          "content": "",
-          "id": "mokoko0345",
-          "lat": -59.33,
-          "lng": 106.24
-        },
-        {
-          "name": "Mokoko Bean",
-          "isCollectible": true,
-          "content": "",
-          "id": "mokoko0346",
-          "lat": -43.85,
-          "lng": 141.4
+          "id": "mokoko0358",
+          "lat": -119.5,
+          "lng": 53.71
         }
       ]
     },
@@ -211,7 +187,7 @@
           "name": "The Keeper Lives On",
           "display": "#1 The Keeper Lives On",
           "content": "Can be started after the main story quest \"At The Threshold\"",
-          "id": "the_keepr_lives_on",
+          "id": "the_keeper_lives_on",
           "lat": -98.38,
           "lng": 106.37
         }
@@ -274,10 +250,10 @@
         },
         {
           "isCollectible": true,
-          "name": "World in My Eyes",
-          "display": "#1 World in My Eyes",
+          "name": "Sir Druden's Past",
+          "display": "#4 Sir Druden's Past",
           "content": "",
-          "id": "world_in_my_eyes",
+          "id": "sir_drudens_past",
           "lat": -203.44,
           "lng": 144.74
         }

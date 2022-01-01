@@ -216,10 +216,10 @@
       "data": [
         {
           "isCollectible": true,
-          "name": "Jeok Clan Miracle Drug",
-          "display": "#2 Jeok Clan Miracle Drug",
+          "name": "Secret Pill Of Jeok Family",
+          "display": "#2 Secret Pill Of Jeok Family",
           "content": "",
-          "id": "jeok_clan_miracle_drug",
+          "id": "secret_pill_of_jeok_family",
           "lat": -109.81,
           "lng": 44.62
         }

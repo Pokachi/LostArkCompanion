@@ -81,8 +81,7 @@
           "name": "Sealed Special Sauce",
           "display": "#3 Sealed Special Sauce",
           "content": "Used to cook Secret Yeon-Style Marinated Special at Hely.\n Cost: 900 silver",
-          "image": "./images/map/log_hill/popup/disgorged_lump.png",
-          "id": "disgorged_lump",
+          "id": "sealed_special_sauce",
           "lat": -96.13,
           "lng": 113.93
         }

@@ -1662,6 +1662,371 @@
     "anikka": {
       "name": "Anikka",
       "id": "anikka",
+      "zones": [
+        {
+          "id": "port_city_changhun",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "delphi_township",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "rattan_hill",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "melody_forest",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "twilight_mists",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "prisma_valley",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "moonmist_manor",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "yeons_barrier",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "jeoks_barrier",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "bleak_edge",
+          "mokokoIndex": 0
+        }
+      ],
+      "bookData": [
+        {
+          "name": "Vista",
+          "id": "vista",
+          "items": [
+            {
+              "location": "port_city_changhun",
+              "id": "canal",
+              "image": "./images/collectibles/vista/canal.png"
+            },
+            {
+              "location": "port_city_changhun",
+              "id": "tournament_arena",
+              "image": "./images/collectibles/vista/tournament_arena.png"
+            },
+            {
+              "location": "rattan_hill",
+              "id": "wisteria",
+              "image": "./images/collectibles/vista/wisteria.png"
+            },
+            {
+              "location": "rattan_hill",
+              "id": "abandoned_house",
+              "image": "./images/collectibles/vista/abandoned_house.png"
+            },
+            {
+              "location": "melody_forest",
+              "id": "demonic_portal_hole",
+              "image": "./images/collectibles/vista/demonic_portal_hole.png"
+            },
+            {
+              "location": "melody_forest",
+              "id": "spring_of_echoes",
+              "image": "./images/collectibles/vista/spring_of_echoes.png"
+            },
+            {
+              "location": "twilight_mists",
+              "id": "hill",
+              "image": "./images/collectibles/vista/hill.png"
+            },
+            {
+              "location": "twilight_mists",
+              "id": "entrance_to_bleak_edge",
+              "image": "./images/collectibles/vista/entrance_to_bleak_edge.png"
+            },
+            {
+              "location": "prisma_valley",
+              "id": "cloud_cliff",
+              "image": "./images/collectibles/vista/cloud_cliff.png"
+            },
+            {
+              "location": "delphi_township",
+              "id": "gate",
+              "image": "./images/collectibles/vista/gate.png"
+            }
+          ]
+        },
+        {
+          "name": "Cooking",
+          "id": "food",
+          "count": 8,
+          "items": [
+            {
+              "location": "port_city_changhun",
+              "id": "lucky_fortune_cookie",
+              "image": "./images/items/lucky_fortune_cookie.png",
+              "grade": 3
+            },
+            {
+              "location": "melody_forest",
+              "id": "secret_pill_of_jeok_family",
+              "image": "./images/items/secret_pill_of_jeok_family.png",
+              "grade": 3
+            },
+            {
+              "location": "yeons_barrier",
+              "id": "sealed_special_sauce",
+              "image": "./images/items/secret_yeon_style_marinated_special.png",
+              "grade": 3
+            },
+            {
+              "location": "port_city_changhun",
+              "id": "100_year_old_centipede",
+              "ids": ["100_year_old_centipede", "old_dumpling"],
+              "image": "./images/items/manpos_secret_meat_dumpling.png",
+              "grade": 3
+            },
+            {
+              "location": "rattan_hill",
+              "id": "deer_hind_hoof",
+              "image": "./images/items/deer_hind_hooves_stew.png",
+              "grade": 3
+            },
+            {
+              "location": "port_city_changhun",
+              "id": "perfect_sugar_sculpture",
+              "image": "./images/items/perfect_sugar_sculpture.png",
+              "grade": 4
+            },
+            {
+              "location": "bleak_edge",
+              "id": "legendary_secret_recipe",
+              "image": "./images/items/soup_of_transcendence.png",
+              "grade": 4
+            }
+          ]
+        },
+        {
+          "name": "Monster",
+          "id": "monster",
+          "items": [
+            {
+              "location": "rattan_hill",
+              "id": "twisted_sorcerers_ghost",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "rattan_hill",
+              "id": "brigand_veteran",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "rattan_hill",
+              "id": "strange_wooden_doll",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "melody_forest",
+              "id": "twisted_nightmare_eyes",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "prisma_valley",
+              "id": "alpha_wind_fox",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "twilight_mists",
+              "id": "notorious_red_robed_shaman",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "twilight_mists",
+              "id": "rugged_tombstone",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "twilight_mists",
+              "id": "hardshelled_flying_bird",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "delphi_township",
+              "id": "lazy_crop_thief",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "delphi_township",
+              "id": "giant_ollac",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "delphi_township",
+              "id": "giant_white_lion_mask",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "prisma_valley",
+              "id": "giant_fire_dokkaebi",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "prisma_valley",
+              "id": "giant_red_lion_mask",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "melody_forest",
+              "id": "earthbound_hydra",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "melody_forest",
+              "id": "unliving_soldier",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            }
+          ]
+        },
+        {
+          "name": "Dungeon",
+          "id": "zone",
+          "items": [
+            {
+              "location": "rattan_hill",
+              "id": "yeons_barrier",
+              "image": "./images/collectibles/dungeon.png"
+            },
+            {
+              "location": "melody_forest",
+              "id": "jeoks_barrier",
+              "image": "./images/collectibles/dungeon.png"
+            },
+            {
+              "location": "twilight_mists",
+              "id": "bleak_edge",
+              "image": "./images/collectibles/dungeon.png"
+            }
+          ]
+        },
+        {
+          "name": "Boss",
+          "id": "boss",
+          "items": [
+            {
+              "location": "twilight_mists",
+              "id": "chuo",
+              "image": "./images/collectibles/monster.png"
+            },
+            {
+              "location": "melody_forest",
+              "id": "chaotic_chuo",
+              "image": "./images/collectibles/monster.png"
+            }
+          ]
+        },
+        {
+          "name": "Rapport",
+          "id": "affinity",
+          "items": [
+            {
+              "location": "port_city_changhun",
+              "id": "port_city_changhun_yuul",
+              "image": "./images/affinity/port_city_changhun_yuul_1.png"
+            },
+            {
+              "location": "melody_forest",
+              "id": "melody_forest_ryeons_ghost",
+              "image": "./images/affinity/melody_forest_ryeons_ghost_1.png"
+            },
+            {
+              "location": "prisma_valley",
+              "id": "prisma_valley_sorang",
+              "image": "./images/affinity/prisma_valley_sorang_1.png"
+            }
+          ]
+        },
+        {
+          "name": "Another Story",
+          "id": "quest",
+          "items": [
+            {
+              "location": "prisma_valley",
+              "id": "the_keeper_lives_on",
+              "image": "./images/collectibles/quest.png"
+            },
+            {
+              "location": "port_city_changhun",
+              "id": "rain_stars_wind",
+              "image": "./images/collectibles/quest.png"
+            }
+          ]
+        },
+        {
+          "name": "Hidden Story",
+          "id": "story",
+          "items": [
+            {
+              "location": "delphi_township",
+              "id": "world_in_my_eyes",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "rattan_hill",
+              "startId": "the_surging_yearning_p1",
+              "id": "the_surging_yearning_p3",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "rattan_hill",
+              "id": "letter_to_you_10_years_from_now",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "prisma_valley",
+              "id": "sir_drudens_past",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "port_city_changhun",
+              "startId": "the_phantom_thief_of_changhun_p1",
+              "id": "the_phantom_thief_of_changhun_p3",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "jeoks_barrier",
+              "startId": "the_sidereals_two_students_p1",
+              "id": "the_sidereals_two_students_p2",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "port_city_changhun",
+              "startId": "qualifications_of_the_grand_master_p1",
+              "id": "qualifications_of_the_grand_master_p3",
+              "image": "./images/collectibles/story.png"
+            }
+          ]
+        }
+      ],
       "mokoko_total": 72
     },
     "arthetine": {
