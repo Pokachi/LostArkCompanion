@@ -639,6 +639,26 @@
             { "type": "story", "count": 3 }
           ],
           "mapId": "prisma_valley"
+        },
+        {
+          "icon": "./images/map/arid_path/arid_path.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Arid Path",
+          "continent": "Arthetine",
+          "display": "Arid Path",
+          "content": "A port built in the desert facing the sea. Designed to enable active trade with other continents, it is connected to the capital Stern by train.",
+          "id": "arid_path",
+          "lat": -92,
+          "lng": 192.24,
+          "markers": [
+            { "type": "mokoko",  "count": 7 },
+            { "type": "monster", "count": 2 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 1 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "arid_path"
         }
       ]
     }

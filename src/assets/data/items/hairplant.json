@@ -1,7 +1,6 @@
 {
   "id": "hairplant",
-  "grade": 3,
-  "subIcon": "heart",
+  "grade": 2,
   "image": "./images/items/hairplant.png",
   "name": "Hairplant",
   "type": "Cooking ingredient",

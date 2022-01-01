@@ -1,0 +1,12 @@
+{
+  "id": "energy_x7_capsule",
+  "grade": 3,
+  "image": "./images/items/energy_x7_capsule.png",
+  "name": "Energy X7 Capsule",
+  "type": "Exchange Currency",
+  "bound": "Bound to Account on Pickup",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "An energy capsule developed by Arthetine chemists. It immediately boosts blood flow and metabolism when ingested.",
+  "cost": 10000,
+  "currency": "silver"
+}
