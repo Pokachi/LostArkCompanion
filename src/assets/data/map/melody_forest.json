@@ -9,7 +9,8 @@
   "minZoom": 2,
   "maxZoom": 4,
   "adjacentZones": [
-    "rattan_hill"
+    "rattan_hill",
+    "jeoks_barrier"
   ],
   "markers": [
     {
