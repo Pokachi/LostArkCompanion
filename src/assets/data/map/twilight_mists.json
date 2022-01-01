@@ -10,7 +10,8 @@
   "maxZoom": 4,
   "adjacentZones": [
     "melody_forest",
-    "prisma_valley"
+    "prisma_valley",
+    "foul_hollow"
   ],
   "markers": [
     {
@@ -309,6 +310,20 @@
             { "type": "story", "count": 1 }
           ],
           "mapId": "melody_forest"
+        },
+        {
+          "isCollectible": false,
+          "name": "Foul Hollow",
+          "continent": "Annika",
+          "display": "Foul Hollow",
+          "content": "",
+          "id": "foul_hollow",
+          "lat": -24.44,
+          "lng": 143.99,
+          "markers": [
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "foul_hollow"
         }
       ]
     }

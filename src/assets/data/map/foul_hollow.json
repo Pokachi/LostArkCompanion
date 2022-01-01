@@ -1,0 +1,64 @@
+{
+  "type": "zone",
+  "name": "Foul Hollow",
+  "id": "foul_hollow",
+  "parent": "twilight_mists",
+  "continent": "Anikka",
+  "continentId": "anikka",
+  "icon": "./images/map/common/dungeon.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "twilight_mists"
+  ],
+  "markers": [
+    {
+      "type": "story",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "The Sidereal's Two Students (2/2)",
+          "display": "#6 The Sidereal's Two Students (2/2)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "jeoks_barrier",
+              "marker": "the_sidereals_two_students_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "foul_hollow",
+              "marker": "the_sidereals_two_students_p2"
+            }
+          ],
+          "id": "the_sidereals_two_students_p2",
+          "lat": -107.5,
+          "lng": 150.37
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Twilight Mists",
+          "continent": "Anikka",
+          "display": "Twilight Mists",
+          "content": "Thick mist flows on the dizzying peak in this rugged upland of Anikka. Ascetics stationed here protect the world from a past disaster that may repeat itself.",
+          "id": "twilight_mists",
+          "lat": -171.5,
+          "lng": 128.36,
+          "markers": [
+            { "type": "mokoko",  "count": 10 },
+            { "type": "monster", "count": 3 },
+            { "type": "boss", "count": 1 },
+            { "type": "vista", "count": 2 }
+          ],
+          "mapId": "twilight_mists"
+        }
+      ]
+    }
+  ]
+}
