@@ -1,0 +1,146 @@
+{
+  "type": "zone",
+  "name": "Dr. Bergstrom's Laboratory",
+  "id": "dr_bergstroms_laboratory",
+  "parent": "totrich",
+  "continent": "Arthetine",
+  "continentId": "arthetine",
+  "icon": "./images/map/common/dungeon.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "totrich"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0427",
+          "lat": -222.19,
+          "lng": 150.99
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0428",
+          "lat": -230.06,
+          "lng": 153.37
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0429",
+          "lat": -215.88,
+          "lng": 175.55
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0430",
+          "lat": -77.25,
+          "lng": 18.62
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0431",
+          "lat": -65.75,
+          "lng": 174.87
+        }
+      ]
+    },{
+      "type": "food",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Bergstrom's Invisibility Potion",
+          "display": "#7 Bergstrom's Invisibility Potion (1/2)",
+          "content": "Used to cook Bergstrom Drink at Cooking Master for 1700 silver.",
+          "markerLink": [
+            {
+              "label": "...Invisbiity...",
+              "zone": "dr_bergstroms_laboratory",
+              "marker": "bergstroms_invisibility_potion"
+            },
+            {
+              "label": "...Yellow...",
+              "zone": "dr_bergstroms_laboratory",
+              "marker": "bergstroms_yellow_potion"
+            }
+          ],
+          "id": "bergstroms_invisibility_potion",
+          "lat": -208.69,
+          "lng": 176.55
+        },
+        {
+          "isCollectible": true,
+          "name": "Bergstrom's Yellow Potion",
+          "display": "#7 Bergstrom's Yellow Potion (2/2)",
+          "content": "Used to cook Bergstrom Drink at Cooking Master for 1700 silver.",
+          "markerLink": [
+            {
+              "label": "...Invisbiity...",
+              "zone": "dr_bergstroms_laboratory",
+              "marker": "bergstroms_invisibility_potion"
+            },
+            {
+              "label": "...Yellow...",
+              "zone": "dr_bergstroms_laboratory",
+              "marker": "bergstroms_yellow_potion"
+            }
+          ],
+          "id": "bergstroms_yellow_potion",
+          "lat": -54.31,
+          "lng": 177.74
+        }
+      ]
+    },
+    {
+      "type": "passage",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0064",
+          "lat": -211.25,
+          "lng": 165.99
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Totrich",
+          "continent": "Arthetine",
+          "display": "Totrich",
+          "content": "A city located in the outskirts of Arthetine. It was the first place where the Cykins settled, but it's becoming a ghost town since all of its utilities and production were transferred to Stern.",
+          "id": "totrich",
+          "lat": -209.25,
+          "lng": 167.93,
+          "markers": [
+            { "type": "mokoko",  "count": 8 },
+            { "type": "affinity",  "count": 1 },
+            { "type": "monster",  "count": 2 },
+            { "type": "boss",  "count": 1 },
+            { "type": "vista",  "count": 1 },
+            { "type": "food",  "count": 2 },
+            { "type": "quest",  "count": 1 },
+            { "type": "story",  "count": 1 }
+          ],
+          "mapId": "totrich"
+        }
+      ]
+    }
+  ]
+}

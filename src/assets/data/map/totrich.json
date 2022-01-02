@@ -9,7 +9,8 @@
   "minZoom": 2,
   "maxZoom": 4,
   "adjacentZones": [
-    "windbringer_hills"
+    "windbringer_hills",
+    "dr_bergstroms_laboratory"
   ],
   "markers": [
     {
@@ -332,6 +333,21 @@
             { "type": "food", "count": 1 }
           ],
           "mapId": "windbringer_hills"
+        },
+        {
+          "isCollectible": true,
+          "name": "Dr. Bergstrom's Laboratory",
+          "continent": "Arthetine",
+          "display": "Dr. Bergstrom's Laboratory",
+          "content": "",
+          "id": "dr_bergstroms_laboratory",
+          "lat": -197.81,
+          "lng": 99.49,
+          "markers": [
+            { "type": "mokoko",  "count": 5 },
+            { "type": "food", "count": 2 }
+          ],
+          "mapId": "dr_bergstroms_laboratory"
         }
       ]
     }
