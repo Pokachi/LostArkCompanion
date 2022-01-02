@@ -242,6 +242,13 @@
               "indexOffset": -4,
               "lat": -154.69,
               "lng": 84.11
+            },
+            {
+              "zone": "riza_falls",
+              "index": 5,
+              "indexOffset": -5,
+              "lat": -110.88,
+              "lng": 129.87
             }
           ]
         }
@@ -327,6 +334,13 @@
               "indexOffset": -4,
               "lat": -155.69,
               "lng": 83.31
+            },
+            {
+              "zone": "riza_falls",
+              "index": 5,
+              "indexOffset": -5,
+              "lat": -112,
+              "lng": 128.87
             }
           ]
         }

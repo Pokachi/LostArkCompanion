@@ -13,7 +13,8 @@
     "eye_of_sceptrum",
     "stern_underground",
     "scraplands",
-    "windbringer_hills"
+    "windbringer_hills",
+    "riza_falls"
   ],
   "markers": [
     {
@@ -427,6 +428,24 @@
             { "type": "food", "count": 1 }
           ],
           "mapId": "windbringer_hills"
+        },
+        {
+          "isCollectible": false,
+          "name": "Riza Falls",
+          "continent": "Arthetine",
+          "display": "Riza Falls",
+          "content": "A huge waterfall area where golden sand flows. Inside the waterfall, there is an iron gate to Verdantier.",
+          "id": "riza_falls",
+          "lat": -80.38,
+          "lng": 197.11,
+          "markers": [
+            { "type": "mokoko",  "count": 10 },
+            { "type": "monster", "count": 3 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 1 },
+            { "type": "quest", "count": 1 }
+          ],
+          "mapId": "riza_falls"
         },
         {
           "isCollectible": false,
