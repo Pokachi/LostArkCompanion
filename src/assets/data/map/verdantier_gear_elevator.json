@@ -1,0 +1,50 @@
+{
+  "type": "zone",
+  "name": "Verdantier Gear Elevator",
+  "id": "verdantier_gear_elevator",
+  "parent": "verdantier",
+  "continent": "Arthetine",
+  "continentId": "arthetine",
+  "icon": "./images/map/common/dungeon.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "verdantier",
+    "verdantier_summit"
+  ],
+  "markers": [
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Verdantier",
+          "continent": "Arthetine",
+          "display": "Verdantier",
+          "content": "",
+          "id": "verdantier",
+          "lat": -161,
+          "lng": 94.22,
+          "markers": [
+            { "type": "mokoko",  "count": 1 }
+          ],
+          "mapId": "verdantier"
+        },
+        {
+          "isCollectible": true,
+          "name": "Verdantier Summit",
+          "continent": "Arthetine",
+          "display": "Verdantier Summit",
+          "content": "",
+          "id": "verdantier_summit",
+          "lat": -154,
+          "lng": 179.94,
+          "markers": [
+            { "type": "story",  "count": 1 }
+          ],
+          "mapId": "verdantier_summit"
+        }
+      ]
+    }
+  ]
+}

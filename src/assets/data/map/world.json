@@ -720,6 +720,67 @@
             { "type": "story",  "count": 2 }
           ],
           "mapId": "nebelhorn"
+        },
+        {
+          "icon": "./images/map/totrich/totrich.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Totrich",
+          "continent": "Arthetine",
+          "display": "Totrich",
+          "content": "A city located in the outskirts of Arthetine. It was the first place where the Cykins settled, but it's becoming a ghost town since all of its utilities and production were transferred to Stern.",
+          "id": "totrich",
+          "lat": -92.19,
+          "lng": 207.15,
+          "markers": [
+            { "type": "mokoko",  "count": 8 },
+            { "type": "affinity",  "count": 1 },
+            { "type": "monster",  "count": 2 },
+            { "type": "boss",  "count": 1 },
+            { "type": "vista",  "count": 1 },
+            { "type": "food",  "count": 2 },
+            { "type": "quest",  "count": 1 },
+            { "type": "story",  "count": 1 }
+          ],
+          "mapId": "totrich"
+        },
+        {
+          "icon": "./images/map/windbringer_hills/windbringer_hills.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Windbringer Hills",
+          "continent": "Arthetine",
+          "display": "Windbringer Hills",
+          "content": "Mushroom-shaped hillside located on the road leading to the old town of Totrich. The outskirts of this area house a dump site that processes scrap metal.",
+          "id": "windbringer_hills",
+          "lat": -98.68,
+          "lng": 196.94,
+          "markers": [
+            { "type": "mokoko",  "count": 9 },
+            { "type": "monster", "count": 2 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 1 }
+          ],
+          "mapId": "windbringer_hills"
+        },
+        {
+          "icon": "./images/map/riza_falls/riza_falls.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "continent": "Arthetine",
+          "display": "Riza Falls",
+          "content": "A huge waterfall area where golden sand flows. Inside the waterfall, there is an iron gate to Verdantier.",
+          "id": "riza_falls",
+          "lat": -86.47,
+          "lng": 203.77,
+          "markers": [
+            { "type": "mokoko",  "count": 10 },
+            { "type": "monster", "count": 3 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 1 },
+            { "type": "quest", "count": 1 }
+          ],
+          "mapId": "riza_falls"
         }
       ]
     }

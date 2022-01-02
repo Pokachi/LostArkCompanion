@@ -9,7 +9,8 @@
   "minZoom": 2,
   "maxZoom": 4,
   "adjacentZones": [
-    "stern"
+    "stern",
+    "verdantier"
   ],
   "markers": [
     {
@@ -450,6 +451,20 @@
             { "type": "story",  "count": 6 }
           ],
           "mapId": "stern"
+        },
+        {
+          "isCollectible": true,
+          "name": "Verdantier",
+          "continent": "Arthetine",
+          "display": "Verdantier",
+          "content": "",
+          "id": "verdantier",
+          "lat": -48.25,
+          "lng": 154.99,
+          "markers": [
+            { "type": "mokoko",  "count": 1 }
+          ],
+          "mapId": "verdantier"
         }
       ]
     }
