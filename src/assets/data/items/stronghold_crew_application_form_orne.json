@@ -1,0 +1,10 @@
+{
+  "id": "stronghold_crew_application_form_orne",
+  "grade": 3,
+  "image": "./images/items/stronghold_crew_application_form.png",
+  "name": "Stronghold Crew Application Form: Orne",
+  "type": "Ship Crew",
+  "bound": "Binds when obtained",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "A suspicious engineer from a slum in Totrich.<br>He has no memory of his past and doesn't know who he is, but knows an awful lot about a variety of subjects.<br><br><span style=\"color: #FFEC50\">Earthquake Additional Adaptation Bonus: 1%</span><br><span style=\"color: #FFEC50\">Flame Additional Adaptation Bonus: 1%</span>"
+}

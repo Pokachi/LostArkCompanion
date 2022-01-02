@@ -1,0 +1,7 @@
+{
+  "id": "deny",
+  "name": "Deny",
+  "description": "Type /deny to shake your head.",
+  "acquisition":"Obtained By Default",
+  "acquisitionType": "default"
+}

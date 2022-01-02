@@ -1,0 +1,339 @@
+{
+  "type": "zone",
+  "name": "Totrich",
+  "id": "totrich",
+  "parent": "world",
+  "continent": "Arthetine",
+  "continentId": "arthetine",
+  "icon": "./images/map/totrich/totrich.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "windbringer_hills"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0419",
+          "lat": -170.19,
+          "lng": 68.18
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0420",
+          "lat": -160.75,
+          "lng": 119.49
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0421",
+          "lat": -125.06,
+          "lng": 140.05
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0422",
+          "lat": -118.37,
+          "lng": 145.36
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0423",
+          "lat": -111.19,
+          "lng": 129.42
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0424",
+          "lat": -101.35,
+          "lng": 178.64
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0425",
+          "lat": -87.73,
+          "lng": 175.02
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0426",
+          "lat": -41.67,
+          "lng": 159.64
+        }
+      ]
+    },
+    {
+      "type": "affinity",
+      "data": [
+        {
+          "name": "Orne",
+          "isCollectible": true,
+          "display": "Orne",
+          "content": "",
+          "id": "totrich_orne",
+          "lat": -113.06,
+          "lng": 107.43
+        }
+      ]
+    },
+    {
+      "type": "monster",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Royal Guard Quartermaster",
+          "display": "#11 Royal Guard Quartermaster",
+          "id": "royal_guard_quartermaster",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "totrich",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -119.69,
+              "lng": 147.43
+            },
+            {
+              "zone": "totrich",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -95.94,
+              "lng": 152.62
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Bolchi Boss",
+          "display": "#12 Bolchi Boss",
+          "id": "bolchi_boss",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "totrich",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -69.75,
+              "lng": 174.67
+            },
+            {
+              "zone": "totrich",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -64.38,
+              "lng": 152.62
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "boss",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Velkan",
+          "display": "Velkan",
+          "id": "velkan",
+          "content": "",
+          "lat": -68.13,
+          "lng": 163.99
+        }
+      ]
+    },
+    {
+      "type": "vista",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Clockwork Square",
+          "display": "#6 Clockwork Square",
+          "content": "",
+          "id": "clockwork_square",
+          "lat": -113.13,
+          "lng": 130.49
+        }
+      ]
+    },
+    {
+      "type": "food",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "X-090892",
+          "display": "#1 X-090892",
+          "content": "Purchase the food from Jane\nCost: 30,000 silver",
+          "id": "x_090892",
+          "lat": -131.13,
+          "lng": 93.43
+        },
+        {
+          "isCollectible": true,
+          "name": "Adrenaline-boosting Fluid",
+          "display": "#5 Adrenaline-boosting Fluid",
+          "content": "Used to cook Boosting Fluid Soup at Cooking Master.\n Cost: 1400 silver",
+          "id": "adrenaline_boosting_fluid",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "arid_path",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -204.88,
+              "lng": 104.68
+            },
+            {
+              "zone": "scraplands",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -158.44,
+              "lng": 115.31
+            },
+            {
+              "zone": "nebelhorn",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -130,
+              "lng": 118.99
+            },
+            {
+              "zone": "windbringer_hills",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -86.13,
+              "lng": 137.3
+            },
+            {
+              "zone": "totrich",
+              "index": 4,
+              "indexOffset": -4,
+              "lat": -154.69,
+              "lng": 84.11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "quest",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Help the Orphans",
+          "display": "#2 Help the Orphans",
+          "content": "can be started after the yellow quest \"Children's Laughter\"",
+          "id": "help_the_orphans",
+          "lat": -132.19,
+          "lng": 73.12
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Welcome to Arthetine",
+          "display": "#1 Welcome to Arthetine",
+          "content": "",
+          "id": "welcome_to_arthetine",
+          "lat": -129.94,
+          "lng": 73.11
+        }
+      ]
+    },
+    {
+      "type": "merchant",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Nox",
+          "display": "Nox",
+          "id": "nox",
+          "content": "Sells the following items",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "arid_path",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -206.19,
+              "lng": 103.93
+            },
+            {
+              "zone": "scraplands",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -159.81,
+              "lng": 114.83
+            },
+            {
+              "zone": "nebelhorn",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -130.88,
+              "lng": 118.05
+            },
+            {
+              "zone": "windbringer_hills",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -87.25,
+              "lng": 136.18
+            },
+            {
+              "zone": "totrich",
+              "index": 4,
+              "indexOffset": -4,
+              "lat": -155.69,
+              "lng": 83.31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Windbringer Hills",
+          "continent": "Arthetine",
+          "display": "Windbringer Hills",
+          "content": "Mushroom-shaped hillside located on the road leading to the old town of Totrich. The outskirts of this area house a dump site that processes scrap metal.",
+          "id": "windbringer_hills",
+          "lat": -137.25,
+          "lng": 50.18,
+          "markers": [
+            { "type": "mokoko",  "count": 9 },
+            { "type": "monster", "count": 2 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 1 }
+          ],
+          "mapId": "windbringer_hills"
+        }
+      ]
+    }
+  ]
+}

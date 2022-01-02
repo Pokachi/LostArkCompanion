@@ -1,0 +1,10 @@
+{
+  "id": "deny",
+  "grade": 0,
+  "image": "./images/items/deny.png",
+  "name": "Deny",
+  "type": "Emote",
+  "bound": "Binds when obtained",
+  "destruction": "<span style=\"color: #C24B46\">Unsellable</span>, <span style=\"color: #C24B46\">Indestructible</span>, <span style=\"color: #C24B46\">Cannot be dismantled</span>",
+  "description": "Use to learn the emote: <font color=\"#6fffcf\">Deny.</font>"
+}

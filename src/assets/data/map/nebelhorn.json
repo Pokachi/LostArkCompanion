@@ -235,6 +235,13 @@
               "indexOffset": -3,
               "lat": -86.13,
               "lng": 137.3
+            },
+            {
+              "zone": "totrich",
+              "index": 4,
+              "indexOffset": -4,
+              "lat": -154.69,
+              "lng": 84.11
             }
           ]
         }
@@ -313,6 +320,13 @@
               "indexOffset": -3,
               "lat": -87.25,
               "lng": 136.18
+            },
+            {
+              "zone": "totrich",
+              "index": 4,
+              "indexOffset": -4,
+              "lat": -155.69,
+              "lng": 83.31
             }
           ]
         }
