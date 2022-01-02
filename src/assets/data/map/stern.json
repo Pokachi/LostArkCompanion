@@ -11,7 +11,8 @@
   "adjacentZones": [
     "arid_path",
     "eye_of_sceptrum",
-    "stern_underground"
+    "stern_underground",
+    "scraplands"
   ],
   "markers": [
     {
@@ -389,6 +390,25 @@
             { "type": "story", "count": 1 }
           ],
           "mapId": "arid_path"
+        },
+        {
+          "isCollectible": false,
+          "name": "Scraplands",
+          "continent": "Arthetine",
+          "display": "Scraplands",
+          "content": "The land between Stern and Nebelhorn Lab. Electricity from Nebelhorn is supplied to the capital Stern and Totrich through this.",
+          "id": "scraplands",
+          "lat": -80.06,
+          "lng": 73.74,
+          "markers": [
+            { "type": "mokoko",  "count": 8 },
+            { "type": "monster", "count": 2 },
+            { "type": "boss", "count": 1 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 3 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "scraplands"
         },
         {
           "isCollectible": false,

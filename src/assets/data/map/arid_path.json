@@ -159,6 +159,13 @@
               "indexOffset": 0,
               "lat": -204.88,
               "lng": 104.68
+            },
+            {
+              "zone": "scraplands",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -158.44,
+              "lng": 115.31
             }
           ]
         }
@@ -195,6 +202,13 @@
               "indexOffset": 0,
               "lat": -206.19,
               "lng": 103.93
+            },
+            {
+              "zone": "scraplands",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -159.81,
+              "lng": 114.83
             }
           ]
         }

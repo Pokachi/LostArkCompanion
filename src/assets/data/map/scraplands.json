@@ -1,0 +1,331 @@
+{
+  "type": "zone",
+  "name": "Scraplands",
+  "id": "scraplands",
+  "parent": "world",
+  "continent": "Arthetine",
+  "continentId": "arthetine",
+  "icon": "./images/map/scraplands/scraplands.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "stern",
+    "soldier_ant_nest"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0380",
+          "lat": -185.63,
+          "lng": 94.68
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0381",
+          "lat": -131.58,
+          "lng": 89.64
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0382",
+          "lat": -96.63,
+          "lng": 79.68
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0383",
+          "lat": -105.56,
+          "lng": 110.36
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0384",
+          "lat": -147.94,
+          "lng": 198.68
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0385",
+          "lat": -141.63,
+          "lng": 176.43
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0386",
+          "lat": -140.13,
+          "lng": 178.81
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0387",
+          "lat": -139.44,
+          "lng": 175.87
+        }
+      ]
+    },
+    {
+      "type": "monster",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "DIS_MK-II Prototype",
+          "display": "#3 DIS_MK-II Prototype",
+          "id": "dis_mk_ii_prototype",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "scraplands",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -144,
+              "lng": 201.86
+            },
+            {
+              "zone": "scraplands",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -121.44,
+              "lng": 175.24
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Skilled Elite Smuggler",
+          "display": "#4 Skilled Elite Smuggler",
+          "id": "skilled_elite_smuggler",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "scraplands",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -116,
+              "lng": 171.05
+            },
+            {
+              "zone": "scraplands",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -112.5,
+              "lng": 189.92
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "boss",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Signatus",
+          "display": "Signatus",
+          "id": "signatus",
+          "content": "",
+          "lat": -74.69,
+          "lng": 139.61
+        }
+      ]
+    },
+    {
+      "type": "vista",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Valley and the Robot Wastes",
+          "display": "#3 Valley and the Robot Wastes",
+          "content": "",
+          "id": "valley_and_the_robot_wastes",
+          "lat": -132.06,
+          "lng": 129.18
+        }
+      ]
+    },
+    {
+      "type": "food",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Adrenaline-boosting Fluid",
+          "display": "#5 Adrenaline-boosting Fluid",
+          "content": "Used to cook Boosting Fluid Soup at Cooking Master.\n Cost: 1400 silver",
+          "id": "adrenaline_boosting_fluid",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "arid_path",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -204.88,
+              "lng": 104.68
+            },
+            {
+              "zone": "scraplands",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -158.44,
+              "lng": 115.31
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Vacuum-dried Powder X-1",
+          "display": "#3 Vacuum-dried Powder X-1 (1/2)",
+          "content": "Used to cook Cykin Combat Ration Type C at Cooking Master for 900 silver.",
+          "markerLink": [
+            {
+              "label": "...X-1",
+              "zone": "scraplands",
+              "marker": "vacuum_dried_powder_x_1"
+            },
+            {
+              "label": "...X-3",
+              "zone": "scraplands",
+              "marker": "vacuum_dried_powder_x_3"
+            }
+          ],
+          "id": "vacuum_dried_powder_x_1",
+          "lat": -162.75,
+          "lng": 109.49
+        },
+        {
+          "isCollectible": true,
+          "name": "Vacuum-dried Powder X-3",
+          "display": "#3 Vacuum-dried Powder X-3 (2/2)",
+          "content": "Used to cook Cykin Combat Ration Type C at Cooking Master for 900 silver.",
+          "markerLink": [
+            {
+              "label": "...X-1",
+              "zone": "scraplands",
+              "marker": "vacuum_dried_powder_x_1"
+            },
+            {
+              "label": "...X-3",
+              "zone": "scraplands",
+              "marker": "vacuum_dried_powder_x_3"
+            }
+          ],
+          "id": "vacuum_dried_powder_x_3",
+          "lat": -150.38,
+          "lng": 136.74
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "RGM Report",
+          "display": "#4 RGM Report",
+          "content": "",
+          "id": "rgm_report",
+          "lat": -75.5,
+          "lng": 120.99
+        }
+      ]
+    },
+    {
+      "type": "merchant",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Nox",
+          "display": "Nox",
+          "id": "nox",
+          "content": "Sells the following items",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "arid_path",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -206.19,
+              "lng": 103.93
+            },
+            {
+              "zone": "scraplands",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -159.81,
+              "lng": 114.83
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "passage",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0056",
+          "lat": -159.81,
+          "lng": 156.05
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Soldier Ant Nest",
+          "continent": "Arthetine",
+          "display": "Soldier Ant Nest",
+          "content": "",
+          "id": "soldier_ant_nest",
+          "lat": -25.06,
+          "lng": 114.74,
+          "markers": [
+            { "type": "mokoko",  "count": 7 }
+          ],
+          "mapId": "soldier_ant_nest"
+        },
+        {
+          "isCollectible": false,
+          "name": "Stern",
+          "continent": "Arthetine",
+          "display": "Stern",
+          "content": "",
+          "id": "stern",
+          "lat": -227.63,
+          "lng": 148.24,
+          "markers": [
+            { "type": "mokoko",  "count": 12 },
+            { "type": "affinity",  "count": 4 },
+            { "type": "vista",  "count": 1 },
+            { "type": "food",  "count": 2 },
+            { "type": "story",  "count": 6 }
+          ],
+          "mapId": "stern"
+        }
+      ]
+    }
+  ]
+}

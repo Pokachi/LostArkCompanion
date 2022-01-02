@@ -659,6 +659,26 @@
             { "type": "story", "count": 1 }
           ],
           "mapId": "arid_path"
+        },
+        {
+          "icon": "./images/map/stern/stern.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Stern",
+          "continent": "Arthetine",
+          "display": "Stern",
+          "content": "",
+          "id": "stern",
+          "lat": -92.59,
+          "lng": 199.74,
+          "markers": [
+            { "type": "mokoko",  "count": 12 },
+            { "type": "affinity",  "count": 4 },
+            { "type": "vista",  "count": 1 },
+            { "type": "food",  "count": 2 },
+            { "type": "story",  "count": 6 }
+          ],
+          "mapId": "stern"
         }
       ]
     }
