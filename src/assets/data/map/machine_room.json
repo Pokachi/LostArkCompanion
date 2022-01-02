@@ -1,0 +1,86 @@
+{
+  "type": "zone",
+  "name": "Machine Room",
+  "id": "machine_room",
+  "parent": "heart_of_sceptrum",
+  "continent": "Arthetine",
+  "continentId": "arthetine",
+  "icon": "./images/map/common/dungeon.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "heart_of_sceptrum"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0406",
+          "lat": -227.19,
+          "lng": 157.99
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0407",
+          "lat": -229.25,
+          "lng": 160.06
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0408",
+          "lat": -221.38,
+          "lng": 148.37
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0409",
+          "lat": -146.81,
+          "lng": 175.31
+        }
+      ]
+    },
+    {
+      "type": "passage",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0063",
+          "lat": -231,
+          "lng": 155.68
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Heart of Sceptrum",
+          "continent": "Arthetine",
+          "display": "Heart of Sceptrum",
+          "content": "",
+          "id": "heart_of_sceptrum",
+          "lat": -241.19,
+          "lng": 167.68,
+          "markers": [
+            { "type": "mokoko",  "count": 3 },
+            { "type": "food",  "count": 1 }
+          ],
+          "mapId": "heart_of_sceptrum"
+        }
+      ]
+    }
+  ]
+}

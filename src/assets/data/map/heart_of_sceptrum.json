@@ -1,0 +1,109 @@
+{
+  "type": "zone",
+  "name": "Heart of Sceptrum",
+  "id": "heart_of_sceptrum",
+  "parent": "nebelhorn",
+  "continent": "Arthetine",
+  "continentId": "arthetine",
+  "icon": "./images/map/common/dungeon.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "nebelhorn"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0403",
+          "lat": -135.94,
+          "lng": 220.49
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0404",
+          "lat": -136.94,
+          "lng": 221.87
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0405",
+          "lat": -135.19,
+          "lng": 223.30
+        }
+      ]
+    },
+    {
+      "type": "food",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Sceptrum Prescription",
+          "display": "#4 Sceptrum Prescription",
+          "content": "Used to cook Sceptrumpam 3mg at Cooking Master\nCost: 1400 silver",
+          "id": "sceptrum_prescription",
+          "lat": -167.25,
+          "lng": 209.8
+        }
+      ]
+    },
+    {
+      "type": "passage",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0062",
+          "lat": -129.63,
+          "lng": 215.99
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Nebelhorn",
+          "continent": "Arthetine",
+          "display": "Nebelhorn",
+          "content": "A place that controls the giant Potenstone, \"Heart of Sceptrum\". The Nebelhorn Institute here boasts the largest scale in Arthetine.",
+          "id": "nebelhorn",
+          "lat": -225,
+          "lng": 134.18,
+          "markers": [
+            { "type": "mokoko",  "count": 8 },
+            { "type": "monster",  "count": 4 },
+            { "type": "vista",  "count": 1 },
+            { "type": "food",  "count": 1 },
+            { "type": "story",  "count": 2 }
+          ],
+          "mapId": "nebelhorn"
+        },
+        {
+          "isCollectible": false,
+          "name": "Machine Room",
+          "continent": "Arthetine",
+          "display": "Machine Room",
+          "content": "",
+          "id": "machine_room",
+          "lat": -60.5,
+          "lng": 29.62,
+          "markers": [
+            { "type": "mokoko",  "count": 4 }
+          ],
+          "mapId": "machine_room"
+        }
+      ]
+    }
+  ]
+}

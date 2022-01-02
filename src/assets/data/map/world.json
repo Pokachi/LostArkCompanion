@@ -679,6 +679,47 @@
             { "type": "story",  "count": 6 }
           ],
           "mapId": "stern"
+        },
+        {
+          "icon": "./images/map/scraplands/scraplands.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Scraplands",
+          "continent": "Arthetine",
+          "display": "Scraplands",
+          "content": "The land between Stern and Nebelhorn Lab. Electricity from Nebelhorn is supplied to the capital Stern and Totrich through this.",
+          "id": "scraplands",
+          "lat": -87.09 ,
+          "lng": 197.21,
+          "markers": [
+            { "type": "mokoko",  "count": 8 },
+            { "type": "monster", "count": 2 },
+            { "type": "boss", "count": 1 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 3 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "scraplands"
+        },
+        {
+          "icon": "./images/map/nebelhorn/nebelhorn.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Nebelhorn",
+          "continent": "Arthetine",
+          "display": "Nebelhorn",
+          "content": "A place that controls the giant Potenstone, \"Heart of Sceptrum\". The Nebelhorn Institute here boasts the largest scale in Arthetine.",
+          "id": "nebelhorn",
+          "lat": -81.28,
+          "lng": 194.93,
+          "markers": [
+            { "type": "mokoko",  "count": 8 },
+            { "type": "monster",  "count": 4 },
+            { "type": "vista",  "count": 1 },
+            { "type": "food",  "count": 1 },
+            { "type": "story",  "count": 2 }
+          ],
+          "mapId": "nebelhorn"
         }
       ]
     }
