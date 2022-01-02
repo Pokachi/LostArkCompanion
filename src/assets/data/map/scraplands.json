@@ -195,6 +195,13 @@
               "indexOffset": -2,
               "lat": -130,
               "lng": 118.99
+            },
+            {
+              "zone": "windbringer_hills",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -86.13,
+              "lng": 137.3
             }
           ]
         },
@@ -287,6 +294,13 @@
               "indexOffset": -2,
               "lat": -130.88,
               "lng": 118.05
+            },
+            {
+              "zone": "windbringer_hills",
+              "index": 3,
+              "indexOffset": -3,
+              "lat": -87.25,
+              "lng": 136.18
             }
           ]
         }

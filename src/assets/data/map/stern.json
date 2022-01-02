@@ -12,7 +12,8 @@
     "arid_path",
     "eye_of_sceptrum",
     "stern_underground",
-    "scraplands"
+    "scraplands",
+    "windbringer_hills"
   ],
   "markers": [
     {
@@ -409,6 +410,23 @@
             { "type": "story", "count": 1 }
           ],
           "mapId": "scraplands"
+        },
+        {
+          "isCollectible": false,
+          "name": "Windbringer Hills",
+          "continent": "Arthetine",
+          "display": "Windbringer Hills",
+          "content": "Mushroom-shaped hillside located on the road leading to the old town of Totrich. The outskirts of this area house a dump site that processes scrap metal.",
+          "id": "windbringer_hills",
+          "lat": -197,
+          "lng": 191.05,
+          "markers": [
+            { "type": "mokoko",  "count": 9 },
+            { "type": "monster", "count": 2 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 1 }
+          ],
+          "mapId": "windbringer_hills"
         },
         {
           "isCollectible": false,
