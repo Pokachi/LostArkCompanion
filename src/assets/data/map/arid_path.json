@@ -166,6 +166,13 @@
               "indexOffset": -1,
               "lat": -158.44,
               "lng": 115.31
+            },
+            {
+              "zone": "nebelhorn",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -130,
+              "lng": 118.99
             }
           ]
         }
@@ -209,6 +216,13 @@
               "indexOffset": -1,
               "lat": -159.81,
               "lng": 114.83
+            },
+            {
+              "zone": "nebelhorn",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -130.88,
+              "lng": 118.05
             }
           ]
         }
@@ -255,7 +269,7 @@
           "name": "Stern",
           "continent": "Arthetine",
           "display": "Stern",
-          "content": "",
+          "content": "The capital of Arthetine, a city-state of Cykins built on the red desert. Arthetine life is centered around this enormous city, ruled by three governors of politics, economics, and evolution.",
           "id": "stern",
           "lat": -29,
           "lng": 131.24,

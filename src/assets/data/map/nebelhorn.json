@@ -1,0 +1,367 @@
+{
+  "type": "zone",
+  "name": "Nebelhorn",
+  "id": "nebelhorn",
+  "parent": "world",
+  "continent": "Arthetine",
+  "continentId": "arthetine",
+  "icon": "./images/map/nebelhorn/nebelhorn.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "scraplands"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0395",
+          "lat": -163.25,
+          "lng": 162.12
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0396",
+          "lat": -164.06,
+          "lng": 163.49
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0397",
+          "lat": -126.63,
+          "lng": 201.42
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0398",
+          "lat": -119.56,
+          "lng": 63.06
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0399",
+          "lat": -63.06,
+          "lng": 104.87
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0400",
+          "lat": -83.50,
+          "lng": 121.05
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0401",
+          "lat": -84.88,
+          "lng": 121.80
+        },
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0402",
+          "lat": -30.38,
+          "lng": 125.68
+        }
+      ]
+    },
+    {
+      "type": "monster",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Sappy Wallou Cactus",
+          "display": "#5 Sappy Wallou Cactus",
+          "id": "sappy_wallou_cactus",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "nebelhorn",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -172.25,
+              "lng": 149.68
+            },
+            {
+              "zone": "nebelhorn",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -185.56,
+              "lng": 152.24
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Solitary Goraon",
+          "display": "#6 Solitary Goraon",
+          "id": "solitary_goraon",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "nebelhorn",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -201.81,
+              "lng": 111.49
+            },
+            {
+              "zone": "nebelhorn",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -205.56,
+              "lng": 117.37
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Wanted Smuggler",
+          "display": "#7 Wanted Smuggler",
+          "id": "wanted_smuggler",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "nebelhorn",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -109.19,
+              "lng": 66.99
+            },
+            {
+              "zone": "nebelhorn",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -126.69,
+              "lng": 66.80
+            }
+          ]
+        },
+        {
+          "isCollectible": true,
+          "name": "Deadly Virulent Scorpion",
+          "display": "#8 Deadly Virulent Scorpion",
+          "id": "deadly_virulent_scorpion",
+          "multi": true,
+          "content": "Respawn Timer: 20 seconds.",
+          "locations": [
+            {
+              "zone": "nebelhorn",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -82.81,
+              "lng": 171.61
+            },
+            {
+              "zone": "nebelhorn",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -95.81,
+              "lng": 161.24
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vista",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Lab",
+          "display": "#4 Lab",
+          "content": "",
+          "id": "lab",
+          "lat": -164.13,
+          "lng": 127.8
+        }
+      ]
+    },
+    {
+      "type": "food",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "Adrenaline-boosting Fluid",
+          "display": "#5 Adrenaline-boosting Fluid",
+          "content": "Used to cook Boosting Fluid Soup at Cooking Master.\n Cost: 1400 silver",
+          "id": "adrenaline_boosting_fluid",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "arid_path",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -204.88,
+              "lng": 104.68
+            },
+            {
+              "zone": "scraplands",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -158.44,
+              "lng": 115.31
+            },
+            {
+              "zone": "nebelhorn",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -130,
+              "lng": 118.99
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "data": [
+        {
+          "isCollectible": true,
+          "name": "To Be a Human",
+          "display": "#3 To Be a Human",
+          "content": "",
+          "id": "to_be_a_human",
+          "lat": -132.13,
+          "lng": 133.24
+        },
+        {
+          "isCollectible": false,
+          "name": "End of His Obsession (1/2)",
+          "display": "#6 End of His Obsession (1/2)",
+          "content": "",
+          "markerLink": [
+            {
+              "label": "Part 1",
+              "zone": "nebelhorn",
+              "marker": "end_of_his_obsession_p1"
+            },
+            {
+              "label": "Part 2",
+              "zone": "verdantier",
+              "marker": "end_of_his_obsession_p2"
+            }
+          ],
+          "id": "end_of_his_obsession_p1",
+          "lat": -94.13,
+          "lng": 131.80
+        }
+      ]
+    },
+    {
+      "type": "merchant",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Nox",
+          "display": "Nox",
+          "id": "nox",
+          "content": "Sells the following items",
+          "multi": true,
+          "locations": [
+            {
+              "zone": "arid_path",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -206.19,
+              "lng": 103.93
+            },
+            {
+              "zone": "scraplands",
+              "index": 1,
+              "indexOffset": -1,
+              "lat": -159.81,
+              "lng": 114.83
+            },
+            {
+              "zone": "nebelhorn",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -130.88,
+              "lng": 118.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "passage",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0060",
+          "lat": -155.38,
+          "lng": 153.99
+        },
+        {
+          "isCollectible": false,
+          "name": "Secret Passage",
+          "content": "",
+          "id": "passage0061",
+          "lat": -76.04,
+          "lng": 123.85
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Scraplands",
+          "continent": "Arthetine",
+          "display": "Scraplands",
+          "content": "The land between Stern and Nebelhorn Lab. Electricity from Nebelhorn is supplied to the capital Stern and Totrich through this.",
+          "id": "scraplands",
+          "lat": -186.56,
+          "lng": 183.8,
+          "markers": [
+            { "type": "mokoko",  "count": 8 },
+            { "type": "monster", "count": 2 },
+            { "type": "boss", "count": 1 },
+            { "type": "vista", "count": 1 },
+            { "type": "food", "count": 3 },
+            { "type": "story", "count": 1 }
+          ],
+          "mapId": "scraplands"
+        },
+        {
+          "isCollectible": true,
+          "name": "Heart of Sceptrum",
+          "continent": "Arthetine",
+          "display": "Heart of Sceptrum",
+          "content": "",
+          "id": "heart_of_sceptrum",
+          "lat": -120.15,
+          "lng": 138.33,
+          "markers": [
+            { "type": "mokoko",  "count": 3 },
+            { "type": "food", "count": 1 }
+          ],
+          "mapId": "heart_of_sceptrum"
+        }
+      ]
+    }
+  ]
+}

@@ -10,7 +10,8 @@
   "maxZoom": 4,
   "adjacentZones": [
     "stern",
-    "soldier_ant_nest"
+    "soldier_ant_nest",
+    "nebelhorn"
   ],
   "markers": [
     {
@@ -187,6 +188,13 @@
               "indexOffset": -1,
               "lat": -158.44,
               "lng": 115.31
+            },
+            {
+              "zone": "nebelhorn",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -130,
+              "lng": 118.99
             }
           ]
         },
@@ -272,6 +280,13 @@
               "indexOffset": -1,
               "lat": -159.81,
               "lng": 114.83
+            },
+            {
+              "zone": "nebelhorn",
+              "index": 2,
+              "indexOffset": -2,
+              "lat": -130.88,
+              "lng": 118.05
             }
           ]
         }
@@ -312,7 +327,7 @@
           "name": "Stern",
           "continent": "Arthetine",
           "display": "Stern",
-          "content": "",
+          "content": "The capital of Arthetine, a city-state of Cykins built on the red desert. Arthetine life is centered around this enormous city, ruled by three governors of politics, economics, and evolution.",
           "id": "stern",
           "lat": -227.63,
           "lng": 148.24,
@@ -324,6 +339,24 @@
             { "type": "story",  "count": 6 }
           ],
           "mapId": "stern"
+        },
+        {
+          "isCollectible": false,
+          "name": "Nebelhorn",
+          "continent": "Arthetine",
+          "display": "Nebelhorn",
+          "content": "A place that controls the giant Potenstone, \"Heart of Sceptrum\". The Nebelhorn Institute here boasts the largest scale in Arthetine.",
+          "id": "nebelhorn",
+          "lat": -87.25,
+          "lng": 48.74,
+          "markers": [
+            { "type": "mokoko",  "count": 8 },
+            { "type": "monster",  "count": 4 },
+            { "type": "vista",  "count": 1 },
+            { "type": "food",  "count": 1 },
+            { "type": "story",  "count": 2 }
+          ],
+          "mapId": "nebelhorn"
         }
       ]
     }
