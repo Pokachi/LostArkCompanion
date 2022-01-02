@@ -767,6 +767,7 @@
           "icon": "./images/map/riza_falls/riza_falls.png",
           "anchor": [30, 30],
           "isCollectible": false,
+          "name": "Riza Falls",
           "continent": "Arthetine",
           "display": "Riza Falls",
           "content": "A huge waterfall area where golden sand flows. Inside the waterfall, there is an iron gate to Verdantier.",
@@ -781,6 +782,22 @@
             { "type": "quest", "count": 1 }
           ],
           "mapId": "riza_falls"
+        },
+        {
+          "icon": "./images/map/red_sand_desert/red_sand_desert.png",
+          "anchor": [30, 30],
+          "isCollectible": false,
+          "name": "Red Sand Desert",
+          "continent": "Arthetine",
+          "display": "Red Sand Desert",
+          "content": "A barren desert where red sand scatters wildly. Rumor has it that traces of a Guardian were found inside this place.",
+          "id": "red_sand_desert",
+          "lat": -98.5,
+          "lng": 209.12,
+          "markers": [
+            { "type": "mokoko", "count": 3 }
+          ],
+          "mapId": "red_sand_desert"
         }
       ]
     }

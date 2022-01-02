@@ -10,7 +10,8 @@
   "maxZoom": 4,
   "adjacentZones": [
     "stern",
-    "verdantier"
+    "verdantier",
+    "red_sand_desert"
   ],
   "markers": [
     {
@@ -465,6 +466,20 @@
             { "type": "mokoko",  "count": 1 }
           ],
           "mapId": "verdantier"
+        },
+        {
+          "isCollectible": false,
+          "name": "Red Sand Desert",
+          "continent": "Arthetine",
+          "display": "Red Sand Desert",
+          "content": "A barren desert where red sand scatters wildly. Rumor has it that traces of a Guardian were found inside this place.",
+          "id": "red_sand_desert",
+          "lat": -128.06,
+          "lng": 235.61,
+          "markers": [
+            { "type": "mokoko",  "count": 3 }
+          ],
+          "mapId": "red_sand_desert"
         }
       ]
     }
