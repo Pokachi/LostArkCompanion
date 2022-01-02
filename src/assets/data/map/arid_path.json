@@ -133,10 +133,10 @@
       "data": [
         {
           "isCollectible": true,
-          "name": "Junkyard",
-          "display": "#2 Junkyard",
+          "name": "Harbour",
+          "display": "#2 Harbour",
           "content": "",
-          "id": "junkyard",
+          "id": "harbour",
           "lat": -183.31,
           "lng": 66.31
         }

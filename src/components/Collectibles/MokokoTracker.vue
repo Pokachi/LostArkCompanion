@@ -8,8 +8,7 @@
       <h3 class="mt-0 mb-0 ml-1 mr-3 text-white d-inline-block align-middle">{{ selectedRegion ? mokokoCollectionData[selectedRegion] ? mokokoCollectionData[selectedRegion].c : 0 : mokokoCollectionData.c }}/{{ selectedRegion ? mokokoData.regions[selectedRegion].mokoko_total : mokokoData.mokoko_total }}</h3>
       <b-dropdown id="dropdown-1" :text="selectedRegion ? mokokoData.regions[selectedRegion].name : 'Select Region'" class="m-md-2">
         <b-dropdown-item @click="selectRegion(null)">All</b-dropdown-item>
-        <b-dropdown-item @click="selectRegion({ id:'rethramis', name: 'Rethramis'})">Rethramis</b-dropdown-item>
-        <b-dropdown-item @click="selectRegion({ id:'yudia', name: 'Yudia'})">Yudia</b-dropdown-item>
+        <b-dropdown-item v-for="region of mokokoData.regions" :key="region.id" @click="selectRegion({ id:region.id, name: region.name})">{{region.name}}</b-dropdown-item>
       </b-dropdown>
     </div>
     <hr class="generalhr">

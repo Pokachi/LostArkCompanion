@@ -164,10 +164,10 @@
       "data": [
         {
           "isCollectible": true,
-          "name": "Zagoras Fortress Entrance",
-          "display": "#1 Zagoras Fortress Entrance",
+          "name": "Big City View",
+          "display": "#1 Big City View",
           "content": "",
-          "id": "zagoras_fortress_entrance",
+          "id": "big_city_view",
           "lat": -195.1,
           "lng": 88.58
         }
@@ -294,79 +294,79 @@
         },
         {
           "isCollectible": false,
-          "name": "The Greatest Evolution Form in Arthetine (1/3)",
-          "display": "#7 The Greatest Evolution Form in Arthetine (1/3)",
+          "name": "The Greatest Evolution Form (1/3)",
+          "display": "#7 The Greatest Evolution Form (1/3)",
           "content": "",
           "markerLink": [
             {
               "label": "Part 1",
               "zone": "stern",
-              "marker": "the_greatest_evolution_form_in_arthetine_p1"
+              "marker": "the_greatest_evolution_form_p1"
             },
             {
               "label": "Part 2",
               "zone": "stern",
-              "marker": "the_greatest_evolution_form_in_arthetine_p2"
+              "marker": "the_greatest_evolution_form_p2"
             },
             {
               "label": "Part 3",
               "zone": "stern",
-              "marker": "the_greatest_evolution_form_in_arthetine_p3"
+              "marker": "the_greatest_evolution_form_p3"
             }
           ],
-          "id": "the_greatest_evolution_form_in_arthetine_p1",
+          "id": "the_greatest_evolution_form_p1",
           "lat": -96.81,
           "lng": 197.8
         },
         {
           "isCollectible": false,
-          "name": "The Greatest Evolution Form in Arthetine (2/3)",
-          "display": "#7 The Greatest Evolution Form in Arthetine (2/3)",
+          "name": "The Greatest Evolution Form (2/3)",
+          "display": "#7 The Greatest Evolution Form (2/3)",
           "content": "",
           "markerLink": [
             {
               "label": "Part 1",
               "zone": "stern",
-              "marker": "the_greatest_evolution_form_in_arthetine_p1"
+              "marker": "the_greatest_evolution_form_p1"
             },
             {
               "label": "Part 2",
               "zone": "stern",
-              "marker": "the_greatest_evolution_form_in_arthetine_p2"
+              "marker": "the_greatest_evolution_form_p2"
             },
             {
               "label": "Part 3",
               "zone": "stern",
-              "marker": "the_greatest_evolution_form_in_arthetine_p3"
+              "marker": "the_greatest_evolution_form_p3"
             }
           ],
-          "id": "the_greatest_evolution_form_in_arthetine_p2",
+          "id": "the_greatest_evolution_form_p2",
           "lat": -106.75,
           "lng": 207.55
         },
         {
-          "isCollectible": false,
-          "name": "The Greatest Evolution Form in Arthetine (3/3)",
-          "display": "#7 The Greatest Evolution Form in Arthetine (3/3)",
+          "isCollectible": true,
+          "name": "The Greatest Evolution Form (3/3)",
+          "display": "#7 The Greatest Evolution Form (3/3)",
           "content": "",
           "markerLink": [
             {
               "label": "Part 1",
               "zone": "stern",
-              "marker": "the_greatest_evolution_form_in_arthetine_p1"
+              "marker": "the_greatest_evolution_form_p1"
             },
             {
               "label": "Part 2",
               "zone": "stern",
-              "marker": "the_greatest_evolution_form_in_arthetine_p2"
+              "marker": "the_greatest_evolution_form_p2"
             },
             {
               "label": "Part 3",
               "zone": "stern",
-              "marker": "the_greatest_evolution_form_in_arthetine_p3"
+              "marker": "the_greatest_evolution_form_p3"
             }
           ],
-          "id": "the_greatest_evolution_form_in_arthetine_p3",
+          "id": "the_greatest_evolution_form_p3",
           "lat": -102.69,
           "lng": 211.55
         }

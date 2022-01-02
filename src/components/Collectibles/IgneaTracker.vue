@@ -8,8 +8,7 @@
       <h3 class="mt-0 mb-0 ml-1 mr-3 text-white d-inline-block align-middle">{{ selectedRegion ? igneaData[selectedRegion] ? 1 : 0 : igneaData.c }}/{{ selectedRegion ? 1 : Object.keys(collectibleData.regions).length }}</h3>
       <b-dropdown id="dropdown-1" :text="selectedRegion ? collectibleData.regions[selectedRegion].name : 'Select Region'" class="m-md-2">
         <b-dropdown-item @click="selectRegion(null)">All</b-dropdown-item>
-        <b-dropdown-item @click="selectRegion({ id:'rethramis', name: 'Rethramis'})">Rethramis</b-dropdown-item>
-        <b-dropdown-item @click="selectRegion({ id:'yudia', name: 'Yudia'})">Yudia</b-dropdown-item>
+        <b-dropdown-item v-for="region of collectibleData.regions" :key="region.id" @click="selectRegion({ id:region.id, name: region.name})">{{region.name}}</b-dropdown-item>
       </b-dropdown>
     </div>
     <hr class="generalhr">

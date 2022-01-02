@@ -2032,6 +2032,387 @@
     "arthetine": {
       "name": "Arthetine",
       "id": "arthetine",
+      "zones": [
+        {
+          "id": "arid_path",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "stern",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "stern_underground",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "eye_of_sceptrum",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "scraplands",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "nebelhorn",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "windbringer_hills",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "totrich",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "riza_falls",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "red_sand_desert",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "soldier_ant_nest",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "heart_of_sceptrum",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "machine_room",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "dr_bergstroms_laboratory",
+          "mokokoIndex": 0
+        },
+        {
+          "id": "verdantier",
+          "mokokoIndex": 0
+        }
+      ],
+      "bookData": [
+        {
+          "name": "Vista",
+          "id": "vista",
+          "items": [
+            {
+              "location": "stern",
+              "id": "big_city_view",
+              "image": "./images/collectibles/vista/big_city_view.png"
+            },
+            {
+              "location": "arid_path",
+              "id": "harbour",
+              "image": "./images/collectibles/vista/harbour.png"
+            },
+            {
+              "location": "scraplands",
+              "id": "valley_and_the_robot_wastes",
+              "image": "./images/collectibles/vista/valley_and_the_robot_wastes.png"
+            },
+            {
+              "location": "nebelhorn",
+              "id": "lab",
+              "image": "./images/collectibles/vista/lab.png"
+            },
+            {
+              "location": "windbringer_hills",
+              "id": "junkyard",
+              "image": "./images/collectibles/vista/junkyard.png"
+            },
+            {
+              "location": "totrich",
+              "id": "clockwork_square",
+              "image": "./images/collectibles/vista/clockwork_square.png"
+            },
+            {
+              "location": "riza_falls",
+              "id": "whirlpool_observatory",
+              "image": "./images/collectibles/vista/whirlpool_observatory.png"
+            }
+          ]
+        },
+        {
+          "name": "Cooking",
+          "id": "food",
+          "count": 9,
+          "items": [
+            {
+              "location": "totrich",
+              "id": "x_090892",
+              "image": "./images/items/x_090892.png",
+              "grade": 3
+            },
+            {
+              "location": "stern",
+              "id": "cykin_combat_ration_type_a",
+              "image": "./images/items/cykin_combat_ration.png",
+              "grade": 3
+            },
+            {
+              "location": "scraplands",
+              "id": "vacuum_dried_powder_x_1",
+              "ids": ["vacuum_dried_powder_x_1", "vacuum_dried_powder_x_3"],
+              "image": "./images/items/cykin_combat_ration.png",
+              "grade": 3
+            },
+            {
+              "location": "heart_of_sceptrum",
+              "id": "sceptrum_prescription",
+              "image": "./images/items/sceptrumpam_3mg.png",
+              "grade": 3
+            },
+            {
+              "location": "arid_path",
+              "id": "adrenaline_boosting_fluid",
+              "index": 0,
+              "image": "./images/items/boosting_fluid_soup.png",
+              "grade": 3
+            },
+            {
+              "location": "stern",
+              "id": "unknown_liquid_xd_6353",
+              "image": "./images/items/unknown_liquid_xd_6353.png",
+              "grade": 4
+            },
+            {
+              "location": "dr_bergstroms_laboratory",
+              "id": "bergstroms_invisibility_potion",
+              "ids": ["bergstroms_invisibility_potion", "bergstroms_yellow_potion"],
+              "image": "./images/items/bergstrom_drink.png",
+              "grade": 4
+            }
+          ]
+        },
+        {
+          "name": "Monster",
+          "id": "monster",
+          "items": [
+            {
+              "location": "arid_path",
+              "id": "steel_eater_boss",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "arid_path",
+              "id": "illegally_modified_weapon_prototype",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "scraplands",
+              "id": "dis_mk_ii_prototype",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "scraplands",
+              "id": "skilled_elite_smuggler",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "nebelhorn",
+              "id": "sappy_wallou_cactus",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "nebelhorn",
+              "id": "solitary_goraon",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "nebelhorn",
+              "id": "wanted_smuggler",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "nebelhorn",
+              "id": "deadly_virulent_scorpion",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "windbringer_hills",
+              "id": "machine_legionnaire_prototype",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "windbringer_hills",
+              "id": "sharptooth_crocodile",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "totrich",
+              "id": "royal_guard_quartermaster",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "totrich",
+              "id": "bolchi_boss",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "riza_falls",
+              "id": "dark_red_claw_scorpion",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "riza_falls",
+              "id": "vicious_mercenary_swordfighter",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            },
+            {
+              "location": "riza_falls",
+              "id": "greedy_royal_guard_commander",
+              "image": "./images/collectibles/monster.png",
+              "index": 0
+            }
+          ]
+        },
+        {
+          "name": "Dungeon",
+          "id": "zone",
+          "items": [
+            {
+              "location": "nebelhorn",
+              "id": "heart_of_sceptrum",
+              "image": "./images/collectibles/dungeon.png"
+            },
+            {
+              "location": "totrich",
+              "id": "dr_bergstroms_laboratory",
+              "image": "./images/collectibles/dungeon.png"
+            },
+            {
+              "location": "riza_falls",
+              "id": "verdantier",
+              "image": "./images/collectibles/dungeon.png"
+            }
+          ]
+        },
+        {
+          "name": "Boss",
+          "id": "boss",
+          "items": [
+            {
+              "location": "scraplands",
+              "id": "signatus",
+              "image": "./images/collectibles/boss.png"
+            },
+            {
+              "location": "totrich",
+              "id": "velkan",
+              "image": "./images/collectibles/boss.png"
+            }
+          ]
+        },
+        {
+          "name": "Rapport",
+          "id": "affinity",
+          "items": [
+            {
+              "location": "stern",
+              "id": "stern_neria",
+              "image": "./images/affinity/stern_neria_1.png"
+            },
+            {
+              "location": "stern",
+              "id": "stern_sasha",
+              "image": "./images/affinity/stern_sasha_1.png"
+            },
+            {
+              "location": "stern",
+              "id": "stern_mercenary_zeira",
+              "image": "./images/affinity/stern_mercenary_zeira_1.png"
+            },
+            {
+              "location": "stern",
+              "id": "stern_bastian",
+              "image": "./images/affinity/stern_bastian_1.png"
+            },
+            {
+              "location": "totrich",
+              "id": "totrich_orne",
+              "image": "./images/affinity/totrich_orne_1.png"
+            }
+          ]
+        },
+        {
+          "name": "Another Story",
+          "id": "quest",
+          "items": [
+            {
+              "location": "riza_falls",
+              "id": "the_sandy_path",
+              "image": "./images/collectibles/quest.png"
+            },
+            {
+              "location": "totrich",
+              "id": "help_the_orphans",
+              "image": "./images/collectibles/quest.png"
+            }
+          ]
+        },
+        {
+          "name": "Hidden Story",
+          "id": "story",
+          "items": [
+            {
+              "location": "totrich",
+              "id": "welcome_to_arthetine",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "stern",
+              "startId": "the_answer_to_the_agony_p1",
+              "id": "the_answer_to_the_agony_p4",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "nebelhorn",
+              "id": "to_be_a_human",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "scraplands",
+              "id": "rgm_report",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "arid_path",
+              "id": "a_stubborn_writer",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "nebelhorn",
+              "startId": "end_of_his_obsession_p1",
+              "id": "end_of_his_obsession_p2",
+              "image": "./images/collectibles/story.png"
+            },
+            {
+              "location": "stern",
+              "startId": "the_greatest_evolution_form_p1",
+              "id": "the_greatest_evolution_form_p3",
+              "image": "./images/collectibles/story.png"
+            }
+          ]
+        }
+      ],
       "mokoko_total": 87
     },
     "north_vern": {

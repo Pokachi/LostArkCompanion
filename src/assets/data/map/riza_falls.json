@@ -183,8 +183,8 @@
           "isCollectible": true,
           "name": "Whirpool Observatory",
           "display": "#7 Whirpool Observatory",
-          "content": "",
-          "id": "whirpool_observatory",
+          "content": "Can be accessed randomly by using one of the sand portals on the map.",
+          "id": "whirlpool_observatory",
           "lat": -98.81,
           "lng": 135.68
         }
