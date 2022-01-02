@@ -1,0 +1,52 @@
+{
+  "type": "zone",
+  "name": "Eye of Sceptrum",
+  "id": "eye_of_sceptrum",
+  "parent": "stern",
+  "continent": "Arthetine",
+  "continentId": "arthetine",
+  "icon": "./images/map/stern/stern.png",
+  "minZoom": 2,
+  "maxZoom": 4,
+  "adjacentZones": [
+    "stern"
+  ],
+  "markers": [
+    {
+      "type": "mokoko",
+      "data": [
+        {
+          "name": "Mokoko Bean",
+          "isCollectible": true,
+          "content": "",
+          "id": "mokoko0378",
+          "lat": -119.56,
+          "lng": 97.43
+        }
+      ]
+    },
+    {
+      "type": "zone",
+      "data": [
+        {
+          "isCollectible": false,
+          "name": "Stern",
+          "continent": "Arthetine",
+          "display": "Stern",
+          "content": "",
+          "id": "stern",
+          "lat": -174.46,
+          "lng": 125.76,
+          "markers": [
+            { "type": "mokoko",  "count": 12 },
+            { "type": "affinity",  "count": 4 },
+            { "type": "vista",  "count": 1 },
+            { "type": "food",  "count": 2 },
+            { "type": "story",  "count": 6 }
+          ],
+          "mapId": "stern"
+        }
+      ]
+    }
+  ]
+}

@@ -9,7 +9,9 @@
   "minZoom": 2,
   "maxZoom": 4,
   "adjacentZones": [
-    "arid_path"
+    "arid_path",
+    "eye_of_sceptrum",
+    "stern_underground"
   ],
   "markers": [
     {
@@ -387,6 +389,64 @@
             { "type": "story", "count": 1 }
           ],
           "mapId": "arid_path"
+        },
+        {
+          "isCollectible": false,
+          "name": "Eye of Sceptrum",
+          "continent": "Arthetine",
+          "display": "Eye of Sceptrum",
+          "content": "",
+          "id": "eye_of_sceptrum",
+          "lat": -166.13,
+          "lng": 135.6,
+          "markers": [
+            { "type": "mokoko",  "count": 1 }
+          ],
+          "mapId": "eye_of_sceptrum"
+        },
+        {
+          "isCollectible": false,
+          "name": "Stern Underground",
+          "continent": "Arthetine",
+          "display": "Stern Underground",
+          "content": "",
+          "id": "stern_underground",
+          "multi": true,
+          "markers": [
+            { "type": "mokoko",  "count": 1 },
+            { "type": "story",  "count": 1 }
+          ],
+          "locations": [
+            {
+              "zone": "stern",
+              "index": 0,
+              "indexOffset": 0,
+              "lat": -169.63,
+              "lng": 49.94
+            },
+            {
+              "zone": "stern",
+              "index": 1,
+              "indexOffset": 0,
+              "lat": -184.06,
+              "lng": 160.24
+            },
+            {
+              "zone": "stern",
+              "index": 2,
+              "indexOffset": 0,
+              "lat": -164.88,
+              "lng": 222.48
+            },
+            {
+              "zone": "stern",
+              "index": 3,
+              "indexOffset": 0,
+              "lat": -97.94,
+              "lng": 114.68
+            }
+          ],
+          "mapId": "stern_underground"
         }
       ]
     }
