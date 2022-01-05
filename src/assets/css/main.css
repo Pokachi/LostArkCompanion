@@ -62,3 +62,9 @@
 .pink_quest {
     color: rgb(255, 10, 142);
 }
+
+
+.custom-control-label::after,
+.custom-control-label::before{
+    left: -1.5rem !important;
+}

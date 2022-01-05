@@ -177,8 +177,8 @@ export default {
     }
   },
   async created() {
+    this.dataReady = false;
     if(this.$route.query.r) {
-      this.dataReady = false;
       this.selectedRegion = this.$route.query.r;
     } else {
       this.selectedRegion = null;

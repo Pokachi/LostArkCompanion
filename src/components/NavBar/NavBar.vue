@@ -13,6 +13,7 @@
           <b-dropdown-item href="#">Songs</b-dropdown-item>
           <b-dropdown-item href="#">Emotes</b-dropdown-item>
         </b-nav-item-dropdown>
+        <b-nav-item to="/tasks">Tasks</b-nav-item>
       </b-navbar-nav>
     </b-navbar>
   </div>

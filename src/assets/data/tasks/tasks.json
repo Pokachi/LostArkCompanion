@@ -1,0 +1,9 @@
+{
+  "daily": [
+    {
+      "type": "chaos_dungeon",
+      "name": "Chaos Dungeon",
+      "id": "chaos_dungeon"
+    }
+  ]
+}

@@ -84,10 +84,10 @@ export default {
 <style>
 
 /* Acquire Switch */
-.custom-control-label::before {
+.subtitle-name-text .custom-control-label::before {
   left: 4.5rem !important;
 }
-.custom-control-label::after {
+.subtitle-name-text .custom-control-label::after {
   left: calc(4.5rem + 2px) !important;
 }
 </style>
