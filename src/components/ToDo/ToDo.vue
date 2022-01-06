@@ -25,7 +25,7 @@
               <div v-for="character in characters" :key="character.id" style="width: fit-content">
                 <div class="text-center border-bottom pt-2 pl-2 pr-2" style="height: 41px" v-b-modal="'character-editor'" v-on:click="editCharacter(character.id)"> {{character.name}} </div>
                 <div v-for="task in dailyTasks" :key="task.id" class="daily-marker m-auto pt-2" style="height: 41px; width: fit-content;">
-                  <b-form-checkbox v-if="Object.keys(character.daily).includes(task.id)" />
+                  <b-form-checkbox v-if="showCheckBox('daily', task.id, character.id)" />
                 </div>
               </div>
               <!-- plus button -->
@@ -54,7 +54,7 @@
                 <b-button v-b-modal="'additional-config-' + task.id" size="sm" pill class="float-right mr-2" v-on:click="taskConfig('daily', task.id)">
                   <font-awesome-icon icon="cog" />
                 </b-button>
-                <b-form-checkbox v-model="characterEditor.daily[task.id].newChecked" class="pt-1 float-right mr-2"></b-form-checkbox>
+                <b-form-checkbox v-model="characterEditor.daily[task.id].checked" class="pt-1 float-right mr-2"></b-form-checkbox>
 
                 <!-- Additional Config -->
                 <b-modal :id="'additional-config-' + task.id" hide-footer size="sm" hide-header body-bg-variant="dark">
@@ -118,7 +118,16 @@ export default {
         daily: {
           chaos_dungeon: {
             interval: 1,
-            newChecked: false,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          }
+        },
+        weekly: {
+          una_weekly: {
+            interval: 1,
+            checked: false,
             date: "2022-01-05",
             newInterval: 1,
             newDate: "2022-01-05"
@@ -185,27 +194,51 @@ export default {
     }
   },
   methods: {
+    showCheckBox(taskType, taskId, characterId) {
+      if (this.characters[characterId]) {
+        const character = this.characters[characterId];
+        if (character[taskType][taskId] && character[taskType][taskId].checked) {
+          const taskDate = new Date(character[taskType][taskId].date);
+          const date = new Date();
+
+          while (date.getTime() - taskDate.getTime() > 86400000 ) {
+            taskDate.setDate(taskDate.getDate() + character[taskType][taskId].interval);
+          }
+          character[taskType][taskId].date = taskDate.toJSON();
+
+          if (0 <= date - taskDate && date - taskDate < 86400000) {
+            return true;
+          }
+        }
+      }
+      return false;
+    },
     editCharacter(characterId) {
       for(const daily of Object.values(this.characterEditor.daily)) {
         daily.interval = 1;
         daily.newInterval = 1;
-        daily.date = new Date().toJSON().slice(0,10);
-        daily.newDate = new Date().toJSON().slice(0,10);
-        daily.newChecked = false;
+        daily.date = new Date(new Date().toJSON().slice(0,10));
+        daily.date.setHours(6)
+        daily.date = daily.date.toJSON();
+        daily.newDate = new Date(new Date().toJSON().slice(0,10));
+        daily.newDate.setHours(6)
+        daily.newDate = daily.newDate.toJSON();
+        daily.checked = false;
       }
 
       if (characterId) {
         this.characterEditor.characterId = this.characters[characterId].id;
         this.characterEditor.newName = this.characters[characterId].name;
-        for (const daily of this.characters[characterId].daily) {
-          this.characterEditor.daily[daily.id].interval = daily.interval;
-          this.characterEditor.daily[daily.id].newInterval = daily.interval;
-          this.characterEditor.daily[daily.id].date = daily.date;
-          this.characterEditor.daily[daily.id].newDate = daily.date;
-          this.characterEditor.daily[daily.id].newChecked = true;
+        for (const dailyId of Object.keys(this.characters[characterId].daily)) {
+          const daily = this.characters[characterId].daily[dailyId];
+          if (daily.checked) {
+            this.characterEditor.daily[dailyId].interval = daily.interval;
+            this.characterEditor.daily[dailyId].newInterval = daily.interval;
+            this.characterEditor.daily[dailyId].date = daily.date;
+            this.characterEditor.daily[dailyId].newDate = daily.date;
+            this.characterEditor.daily[dailyId].checked = true;
+          }
         }
-        this.characterEditor.daily = this.characters[characterId].daily;
-        this.characterEditor.weekly = this.characters[characterId].weekly;
       } else {
         this.characterEditor.characterId = this.uuidv4();
         this.characterEditor.newName = ""
@@ -219,16 +252,24 @@ export default {
       event.preventDefault();
       this.characterEditor[type][taskId].interval = this.characterEditor[type][taskId].newInterval;
       this.characterEditor[type][taskId].date = this.characterEditor[type][taskId].newDate;
+      const tempDate = new Date(this.characterEditor[type][taskId].newDate);
+      let extraHour = tempDate.getHours() + 6 + tempDate.getTimezoneOffset()/60;
+      if (extraHour >= 24) {
+        tempDate.setDate(tempDate.getDate() + 1);
+        extraHour -= 24;
+      }
+      tempDate.setHours(extraHour);
+      this.characterEditor[type][taskId].date = tempDate.toJSON();
       this.$bvModal.hide('additional-config-' + taskId)
     },
     submitCharacter(event) {
       event.preventDefault();
 
       const charData = {};
-      charData.name = this.characterEditor.newName;
-      charData.id = this.characterEditor.characterId;
-      charData.daily = this.characterEditor.daily;
-      charData.weekly = this.characterEditor.weekly;
+      charData.name = JSON.parse(JSON.stringify(this.characterEditor.newName));
+      charData.id = JSON.parse(JSON.stringify(this.characterEditor.characterId));
+      charData.daily = JSON.parse(JSON.stringify(this.characterEditor.daily));
+      charData.weekly = JSON.parse(JSON.stringify(this.characterEditor.weekly));
       this.characters[charData.id] = charData;
       this.$bvModal.hide('character-editor')
       console.log(JSON.stringify(this.characters));
@@ -237,19 +278,6 @@ export default {
 
     async importData() {
       this.taskData = JSON.parse(JSON.stringify(await import("@/assets/data/tasks/tasks.json")));
-
-      const today = new Date().toJSON().slice(0,10)
-      for (const task of this.taskData.daily) {
-        this.characterEditor.daily[task.id].date = today;
-        this.characterEditor.daily[task.id].newDate = today;
-      }
-
-      //TODO
-      if (this.taskData.weekly) {
-        for (const task of this.taskData.weekly) {
-          this.characterEditor.weekly[task.id] = { interval: 1, checked: false, date: ""};
-        }
-      }
 
       this.dataReady = true;
       this.$forceUpdate();
