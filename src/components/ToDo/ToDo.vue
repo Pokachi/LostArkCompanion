@@ -23,7 +23,10 @@
           <div class="bg-task-row daily-container flex-grow-1">
             <div style="min-width: 100%" class="d-flex flex-nowrap justify-content-center flex-nowrap">
               <div v-for="character in characters" :key="character.id" style="width: fit-content">
-                <div class="text-center border-bottom pt-2 pl-2 pr-2" style="height: 41px" v-b-modal="'character-editor'" v-on:click="editCharacter(character.id)"> {{character.name}} </div>
+                <div class="text-center border-bottom pt-2 pl-2 pr-2" style="height: 41px" v-b-modal="'character-editor'" v-on:click="editCharacter(character.id)">
+                  <b-img :src="'./images/classes/' + character.characterClass + '.png'" class="d-inline mr-1" style="width: 24px;"/>
+                  {{character.name}}
+                </div>
                 <div v-for="task in dailyTasks" :key="task.id" class="daily-marker m-auto pt-2" style="height: 41px; width: fit-content;">
                   <b-form-checkbox v-if="showCheckBox('daily', task.id, character.id)" />
                 </div>
@@ -42,8 +45,10 @@
       <!-- Character editor -->
       <b-modal scrollable id="character-editor" :hide-footer="true" :hide-header="true" body-bg-variant="dark">
         <b-form @submit="submitCharacter" @reset="$bvModal.hide('character-editor')">
+          <!-- Character Portrait -->
+          <b-img :src="'./images/classes/' + characterEditor.characterClass + '.png'" class="d-inline" style="width: 48px;" v-b-modal="'character-portrait'"/>
           <!-- Character Name -->
-          <b-form-input v-model="characterEditor.newName" placeholder="Character Name" />
+          <b-form-input v-model="characterEditor.newName" placeholder="Character Name" class="d-inline ml-3" style="width: fit-content;"/>
 
           <!-- daily -->
           <b-tabs class="mt-3" content-class="mt-1" active-nav-item-class="bg-dark text-light" justified>
@@ -88,6 +93,25 @@
 
       </b-modal>
 
+      <!-- Character Portrait -->
+      <b-modal id="character-portrait" hide-footer hide-header body-bg-variant="dark">
+        <h4 class="text-white"> Select Character Class </h4>
+        <hr class="generalhr">
+        <div v-for="charClass of Object.keys(characterData.classes)" :key="charClass" class="m-2 text-white">
+          <h5 class="text-center">
+            {{characterData.classes[charClass].name}}
+          </h5>
+          <div class="d-flex flex-grow-0 flex-wrap justify-content-center">
+            <b-link v-for="charSubclass of Object.keys(characterData.classes[charClass].subclass)" :key="charSubclass" class="m-2" v-on:click="submitPortrait($event, charSubclass)">
+              <div class="m-auto" style="width: fit-content">
+                <b-img :src="'./images/classes/' + charSubclass + '.png'" width="48px" class="m-auto"/>
+              </div>
+              <div class="m-auto" style="width: fit-content"> {{ characterData.classes[charClass].subclass[charSubclass].name }}</div>
+            </b-link>
+          </div>
+        </div>
+      </b-modal>
+
       <div class="text-white p-2">
         <h3 class="text-center pl-4 pr-4 pt-2 pb-2 m-0 bg-secondary">Character Weekly</h3>
         <draggable v-model="weeklyTasks" group="people" @start="drag=true" @end="drag=false" class="bg-task-row">
@@ -112,8 +136,10 @@ export default {
     return {
       dataReady: false,
       taskData: null,
+      characterData: null,
       characterEditor: {
         characterId: '',
+        characterClass: '',
         newName: '',
         daily: {
           chaos_dungeon: {
@@ -214,6 +240,7 @@ export default {
       return false;
     },
     editCharacter(characterId) {
+      this.characterEditor.characterClass = "unknown";
       for(const daily of Object.values(this.characterEditor.daily)) {
         daily.interval = 1;
         daily.newInterval = 1;
@@ -229,6 +256,7 @@ export default {
       if (characterId) {
         this.characterEditor.characterId = this.characters[characterId].id;
         this.characterEditor.newName = this.characters[characterId].name;
+        this.characterEditor.characterClass = this.characters[characterId].characterClass;
         for (const dailyId of Object.keys(this.characters[characterId].daily)) {
           const daily = this.characters[characterId].daily[dailyId];
           if (daily.checked) {
@@ -262,11 +290,17 @@ export default {
       this.characterEditor[type][taskId].date = tempDate.toJSON();
       this.$bvModal.hide('additional-config-' + taskId)
     },
+    submitPortrait(event, portrait) {
+      event.preventDefault();
+      this.characterEditor.characterClass = portrait;
+      this.$bvModal.hide('character-portrait')
+    },
     submitCharacter(event) {
       event.preventDefault();
 
       const charData = {};
       charData.name = JSON.parse(JSON.stringify(this.characterEditor.newName));
+      charData.characterClass = JSON.parse(JSON.stringify(this.characterEditor.characterClass));
       charData.id = JSON.parse(JSON.stringify(this.characterEditor.characterId));
       charData.daily = JSON.parse(JSON.stringify(this.characterEditor.daily));
       charData.weekly = JSON.parse(JSON.stringify(this.characterEditor.weekly));
@@ -278,6 +312,7 @@ export default {
 
     async importData() {
       this.taskData = JSON.parse(JSON.stringify(await import("@/assets/data/tasks/tasks.json")));
+      this.characterData = JSON.parse(JSON.stringify(await import("@/assets/data/characters/characterInfo.json")));
 
       this.dataReady = true;
       this.$forceUpdate();
@@ -291,6 +326,25 @@ export default {
 </script>
 
 <style scoped>
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
 
 .bg-task-row {
   background-color: #424242;

@@ -1,0 +1,77 @@
+{
+  "classes": {
+    "warrior": {
+      "name": "Warrior",
+      "subclass": {
+        "berserker": {
+          "name": "Berserker"
+        },
+        "gunlancer": {
+          "name": "Gunlancer"
+        },
+        "paladin": {
+          "name": "Paladin"
+        }
+      }
+    },
+    "martial_artist": {
+      "name": "Martial Artist",
+      "subclass": {
+        "striker": {
+          "name": "Striker"
+        },
+        "wardancer": {
+          "name": "Wardancer"
+        },
+        "scrapper": {
+          "name": "Scrapper"
+        },
+        "soulfist": {
+          "name": "Soulfist"
+        }
+      }
+    },
+    "gunner": {
+      "name": "Gunner",
+      "subclass": {
+        "gunslinger": {
+          "name": "Gunslinger"
+        },
+        "artillerist": {
+          "name": "Artillerist"
+        },
+        "deadeye": {
+          "name": "Deadeye"
+        },
+        "sharpshooter": {
+          "name": "Sharpshooter"
+        }
+      }
+    },
+    "mage": {
+      "name": "Mage",
+      "subclass": {
+        "bard": {
+          "name": "Bard"
+        },
+        "summoner": {
+          "name": "Summoner"
+        },
+        "sorceress": {
+          "name": "Sorceress"
+        }
+      }
+    },
+    "assassin": {
+      "name": "Assassin",
+      "subclass": {
+        "shadowhunter": {
+          "name": "Shadowhunter"
+        },
+        "deathblade": {
+          "name": "Deathblade"
+        }
+      }
+    }
+  }
+}
