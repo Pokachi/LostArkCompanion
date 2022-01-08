@@ -654,11 +654,8 @@ export default {
           nextDate.setMinutes(0);
           nextDate.setSeconds(0);
           nextDate.setMilliseconds(0);
-          console.log(nextDate);
           taskType === 'daily' ? nextDate.setDate(nextDate.getDate() + character[taskType][taskId].interval) : nextDate.setDate(nextDate.getDate() + 7 * character[taskType][taskId].interval);
-          console.log(nextDate);
           let hoursToSet = 6 + this.serverRegionData.regions[this.selectedRegion].timeZoneOffset - nextDate.getTimezoneOffset()/60;
-          console.log(hoursToSet);
           if (hoursToSet >= 24) {
             nextDate.setDate(nextDate.getDate() + 1);
             hoursToSet -= 24;
@@ -668,7 +665,6 @@ export default {
           }
 
           nextDate.setHours(hoursToSet);
-          console.log(nextDate);
           character[taskType][taskId].nextDate = nextDate.toJSON();
         } else {
           character[taskType][taskId].nextDate = character[taskType][taskId].date;
@@ -793,13 +789,13 @@ export default {
           }
         }
         for (const weeklyId of Object.keys(this.characters[characterId].weekly)) {
-          const weekly = this.characters[characterId].daily[weeklyId];
+          const weekly = this.characters[characterId].weekly[weeklyId];
           if (weekly.checked) {
-            this.characterEditor.daily[weeklyId].interval = weekly.interval;
-            this.characterEditor.daily[weeklyId].newInterval = weekly.interval;
-            this.characterEditor.daily[weeklyId].date = weekly.date;
-            this.characterEditor.daily[weeklyId].newDate = weekly.date;
-            this.characterEditor.daily[weeklyId].checked = true;
+            this.characterEditor.weekly[weeklyId].interval = weekly.interval;
+            this.characterEditor.weekly[weeklyId].newInterval = weekly.interval;
+            this.characterEditor.weekly[weeklyId].date = weekly.date;
+            this.characterEditor.weekly[weeklyId].newDate = weekly.date;
+            this.characterEditor.weekly[weeklyId].checked = true;
           }
         }
       } else {
