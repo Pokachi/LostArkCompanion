@@ -1,0 +1,16 @@
+{
+  "regions": {
+    "na-west": {
+      "name": "NA West",
+      "timeZoneOffset": 8
+    },
+    "na-east": {
+      "name": "NA East",
+      "timeZoneOffset": 5
+    },
+    "eu": {
+      "name": "EU",
+      "timeZoneOffset": -1
+    }
+  }
+}

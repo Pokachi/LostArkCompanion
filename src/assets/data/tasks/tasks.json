@@ -1,9 +1,64 @@
 {
-  "daily": [
-    {
+  "daily": {
+    "chaos_dungeon": {
       "type": "chaos_dungeon",
       "name": "Chaos Dungeon",
-      "id": "chaos_dungeon"
+      "id": "chaos_dungeon",
+      "image_id": "chaos_dungeon"
+    },
+    "una_daily": {
+      "type": "una_daily",
+      "name": "Una Daily",
+      "id": "una_daily",
+      "image_id": "una_daily"
+    },
+    "guardian_raid": {
+      "type": "guardian_raid",
+      "name": "Guardian Raid",
+      "id": "guardian_raid",
+      "image_id": "guardian_raid"
+    },
+    "guild_support": {
+      "type": "guild_support",
+      "name": "Guild Support",
+      "id": "guild_support",
+      "image_id": "guild_support"
+    },
+    "rapport_actions": {
+      "type": "rapport_actions",
+      "name": "Rapport Actions (Account)",
+      "id": "rapport_actions",
+      "image_id": "rapport_actions"
+    },
+    "world_boss": {
+      "type": "world_boss",
+      "name": "World Boss (Account)",
+      "id": "world_boss",
+      "image_id": "world_boss"
+    },
+    "chaos_gate": {
+      "type": "chaos_gate",
+      "name": "Chaos Gate (Account)",
+      "id": "chaos_gate",
+      "image_id": "chaos_gate"
+    },
+    "adventure_island": {
+      "type": "adventure_island",
+      "name": "Adventure Island (Account)",
+      "id": "adventure_island",
+      "image_id": "adventure_island"
+    },
+    "voyage_co_op_mission": {
+      "type": "voyage_co_op_mission",
+      "name": "Voyage Co-op Mission (Account)",
+      "id": "voyage_co_op_mission",
+      "image_id": "voyage_co_op_mission"
+    },
+    "trade_skill": {
+      "type": "trade_skill",
+      "name": "Trade Skill (Account)",
+      "id": "trade_skill",
+      "image_id": "trade_skill"
     }
-  ]
+  }
 }

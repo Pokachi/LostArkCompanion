@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faPlus, faCog } from '@fortawesome/free-solid-svg-icons'
+import { faPlus, faCog, faTrash, faHourglass } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import '@/mixins/globalMixin'
@@ -17,7 +17,7 @@ Vue.use(BootstrapVue)
 Vue.use(Notification)
 
 // Font-awesome library
-library.add(faPlus, faCog)
+library.add(faPlus, faCog, faTrash, faHourglass)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
