@@ -849,7 +849,7 @@ export default {
             this.dailyTasks[ceDaily] = {};
             this.dailyTasks[ceDaily].characters = [];
             if (this.characterEditor.daily[ceDaily].parent) {
-              this.weeklyTaskDraggable.push(JSON.parse(JSON.stringify(this.taskData.daily[this.characterEditor.daily[ceDaily].parent].content[ceDaily])))
+              this.dailyTaskDraggable.push(JSON.parse(JSON.stringify(this.taskData.daily[this.characterEditor.daily[ceDaily].parent].content[ceDaily])))
             } else {
               this.dailyTaskDraggable.push(JSON.parse(JSON.stringify(this.taskData.daily[ceDaily])))
             }
