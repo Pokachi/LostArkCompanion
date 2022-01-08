@@ -5,7 +5,7 @@
     </h1>
 
     <div class="text-center mb-3">
-      <div class="d-inline">
+      <div class="d-inline mr-2">
         <b-dropdown id="dropdown-1" :text="selectedRegion ? serverRegionData.regions[selectedRegion].name : 'Select Region'" class="m-md-2">
           <b-dropdown-item v-for="region of Object.keys(serverRegionData.regions)" :key="region" @click="changeRegion(region);">{{serverRegionData.regions[region].name}}</b-dropdown-item>
         </b-dropdown>
@@ -18,8 +18,8 @@
         </b-dropdown>
       </div>
     </div>
-    <!-- Daily -->
     <div class="d-flex flex-wrap justify-content-center">
+      <!-- Daily -->
       <div class="text-white p-2">
         <h3 class="text-center pl-4 pr-4 pt-2 pb-2 m-0 bg-secondary">Daily</h3>
         <div class="d-flex" style="max-width: 95vw">
@@ -63,8 +63,52 @@
         </div>
       </div>
 
+      <!-- Weekly -->
+      <div class="text-white p-2">
+        <h3 class="text-center pl-4 pr-4 pt-2 pb-2 m-0 bg-secondary">Weekly</h3>
+        <div class="d-flex" style="max-width: 95vw">
+          <b-container class="bg-task-row text-nowrap" style="width: auto">
+            <b-row class="pt-2 pb-2 border-bottom flex-nowrap" style="height: 41px">
+              <b-col> </b-col>
+            </b-row>
+            <draggable v-model="weeklyTaskDraggable" @start="drag=true" @end="drag=false" @change="saveData">
+              <b-row v-for="task in weeklyTaskDraggable" :key="task.id" class="pt-2 pb-2">
+                <b-col>
+                  <b-img :src="'./images/tasks/' + task.image_id + '.png'" class="d-inline mr-1" style="width: 24px;"/>
+                  {{task.name}}
+                </b-col>
+              </b-row>
+            </draggable>
+          </b-container>
+
+          <div class="bg-task-row daily-container flex-grow-1">
+            <div style="min-width: 100%" class="d-flex flex-nowrap flex-nowrap">
+              <div v-for="character in getCharacters" :key="character.id" style="width: fit-content">
+                <div class="text-center border-bottom pt-2 pl-2 pr-2" style="height: 41px; width: max-content" v-b-modal="'character-editor'" v-on:click="editCharacter(character.id)">
+                  <b-img :src="'./images/classes/' + character.characterClass + '.png'" class="d-inline mr-1" style="width: 24px;"/>
+                  <div class="d-inline"> {{character.name}} </div>
+                </div>
+                <div v-for="task in weeklyTaskDraggable" :key="task.id" class="daily-marker m-auto pt-2" style="height: 41px; width: fit-content;">
+                  <b-form-checkbox v-if="showCheckBox('weekly', task.id, character.id)" v-model="character.weekly[task.id].completed" @change="toggleTask('weekly', task.id, character.id, $event)"/>
+                  <div class="mr-1" v-if="showHourglass('weekly', task.id, character.id)">
+                    <font-awesome-icon icon="hourglass"/>
+                    {{ calcRemainingDate('weekly', task.id, character.id) }}
+                  </div>
+                </div>
+              </div>
+              <!-- plus button -->
+              <div class="text-center border-bottom pt-1 pl-3 pr-4 flex-grow-1" style="height: 41px">
+                <b-button pill variant="outline-light" style="height: fit-content" size="sm" v-b-modal="'character-editor'" v-on:click="editCharacter(null)">
+                  <font-awesome-icon icon="plus" />
+                </b-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Character editor -->
-      <b-modal scrollable id="character-editor" :hide-footer="true" :hide-header="true" body-bg-variant="dark">
+      <b-modal scrollable id="character-editor" content-class="character-editor" :hide-footer="true" :hide-header="true" body-bg-variant="dark">
         <b-form @submit="submitCharacter" @reset="$bvModal.hide('character-editor')">
           <!-- Character Portrait -->
           <b-img :src="'./images/classes/' + characterEditor.characterClass + '.png'" class="d-inline" style="width: 48px;" v-b-modal="'character-portrait'"/>
@@ -91,34 +135,109 @@
           <b-tabs class="mt-3" content-class="mt-1" active-nav-item-class="bg-dark text-light" justified>
             <b-tab title="Daily">
               <div v-for="task of taskData.daily" :key="task.id" class="mt-2">
-                <b-img class="ml-2" :src="'./images/tasks/' + task.id + '.png'" style="width: 24px"/>
-                <div class="text-white d-inline align-middle"> {{task.name}}</div>
-                <b-button v-b-modal="'additional-config-' + task.id" size="sm" pill class="float-right mr-2" v-on:click="taskConfig('daily', task.id)">
-                  <font-awesome-icon icon="cog" />
-                </b-button>
-                <b-form-checkbox v-model="characterEditor.daily[task.id].checked" class="pt-1 float-right mr-2"></b-form-checkbox>
+                <div v-if="!task.multi">
+                  <b-img class="ml-2" :src="'./images/tasks/' + task.image_id + '.png'" style="width: 24px"/>
+                  <div class="text-white d-inline align-middle"> {{task.name}}</div>
+                  <b-button v-b-modal="'additional-config-' + task.id" size="sm" pill class="float-right mr-2" v-on:click="taskConfig('daily', task.id)">
+                    <font-awesome-icon icon="cog" />
+                  </b-button>
+                  <b-form-checkbox v-model="characterEditor.daily[task.id].checked" class="pt-1 float-right mr-2"></b-form-checkbox>
 
-                <!-- Additional Config -->
-                <b-modal :id="'additional-config-' + task.id" hide-footer size="sm" hide-header body-bg-variant="dark">
-                  <h5 class="text-white"> {{task.name}} Config </h5>
-                  <hr class="generalhr">
-                  <p class="text-white font-weight-bold mt-2"> Interval: </p>
-                  <b-form-spinbutton v-model="characterEditor.daily[task.id].newInterval" />
-                  <p class="text-white font-weight-bold  mt-2"> Start Date: </p>
-                  <b-form-datepicker v-model="characterEditor.daily[task.id].newDate" :date-format-options="{ year: 'numeric', month: 'numeric', day: 'numeric' }"/>
-                  <div class="mt-2">
-                    <b-button class="float-right m-2" v-on:click="submitConfig($event, 'daily', task.id)" variant="primary">Confirm</b-button>
-                    <b-button class="float-right m-2" v-on:click="$bvModal.hide('additional-config-' + task.id)" >Cancel</b-button>
-                  </div>
-                </b-modal>
+                  <!-- Additional Config -->
+                  <b-modal :id="'additional-config-' + task.id" hide-footer size="sm" hide-header body-bg-variant="dark">
+                    <h5 class="text-white"> {{task.name}} Config </h5>
+                    <hr class="generalhr">
+                    <p class="text-white font-weight-bold mt-2"> Interval: </p>
+                    <b-form-spinbutton v-model="characterEditor.daily[task.id].newInterval" />
+                    <p class="text-white font-weight-bold  mt-2"> Start Date: </p>
+                    <b-form-datepicker v-model="characterEditor.daily[task.id].newDate" :date-format-options="{ year: 'numeric', month: 'numeric', day: 'numeric' }"/>
+                    <div class="mt-2">
+                      <b-button class="float-right m-2" v-on:click="submitConfig($event, 'daily', task.id)" variant="primary">Confirm</b-button>
+                      <b-button class="float-right m-2" v-on:click="$bvModal.hide('additional-config-' + task.id)" >Cancel</b-button>
+                    </div>
+                  </b-modal>
+                </div>
+                <div v-else>
+                  <b-button block v-b-toggle="task.id + '-toggle'" variant="outline-info"> {{task.name}}</b-button>
+                  <b-collapse :id="task.id + '-toggle'">
+                    <div v-for="actualTask of task.content" :key="actualTask.id" class="mt-2">
+                      <b-img class="ml-2" :src="'./images/tasks/' + actualTask.image_id + '.png'" style="width: 24px"/>
+                      <div class="text-white d-inline align-middle"> {{actualTask.name}}</div>
+                      <b-button v-b-modal="'additional-config-' + actualTask.id" size="sm" pill class="float-right mr-2" v-on:click="taskConfig('daily', actualTask.id)">
+                        <font-awesome-icon icon="cog" />
+                      </b-button>
+                      <b-form-checkbox v-model="characterEditor.daily[actualTask.id].checked" class="pt-1 float-right mr-2"></b-form-checkbox>
+
+                      <!-- Additional Config -->
+                      <b-modal :id="'additional-config-' + actualTask.id" hide-footer size="sm" hide-header body-bg-variant="dark">
+                        <h5 class="text-white"> {{actualTask.name}} Config </h5>
+                        <hr class="generalhr">
+                        <p class="text-white font-weight-bold mt-2"> Interval: </p>
+                        <b-form-spinbutton v-model="characterEditor.daily[actualTask.id].newInterval" />
+                        <p class="text-white font-weight-bold  mt-2"> Start Date: </p>
+                        <b-form-datepicker v-model="characterEditor.daily[actualTask.id].newDate" :date-format-options="{ year: 'numeric', month: 'numeric', day: 'numeric' }"/>
+                        <div class="mt-2">
+                          <b-button class="float-right m-2" v-on:click="submitConfig($event, 'daily', actualTask.id)" variant="primary">Confirm</b-button>
+                          <b-button class="float-right m-2" v-on:click="$bvModal.hide('additional-config-' + actualTask.id)" >Cancel</b-button>
+                        </div>
+                      </b-modal>
+                    </div>
+                  </b-collapse>
+                </div>
               </div>
             </b-tab>
             <!-- weekly -->
             <b-tab title="Weekly">
               <div v-for="task of taskData.weekly" :key="task.id" class="mt-2">
-                <b-img class="ml-2" :src="'./images/tasks/' + task.id + '.png'" style="width: 24px"/>
-                <div class="text-white d-inline align-middle"> {{task.name}}</div>
-                <b-form-checkbox v-model="characterEditor.weekly[task.id]" class="float-right mr-2"></b-form-checkbox>
+                <div v-if="!task.multi">
+                  <b-img class="ml-2" :src="'./images/tasks/' + task.image_id + '.png'" style="width: 24px"/>
+                  <div class="text-white d-inline align-middle"> {{task.name}}</div>
+                  <b-button v-b-modal="'additional-config-' + task.id" size="sm" pill class="float-right mr-2" v-on:click="taskConfig('weekly', task.id)">
+                    <font-awesome-icon icon="cog" />
+                  </b-button>
+                  <b-form-checkbox v-model="characterEditor.weekly[task.id].checked" class="pt-1 float-right mr-2"></b-form-checkbox>
+
+                  <!-- Additional Config -->
+                  <b-modal :id="'additional-config-' + task.id" hide-footer size="sm" hide-header body-bg-variant="dark">
+                    <h5 class="text-white"> {{task.name}} Config </h5>
+                    <hr class="generalhr">
+                    <p class="text-white font-weight-bold mt-2"> Interval: </p>
+                    <b-form-spinbutton v-model="characterEditor.weekly[task.id].newInterval" />
+                    <p class="text-white font-weight-bold  mt-2"> Start Date: </p>
+                    <b-form-datepicker v-model="characterEditor.weekly[task.id].newDate" :date-format-options="{ year: 'numeric', month: 'numeric', day: 'numeric' }"/>
+                    <div class="mt-2">
+                      <b-button class="float-right m-2" v-on:click="submitConfig($event, 'weekly', task.id)" variant="primary">Confirm</b-button>
+                      <b-button class="float-right m-2" v-on:click="$bvModal.hide('additional-config-' + task.id)" >Cancel</b-button>
+                    </div>
+                  </b-modal>
+                </div>
+                <div v-else>
+                  <b-button block v-b-toggle="task.id + '-toggle'" variant="outline-info"> {{task.name}}</b-button>
+                  <b-collapse :id="task.id + '-toggle'">
+                    <div v-for="actualTask of task.content" :key="actualTask.id" class="mt-2">
+                      <b-img class="ml-2" :src="'./images/tasks/' + actualTask.image_id + '.png'" style="width: 24px"/>
+                      <div class="text-white d-inline align-middle"> {{actualTask.name}}</div>
+                      <b-button v-b-modal="'additional-config-' + actualTask.id" size="sm" pill class="float-right mr-2" v-on:click="taskConfig('weekly', actualTask.id)">
+                        <font-awesome-icon icon="cog" />
+                      </b-button>
+                      <b-form-checkbox v-model="characterEditor.weekly[actualTask.id].checked" class="pt-1 float-right mr-2"></b-form-checkbox>
+
+                      <!-- Additional Config -->
+                      <b-modal :id="'additional-config-' + actualTask.id" hide-footer size="sm" hide-header body-bg-variant="dark">
+                        <h5 class="text-white"> {{actualTask.name}} Config </h5>
+                        <hr class="generalhr">
+                        <p class="text-white font-weight-bold mt-2"> Interval: </p>
+                        <b-form-spinbutton v-model="characterEditor.weekly[actualTask.id].newInterval" />
+                        <p class="text-white font-weight-bold  mt-2"> Start Date: </p>
+                        <b-form-datepicker v-model="characterEditor.weekly[actualTask.id].newDate" :date-format-options="{ year: 'numeric', month: 'numeric', day: 'numeric' }"/>
+                        <div class="mt-2">
+                          <b-button class="float-right m-2" v-on:click="submitConfig($event, 'weekly', actualTask.id)" variant="primary">Confirm</b-button>
+                          <b-button class="float-right m-2" v-on:click="$bvModal.hide('additional-config-' + actualTask.id)" >Cancel</b-button>
+                        </div>
+                      </b-modal>
+                    </div>
+                  </b-collapse>
+                </div>
               </div>
             </b-tab>
           </b-tabs>
@@ -148,15 +267,8 @@
           </div>
         </div>
       </b-modal>
-
-      <div class="text-white p-2">
-        <h3 class="text-center pl-4 pr-4 pt-2 pb-2 m-0 bg-secondary">Weekly</h3>
-        <draggable v-model="weeklyTaskDraggable" group="people" @start="drag=true" @end="drag=false" @change="saveData" class="bg-task-row">
-          <div v-for="task in weeklyTaskDraggable" :key="task.id" class="text-white p-2">{{task.name}}</div>
-        </draggable>
-      </div>
-
     </div>
+
   </div>
 </template>
 
@@ -211,6 +323,7 @@ export default {
             newDate: "2022-01-05"
           },
           rapport_actions: {
+            parent: "miscellaneous",
             interval: 1,
             checked: false,
             date: "2022-01-05",
@@ -218,6 +331,7 @@ export default {
             newDate: "2022-01-05"
           },
           world_boss: {
+            parent: "miscellaneous",
             interval: 1,
             checked: false,
             date: "2022-01-05",
@@ -225,6 +339,7 @@ export default {
             newDate: "2022-01-05"
           },
           chaos_gate: {
+            parent: "miscellaneous",
             interval: 1,
             checked: false,
             date: "2022-01-05",
@@ -232,6 +347,7 @@ export default {
             newDate: "2022-01-05"
           },
           adventure_island: {
+            parent: "miscellaneous",
             interval: 1,
             checked: false,
             date: "2022-01-05",
@@ -239,6 +355,7 @@ export default {
             newDate: "2022-01-05"
           },
           voyage_co_op_mission: {
+            parent: "miscellaneous",
             interval: 1,
             checked: false,
             date: "2022-01-05",
@@ -246,6 +363,7 @@ export default {
             newDate: "2022-01-05"
           },
           trade_skill: {
+            parent: "miscellaneous",
             interval: 1,
             checked: false,
             date: "2022-01-05",
@@ -255,6 +373,198 @@ export default {
         },
         weekly: {
           una_weekly: {
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          demon_beast_canyon: {
+            parent: "abyss_dungeon",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          necromancers_origin: {
+            parent: "abyss_dungeon",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          hall_of_the_twisted_warlord: {
+            parent: "abyss_dungeon",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          hildebrandt_palace: {
+            parent: "abyss_dungeon",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          road_of_sorrow: {
+            parent: "abyss_dungeon",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          forgotten_forge: {
+            parent: "abyss_dungeon",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          oblivion_sea: {
+            parent: "abyss_dungeon",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          perilous_abyss: {
+            parent: "abyss_dungeon",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          underwater_sanctuary: {
+            parent: "abyss_dungeon",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          distraught_forest: {
+            parent: "abyss_dungeon",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          rotting_glade: {
+            parent: "abyss_dungeon",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          valtan: {
+            parent: "legion_raid",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          vykas: {
+            parent: "legion_raid",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          kakul_saydon: {
+            parent: "legion_raid",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          brelshaza: {
+            parent: "legion_raid",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          argos: {
+            parent: "abyss_raid",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          gvg: {
+            parent: "miscellaneous",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          guild_boss: {
+            parent: "miscellaneous",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          merchant_ship_exchange: {
+            parent: "miscellaneous",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          silmael_bloodstone_exchange: {
+            parent: "miscellaneous",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          pvp_token_exchange: {
+            parent: "miscellaneous",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          ghost_ship: {
+            parent: "miscellaneous",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          pvp_island: {
+            parent: "miscellaneous",
+            interval: 1,
+            checked: false,
+            date: "2022-01-05",
+            newInterval: 1,
+            newDate: "2022-01-05"
+          },
+          guardian_challenge: {
+            parent: "miscellaneous",
             interval: 1,
             checked: false,
             date: "2022-01-05",
@@ -280,9 +590,6 @@ export default {
             const taskDate = new Date(daily.date);
             const todayDate = new Date;
             if (daily.completed !== true && taskDate < todayDate) {
-              console.log(character.name);
-              console.log (taskDate);
-              console.log(todayDate);
               return true;
             }
           }
@@ -318,6 +625,19 @@ export default {
           }
         }
       }
+      for(const weekly of Object.keys(this.characters[characterId].weekly)) {
+        const index = this.weeklyTasks[weekly].characters.indexOf(characterId);
+        this.weeklyTasks[weekly].characters.splice(index, 1);
+        if (this.weeklyTasks[weekly].characters.length === 0) {
+          delete this.weeklyTasks[weekly];
+          for (let i = 0; i < this.weeklyTaskDraggable.length; i++) {
+            if (this.weeklyTaskDraggable[i].id === weekly) {
+              this.weeklyTaskDraggable.splice(i, 1);
+              break;
+            }
+          }
+        }
+      }
       delete this.characters[characterId];
       this.saveData();
       this.$bvModal.hide('delete-character-' + characterId);
@@ -329,15 +649,26 @@ export default {
         const character = this.characters[characterId];
         character[taskType][taskId].completed = event;
         if (event) {
-          const nextDate = new Date(new Date().toJSON().slice(0,10));
-          nextDate.setDate(nextDate.getDate() + character[taskType][taskId].interval);
-          let hoursToSet = nextDate.getHours()  + 6 + this.serverRegionData.regions[this.selectedRegion].timeZoneOffset;
+          const nextDate = new Date();
+          nextDate.setHours(0);
+          nextDate.setMinutes(0);
+          nextDate.setSeconds(0);
+          nextDate.setMilliseconds(0);
+          console.log(nextDate);
+          taskType === 'daily' ? nextDate.setDate(nextDate.getDate() + character[taskType][taskId].interval) : nextDate.setDate(nextDate.getDate() + 7 * character[taskType][taskId].interval);
+          console.log(nextDate);
+          let hoursToSet = 6 + this.serverRegionData.regions[this.selectedRegion].timeZoneOffset - nextDate.getTimezoneOffset()/60;
+          console.log(hoursToSet);
           if (hoursToSet >= 24) {
-            hoursToSet -=24;
+            nextDate.setDate(nextDate.getDate() + 1);
+            hoursToSet -= 24;
           } else if (hoursToSet < 0) {
+            nextDate.setDate(nextDate.getDate() - 1);
             hoursToSet += 24;
           }
+
           nextDate.setHours(hoursToSet);
+          console.log(nextDate);
           character[taskType][taskId].nextDate = nextDate.toJSON();
         } else {
           character[taskType][taskId].nextDate = character[taskType][taskId].date;
@@ -378,11 +709,12 @@ export default {
           let taskDate = new Date(character[taskType][taskId].date);
           const date = new Date();
 
-          if (date - taskDate >= 86400000 && character[taskType][taskId].completed && character[taskType][taskId].nextDate && character[taskType][taskId].date !== character[taskType][taskId].nextDate) {
+          const minTaskTime = 86400000;
+
+          if (date - taskDate >= minTaskTime && character[taskType][taskId].completed && character[taskType][taskId].nextDate && character[taskType][taskId].date !== character[taskType][taskId].nextDate) {
             character[taskType][taskId].date = character[taskType][taskId].nextDate;
             character[taskType][taskId].completed = false;
             taskDate = new Date(character[taskType][taskId].date);
-            console.log(character[taskType][taskId].date);
             this.saveData();
           }
 
@@ -398,9 +730,17 @@ export default {
       for(const daily of Object.values(this.characterEditor.daily)) {
         daily.interval = 1;
         daily.newInterval = 1;
-        daily.date = new Date(new Date().toJSON().slice(0,10));
-        daily.newDate = new Date(new Date().toJSON().slice(0,10));
-        let hoursToSet = daily.date.getHours()  + 6 + this.serverRegionData.regions[this.selectedRegion].timeZoneOffset;
+        daily.date = new Date();
+        daily.date.setHours(0);
+        daily.date.setMinutes(0);
+        daily.date.setSeconds(0);
+        daily.date.setMilliseconds(0);
+        daily.newDate = new Date();
+        daily.newDate.setHours(0);
+        daily.newDate.setMinutes(0);
+        daily.newDate.setSeconds(0);
+        daily.newDate.setMilliseconds(0);
+        let hoursToSet = 6 + this.serverRegionData.regions[this.selectedRegion].timeZoneOffset - daily.date.getTimezoneOffset()/60;
         if (hoursToSet >= 24) {
           hoursToSet -=24;
         } else if (hoursToSet < 0) {
@@ -411,6 +751,31 @@ export default {
         daily.newDate.setHours(hoursToSet)
         daily.newDate = daily.newDate.toJSON();
         daily.checked = false;
+      }
+      for(const weekly of Object.values(this.characterEditor.weekly)) {
+        weekly.interval = 1;
+        weekly.newInterval = 1;
+        weekly.date = new Date();
+        weekly.date.setHours(0);
+        weekly.date.setMinutes(0);
+        weekly.date.setSeconds(0);
+        weekly.date.setMilliseconds(0);
+        weekly.newDate = new Date();
+        weekly.newDate.setHours(0);
+        weekly.newDate.setMinutes(0);
+        weekly.newDate.setSeconds(0);
+        weekly.newDate.setMilliseconds(0);
+        let hoursToSet = 6 + this.serverRegionData.regions[this.selectedRegion].timeZoneOffset - weekly.date.getTimezoneOffset()/60;
+        if (hoursToSet >= 24) {
+          hoursToSet -=24;
+        } else if (hoursToSet < 0) {
+          hoursToSet += 24;
+        }
+        weekly.date.setHours(hoursToSet);
+        weekly.date = weekly.date.toJSON();
+        weekly.newDate.setHours(hoursToSet)
+        weekly.newDate = weekly.newDate.toJSON();
+        weekly.checked = false;
       }
 
       if (characterId) {
@@ -425,6 +790,16 @@ export default {
             this.characterEditor.daily[dailyId].date = daily.date;
             this.characterEditor.daily[dailyId].newDate = daily.date;
             this.characterEditor.daily[dailyId].checked = true;
+          }
+        }
+        for (const weeklyId of Object.keys(this.characters[characterId].weekly)) {
+          const weekly = this.characters[characterId].daily[weeklyId];
+          if (weekly.checked) {
+            this.characterEditor.daily[weeklyId].interval = weekly.interval;
+            this.characterEditor.daily[weeklyId].newInterval = weekly.interval;
+            this.characterEditor.daily[weeklyId].date = weekly.date;
+            this.characterEditor.daily[weeklyId].newDate = weekly.date;
+            this.characterEditor.daily[weeklyId].checked = true;
           }
         }
       } else {
@@ -477,14 +852,42 @@ export default {
           if (!this.dailyTasks[ceDaily]) {
             this.dailyTasks[ceDaily] = {};
             this.dailyTasks[ceDaily].characters = [];
-            this.dailyTaskDraggable.push(JSON.parse(JSON.stringify(this.taskData.daily[ceDaily])))
+            if (this.characterEditor.daily[ceDaily].parent) {
+              this.weeklyTaskDraggable.push(JSON.parse(JSON.stringify(this.taskData.daily[this.characterEditor.daily[ceDaily].parent].content[ceDaily])))
+            } else {
+              this.dailyTaskDraggable.push(JSON.parse(JSON.stringify(this.taskData.daily[ceDaily])))
+            }
           }
 
           this.dailyTasks[ceDaily].characters.push(charData.id);
         }
       }
+      const weekly = {}
+      for (const ceWeekly of Object.keys(this.characterEditor.weekly)) {
+        if (this.characterEditor.weekly[ceWeekly].checked) {
+          const cWeekly = {}
+          cWeekly.interval = this.characterEditor.weekly[ceWeekly].interval;
+          cWeekly.date = this.characterEditor.weekly[ceWeekly].date;
+          cWeekly.checked = this.characterEditor.weekly[ceWeekly].checked;
+          cWeekly.completed = this.characters[charData.id] && this.characters[charData.id].weekly[ceWeekly] && this.characters[charData.id].weekly[ceWeekly].completed;
+          weekly[ceWeekly] = cWeekly;
+
+          //add to task data
+          if (!this.weeklyTasks[ceWeekly]) {
+            this.weeklyTasks[ceWeekly] = {};
+            this.weeklyTasks[ceWeekly].characters = [];
+            if (this.characterEditor.weekly[ceWeekly].parent) {
+              this.weeklyTaskDraggable.push(JSON.parse(JSON.stringify(this.taskData.weekly[this.characterEditor.weekly[ceWeekly].parent].content[ceWeekly])))
+            } else {
+              this.weeklyTaskDraggable.push(JSON.parse(JSON.stringify(this.taskData.weekly[ceWeekly])))
+            }
+          }
+
+          this.weeklyTasks[ceWeekly].characters.push(charData.id);
+        }
+      }
       charData.daily = JSON.parse(JSON.stringify(daily));
-      charData.weekly = JSON.parse(JSON.stringify(this.characterEditor.weekly));
+      charData.weekly = JSON.parse(JSON.stringify(weekly));
       this.characters[charData.id] = charData;
       this.$bvModal.hide('character-editor');
       this.saveData();
@@ -506,6 +909,22 @@ export default {
           }
           temp.setHours(tempHours);
           daily.date = temp.toJSON();
+        }
+
+        for (const weekly of Object.values(character.weekly)) {
+
+          const temp = new Date(weekly.date);
+          let tempHours = temp.getHours() + this.serverRegionData.regions[region].timeZoneOffset - this.serverRegionData.regions[this.selectedRegion].timeZoneOffset;
+          if (tempHours >= 24) {
+            temp.setDate(temp.getDate() + 1);
+            tempHours -=24;
+          } else if (tempHours < 0) {
+            temp.setDate(temp.getDate() - 1);
+
+            tempHours += 24;
+          }
+          temp.setHours(tempHours);
+          weekly.date = temp.toJSON();
         }
       }
       this.selectedRegion = region;
