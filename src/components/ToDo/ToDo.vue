@@ -828,6 +828,11 @@ export default {
       this.$bvModal.hide('character-portrait')
     },
     submitCharacter(event) {
+      var re = /^[A-Za-z0-9']{3,12}$/;
+      if (!re.test(this.characterEditor.newName)) {
+        return;
+      }
+
       event.preventDefault();
 
       const charData = {};
@@ -855,7 +860,23 @@ export default {
             }
           }
 
-          this.dailyTasks[ceDaily].characters.push(charData.id);
+          if (!this.dailyTasks[ceDaily].characters.includes(charData.id)) {
+            this.dailyTasks[ceDaily].characters.push(charData.id);
+          }
+        } else {
+          if (this.characters[charData.id] && this.characters[charData.id].daily[ceDaily]) {
+            const index = this.dailyTasks[ceDaily].characters.indexOf(charData.id);
+            this.dailyTasks[ceDaily].characters.splice(index, 1);
+            if (this.dailyTasks[ceDaily].characters.length === 0) {
+              delete this.dailyTasks[ceDaily];
+              for (let i = 0; i < this.dailyTaskDraggable.length; i++) {
+                if (this.dailyTaskDraggable[i].id === ceDaily) {
+                  this.dailyTaskDraggable.splice(i, 1);
+                  break;
+                }
+              }
+            }
+          }
         }
       }
       const weekly = {}
@@ -879,7 +900,23 @@ export default {
             }
           }
 
-          this.weeklyTasks[ceWeekly].characters.push(charData.id);
+          if (!this.weeklyTasks[ceWeekly].characters.includes(charData.id)) {
+            this.weeklyTasks[ceWeekly].characters.push(charData.id);
+          }
+        } else {
+          if (this.characters[charData.id] && this.characters[charData.id].weekly[ceWeekly]) {
+            const index = this.weeklyTasks[ceWeekly].characters.indexOf(charData.id);
+            this.weeklyTasks[ceWeekly].characters.splice(index, 1);
+            if (this.weeklyTasks[ceWeekly].characters.length === 0) {
+              delete this.weeklyTasks[ceWeekly];
+              for (let i = 0; i < this.weeklyTaskDraggable.length; i++) {
+                if (this.weeklyTaskDraggable[i].id === ceWeekly) {
+                  this.weeklyTaskDraggable.splice(i, 1);
+                  break;
+                }
+              }
+            }
+          }
         }
       }
       charData.daily = JSON.parse(JSON.stringify(daily));
