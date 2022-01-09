@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0b1a32"],{2163:function(n){n.exports=JSON.parse('{"id":"king_thirain_card","grade":4,"image":"./images/items/card.png","name":"King Thirain Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"The King of Luterra. The epitome of a good leader, always thinking of his people.","cost":8000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d0b1a32.99940ed2.js.map

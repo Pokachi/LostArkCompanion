@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d226cfa"],{e9f6:function(o){o.exports=JSON.parse('{"id":"hearts_melody","name":"Heart\'s Melody","cooldown":"5s","description":"A song with the power to move people\'s hearts.","acquisition":"Time for Treatment - Forest of Giants","acquisitionType":"blue_quest","acquisitionContinentId":"tortoyk","acquisitionLocation":"forest_of_giant","acquisitionLink":"#/map?m=forest_of_giant&c=hearts_melody"}')}}]);
+//# sourceMappingURL=chunk-2d226cfa.d0f67ef8.js.map

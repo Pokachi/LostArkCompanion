@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0c1b08"],{"46b2":function(i){i.exports=JSON.parse('{"name":"Malone","id":"malone","items":[{"id":"berhart_card","condition":"Limit 1"},{"id":"black_rose","condition":"Limit 1"},{"id":"cadogan_card","condition":"Limit 1"},{"id":"cassleford_card","condition":"Limit 1"},{"id":"chain_war_chronicles","condition":"Limit 1"},{"id":"hairplant"},{"id":"lakebar_tomato_juice","condition":"Limit 1"},{"id":"stalwart_cage","condition":"Limit 1"}]}')}}]);
+//# sourceMappingURL=chunk-2d0c1b08.3b3a9f03.js.map

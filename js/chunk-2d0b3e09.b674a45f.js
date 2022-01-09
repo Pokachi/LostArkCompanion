@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0b3e09"],{"29f2":function(e){e.exports=JSON.parse('{"id":"advance","name":"Advance","description":"Type /advance to point the way forward.","acquisition":"[Adventure\'s Tome] Arthetine 40%","acquisitionType":"adventures_tome","acquisitionLink":"#/collectibles/ignea?r=arthetine"}')}}]);
+//# sourceMappingURL=chunk-2d0b3e09.b674a45f.js.map

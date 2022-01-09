@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d22897b"],{da9a:function(i){i.exports=JSON.parse('{"id":"forests_minuet","name":"Forest\'s Minuet","cooldown":"5s","description":"It reveals hidden paths by moving thorny vines.","acquisition":"It\'s Okay, Miss Fairy - Lullaby Island","additionalInfo":"-Requires Song of Resonance-","acquisitionType":"purple_quest","acquisitionContinentId":"sea","acquisitionLocation":"lullaby_island","acquisitionLink":"#/map?m=lullaby_island&c=forests_minuet"}')}}]);
+//# sourceMappingURL=chunk-2d22897b.764ce24f.js.map

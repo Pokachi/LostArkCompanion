@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d208a0c"],{a634:function(i){i.exports=JSON.parse('{"id":"affection","name":"Affection","description":"Type /affection to make a heart with your hands.","acquisition":"A Great Discovery - Totopia","acquisitionType":"chain_quest","acquisitionContinentId":"sea","acquisitionLocation":"totopia","acquisitionLink":"#/map?m=totopia&c=affection"}')}}]);
+//# sourceMappingURL=chunk-2d208a0c.6f056586.js.map

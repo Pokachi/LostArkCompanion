@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d2169b6"],{c2d5:function(a){a.exports=JSON.parse('{"id":"cadogan_card","grade":1,"image":"./images/items/card.png","name":"Cadogan Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"The captain of Scherrit\'s army, a knight who always follows orders.","cost":5000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d2169b6.fb74d00d.js.map

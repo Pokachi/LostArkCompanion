@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0d6d5f"],{"73f3":function(e){e.exports=JSON.parse('{"id":"respect","name":"Respect","description":"Type /respect to take a knee.","acquisition":"Ealyn\'s Gift - Vern Castle","acquisitionType":"blue_quest","acquisitionContinentId":"north_vern","acquisitionLocation":"vern_castle","acquisitionLink":"#/map?m=vern_castle&c=respect"}')}}]);
+//# sourceMappingURL=chunk-2d0d6d5f.0ae8a96b.js.map

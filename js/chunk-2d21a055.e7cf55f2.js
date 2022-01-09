@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d21a055"],{ba77:function(n){n.exports=JSON.parse('{"id":"stern_neria_card","grade":2,"image":"./images/items/card.png","name":"Stern Neria Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"She\'s called Stern\'s prima donna. Many people come to Stern just to listen to Neria sing.","cost":8000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d21a055.e7cf55f2.js.map

@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d21d90e"],{d29c:function(i){i.exports=JSON.parse('{"id":"song_of_temptation","name":"Song of Temptation","cooldown":"5s","description":"Can charm the target.","acquisition":"[Adventure\'s Tome] Yudia 60%","acquisitionType":"adventures_tome","acquisitionLink":"#/collectibles/ignea?r=yudia"}')}}]);
+//# sourceMappingURL=chunk-2d21d90e.9e62e5d9.js.map

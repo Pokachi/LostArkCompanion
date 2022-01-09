@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d230a91"],{ecda:function(n){n.exports=JSON.parse('{"id":"nox_card","grade":2,"image":"./images/items/card.png","name":"Nox Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"A Redfin Pirate who carries a big cannon on his shoulder. He guards their spoils in Stormcry Grotto.","cost":8000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d230a91.7a581955.js.map

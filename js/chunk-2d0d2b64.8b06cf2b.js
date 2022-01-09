@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0d2b64"],{"5a57":function(e){e.exports=JSON.parse('{"regions":{"na-west":{"name":"NA West","timeZoneOffset":8},"na-east":{"name":"NA East","timeZoneOffset":5},"eu":{"name":"EU","timeZoneOffset":-1}}}')}}]);
+//# sourceMappingURL=chunk-2d0d2b64.8b06cf2b.js.map

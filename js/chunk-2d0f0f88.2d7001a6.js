@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0f0f88"],{"9f49":function(o){o.exports=JSON.parse('{"id":"eolh_card","grade":2,"image":"./images/items/card.png","name":"Eolh Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"A Guardian of Tortoyk\'s Heart. It woke from its slumber within the stone to conduct the Guardian\'s Test.","cost":8000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d0f0f88.2d7001a6.js.map

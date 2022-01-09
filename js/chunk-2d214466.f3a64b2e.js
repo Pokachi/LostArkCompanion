@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d214466"],{aff1:function(a){a.exports=JSON.parse('{"id":"applause","name":"Applause","description":"Type /applause to clap your hands.","acquisition":"Obtained By Default","acquisitionType":"default"}')}}]);
+//# sourceMappingURL=chunk-2d214466.f3a64b2e.js.map

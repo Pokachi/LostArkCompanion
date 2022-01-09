@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0ba362"],{"35f0":function(i){i.exports=JSON.parse('{"id":"pray","name":"Pray","description":"Type /pray to kneel down and pray.","acquisition":"Morai Ruins - Saland Hill","acquisitionType":"orange_quest","acquisitionContinentId":"yudia","acquisitionLocation":"saland_hill","acquisitionLink":"#/map?m=saland_hill&c=pray"}')}}]);
+//# sourceMappingURL=chunk-2d0ba362.55c97e57.js.map

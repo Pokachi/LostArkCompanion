@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d2261b2"],{e6f1:function(e){e.exports=JSON.parse('{"id":"bergstorm_card","grade":2,"image":"./images/items/card.png","name":"Bergstorm Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"A scientist who was driven to madness by the Ruby Eye.","cost":8000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d2261b2.31994741.js.map

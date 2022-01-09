@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d238648"],{fed7:function(e){e.exports=JSON.parse('{"id":"wei_card","grade":4,"image":"./images/items/card.png","name":"Wei Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"A fighter who inherited the name of the Sidereal. Having avenged his master, he is now ready to save the world.","cost":200000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d238648.2dbf85c0.js.map

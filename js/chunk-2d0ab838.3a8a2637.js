@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0ab838"],{1630:function(o){o.exports=JSON.parse('{"id":"mokamoka_card","grade":3,"image":"./images/items/card.png","name":"Mokamoka Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"A curious Mokoko boy. He\'s embarked on the greatest adventure of his life to find Tortoyk\'s heart.","cost":40000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d0ab838.3a8a2637.js.map

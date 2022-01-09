@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d224ad0"],{e0c2:function(i){i.exports=JSON.parse('{"id":"cute","name":"Cute","description":"Type /cute to show interest.","acquisition":"Yurei - Peyto\\n(5000 silver)","acquisitionType":"exchange","acquisitionContinentId":"sea","acquisitionLocation":"peyto","acquisitionLink":"#/map?m=peyto&c=cute"}')}}]);
+//# sourceMappingURL=chunk-2d224ad0.cf5c736b.js.map

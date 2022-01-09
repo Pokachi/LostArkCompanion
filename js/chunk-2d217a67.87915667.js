@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d217a67"],{c840:function(e){e.exports=JSON.parse('{"id":"yuul_card","grade":1,"image":"./images/items/card.png","name":"Yuul Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"A member of the staff in charge of the Changhun Tournament. Because of her interest in martial arts, she\'s extremely invested in the tournament.","cost":5000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d217a67.87915667.js.map

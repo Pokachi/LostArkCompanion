@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0e4aea"],{"90eb":function(e){e.exports=JSON.parse('{"id":"siera_card","grade":1,"image":"./images/items/card.png","name":"Siera Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"A bard who lives in Prideholme.","cost":5000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d0e4aea.9228a50e.js.map

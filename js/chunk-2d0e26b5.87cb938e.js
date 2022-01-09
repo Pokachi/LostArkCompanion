@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0e26b5"],{"7f2b":function(i){i.exports=JSON.parse('{"id":"laugh","name":"Laugh","description":"Type /laugh to laugh out loud.","acquisition":"Naphta - Flowering Orchard\\n(6000 silver)","acquisitionType":"exchange","acquisitionContinentId":"east_luterra","acquisitionLocation":"flowering_orchard","acquisitionLink":"#/map?m=flowering_orchard&c=laugh"}')}}]);
+//# sourceMappingURL=chunk-2d0e26b5.87cb938e.js.map

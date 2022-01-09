@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0cfa96"],{6556:function(e){e.exports=JSON.parse('{"id":"meneliks_tome","grade":4,"image":"./images/items/card2.png","name":"Menelik\'s Tome","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"An ancient book left by the pilgrim Menelik.<br>It is said that the book contains all the world\'s knowledge.","cost":8000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d0cfa96.8077777f.js.map

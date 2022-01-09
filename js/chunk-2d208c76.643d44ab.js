@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d208c76"],{a5f2:function(a){a.exports=JSON.parse('{"id":"wavestrand_port_neria_card","grade":2,"image":"./images/items/card.png","name":"Wavestrand Port Neria Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"A woman who works at a tavern in Wavestrand Port. She\'s absolutely unforgettable.","cost":8000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d208c76.643d44ab.js.map

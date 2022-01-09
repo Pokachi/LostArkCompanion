@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d208c8a"],{a5ee:function(e){e.exports=JSON.parse('{"id":"prideholme_neria_card","grade":2,"image":"./images/items/card.png","name":"Prideholme Neria Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"A kind, cheerful girl who works at the Prideholme tavern and likes to cook.","cost":8000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d208c8a.fcf03792.js.map

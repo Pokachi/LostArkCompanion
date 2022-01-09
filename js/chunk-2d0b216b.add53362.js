@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0b216b"],{"232f":function(o){o.exports=JSON.parse('{"id":"morpheo_card","grade":1,"image":"./images/items/card.png","name":"Morpheo Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"An old woman who lives in an orchard of pear trees. She has a warm heart.","cost":5000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d0b216b.add53362.js.map

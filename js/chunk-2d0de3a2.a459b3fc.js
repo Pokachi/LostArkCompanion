@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0de3a2"],{"856e":function(e){e.exports=JSON.parse('{"id":"agree","name":"Agree","description":"Type /agree to nod your head in agreement.","acquisition":"Obtained By Default","acquisitionType":"default"}')}}]);
+//# sourceMappingURL=chunk-2d0de3a2.a459b3fc.js.map

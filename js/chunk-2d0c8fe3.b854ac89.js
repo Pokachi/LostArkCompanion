@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0c8fe3"],{"56f2":function(i){i.exports=JSON.parse('{"id":"shy","name":"Shy","description":"Type /shy to squirm with shyness.","acquisition":"A Good Day to Love - Liebeheim","acquisitionType":"purple_quest","acquisitionContinentId":"sea","acquisitionLocation":"liebeheim","acquisitionLink":"#/map?m=liebeheim&c=shy"}')}}]);
+//# sourceMappingURL=chunk-2d0c8fe3.b854ac89.js.map

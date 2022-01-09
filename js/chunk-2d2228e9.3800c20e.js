@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d2228e9"],{ceb3:function(e){e.exports=JSON.parse('{"id":"sad","grade":0,"image":"./images/items/sad.png","name":"Sad","type":"Emote","bound":"Binds when obtained","destruction":"<span style=\\"color: #C24B46\\">Unsellable</span>, <span style=\\"color: #C24B46\\">Indestructible</span>, <span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"Use to learn the emote: <font color=\\"#6fffcf\\">Sad.</font>"}')}}]);
+//# sourceMappingURL=chunk-2d2228e9.3800c20e.js.map

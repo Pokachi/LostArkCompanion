@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d221796"],{cb01:function(i){i.exports=JSON.parse('{"id":"song_of_starlight","name":"Song of Starlight","cooldown":"5s","description":"It is the song of the starkeeper who guides souls.","acquisition":"Favreau - Starlight Isle\\n(3,300 Gienah\'s Coin)","acquisitionType":"exchange","acquisitionContinentId":"sea","acquisitionLocation":"starlight_isle","acquisitionLink":"#/map?m=starlight_isle&c=song_of_starlight"}')}}]);
+//# sourceMappingURL=chunk-2d221796.cb2a217e.js.map

@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0b8a45"],{"300b":function(o){o.exports=JSON.parse('{"id":"joy","name":"Joy","description":"Type /joy to show your happiness.","acquisition":"Mokamoka Trust Level - Mokoko Village","acquisitionType":"affinity","acquisitionContinentId":"tortoyk","acquisitionLocation":"mokoko_village","acquisitionLink":"#/map?m=mokoko_village&c=joy"}')}}]);
+//# sourceMappingURL=chunk-2d0b8a45.c6ccc7bd.js.map

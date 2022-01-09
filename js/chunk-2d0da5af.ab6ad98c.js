@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0da5af"],{"6af4":function(e){e.exports=JSON.parse('{"id":"madam_moonscent_card","grade":1,"image":"./images/items/card.png","name":"Madam Moonscent Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"One of the three masters of Anikka. She leads the scrollmaidens.","cost":5000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d0da5af.ab6ad98c.js.map

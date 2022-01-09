@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0ae955"],{"0b4a":function(a){a.exports=JSON.parse('{"id":"sad","name":"Sad","description":"Type /sad to weep.","acquisition":"Obtained By Default","acquisitionType":"default"}')}}]);
+//# sourceMappingURL=chunk-2d0ae955.3fc149ee.js.map

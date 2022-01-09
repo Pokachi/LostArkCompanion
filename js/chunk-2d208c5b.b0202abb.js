@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d208c5b"],{a5e6:function(e){e.exports=JSON.parse('{"id":"thunder_card","grade":2,"image":"./images/items/card.png","name":"Thunder Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"A nomad priestess who worships the sky. She can perform a ritual to appeal to the sky and make it rain.","cost":8000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d208c5b.b0202abb.js.map

@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0ceffe"],{"629e":function(i){i.exports=JSON.parse('{"name":"Nox","id":"nox","items":[{"id":"adrenaline_boosting_fluid"},{"id":"bergstorm_card","condition":"Limit 1"},{"id":"energy_x7_capsule","condition":"Limit 1"},{"id":"fine_gramophone","condition":"Limit 1"},{"id":"krause_card","condition":"Limit 1"},{"id":"stern_neria_card","condition":"Limit 1"}]}')}}]);
+//# sourceMappingURL=chunk-2d0ceffe.9884adc8.js.map

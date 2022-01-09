@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0b34b9"],{2885:function(e){e.exports=JSON.parse('{"id":"affection","grade":0,"image":"./images/items/affection.png","name":"Affection","type":"Emote","bound":"Binds when obtained","destruction":"<span style=\\"color: #C24B46\\">Unsellable</span>, <span style=\\"color: #C24B46\\">Indestructible</span>, <span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"Use to learn the emote: <font color=\\"#6fffcf\\">Affection.</font>"}')}}]);
+//# sourceMappingURL=chunk-2d0b34b9.06661db8.js.map

@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0aef18"],{"0be5":function(e){e.exports=JSON.parse('{"id":"varut_card","grade":2,"image":"./images/items/card.png","name":"Varut Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"A gentle priest at Prideholme Cathedral. A member of the Sacrian Order and one of the Dawn Priests who support Pope Gustaven.","cost":8000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d0aef18.94e0cf51.js.map

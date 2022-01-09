@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0cf570"],{"62fd":function(e){e.exports=JSON.parse('{"id":"silver","grade":0,"image":"./images/items/silver.png","name":"Silver","type":"Silver","bound":"Binds when obtained","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"A currency crafted in Rohendel before the Chain War. It\'s still in use. A symbol for the light of Regulus is engraved on the coin."}')}}]);
+//# sourceMappingURL=chunk-2d0cf570.e013fd59.js.map

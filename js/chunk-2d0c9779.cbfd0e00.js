@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0c9779"],{"58ee":function(n){n.exports=JSON.parse('{"id":"song_of_resonance","name":"Song of Resonance","cooldown":"5s","description":"It opens hidden spaces.","acquisition":"Treasure Hunter Igran - Peyto\\n(16,500 Pirate Coin)","acquisitionType":"exchange","acquisitionContinentId":"sea","acquisitionLocation":"peyto","acquisitionLink":"#/map?m=peyto&c=song_of_resonance"}')}}]);
+//# sourceMappingURL=chunk-2d0c9779.cbfd0e00.js.map

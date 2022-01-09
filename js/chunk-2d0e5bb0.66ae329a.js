@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0e5bb0"],{9674:function(e){e.exports=JSON.parse('{"id":"bored","name":"Bored","description":"Type /bored to yawn.","acquisition":"[Adventure\'s Tome] Rethramis 70%","acquisitionType":"adventures_tome","acquisitionLink":"#/collectibles/ignea?r=rethramis"}')}}]);
+//# sourceMappingURL=chunk-2d0e5bb0.66ae329a.js.map

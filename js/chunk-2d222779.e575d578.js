@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d222779"],{cf77:function(e){e.exports=JSON.parse('{"id":"cheers","name":"Cheers","description":"Type /cheers to celebrate in triumph.","acquisition":"Master\'s Drinking Table - Melody Forest","acquisitionType":"blue_quest","acquisitionContinentId":"anikka","acquisitionLocation":"melody_forest","acquisitionLink":"#/map?m=melody_forest&c=cheer"}')}}]);
+//# sourceMappingURL=chunk-2d222779.e575d578.js.map

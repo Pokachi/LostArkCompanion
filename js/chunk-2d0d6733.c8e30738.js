@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0d6733"],{7334:function(e){e.exports=JSON.parse('{"id":"brinewt_card","grade":1,"image":"./images/items/card.png","name":"Brinewt Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"A Puruu who has succumbed to the power of mayhem. He once was known as the best of all Puruu warriors.","cost":5000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d0d6733.c8e30738.js.map

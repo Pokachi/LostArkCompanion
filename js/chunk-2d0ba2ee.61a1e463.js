@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0ba2ee"],{"35b8":function(e){e.exports=JSON.parse('{"id":"dance","name":"Dance","description":"Type /dance to boogie to the beat.","acquisition":"Obtained By Default","acquisitionType":"default"}')}}]);
+//# sourceMappingURL=chunk-2d0ba2ee.61a1e463.js.map

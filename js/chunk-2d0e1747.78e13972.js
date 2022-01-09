@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0e1747"],{"7b06":function(e){e.exports=JSON.parse('{"id":"sasha_card","grade":3,"image":"./images/items/card.png","name":"Sasha Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"One of the three leaders of the Republic of Arthetine. She manages her nation\'s finances with an iron fist.","cost":40000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d0e1747.78e13972.js.map

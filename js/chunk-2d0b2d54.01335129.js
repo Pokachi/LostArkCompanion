@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0b2d54"],{2693:function(e){e.exports=JSON.parse('{"id":"vengeful_spirit_card","grade":1,"image":"./images/items/card.png","name":"Vengeful Spirit Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"The angry spirit of a woman. She roams Rethramis, seeking revenge.","cost":5000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d0b2d54.01335129.js.map

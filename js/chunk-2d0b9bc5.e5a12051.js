@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0b9bc5"],{"33e4":function(e){e.exports=JSON.parse('{"id":"deny","name":"Deny","description":"Type /deny to shake your head.","acquisition":"Obtained By Default","acquisitionType":"default"}')}}]);
+//# sourceMappingURL=chunk-2d0b9bc5.e5a12051.js.map

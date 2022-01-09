@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0aaef7"],{"12aa":function(a){a.exports=JSON.parse('{"id":"vivian_card","grade":0,"image":"./images/items/card.png","name":"Vivian Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"An employee at Neria\'s Tavern in Luterra Castle. She wants to be as successful as Neria, someday.","cost":5000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d0aaef7.535418af.js.map

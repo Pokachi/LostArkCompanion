@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0c4283"],{"3a43":function(n){n.exports=JSON.parse('{"id":"giant_worm_card","grade":1,"image":"./images/items/card.png","name":"Giant Worm Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"An ancient creature living in a barren land. It absorbs nutrients while wandering through the ground, digging tunnels.","cost":5000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d0c4283.7803b709.js.map

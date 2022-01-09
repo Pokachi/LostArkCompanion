@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0c8664"],{"555c":function(o){o.exports=JSON.parse('{"id":"dakudaku_card","grade":1,"image":"./images/items/card.png","name":"Dakudaku Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"A Mokoko with a strong sense of responsibility who lives in Mokoko Village. He loves his family.","cost":8000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d0c8664.dbe40275.js.map

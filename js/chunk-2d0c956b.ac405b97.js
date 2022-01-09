@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0c956b"],{"595f":function(i){i.exports=JSON.parse('{"id":"beg","name":"Beg","description":"Type /beg to beg with both hands.","acquisition":"Lina the Lovely - Runaways Island","acquisitionType":"purple_quest","acquisitionContinentId":"sea","acquisitionLocation":"runaways_island","acquisitionLink":"#/map?m=runaways_island&c=beg"}')}}]);
+//# sourceMappingURL=chunk-2d0c956b.ac405b97.js.map

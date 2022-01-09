@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0dacb7"],{"6cb6":function(e){e.exports=JSON.parse('{"id":"bastian_card","grade":3,"image":"./images/items/card.png","name":"Bastian Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"One of the three leaders of the Republic of Arthetine. His boyish appearance belies his levelheadedness and charisma.","cost":40000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d0dacb7.fe38147f.js.map

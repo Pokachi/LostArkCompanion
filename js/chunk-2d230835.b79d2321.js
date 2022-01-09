@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d230835"],{ed33:function(i){i.exports=JSON.parse('{"name":"Oliver","id":"oliver","items":[{"id":"egg_of_creation_card","condition":"Limit 1"},{"id":"eolh_card","condition":"Limit 1"},{"id":"mokamoka_card","condition":"Limit 1"},{"id":"mokoko_carrot","condition":"Limit 1"},{"id":"oversize_ladybug_doll","condition":"Limit 1"},{"id":"round_glass_piece","condition":"Limit 1"},{"id":"shy_wind_flower_pollen","condition":"Limit 1"}]}')}}]);
+//# sourceMappingURL=chunk-2d230835.b79d2321.js.map

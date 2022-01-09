@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0e23cf"],{"7e9d":function(e){e.exports=JSON.parse('{"id":"talk","name":"Talk","description":"Type /talk to talk animatedly with gestures.","acquisition":"Obtained By Default","acquisitionType":"default"}')}}]);
+//# sourceMappingURL=chunk-2d0e23cf.512429ab.js.map

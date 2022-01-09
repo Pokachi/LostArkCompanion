@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d238675"],{fedd:function(e){e.exports=JSON.parse('{"id":"greet","name":"Greet","description":"Type /greet to wave and say hello.","acquisition":"Obtained By Default","acquisitionType":"default"}')}}]);
+//# sourceMappingURL=chunk-2d238675.d7bf5961.js.map

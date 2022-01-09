@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0c0dea"],{"442f":function(n){n.exports=JSON.parse('{"id":"morina_card","grade":1,"image":"./images/items/card.png","name":"Morina Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"A young woman in Yudia who is trying to become a shaman.","cost":5000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d0c0dea.36621768.js.map

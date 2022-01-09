@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d208129"],{a2df:function(e){e.exports=JSON.parse('{"id":"zeira_card","grade":1,"image":"./images/items/card.png","name":"Zeira Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"A writer who crafts covert novels based on rumors.","cost":5000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d208129.d1d60d55.js.map

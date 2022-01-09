@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d226746"],{e973:function(e){e.exports=JSON.parse('{"id":"seria_card","grade":2,"image":"./images/items/card.png","name":"Seria Card","type":"Card","bound":"Bound to Account on Pickup","destruction":"<span style=\\"color: #C24B46\\">Cannot be dismantled</span>","description":"A kind, goodhearted member of the Sacrian Order. She takes care of those who have been attacked.","cost":8000,"currency":"silver"}')}}]);
+//# sourceMappingURL=chunk-2d226746.73104ee1.js.map

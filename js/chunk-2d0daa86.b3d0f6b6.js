@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0daa86"],{"6d13":function(i){i.exports=JSON.parse('{"name":"Ben","id":"ben","items":[{"id":"fancier_bouquet","condition":"Limit 1"},{"id":"prideholme_potato","condition":"Limit 1"},{"id":"rethramis_holy_water","condition":"Limit 1"},{"id":"surprise_chest","condition":"Limit 1"},{"id":"varut_card","condition":"Limit 1"},{"id":"prideholme_neria_card","condition":"Limit 1"},{"id":"siera_card","condition":"Limit 1"}]}')}}]);
+//# sourceMappingURL=chunk-2d0daa86.b3d0f6b6.js.map

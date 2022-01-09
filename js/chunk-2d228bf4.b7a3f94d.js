@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d228bf4"],{db00:function(o){o.exports=JSON.parse('{"id":"song_of_valor","name":"Song of Valor","cooldown":"5s","description":"An encouraging anthem of Luterra.","acquisition":"Song of Valor - Mount Zagoras","acquisitionType":"orange_quest","acquisitionContinentId":"west_luterra","acquisitionLocation":"mount_zagoras","acquisitionLink":"#/map?m=mount_zagoras&c=song_of_valor"}')}}]);
+//# sourceMappingURL=chunk-2d228bf4.b7a3f94d.js.map
