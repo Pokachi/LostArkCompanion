@@ -593,6 +593,13 @@ export default {
               return true;
             }
           }
+          for (const weekly of Object.values(character.weekly)) {
+            const taskDate = new Date(weekly.date);
+            const todayDate = new Date;
+            if (weekly.completed !== true && taskDate < todayDate) {
+              return true;
+            }
+          }
           return false;
         })
       }
